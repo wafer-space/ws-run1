@@ -2,15 +2,15 @@
 
 [wafer.space](https://wafer.space/) GF180MCU Run 1
 
-Shuttle ID: G801
-Process: GF180MCU
-Number of slots: 40
+- Shuttle ID: G801
+- Process: GF180MCU
+- Number of slots: 40
 
 <div align="center">
 <table width="100%">
   <tr>
-  <td width="50%"><img src="images/reticle_white.png" width="45%"/></td>
-  <td width="50%"><img src="images/reticle.svg" width="45%"/></td>
+  <td width="50%"><img src="images/reticle_white.png" width="95%"/></td>
+  <td width="50%"><img src="images/reticle.svg" width="95%"/></td>
   </tr>
 </table>
 </div>
