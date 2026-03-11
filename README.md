@@ -48,7 +48,7 @@ The "?" indicate private projects that have been obfuscated to hide their layout
 | TRID | gf180mcu-project-trident-gf180-teststructure | 0p5x1 | Test structures to evaluate leakage currents in gf180mcuD technology  | https://github.com/Scafir/gf180mcu-project-trident-gf180-teststructure |
 | TTP2 | Tiny Tapeout GF 0.2 | 1x1 | https://tinytapeout.com  | https://github.com/TinyTapeout/tinytapeout-gf-0p2 |
 | TTPG | Tiny Tapeout GF 0p2 - Power Gated Variant | 1x1 | https://tinytapeout.com  | https://github.com/TinyTapeout/tinytapeout-gf-0p2 |
-| TZ01 | TillitisZedulo-testchip2025 | 1x1 | eFUSE and SRAM testchip put together by Egorexe and Zedulo team with support from Tillitis  | https://github.com/ZeduloTech/gf180mcu-testchip2025 |
+| TZ01 | TillitisZedulo-testchip2025 | 1x1 | eFUSE and SRAM testchip put together by Egorxe and Zedulo team with support from Tillitis  | https://github.com/ZeduloTech/gf180mcu-testchip2025 |
 | WSLG | Wafer.Space Logo | 1x1 | Die with a big wafer.space logo on it!  | https://github.com/89Mods/ws-logo-die |
 
 # View the Reticle Layout
