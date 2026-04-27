@@ -1,1 +1,4 @@
 *.oas
+*.bak
+*.swp
+tmp/
