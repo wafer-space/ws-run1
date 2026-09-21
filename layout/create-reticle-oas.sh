@@ -1,4 +1,4 @@
 #!/bin/sh
 set -Ce
-cat reticle-part-* > reticle.oas
-echo "316f07f37e148457558053f4d4d11540  reticle.oas" | md5sum -c
+cat G801-part-* > G801.oas
+echo "3ae7349e205f60d9f997cf7d3a688500  G801.oas" | md5sum -c
