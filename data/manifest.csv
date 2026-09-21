@@ -1,3 +1,4 @@
+CODE,PROJECT,SLOT_SIZE,VISIBILITY,PROJECT_DETAILS,REPOSITORY,TOP,SHA256,LAYOUT
 2975,Cloneless1,1x1,Public,Cloneless1 is a cryptographic ASIC that implements a physically secure block cipher instance with tamper-resistant long-term secret via physically unclonable function and leakage-resilient secret sharing.,https://github.com/ThorbenMoos/Cloneless1,chip_top,af0d087e19471f52ce57399f4e436f8bd9dbedac36f251a3cafdfe1600399b34,2975/chip_top.gds
 AS03,WS-Multi,1x1,Public,Multi-project die,https://github.com/AvalonSemiconductors/ws-submission-2025/,chip_top,51153e7799aba1c19a5d6ae17b3bb8bc301fb363c1374be11e8ee74a5b0c6a23,AS03/chip_top.gds
 BRWN,FA25_Engn2912e_Saligane_Brown,1x1,Public,FA25 ENGN2912e@Brown Course Project,,ENGN2912E_TOP,dcbf5b02fe7e5cd36f78012eebb2b6fd5f4db740c3f56357123b9a304018b1ac,BRWN/ENGN2912E_TOP.gds
