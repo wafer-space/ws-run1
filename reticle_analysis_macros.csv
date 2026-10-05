@@ -1,0 +1,8 @@
+macro,width_um,height_um,transistor_count,instances
+gf180mcu_fd_ip_sram__sram128x8m8wm1,431.860,268.880,11377,2
+gf180mcu_fd_ip_sram__sram256x8m8wm1,431.860,340.880,18305,12
+gf180mcu_fd_ip_sram__sram512x8m8wm1,431.860,484.880,32161,181
+gf180mcu_fd_ip_sram__sram64x8m8wm1,431.860,232.880,7913,2
+gf180mcu_ocd_ip_sram__sram1024x8m8wm1,301.300,515.810,59873,2
+gf180mcu_ocd_ip_sram__sram256x8m8wm1,301.300,224.930,18305,8
+gf180mcu_ocd_ip_sram__sram512x8m8wm1,301.300,321.890,32161,6

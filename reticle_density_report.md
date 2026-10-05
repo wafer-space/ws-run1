@@ -1,404 +1,320 @@
-# Wafer.Space Run 1 — Standard Cell & SRAM Density Report
+# wafer.space GF180MCU Run 1 — Standard Cell & SRAM Density Report
 
 **GF180MCU Process (GlobalFoundries 180nm), Shuttle G801**
 
 ## Introduction
 
-This report analyzes the standard cell and SRAM density achieved by the 24 unique chip designs on the [wafer.space](https://wafer.space/) Run 1 reticle. The reticle is 30mm x 24mm and contains 37 slot placements (some designs appear more than once for redundancy).
+This report analyzes the standard cell and SRAM density achieved by the 30 unique public chip designs on the [wafer.space](https://wafer.space/) GF180MCU Run 1 reticle. The reticle has 40 slots; the public layout contains 38 slot placements (some designs appear more than once, and private designs are not included).
 
 All designs were fabricated on GlobalFoundries' GF180MCU process, a 180-nanometer (0.18um) technology node. This is a mature, relatively large-geometry process — for comparison, modern smartphone chips use 3nm or 5nm processes with features roughly 50x smaller.
 
-> **Note on counting methodology:** All standard cell counts in this report count only **logic cells** — cells that perform actual computation (gates, flip-flops, buffers, multiplexers, etc.). Infrastructure cells are excluded: filler cells (fill, fillcap, endcap, filltie), well taps, antenna fix diodes, ESD diodes, and tie-high/tie-low cells. These infrastructure cells are inserted by automated tools to satisfy manufacturing rules but perform no logic function. On this reticle, infrastructure cells outnumber logic cells nearly 3:1 — 5.6M infrastructure vs 2.1M logic instances.[^44]
+> **Note on counting methodology:** All standard cell counts in this report count only **logic cells** — cells that perform actual computation (gates, flip-flops, buffers, multiplexers, etc.). Infrastructure cells are excluded: filler cells (fill, fillcap, endcap, filltie), well taps, antenna fix diodes, ESD diodes, and tie-high/tie-low cells. These infrastructure cells are inserted by automated tools to satisfy manufacturing rules but perform no logic function. On this reticle there are 6.0M infrastructure cell instances and 2.1M logic cell instances across the unique designs — 2.8 infrastructure cells for every logic cell.
 
 ## What Are Standard Cells?
 
 A "standard cell" is a pre-designed, pre-verified building block used to construct digital circuits. Think of them like LEGO bricks for chip design: each cell performs one simple logic function (an AND gate, a flip-flop for storing one bit, a buffer for boosting signal strength), and a chip designer assembles thousands or millions of them to build complex circuits.
 
-Standard cells in a library all share the same height (so they line up in rows) but vary in width depending on their function. A simple inverter might be 3um wide, while a flip-flop (which stores data) might be 17um wide. Automated tools place these cells in rows and then route wires between them.
+Standard cells in a library all share the same height (so they line up in rows) but vary in width depending on their function. Automated tools place these cells in rows and then route wires between them.
 
 The "density" of standard cells — how many fit per square millimeter — is a key measure of how efficiently a design uses its silicon area. Higher density generally means more logic functionality packed into less chip area, which reduces cost.
 
 ## Standard Cell Libraries on This Reticle
 
-The GF180MCU process provides three standard cell libraries used on this reticle, differing in track count (row height) and voltage:
+| Library | Row Height | Rows per mm | Relative Density | Logic instances | Share |
+|---|---|---|---|---|---|
+| mcu7t5v0 (7-track, 5V) | 3.92 um | 255 rows | 100% | 1.7M | 78% |
+| mcu9t5v0 (9-track, 5V) | 5.04 um | 198 rows | 78% | 443k | 21% |
+| mcu7t3v3 (7-track, 3.3V) | 3.92 um | 255 rows | 100% | 35k | 2% |
 
-| Library | Voltage | Row Height | Rows per mm | Relative Density |
-|---|---|---|---|---|
-| mcu7t5v0 (7-track, 5V) | 5V tolerant | 4.78 um | 209 rows | 100% (base) |
-| mcu7t3v3 (7-track, 3.3V) | 3.3V only | 4.78 um | 209 rows | 100% |
-| mcu9t5v0 (9-track, 5V) | 5V tolerant | 5.94 um | 168 rows | 80% |
+Row height is the height of the cells' placement boundary, which is what rows are stacked at. Taller rows hold fewer cells per mm² but leave more room for wiring inside the cell.
 
-The two 7-track libraries (5V and 3.3V) share the same 4.78um row height, so they pack identically in terms of rows per millimeter. The 3.3V library (`mcu7t3v3`) targets designs that don't need 5V-tolerant I/O, and its cells are slightly more compact — for example, a 3.3V nand2_2 is 4.78um wide vs 5.90um for the 5V equivalent (19% narrower).[^1]
-
-The 9-track library (`mcu9t5v0`) has 24% taller rows, reducing density but providing more space for internal wiring, which helps automated routing tools complete complex designs without congestion.
-
-Across the reticle, the libraries are used in these proportions:[^2]
-- **mcu7t5v0** (7-track 5V): 1,987k logic instances (77% of all logic cells)
-- **mcu9t5v0** (9-track 5V): 545k logic instances (21%)
-- **mcu7t3v3** (7-track 3.3V): 35k logic instances (1%)
-
-Most designs use one library exclusively. Exceptions include [Tiny Tapeout](https://tinytapeout.com) ([TTPG](https://github.com/TinyTapeout/tinytapeout-gf-0p2)/[TTP2](https://github.com/TinyTapeout/tinytapeout-gf-0p2)), where each of the 52 sub-projects independently chose their library, and [AS03](https://github.com/AvalonSemiconductors/ws-submission-2025/) and [JKU2](https://github.com/iic-jku/gf180mcu-jku-atbs-adc), which mix libraries.[^2]
+Most designs use one library exclusively. The designs that mix libraries are: [AS03](https://github.com/AvalonSemiconductors/ws-submission-2025/) (84k mcu7t5v0 + 2k mcu9t5v0); [OCD2](https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test) (120 mcu7t3v3 + 2 mcu7t5v0); [TTP2](https://github.com/TinyTapeout/tinytapeout-gf-0p2) (200k mcu7t5v0 + 4k mcu9t5v0); [TTPG](https://github.com/TinyTapeout/tinytapeout-gf-0p2) (200k mcu7t5v0 + 4k mcu9t5v0).
 
 ## Theoretical Maximum Standard Cell Density
 
 If you filled an entire square millimeter with nothing but one type of logic standard cell (no wiring, no gaps, no infrastructure cells), the theoretical maximum density would be:
 
-| Cell Type | 7-track 5V | 7-track 3.3V | 9-track 5V | What it does |
+| Cell Type | 7t-5V | 9t-5V | 7t-3.3V | What it does |
 |---|---|---|---|---|
-| Inverter (inv\_1) | 67k/mm² (3.10um) | — | 54k/mm² (3.10um) | Flips a signal |
-| Inverter (inv\_2) | 50k/mm² (4.22um) | 67k/mm² (3.10um) | 40k/mm² (4.22um) | Flips a signal (2x drive) |
-| NAND gate (nand2\_1) | 57k/mm² (3.66um) | — | 46k/mm² (3.66um) | Basic logic gate |
-| NAND gate (nand2\_2) | 35k/mm² (5.90um) | 44k/mm² (4.78um) | 29k/mm² (5.90um) | Basic logic gate (2x drive) |
-| Buffer (buf\_1) | 50k/mm² (4.22um) | — | 40k/mm² (4.22um) | Strengthens a signal |
-| Buffer (buf/buff\_2) | 39k/mm² (5.34um) | 50k/mm² (4.22um) | 32k/mm² (5.34um) | Strengthens a signal (2x drive) |
-| Flip-flop (dffq\_1 / dfxtp\_2) | 12k/mm² (17.10um) | 13k/mm² (15.98um) | 10k/mm² (16.54um) | Stores one bit |
+| Inverter | 114k/mm² (inv_1, 2.24um) | 89k/mm² (inv_1, 2.24um) | 114k/mm² (inv_2, 2.24um) | Flips a signal |
+| NAND gate | 91k/mm² (nand2_1, 2.80um) | 71k/mm² (nand2_1, 2.80um) | 65k/mm² (nand2_2, 3.92um) | Basic logic gate |
+| Buffer | 76k/mm² (buf_1, 3.36um) | 59k/mm² (buf_1, 3.36um) | 76k/mm² (buff_2, 3.36um) | Strengthens a signal |
+| Flip-flop | 16k/mm² (dffq_1, 16.24um) | 13k/mm² (dffq_1, 15.68um) | 17k/mm² (dfxtp_2, 15.12um) | Stores one bit |
 
-These are hard upper bounds — the density if you packed cells edge-to-edge with zero routing overhead.[^3]
-
-The 3.3V library does not include minimum-size (`_1`) variants — its smallest cells are `_2` drive strength. At equivalent drive strength (`_2`), the 3.3V cells are consistently denser: 24–36% higher theoretical max than 5V cells of the same function.[^1] The 5V library's minimum-size `_1` cells are smaller than the 3.3V `_2` cells, but they are not equivalent — `_1` cells have weaker drive strength.
+These are hard upper bounds — the density if you packed cells edge-to-edge with zero routing overhead. For each library the smallest cell of that kind is used; the 3.3V library has no drive strength 1 cells, so its smallest cells are the `_2` variants.
 
 In practice, real designs achieve significantly less because:
 
-- **(a) Routing overhead** — wires connecting cells consume area between rows
-- **(b) Infrastructure cells** — fillers, taps, antenna diodes, and tie cells consume ~75% of cell instances on this reticle
+- **(a) Routing overhead** — wires connecting cells need room, which limits how tightly cells can be placed
+- **(b) Infrastructure cells** — fillers, taps, antenna diodes, and tie cells make up 74% of cell instances on this reticle
 - **(c) Mixed cell types** — designs use a mix of small and large cells
-- **(d) Power planning** — power/ground rails consume area
+- **(d) Power planning** — power/ground straps consume area
 - **(e) Clock distribution** — clock tree buffers and wiring take space
-
-On this reticle, achieved densities range from 20–62% of the buffer theoretical max in the densest regions, and 2–44% averaged over the core area.[^4]
 
 ## Achieved Standard Cell Density — Design Averages
 
-The following table shows the average logic standard cell density for each design's "core area" — the interior of the chip excluding the I/O pad ring (a ~350um border of large pads around the perimeter used for external connections).[^5]
+The following tables show the average logic standard cell density for each design's "core area" — the interior of the chip excluding the I/O pad ring (a 350um border of large pads around the perimeter used for external connections).
 
-All "% of max" figures compare against the buf theoretical maximum for the design's primary library: 50k/mm² for 7-track, 40k/mm² for 9-track.[^3]
+"% of max" compares against the buffer theoretical maximum for the design's primary library. "Cell area" is the share of the core area actually covered by logic cells — the placement utilisation of the die as a whole, including any area left empty or given to SRAM.
 
 ### High Density (above 10k logic SC/mm² core average)
 
-| Design | Library | Core SC/mm² | % of max | Logic SC | SRAM | Description |
-|---|---|---|---|---|---|---|
-| [2975](https://github.com/ThorbenMoos/Cloneless1) | 7t-5V | 22k | 44% | 316k | 0 | Cryptographic ASIC, densest design overall[^6] |
-| [TQVA](https://github.com/MichaelBell/ws01-tinyQV) | 7t-5V | 16k | 31% | 36k | 2 | RISC-V SoC, quarter-size slot[^7] |
-| [TTPG](https://github.com/TinyTapeout/tinytapeout-gf-0p2) | mixed | 14k | 29% | 204k | 0 | Tiny Tapeout, 52 sub-designs[^8] |
-| [TTP2](https://github.com/TinyTapeout/tinytapeout-gf-0p2) | mixed | 14k | 29% | 204k | 0 | Tiny Tapeout, 52 sub-designs[^8] |
-| [MOLE](https://github.com/mole99/gf180mcu-fabulous-fpga) | 7t-5V | 14k | 29% | 204k | 12 | FABulous eFPGA[^11] |
-| [JKU1](https://github.com/iic-jku/gf180mcu-jku-projects) | 7t-5V | 12k | 24% | 174k | 0 | JKU multi-project[^9] |
-| [CHES](https://github.com/Ravenslofty/gf180mcu-chess) | 9t-5V | 10k | 25% | 145k | 0 | 8-core chess move generator, densest 9-track design[^10] |
+| Design | Library | Core SC/mm² | % of max | Cell area | Logic SC | SRAM | Project |
+|---|---|---|---|---|---|---|---|
+| [2975](https://github.com/ThorbenMoos/Cloneless1) | 7t-5V | 22k | 29% | 50% | 316k | 0 | Cloneless1 |
+| [TQVA](https://github.com/MichaelBell/ws01-tinyQV) | 7t-5V | 16k | 21% | 36% | 36k | 1 | TinyQV - Crowdsourced Risc-V SoC |
+| [TTP2](https://github.com/TinyTapeout/tinytapeout-gf-0p2) | mixed | 14k | 19% | 42% | 204k | 0 | Tiny Tapeout GF 0.2 |
+| [TTPG](https://github.com/TinyTapeout/tinytapeout-gf-0p2) | mixed | 14k | 19% | 42% | 204k | 0 | Tiny Tapeout GF 0p2 - Power Gated Variant |
+| [MOLE](https://github.com/mole99/gf180mcu-fabulous-fpga) | 7t-5V | 14k | 19% | 45% | 204k | 6 | FABulous FPGA |
+| [JKU1](https://github.com/iic-jku/gf180mcu-jku-projects) | 7t-5V | 12k | 16% | 26% | 174k | 0 | gf180mcu-jku-projects |
+| [CHES](https://github.com/Ravenslofty/gf180mcu-chess) | 9t-5V | 10k | 17% | 31% | 145k | 0 | chess-move-generator |
 
 ### Medium Density (3k–10k logic SC/mm² core average)
 
-| Design | Library | Core SC/mm² | % of max | Logic SC | SRAM | Notes |
-|---|---|---|---|---|---|---|
-| [CAFE](https://github.com/meiniKi/gf180mcu-fazyrv-hachure) | 7t-5V | 7k | 14% | 101k | 40 | FazyRV Hachure SoC[^15] |
-| [KIAN](https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32/) | 9t-5V | 6k | 16% | 89k | 42 | KianV RISC-V Linux SoC[^18] |
-| [TQVB](https://github.com/MichaelBell/ws01-tinyQV) | 7t-5V | 6k | 13% | 35k | 2 | TinyQV half-width slot[^13] |
-| [GD02](https://github.com/gregdavill/gf180mcu-racquet-0.5x1) | 7t-5V | 6k | 13% | 35k | 18 | Racquet 9-core SERV SoC[^20] |
-| [TQVC](https://github.com/MichaelBell/ws01-tinyQV) | 7t-5V | 6k | 12% | 36k | 2 | TinyQV half-height slot[^12] |
-| [GD04](https://github.com/gregdavill/gf180mcu-racquet-1x0.5) | 9t-5V | 6k | 15% | 36k | 12 | Racquet 6-core variant[^16] |
-| [AS03](https://github.com/AvalonSemiconductors/ws-submission-2025/) | mixed | 6k | 12% | 87k | 0 | Multi-project die[^14] |
-| [GD03](https://github.com/gregdavill/gf180mcu-racquet/) | 7t-5V | 5k | 11% | 78k | 46 | Racquet 23-core SERV SoC[^19] |
-| [RBOY](https://github.com/wren6991/riscboy-180) | 9t-5V | 5k | 12% | 70k | 60 | RISCBoy-180 games console[^22] |
-| [TZ01](https://github.com/ZeduloTech/gf180mcu-testchip2025) | 7t-5V | 4k | 8% | 58k | 16 | eFUSE/SRAM testchip[^21] |
-| [JKU2](https://github.com/iic-jku/gf180mcu-jku-atbs-adc) | 9t-5V | 4k | 10% | 22k | 0 | ATBS ADC digital core[^17] |
-| [BTAP](https://github.com/polyfractal/BreakingTTAPs) | 9t-5V | 3k | 8% | 43k | 56 | TTA processor, SRAM-dominated[^25] |
+| Design | Library | Core SC/mm² | % of max | Cell area | Logic SC | SRAM | Project |
+|---|---|---|---|---|---|---|---|
+| [CAFE](https://github.com/meiniKi/gf180mcu-fazyrv-hachure) | 7t-5V | 7k | 9% | 24% | 101k | 20 | FazyRV Hachure |
+| [TQVB](https://github.com/MichaelBell/ws01-tinyQV) | 7t-5V | 6k | 9% | 15% | 35k | 1 | TinyQV - Crowdsourced Risc-V SoC (0.5x1) |
+| [GD02](https://github.com/gregdavill/gf180mcu-racquet-0.5x1) | 7t-5V | 6k | 8% | 17% | 35k | 9 | Racquet Half r1p0 (1/2 slot) |
+| [KIAN](https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32/) | 9t-5V | 6k | 11% | 22% | 89k | 21 | KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU |
+| [RZML](https://gitlab.com/rejunity/ws0-lgn-fxnist-gf180mcu-tapeout) | 7t-5V | 6k | 8% | 20% | 88k | 0 | LGN FashionMNIST - Logic Gate Network trained on FashioMNIST |
+| [TQVC](https://github.com/MichaelBell/ws01-tinyQV) | 7t-5V | 6k | 8% | 14% | 36k | 1 | TinyQV - Crowdsourced Risc-V SoC (1x0.5) |
+| [AS03](https://github.com/AvalonSemiconductors/ws-submission-2025/) | mixed | 6k | 8% | 17% | 87k | 0 | WS-Multi |
+| [GD04](https://github.com/gregdavill/gf180mcu-racquet-1x0.5) | 9t-5V | 6k | 10% | 24% | 36k | 6 | Racquet Wide 1x0.5 |
+| [GD03](https://github.com/gregdavill/gf180mcu-racquet/) | 7t-5V | 5k | 7% | 15% | 78k | 23 | Racquet r2p0 - 23 core SoC |
+| [RBOY](https://github.com/wren6991/riscboy-180) | 9t-5V | 5k | 8% | 21% | 70k | 30 | RISCBoy-180 |
+| [TZ01](https://github.com/ZeduloTech/gf180mcu-testchip2025) | 7t-5V | 4k | 5% | 12% | 58k | 8 | TillitisZedulo-testchip2025 |
+| [JKU2](https://github.com/iic-jku/gf180mcu-jku-atbs-adc) | 9t-5V | 4k | 6% | 16% | 22k | 0 | gf180mcu-jku-atbs-adc |
+| [BTAP](https://github.com/polyfractal/BreakingTTAPs) | 9t-5V | 3k | 5% | 9% | 43k | 28 | BreakingTTAPs |
 
 ### Low Density (below 3k logic SC/mm² core average)
 
-| Design | Library | Core SC/mm² | % of max | Logic SC | SRAM | Notes |
-|---|---|---|---|---|---|---|
-| [OCD1](https://github.com/RTimothyEdwards/gf180mcu_ocd_openframe) | 7t-3.3V | 2k | 5% | 34k | 16 | Only significant 3.3V design[^35] |
-| MOSB | 9t-5V | 1k | 3% | 18k | 0 | [^28] |
-| [WSLG](https://github.com/89Mods/ws-logo-die) | 7t-5V | 1k | 2% | 14k | 0 | Logo die[^26] |
-| [HZ80](https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu) | 9t-5V | 1k | 2% | 5k | 0 | Z80 open-source CPU, half-width[^24] |
-| [RZ80](https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu?tab=readme-ov-file) | 9t-5V | <1k | <1% | 5k | 0 | Z80 open-source CPU, full-size[^23] |
-| BRWN | 7t-5V | <1k | <1% | 4k | 0 | Brown University course project[^27] |
+| Design | Library | Core SC/mm² | % of max | Cell area | Logic SC | SRAM | Project |
+|---|---|---|---|---|---|---|---|
+| [OCD1](https://github.com/RTimothyEdwards/gf180mcu_ocd_openframe) | 7t-3.3V | 2k | 3% | 7% | 34k | 8 | openframe_caravel_picorv32 |
+| MOSB | 9t-5V | 1k | 2% | 4% | 18k | 0 | MOSbiusV3 |
+| [WSLG](https://github.com/89Mods/ws-logo-die) | 7t-5V | 1k | 1% | 4% | 14k | 0 | Wafer.Space Logo |
+| [HZ80](https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu) | 9t-5V | 1k | 2% | 3% | 5k | 0 | FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 1 slot) |
+| [RZ80](https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu?tab=readme-ov-file) | 9t-5V | <1k | 1% | 1% | 5k | 0 | FOSSi open-source replacement for Z80 classic 8-bit CPU |
+| BRWN | 7t-5V | <1k | <1% | 1% | 4k | 0 | FA25_Engn2912e_Saligane_Brown |
 
-### Minimal (analog/test structures)
+### Minimal (analog, custom or test structures)
 
-[OCD2](https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test) (122 logic cells, 7t-3.3V), [MOS2](https://github.com/AutoMOS-project/AutoMOS-chipathon2025/tree/update-for-ws) (0), [ISHI](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_WaferSapce-GF180-1) (0), [TRID](https://github.com/Scafir/gf180mcu-project-trident-gf180-teststructure) (0).[^29]
+These designs contain fewer than 1,000 logic standard cells:
+
+| Design | Logic SC | Transistors | SRAM | Pads | Project |
+|---|---|---|---|---|---|
+| [ISHI](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_WaferSapce-GF180-1) | 0 | 227k | 0 | 196 | ISHI-KAI's Multiple Users Project |
+| [MOS2](https://github.com/AutoMOS-project/AutoMOS-chipathon2025/tree/update-for-ws) | 0 | 241k | 0 | 163 | AutoMOS-Chipathon-2025 full size |
+| [OCD2](https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test) | 122 | 251k | 4 | 73 | ocd_sram_test |
+| [TRID](https://github.com/Scafir/gf180mcu-project-trident-gf180-teststructure) | 0 | 102k | 0 | 95 | gf180mcu-project-trident-gf180-teststructure |
 
 ## Achieved Density — Peak 1mm x 1mm Regions
 
-While the averages above include sparse regions, the peak density in the best single 1mm x 1mm grid cell shows the maximum density achieved anywhere on each design:
+While the averages above include sparse regions, the peak density in the best single 1mm x 1mm grid cell shows the maximum density achieved anywhere on each design. Grid cells that overlap an SRAM macro are excluded.
 
-| Design | Peak Logic SC/mm² | % of buf max | Library |
+| Design | Peak Logic SC/mm² | % of buffer max | Library |
 |---|---|---|---|
-| [2975](https://github.com/ThorbenMoos/Cloneless1) | 31k | 62% of 50k | 7t-5V |
-| [MOLE](https://github.com/mole99/gf180mcu-fabulous-fpga) | 27k | 53% of 50k | 7t-5V |
-| [TTPG](https://github.com/TinyTapeout/tinytapeout-gf-0p2) | 24k | 49% of 50k | mixed |
-| [TTP2](https://github.com/TinyTapeout/tinytapeout-gf-0p2) | 24k | 49% of 50k | mixed |
-| [JKU1](https://github.com/iic-jku/gf180mcu-jku-projects) | 23k | 45% of 50k | 7t-5V |
-| [CAFE](https://github.com/meiniKi/gf180mcu-fazyrv-hachure) | 21k | 42% of 50k | 7t-5V |
-| [AS03](https://github.com/AvalonSemiconductors/ws-submission-2025/) | 13k | 26% of 50k | mixed |
-| [TQVB](https://github.com/MichaelBell/ws01-tinyQV) | 13k | 26% of 50k | 7t-5V |
-| [KIAN](https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32/) | 13k | 32% of 40k | 9t-5V |
-| [CHES](https://github.com/Ravenslofty/gf180mcu-chess) | 12k | 31% of 40k | 9t-5V |
-| [BTAP](https://github.com/polyfractal/BreakingTTAPs) | 12k | 31% of 40k | 9t-5V |
-| [TQVA](https://github.com/MichaelBell/ws01-tinyQV) | 12k | 23% of 50k | 7t-5V |
-| [TZ01](https://github.com/ZeduloTech/gf180mcu-testchip2025) | 12k | 24% of 50k | 7t-5V |
-| [GD02](https://github.com/gregdavill/gf180mcu-racquet-0.5x1) | 12k | 23% of 50k | 7t-5V |
-| [TQVC](https://github.com/MichaelBell/ws01-tinyQV) | 11k | 23% of 50k | 7t-5V |
+| [2975](https://github.com/ThorbenMoos/Cloneless1) | 31k | 41% of 76k | 7t-5V |
+| [MOLE](https://github.com/mole99/gf180mcu-fabulous-fpga) | 27k | 35% of 76k | 7t-5V |
+| [TTP2](https://github.com/TinyTapeout/tinytapeout-gf-0p2) | 24k | 32% of 76k | mixed |
+| [TTPG](https://github.com/TinyTapeout/tinytapeout-gf-0p2) | 24k | 32% of 76k | mixed |
+| [JKU1](https://github.com/iic-jku/gf180mcu-jku-projects) | 23k | 30% of 76k | 7t-5V |
+| [CAFE](https://github.com/meiniKi/gf180mcu-fazyrv-hachure) | 21k | 27% of 76k | 7t-5V |
+| [TQVB](https://github.com/MichaelBell/ws01-tinyQV) | 13k | 17% of 76k | 7t-5V |
+| [AS03](https://github.com/AvalonSemiconductors/ws-submission-2025/) | 13k | 17% of 76k | mixed |
+| [KIAN](https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32/) | 13k | 22% of 59k | 9t-5V |
+| [CHES](https://github.com/Ravenslofty/gf180mcu-chess) | 12k | 21% of 59k | 9t-5V |
+| [BTAP](https://github.com/polyfractal/BreakingTTAPs) | 12k | 21% of 59k | 9t-5V |
+| [TZ01](https://github.com/ZeduloTech/gf180mcu-testchip2025) | 12k | 16% of 76k | 7t-5V |
+| [TQVA](https://github.com/MichaelBell/ws01-tinyQV) | 12k | 15% of 76k | 7t-5V |
+| [GD02](https://github.com/gregdavill/gf180mcu-racquet-0.5x1) | 12k | 15% of 76k | 7t-5V |
+| [TQVC](https://github.com/MichaelBell/ws01-tinyQV) | 11k | 15% of 76k | 7t-5V |
 
-The highest achieved density on this reticle is 62% of the buf theoretical maximum, observed in the densest 1mm² region of [2975](https://github.com/ThorbenMoos/Cloneless1). The remaining 38% of the theoretical area is consumed by routing channels, infrastructure cells, power rails, and clock distribution.[^30]
+The highest achieved density on this reticle is 41% of the buffer theoretical maximum, observed in the densest 1mm² region of [2975](https://github.com/ThorbenMoos/Cloneless1). The rest of that area is consumed by larger cells, infrastructure cells and the gaps left for routing.
 
-## 7-Track vs 9-Track Library Comparison
+## Library Comparison
 
-Comparing designs that exclusively use one library (5V variants):
+Comparing designs that use one library exclusively:
 
-| Metric | 7-track 5V (mcu7t5v0) | 9-track 5V (mcu9t5v0) |
-|---|---|---|
-| Designs using this lib | 14 | 10 |
-| Best core density | 22k SC/mm² · 44% of max ([2975](https://github.com/ThorbenMoos/Cloneless1)) | 10k SC/mm² · 25% of max ([CHES](https://github.com/Ravenslofty/gf180mcu-chess)) |
-| Best peak grid cell | 31k SC/mm² · 62% of max ([2975](https://github.com/ThorbenMoos/Cloneless1)) | 13k SC/mm² · 32% of max ([KIAN](https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32/)) |
-| Median core density | 5k SC/mm² · 10% of max | 4k SC/mm² · 10% of max |
-
-The 7-track library achieves higher logic cell density on this reticle — roughly 2x at the top end.[^32] The theoretical advantage from row height alone is 24% (5.94/4.78 = 1.24x), so the observed 2x gap suggests that denser designs on this reticle tended to select the 7-track library.
-
-## 3.3V vs 5V Library Comparison
-
-The 3.3V library (`mcu7t3v3`) is used by only one design with significant logic: [OCD1](https://github.com/RTimothyEdwards/gf180mcu_ocd_openframe), a Caravel OpenFrame design with 34k logic cells (2k SC/mm² core, 5% of buf max).[^35] [OCD2](https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test) also uses it but with only 122 logic cells.[^36]
-
-The 3.3V cells share the same row height (4.78um) as the 7-track 5V cells, but some are narrower because they don't need the extra transistor sizing required for 5V tolerance:[^1]
-
-| Cell | 3.3V Width | 5V Width | 3.3V Advantage |
+| Metric | mcu7t5v0 (7-track, 5V) | mcu9t5v0 (9-track, 5V) | mcu7t3v3 (7-track, 3.3V) |
 |---|---|---|---|
-| nand2_2 | 4.78 um | 5.90 um | 19% narrower |
-| mux2_2 | 7.58 um | 9.26 um | 18% narrower |
-| inv_2 | 3.10 um | 4.22 um | 27% narrower |
-| buf/buff_2 | 4.22 um | 5.34 um | 21% narrower |
-| dfxtp_2 / dffq_1 | 15.98 um | 17.10 um | 7% narrower |
+| Designs using this library | 13 | 9 | 1 |
+| Best core density | 22k SC/mm² · 29% of max ([2975](https://github.com/ThorbenMoos/Cloneless1)) | 10k SC/mm² · 17% of max ([CHES](https://github.com/Ravenslofty/gf180mcu-chess)) | 2k SC/mm² · 3% of max ([OCD1](https://github.com/RTimothyEdwards/gf180mcu_ocd_openframe)) |
+| Best peak grid cell | 31k SC/mm² · 41% of max ([2975](https://github.com/ThorbenMoos/Cloneless1)) | 13k SC/mm² · 22% of max ([KIAN](https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32/)) | 6k SC/mm² · 8% of max ([OCD1](https://github.com/RTimothyEdwards/gf180mcu_ocd_openframe)) |
+| Median core density | 6k SC/mm² · 8% of max | 4k SC/mm² · 6% of max | 2k SC/mm² · 3% of max |
 
-The 3.3V library's cells are 7–27% narrower than their 5V equivalents, meaning designs could theoretically achieve correspondingly higher density. With only one design using this library on this reticle, we cannot compare achieved density between the voltage variants. [OCD1](https://github.com/RTimothyEdwards/gf180mcu_ocd_openframe)'s core density of 2k SC/mm² (5% of buf max) reflects its purpose as an SRAM characterization vehicle with minimal control logic, not a limitation of the library.
+Differences between libraries here reflect which designs chose which library as much as the libraries themselves; the theoretical difference from row height alone is in the table above.
 
 ## Most Common Logic Cell Types
 
-The 15 most-used logic cell types across all unique designs on the reticle:[^45]
+The 15 most-used logic cell types across all unique designs on the reticle:
 
 | Cell Type | Library | Instances | What it does |
 |---|---|---|---|
-| nand2_1 | 7t-5V | 221k | 2-input NAND gate (smallest) |
-| nor2_1 | 7t-5V | 92k | 2-input NOR gate |
-| oai21_1 | 7t-5V | 89k | OR-AND-Invert compound gate |
+| nand2_1 | 7t-5V | 228k | 2-input NAND gate |
+| nor2_1 | 7t-5V | 99k | 2-input NOR gate |
+| oai21_1 | 7t-5V | 94k | OR-AND-Invert compound gate |
 | dffq_1 | 7t-5V | 87k | D flip-flop (1 bit storage) |
-| aoi21_1 | 7t-5V | 77k | AND-OR-Invert compound gate |
-| nand2_1 | 9t-5V | 76k | 2-input NAND gate (9-track) |
-| clkinv_1 | 7t-5V | 74k | Clock inverter |
-| xor2_1 | 7t-5V | 74k | 2-input XOR gate |
-| buf_1 | 7t-5V | 60k | Buffer (smallest) |
-| buf_2 | 7t-5V | 58k | Buffer (2x drive) |
+| aoi21_1 | 7t-5V | 81k | AND-OR-Invert compound gate |
+| xor2_1 | 7t-5V | 81k | 2-input XOR gate |
+| nand2_1 | 9t-5V | 76k | 2-input NAND gate |
+| clkinv_1 | 7t-5V | 76k | Clock inverter |
+| buf_2 | 7t-5V | 63k | Buffer (2x drive) |
+| buf_1 | 7t-5V | 60k | Buffer |
 | latq_1 | 7t-5V | 55k | Latch (level-sensitive) |
-| mux2_2 | 7t-5V | 53k | 2-input multiplexer |
-| dlyb_1 | 7t-5V | 45k | Delay buffer |
+| mux2_2 | 7t-5V | 53k | 2-input multiplexer (2x drive) |
+| dlyb_1 | 7t-5V | 48k | Delay buffer |
 | nand3_1 | 7t-5V | 38k | 3-input NAND gate |
-| aoi22_1 | 7t-5V | 33k | AND-OR-Invert (2x2 inputs) |
+| buf_4 | 7t-5V | 34k | Buffer (4x drive) |
 
-NAND2 gates are the most-used cell (221k 7-track + 76k 9-track = 297k total). The combined NAND2:flip-flop ratio across the reticle is ~3:1 (297k NAND2 vs 101k flip-flops).[^45]
+Across the reticle there are 329k 2-input NAND gates and 178k flip-flops — 1.8 NAND2 gates per flip-flop.
 
 ## SRAM Block Usage
 
-SRAM (Static Random-Access Memory) blocks are pre-designed memory macros provided by the foundry. Unlike standard cells, which are composed by automated tools, SRAM blocks are hand-optimized fixed-size units designed to store data as densely as possible.
+SRAM (Static Random-Access Memory) blocks are pre-designed memory macros. Unlike standard cells, which are composed by automated tools, SRAM blocks are hand-optimized fixed-size units designed to store data as densely as possible.
 
-14 of the 24 designs include SRAM blocks:[^33]
+14 of the 30 designs include SRAM, holding 79 KiB of memory between them:
 
-### SRAM-Heavy (40+ blocks, dominating the die)
+| Design | SRAM macros | SRAM bits | SRAM area | Logic SC | Project |
+|---|---|---|---|---|---|
+| [RBOY](https://github.com/wren6991/riscboy-180) | 30 | 118,784 | 6.16 mm² (43% of core) | 70k | RISCBoy-180 |
+| [BTAP](https://github.com/polyfractal/BreakingTTAPs) | 28 | 106,496 | 5.61 mm² (39% of core) | 43k | BreakingTTAPs |
+| [GD03](https://github.com/gregdavill/gf180mcu-racquet/) | 23 | 94,208 | 4.82 mm² (34% of core) | 78k | Racquet r2p0 - 23 core SoC |
+| [KIAN](https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32/) | 21 | 86,016 | 4.40 mm² (31% of core) | 89k | KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU |
+| [CAFE](https://github.com/meiniKi/gf180mcu-fazyrv-hachure) | 20 | 81,920 | 4.19 mm² (29% of core) | 101k | FazyRV Hachure |
+| [GD02](https://github.com/gregdavill/gf180mcu-racquet-0.5x1) | 9 | 36,864 | 1.88 mm² (34% of core) | 35k | Racquet Half r1p0 (1/2 slot) |
+| [OCD1](https://github.com/RTimothyEdwards/gf180mcu_ocd_openframe) | 8 | 24,576 | 0.66 mm² (5% of core) | 34k | openframe_caravel_picorv32 |
+| [TZ01](https://github.com/ZeduloTech/gf180mcu-testchip2025) | 8 | 24,064 | 1.41 mm² (10% of core) | 58k | TillitisZedulo-testchip2025 |
+| [GD04](https://github.com/gregdavill/gf180mcu-racquet-1x0.5) | 6 | 24,576 | 1.26 mm² (21% of core) | 36k | Racquet Wide 1x0.5 |
+| [MOLE](https://github.com/mole99/gf180mcu-fabulous-fpga) | 6 | 24,576 | 1.26 mm² (9% of core) | 204k | FABulous FPGA |
+| [OCD2](https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test) | 4 | 16,384 | 0.39 mm² (7% of core) | 122 | ocd_sram_test |
+| [TQVA](https://github.com/MichaelBell/ws01-tinyQV) | 1 | 4,096 | 0.21 mm² (9% of core) | 36k | TinyQV - Crowdsourced Risc-V SoC |
+| [TQVB](https://github.com/MichaelBell/ws01-tinyQV) | 1 | 4,096 | 0.21 mm² (4% of core) | 35k | TinyQV - Crowdsourced Risc-V SoC (0.5x1) |
+| [TQVC](https://github.com/MichaelBell/ws01-tinyQV) | 1 | 4,096 | 0.21 mm² (4% of core) | 36k | TinyQV - Crowdsourced Risc-V SoC (1x0.5) |
 
-| Design | SRAM Blocks | Logic SC | Notes |
-|---|---|---|---|
-| [RBOY](https://github.com/wren6991/riscboy-180) | 60 | 70k | Most SRAM blocks of any design[^34] |
-| [BTAP](https://github.com/polyfractal/BreakingTTAPs) | 56 | 43k | [^25] |
-| [GD03](https://github.com/gregdavill/gf180mcu-racquet/) | 46 | 78k | [^19] |
-| [KIAN](https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32/) | 42 | 89k | [^18] |
-| [CAFE](https://github.com/meiniKi/gf180mcu-fazyrv-hachure) | 40 | 101k | [^15] |
-
-### SRAM-Moderate (10–39 blocks)
-
-| Design | SRAM Blocks | Logic SC | Notes |
-|---|---|---|---|
-| [GD02](https://github.com/gregdavill/gf180mcu-racquet-0.5x1) | 18 | 35k | [^20] |
-| [TZ01](https://github.com/ZeduloTech/gf180mcu-testchip2025) | 16 | 58k | [^21] |
-| [OCD1](https://github.com/RTimothyEdwards/gf180mcu_ocd_openframe) | 16 | 34k | SRAM characterization, 3.3V library[^35] |
-| [MOLE](https://github.com/mole99/gf180mcu-fabulous-fpga) | 12 | 204k | [^11] |
-| [GD04](https://github.com/gregdavill/gf180mcu-racquet-1x0.5) | 12 | 36k | [^16] |
-
-### SRAM-Light (1–9 blocks)
-
-| Design | SRAM Blocks | Logic SC | Notes |
-|---|---|---|---|
-| [OCD2](https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test) | 8 | 122 | SRAM test vehicle[^36] |
-| [TQVA](https://github.com/MichaelBell/ws01-tinyQV) | 2 | 36k | [^7] |
-| [TQVC](https://github.com/MichaelBell/ws01-tinyQV) | 2 | 36k | [^12] |
-| [TQVB](https://github.com/MichaelBell/ws01-tinyQV) | 2 | 35k | [^13] |
+SRAM macros are identified by cell name, and their area is the macro footprint. "custom" marks a design with SRAM marker shapes (GDS 108/5) but no recognised macro, where the count and size are not known and the area is that of the marked bitcell arrays.
 
 ## SRAM vs Standard Cell Transistor Density
 
-A critical comparison: how does the transistor density inside a foundry-provided SRAM block compare to the density achieved by packing standard cells?
-
-"Transistor density" here counts the number of distinct regions where a gate electrode (polysilicon) crosses an active area (diffusion) — each such crossing forms one transistor.[^37]
+"Transistor density" here counts the number of distinct regions where a gate electrode (polysilicon, GDS 30/0) crosses an active area (diffusion, GDS 22/0) — each such crossing forms one transistor.
 
 ### Theoretical Maximum Transistor Density for Standard Cells
 
-The transistor density achievable with standard cells depends on which cell type is packed. Larger, more complex cells contain more transistors per cell but are wider, so the relationship is not linear:[^46]
-
-| Cell (7-track 5V) | Width | Cells/mm² | Trans/cell | Trans/mm² theoretical max |
+| Cell (7t-5V) | Width | Cells/mm² | Trans/cell | Trans/mm² theoretical max |
 |---|---|---|---|---|
-| inv\_1 | 3.10 um | 67k | 2 | 135k/mm² |
-| buf\_1 | 4.22 um | 50k | 4 | 198k/mm² |
-| nand2\_1 | 3.66 um | 57k | 4 | 229k/mm² |
-| dffq\_1 | 17.10 um | 12k | 24 | 294k/mm² |
+| inv_1 | 2.24 um | 114k | 2 | 228k/mm² |
+| nand2_1 | 2.80 um | 91k | 4 | 364k/mm² |
+| buf_1 | 3.36 um | 76k | 4 | 304k/mm² |
+| dffq_1 | 16.24 um | 16k | 24 | 377k/mm² |
 
-| Cell (9-track 5V) | Width | Cells/mm² | Trans/cell | Trans/mm² theoretical max |
+| Cell (9t-5V) | Width | Cells/mm² | Trans/cell | Trans/mm² theoretical max |
 |---|---|---|---|---|
-| inv\_1 | 3.10 um | 54k | 2 | 109k/mm² |
-| buf\_1 | 4.22 um | 40k | 4 | 160k/mm² |
-| nand2\_1 | 3.66 um | 46k | 4 | 184k/mm² |
-| dffq\_1 | 16.54 um | 10k | 24 | 244k/mm² |
+| inv_1 | 2.24 um | 89k | 2 | 177k/mm² |
+| nand2_1 | 2.80 um | 71k | 4 | 283k/mm² |
+| buf_1 | 3.36 um | 59k | 4 | 236k/mm² |
+| dffq_1 | 15.68 um | 13k | 24 | 304k/mm² |
 
-A mm² packed entirely with flip-flops would achieve 294k trans/mm² (7-track) or 244k trans/mm² (9-track). A mm² of inverters would achieve only 135k/109k trans/mm². Real designs use a mix of cell types, so the achievable transistor density depends on the design's cell mix.
-
-### SRAM Macros (foundry-provided, hand-optimized)[^38]
-
-| Macro | Size | Trans/mm² | % of 7t dffq\_1 max | Notes |
+| Cell (7t-3.3V) | Width | Cells/mm² | Trans/cell | Trans/mm² theoretical max |
 |---|---|---|---|---|
-| sram1024x8 (OCD) | 301 x 516 um | 385k/mm² | 131% | Exceeds stdcell theoretical max |
-| sram512x8 (OCD) | 301 x 322 um | 332k/mm² | 113% | Exceeds stdcell theoretical max |
-| sram256x8 (OCD) | 301 x 225 um | 270k/mm² | 92% | |
-| sram512x8 (standard) | 432 x 485 um | 154k/mm² | 52% | Most commonly used |
-| sram256x8 (standard) | 432 x 341 um | 124k/mm² | 42% | |
-| sram128x8 | 432 x 269 um | 98k/mm² | 33% | |
-| sram64x8 | 432 x 233 um | 79k/mm² | 27% | Below inv theoretical max (135k) |
+| inv_2 | 2.24 um | 114k | 4 | 456k/mm² |
+| nand2_2 | 3.92 um | 65k | 8 | 521k/mm² |
+| buff_2 | 3.36 um | 76k | 6 | 456k/mm² |
+| dfxtp_2 | 15.12 um | 17k | 26 | 439k/mm² |
 
-The standard SRAM macros (79k–154k trans/mm²) fall between the theoretical max of an all-inverter design (135k) and an all-NAND2 design (229k). Only the OCD SRAM variants exceed the theoretical stdcell maximum for any cell type.[^38]
+### SRAM Macros
 
-### Best Standard Cell Regions (automated place-and-route)[^39]
+| Macro | Size | Trans/mm² | % of flip-flop max | Placements |
+|---|---|---|---|---|
+| `gf180mcu_ocd_ip_sram__sram1024x8m8wm1` | 301 x 516 um | 385k/mm² | 88% | 2 |
+| `gf180mcu_ocd_ip_sram__sram512x8m8wm1` | 301 x 322 um | 332k/mm² | 76% | 6 |
+| `gf180mcu_ocd_ip_sram__sram256x8m8wm1` | 301 x 225 um | 270k/mm² | 62% | 8 |
+| `gf180mcu_fd_ip_sram__sram512x8m8wm1` | 432 x 485 um | 154k/mm² | 35% | 181 |
+| `gf180mcu_fd_ip_sram__sram256x8m8wm1` | 432 x 341 um | 124k/mm² | 28% | 12 |
+| `gf180mcu_fd_ip_sram__sram128x8m8wm1` | 432 x 269 um | 98k/mm² | 22% | 2 |
+| `gf180mcu_fd_ip_sram__sram64x8m8wm1` | 432 x 233 um | 79k/mm² | 18% | 2 |
 
-| Design | Peak 1mm² Trans/mm² | % of dffq\_1 max | Library |
+The macro density includes the peripheral circuits (address decoders, sense amplifiers, I/O drivers) around the bitcell array, which is why larger macros of a family are denser than smaller ones.
+
+### Best Standard Cell Regions
+
+| Design | Peak 1mm² Trans/mm² | % of flip-flop max | Library |
 |---|---|---|---|
-| [MOLE](https://github.com/mole99/gf180mcu-fabulous-fpga) | 305k/mm² | 104% of 7t max | 7t-5V |
-| [TTPG](https://github.com/TinyTapeout/tinytapeout-gf-0p2) | 297k/mm² | 101% of 7t max | mixed |
-| [CAFE](https://github.com/meiniKi/gf180mcu-fazyrv-hachure) | 296k/mm² | 101% of 7t max | 7t-5V |
-| [2975](https://github.com/ThorbenMoos/Cloneless1) | 292k/mm² | 99% of 7t max | 7t-5V |
-| [JKU1](https://github.com/iic-jku/gf180mcu-jku-projects) | 258k/mm² | 88% of 7t max | 7t-5V |
-| [TQVC](https://github.com/MichaelBell/ws01-tinyQV) | 252k/mm² | 86% of 7t max | 7t-5V |
-| [CHES](https://github.com/Ravenslofty/gf180mcu-chess) | 234k/mm² | 96% of 9t max | 9t-5V |
+| [MOLE](https://github.com/mole99/gf180mcu-fabulous-fpga) | 305k/mm² | 69% | 7t-5V |
+| [TTP2](https://github.com/TinyTapeout/tinytapeout-gf-0p2) | 297k/mm² | 68% | mixed |
+| [TTPG](https://github.com/TinyTapeout/tinytapeout-gf-0p2) | 297k/mm² | 68% | mixed |
+| [CAFE](https://github.com/meiniKi/gf180mcu-fazyrv-hachure) | 296k/mm² | 67% | 7t-5V |
+| [2975](https://github.com/ThorbenMoos/Cloneless1) | 292k/mm² | 67% | 7t-5V |
+| [RZML](https://gitlab.com/rejunity/ws0-lgn-fxnist-gf180mcu-tapeout) | 268k/mm² | 61% | 7t-5V |
+| [JKU1](https://github.com/iic-jku/gf180mcu-jku-projects) | 258k/mm² | 59% | 7t-5V |
+| [TQVC](https://github.com/MichaelBell/ws01-tinyQV) | 252k/mm² | 57% | 7t-5V |
 
-The top designs achieve 96–104% of the flip-flop theoretical transistor density maximum — meaning the densest 1mm² regions on this reticle pack transistors almost as tightly as if they were filled entirely with flip-flops edge-to-edge with no routing. This is possible because the real cell mix includes cells with higher transistor-per-area ratios than dffq\_1, and infrastructure cells (which are excluded from logic counts but still contain transistors) contribute to the transistor count.[^39]
-
-### Comparison
-
-The most commonly used SRAM macro (sram512x8 standard, 154k trans/mm², 52% of dffq\_1 max) has **lower** transistor density than the best standard cell regions on this reticle (250k–305k trans/mm², 86–104% of dffq\_1 max).
-
-The standard SRAM macros (`gf180mcu_fd_ip_sram`) include peripheral circuits (address decoders, sense amplifiers, I/O drivers) surrounding the compact bitcell array. The 6-transistor SRAM bitcells themselves are extremely dense, but the peripheral overhead brings the overall macro density down — and the overhead is proportionally larger for smaller macros (sram64x8 at 79k trans/mm² vs sram512x8 at 154k trans/mm²).[^40]
-
-The OCD SRAM variants (`gf180mcu_ocd_ip_sram`) at 270k–385k trans/mm² are 2–3x denser than the standard variants, and the largest (sram1024x8 at 385k, 131% of dffq\_1 max) exceeds the theoretical maximum for any single standard cell type.[^41]
-
-At the whole-chip level, [BTAP](https://github.com/polyfractal/BreakingTTAPs) (56 SRAM blocks) achieves 153k trans/mm² core average (52% of dffq\_1 max), while [2975](https://github.com/ThorbenMoos/Cloneless1) (pure stdcell, no SRAM) achieves 253k trans/mm² core average (86% of dffq\_1 max) — 65% higher.[^42]
+Infrastructure cells are excluded from logic cell counts but their transistors (decoupling capacitors in particular) are included in transistor counts.
 
 ## Key Findings
 
-1. The densest logic standard cell design, [2975](https://github.com/ThorbenMoos/Cloneless1) (Cloneless1), achieves **22k logic SC/mm²** averaged over its core (44% of buf max), with a peak of **31k logic SC/mm²** (62% of buf max) in its densest 1mm² region.[^6] [^30]
+1. The densest logic standard cell design, [2975](https://github.com/ThorbenMoos/Cloneless1) (Cloneless1), achieves **22k logic SC/mm²** averaged over its core (29% of buffer max), with a peak of **31k logic SC/mm²** in its densest 1mm² region.
 
-2. Three standard cell libraries are used: **7-track 5V** (77% of logic cells), **9-track 5V** (21%), and **7-track 3.3V** (1%). The 3.3V cells are 7–27% narrower than 5V equivalents for the same function but are used by only [OCD1](https://github.com/RTimothyEdwards/gf180mcu_ocd_openframe) and [OCD2](https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test) on this reticle.[^1] [^2]
+2. Standard cell libraries in use: **7t-5V** (78% of logic cells), **9t-5V** (21% of logic cells), **7t-3.3V** (2% of logic cells).
 
-3. The 7-track 5V library achieves roughly **2x higher peak density** than the 9-track 5V library on this reticle (31k vs 13k peak SC/mm²), exceeding the 24% theoretical advantage from row height.[^32]
+3. The median digital design achieves **6k logic SC/mm²** over its core. 7 of 26 designs exceed 10k logic SC/mm².
 
-4. Standard cell transistor density (up to **305k/mm²** in [MOLE](https://github.com/mole99/gf180mcu-fabulous-fpga), 104% of dffq\_1 theoretical max) exceeds the most commonly used foundry SRAM macro (154k/mm², 52% of dffq\_1 max). Only the OCD SRAM variants (up to 385k/mm², 131% of dffq\_1 max) exceed the stdcell theoretical limit.[^38] [^39] [^40] [^46]
+4. The best standard cell region reaches **305k transistors/mm²** ([MOLE](https://github.com/mole99/gf180mcu-fabulous-fpga)); the most used SRAM macro, `gf180mcu_fd_ip_sram__sram512x8m8wm1`, is 154k transistors/mm².
 
-5. Infrastructure cells (fillers, taps, antenna diodes, ties) outnumber logic cells **nearly 3:1** across the reticle (5.6M vs 2.1M). Any density analysis must exclude these to avoid dramatically overstating actual logic content.[^44]
+5. Infrastructure cells (fillers, taps, antenna diodes, ties) outnumber logic cells **2.8 to 1** across the reticle (6.0M vs 2.1M). Any density analysis must exclude these to avoid dramatically overstating actual logic content.
 
-6. The most common logic cell is **nand2_1** (297k instances across both libraries), followed by nor2_1 (118k) and oai21_1 (107k). The NAND2:flip-flop ratio across the reticle is ~3:1.[^45]
+6. The most common logic cell is **nand2_1** (228k instances in 7t-5V).
 
----
+## Per-Design Details
 
-## Footnotes
+| Design | Cell | Die (mm) | Core mm² | Placements | Pads | Logic SC | Infra SC | Transistors | SRAM | Libraries |
+|---|---|---|---|---|---|---|---|---|---|---|
+| [2975](https://github.com/ThorbenMoos/Cloneless1) | `2975_chip_top_0_6` | 3.93 x 5.12 | 14.3 | 2 | 33 | 316,440 | 463,577 | 3,615,126 | 0 | mcu7t5v0: 316,440 |
+| [AS03](https://github.com/AvalonSemiconductors/ws-submission-2025/) | `AS03_chip_top_6_0` | 3.93 x 5.12 | 14.3 | 1 | 75 | 86,629 | 302,626 | 2,446,849 | 0 | mcu7t5v0: 84,259, mcu9t5v0: 2,370 |
+| BRWN | `BRWN_ENGN2912E_TOP_8_2` | 3.93 x 5.12 | 14.3 | 1 | 75 | 4,379 | 64,895 | 821,902 | 0 | mcu7t5v0: 4,379 |
+| [BTAP](https://github.com/polyfractal/BreakingTTAPs) | `BTAP_chip_top_0_0` | 3.93 x 5.12 | 14.3 | 2 | 75 | 43,225 | 156,483 | 2,180,953 | 28 | mcu9t5v0: 43,225 |
+| [CAFE](https://github.com/meiniKi/gf180mcu-fazyrv-hachure) | `CAFE_chip_top_12_0` | 3.93 x 5.12 | 14.3 | 1 | 75 | 100,546 | 266,996 | 2,934,001 | 20 | mcu7t5v0: 100,546 |
+| [CHES](https://github.com/Ravenslofty/gf180mcu-chess) | `CHES_chip_top_10_4` | 3.93 x 5.12 | 14.3 | 1 | 75 | 145,076 | 406,519 | 2,716,746 | 0 | mcu9t5v0: 145,076 |
+| [GD02](https://github.com/gregdavill/gf180mcu-racquet-0.5x1) | `GD02_chip_top_14_4` | 1.94 x 5.12 | 5.5 | 1 | 73 | 34,564 | 78,256 | 976,848 | 9 | mcu7t5v0: 34,564 |
+| [GD03](https://github.com/gregdavill/gf180mcu-racquet/) | `GD03_chip_top_6_6` | 3.93 x 5.12 | 14.3 | 1 | 75 | 78,208 | 241,732 | 2,744,447 | 23 | mcu7t5v0: 78,208 |
+| [GD04](https://github.com/gregdavill/gf180mcu-racquet-1x0.5) | `GD04_chip_top_6_8` | 3.93 x 2.53 | 5.9 | 2 | 73 | 35,525 | 104,165 | 1,002,605 | 6 | mcu9t5v0: 35,525 |
+| [HZ80](https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu) | `HZ80_chip_top_14_0` | 1.94 x 5.12 | 5.5 | 1 | 73 | 5,143 | 80,093 | 831,740 | 0 | mcu9t5v0: 5,143 |
+| [ISHI](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_WaferSapce-GF180-1) | `ISHI_ISHI-KAI_WS_RUN1_12_4` | 3.93 x 5.12 | 14.3 | 1 | 196 | 0 | 63 | 227,230 | 0 | — |
+| [JKU1](https://github.com/iic-jku/gf180mcu-jku-projects) | `JKU1_chip_top_10_0` | 3.93 x 5.12 | 14.3 | 1 | 75 | 174,469 | 395,678 | 3,154,664 | 0 | mcu7t5v0: 174,469 |
+| [JKU2](https://github.com/iic-jku/gf180mcu-jku-atbs-adc) | `JKU2_chip_top_0_8` | 3.93 x 2.53 | 5.9 | 1 | 73 | 22,476 | 118,209 | 1,001,897 | 0 | mcu9t5v0: 22,471, mcu7t5v0: 5 |
+| [KIAN](https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32/) | `KIAN_chip_top_8_0` | 3.93 x 5.12 | 14.3 | 1 | 75 | 88,941 | 246,524 | 2,456,450 | 21 | mcu9t5v0: 88,941 |
+| [MOLE](https://github.com/mole99/gf180mcu-fabulous-fpga) | `MOLE_chip_top_8_4` | 3.93 x 5.12 | 14.3 | 1 | 75 | 203,757 | 295,366 | 3,418,507 | 6 | mcu7t5v0: 203,757 |
+| [MOS2](https://github.com/AutoMOS-project/AutoMOS-chipathon2025/tree/update-for-ws) | `MOS2_chip_top_10_6` | 3.93 x 5.12 | 14.3 | 1 | 163 | 0 | 52 | 240,673 | 0 | — |
+| MOSB | `MOSB_chip_top_4_0` | 3.93 x 5.12 | 14.3 | 2 | 75 | 17,889 | 8,134 | 432,098 | 0 | mcu9t5v0: 17,889 |
+| [OCD1](https://github.com/RTimothyEdwards/gf180mcu_ocd_openframe) | `OCD1_caravel_openframe_top_8_6` | 3.93 x 5.12 | 14.3 | 1 | 64 | 34,431 | 524,019 | 1,528,880 | 8 | mcu7t3v3: 34,429, mcu7t5v0: 2 |
+| [OCD2](https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test) | `OCD2_gf180mcu_ocd_sram_top_2_8` | 3.93 x 2.53 | 5.9 | 2 | 73 | 122 | 445 | 250,621 | 4 | mcu7t3v3: 120, mcu7t5v0: 2 |
+| [RBOY](https://github.com/wren6991/riscboy-180) | `RBOY_chip_top_12_6` | 3.93 x 5.12 | 14.3 | 1 | 75 | 69,949 | 179,358 | 2,395,590 | 30 | mcu9t5v0: 69,949 |
+| [RZ80](https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu?tab=readme-ov-file) | `RZ80_chip_top_0_2` | 3.93 x 5.12 | 14.3 | 2 | 75 | 5,209 | 208,620 | 2,307,517 | 0 | mcu9t5v0: 5,209 |
+| [RZML](https://gitlab.com/rejunity/ws0-lgn-fxnist-gf180mcu-tapeout) | `RZML_chip_top_12_2` | 3.93 x 5.12 | 14.3 | 1 | 75 | 88,407 | 434,355 | 3,299,354 | 0 | mcu7t5v0: 88,407 |
+| [TQVA](https://github.com/MichaelBell/ws01-tinyQV) | `TQVA_chip_top_14_8` | 1.94 x 2.53 | 2.3 | 1 | 57 | 35,711 | 62,585 | 480,963 | 1 | mcu7t5v0: 35,711 |
+| [TQVB](https://github.com/MichaelBell/ws01-tinyQV) | `TQVB_chip_top_14_6` | 1.94 x 5.12 | 5.5 | 1 | 73 | 35,416 | 123,968 | 1,098,008 | 1 | mcu7t5v0: 35,416 |
+| [TQVC](https://github.com/MichaelBell/ws01-tinyQV) | `TQVC_chip_top_8_8` | 3.93 x 2.53 | 5.9 | 2 | 73 | 36,116 | 137,094 | 1,219,676 | 1 | mcu7t5v0: 36,116 |
+| [TRID](https://github.com/Scafir/gf180mcu-project-trident-gf180-teststructure) | `TRID_TOP_14_2` | 1.94 x 5.12 | 5.5 | 1 | 95 | 0 | 0 | 102,336 | 0 | — |
+| [TTP2](https://github.com/TinyTapeout/tinytapeout-gf-0p2) | `TTP2_tt_gf_wrapper_6_4` | 3.93 x 5.12 | 14.3 | 1 | 75 | 203,781 | 366,289 | 3,274,885 | 0 | mcu7t5v0: 200,156, mcu9t5v0: 3,625 |
+| [TTPG](https://github.com/TinyTapeout/tinytapeout-gf-0p2) | `TTPG_tt_gf_wrapper_6_2` | 3.93 x 5.12 | 14.3 | 1 | 75 | 203,780 | 366,311 | 3,291,757 | 0 | mcu7t5v0: 200,155, mcu9t5v0: 3,625 |
+| [TZ01](https://github.com/ZeduloTech/gf180mcu-testchip2025) | `TZ01_chip_top_0_4` | 3.93 x 5.12 | 14.3 | 2 | 75 | 58,018 | 228,360 | 2,034,655 | 8 | mcu7t5v0: 58,018 |
+| [WSLG](https://github.com/89Mods/ws-logo-die) | `WSLG_chip_top_10_2` | 3.93 x 5.12 | 14.3 | 1 | 75 | 14,290 | 145,520 | 1,521,509 | 0 | mcu7t5v0: 14,290 |
 
-[^1]: The 3.3V library (`gf180mcu_as_sc_mcu7t3v3`) and 5V library (`gf180mcu_fd_sc_mcu7t5v0`) share the same 4.78um row height. Cell width comparison measured from layout bounding boxes: 3.3V nand2_2 = 4.78um vs 5V nand2_2 = 5.90um (19% narrower); 3.3V inv_2 = 3.10um vs 5V inv_2 = 4.22um (27% narrower); 3.3V buff_2 = 4.22um vs 5V buf_2 = 5.34um (21% narrower); 3.3V mux2_2 = 7.58um vs 5V mux2_2 = 9.26um (18% narrower); 3.3V dfxtp_2 = 15.98um vs 5V dffq_1 = 17.10um (7% narrower).
+## Methodology
 
-[^2]: Library usage determined by the `count_stdcell_usage` bottom-up hierarchy walk, classifying each cell instance by its library prefix (mcu7t5v0, mcu9t5v0, mcu7t3v3). Counts exclude infrastructure cells. [TTPG](https://github.com/TinyTapeout/tinytapeout-gf-0p2): 200k mcu7t5v0 + 4k mcu9t5v0. [AS03](https://github.com/AvalonSemiconductors/ws-submission-2025/): 84k mcu7t5v0 + 2k mcu9t5v0. [JKU2](https://github.com/iic-jku/gf180mcu-jku-atbs-adc): 22k mcu9t5v0 + 5 mcu7t5v0. [OCD1](https://github.com/RTimothyEdwards/gf180mcu_ocd_openframe): 34k mcu7t3v3 + 2 mcu7t5v0.
+- **Logic cell counts** come from walking the layout hierarchy and counting instances of every cell whose name contains a standard cell library prefix, excluding types starting with `fill`, `endcap`, `filltie`, `fillcap`, `tap`, `antenna`, `diode`, `tiel`, `tieh`.
+- **Transistor counts** are the number of merged polygons in the boolean AND of the diffusion (22/0) and gate polysilicon (30/0) layers.
+- **Core area** is (die width − 0.70mm) x (die height − 0.70mm), removing a 350um pad ring from each side.
+- **Cell dimensions** are the width and height of each standard cell's placement boundary (GDS 0/0), measured from the cells present in this layout.
+- **Theoretical maximum** = (1000um / cell width) x (1000um / row height).
+- **Peak figures** are the best single cell of a 1mm x 1mm grid laid over each design, skipping grid cells that overlap an SRAM macro. Grid cells at the top and right edges of a die are smaller than 1mm², so peaks are lower bounds.
+- **SRAM macros** are counted by cell name. The `sram_block_count` column of the summary CSV is kept for comparison with earlier results; it counts SramCore marker shapes, of which each GF180MCU macro has two.
+- Designs placed more than once on the reticle are counted once.
 
-[^3]: Theoretical maximum = (1000um / cell\_width) x (1000um / row\_height) for a single cell type filling 1mm² with zero routing overhead. 7-track row height = 4.78um, 9-track = 5.94um. Cell dimensions from layout bounding boxes. The 3.3V library only includes `_2` and larger drive strengths (no `_1` variants). At `_2` drive strength: 3.3V inv\_2 = 3.10um → 67k/mm² vs 5V inv\_2 = 4.22um → 50k/mm² (3.3V is 36% denser); 3.3V nand2\_2 = 4.78um → 44k/mm² vs 5V nand2\_2 = 5.90um → 35k/mm² (3.3V is 24% denser); 3.3V buff\_2 = 4.22um → 50k/mm² vs 5V buf\_2 = 5.34um → 39k/mm² (3.3V is 27% denser).
+### Difference from the March 2026 Run 1 report
 
-[^4]: Achieved-vs-theoretical ratios observed on this reticle: peak grid cell ranges from 62% of buf max ([2975](https://github.com/ThorbenMoos/Cloneless1)) down to <1% ([RZ80](https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu?tab=readme-ov-file)). Core averages range from 44% ([2975](https://github.com/ThorbenMoos/Cloneless1)) down to <1%.
-
-[^5]: Core area estimated as (die\_width - 0.70mm) x (die\_height - 0.70mm), subtracting a 350um pad ring border on each side. I/O pad cells are 350um tall as measured in the layout. Full-size slots: die = 3.93 x 5.12mm, core = 3.23 x 4.42mm = 14.3mm². Half-height: die = 3.93 x 2.53mm, core = 3.23 x 1.83mm = 5.9mm². Half-width: die = 1.94 x 5.12mm, core = 1.24 x 4.42mm = 5.5mm². Quarter: die = 1.94 x 2.53mm, core = 1.24 x 1.83mm = 2.3mm².
-
-[^6]: [2975](https://github.com/ThorbenMoos/Cloneless1) (`2975_chip_top`): 316k logic cells in 14.3mm² core = 22k SC/mm² (44% of 7t buf max). Peak grid cell: 31k SC/mm² (62% of max). 3,615k transistor regions. Zero SRAM, 33 pads.
-
-[^7]: [TQVA](https://github.com/MichaelBell/ws01-tinyQV) (`TQVA_chip_top_14_8`): 36k logic cells in quarter-size slot (1.94 x 2.53mm die, 2.3mm² core). Core density 16k SC/mm² (31% of max). mcu7t5v0. 2 SRAM blocks, 57 pads.
-
-[^8]: [TTPG](https://github.com/TinyTapeout/tinytapeout-gf-0p2) and [TTP2](https://github.com/TinyTapeout/tinytapeout-gf-0p2) are [Tiny Tapeout](https://tinytapeout.com) shuttle designs, each containing 52 independent user projects multiplexed onto shared I/O via `tt_mux` cells. Each user design's stdcells are prefixed with a unique 2-character hash (e.g., `OH_`, `ZI_`) to avoid naming collisions. ~200k mcu7t5v0 + ~4k mcu9t5v0 logic cells per chip. 14k SC/mm² core (29% of max). 75 pads, 0 SRAM.
-
-[^9]: [JKU1](https://github.com/iic-jku/gf180mcu-jku-projects) (`JKU1_chip_top_10_0`): 174k logic cells, 12k SC/mm² core (24% of max). mcu7t5v0 exclusively. 3,155k transistors. No SRAM, 75 pads.
-
-[^10]: [CHES](https://github.com/Ravenslofty/gf180mcu-chess) (`CHES_chip_top_10_4`): 145k logic cells, 10k SC/mm² core (25% of 9t buf max). mcu9t5v0 exclusively — the highest density achieved with the 9-track library on this reticle. 2,717k transistors. No SRAM, 75 pads.
-
-[^11]: [MOLE](https://github.com/mole99/gf180mcu-fabulous-fpga) (`MOLE_chip_top_8_4`): 204k logic cells, 14k SC/mm² core (29% of max). mcu7t5v0. 3,419k transistors (second highest on reticle). 12 SRAM blocks, 75 pads.
-
-[^12]: [TQVC](https://github.com/MichaelBell/ws01-tinyQV) (`TQVC_chip_top`, 2 placements): 36k logic cells in half-height slot. Core density 6k SC/mm² (12% of max). mcu7t5v0. 2 SRAM blocks, 73 pads.
-
-[^13]: [TQVB](https://github.com/MichaelBell/ws01-tinyQV) (`TQVB_chip_top_14_6`): 35k logic cells in half-width slot. Core density 6k SC/mm² (13% of max). mcu7t5v0. 2 SRAM, 73 pads.
-
-[^14]: [AS03](https://github.com/AvalonSemiconductors/ws-submission-2025/) (`AS03_chip_top_6_0`): 87k logic cells, 6k SC/mm² core (12% of max). Mixed: 84k mcu7t5v0 + 2k mcu9t5v0. No SRAM, 75 pads.
-
-[^15]: [CAFE](https://github.com/meiniKi/gf180mcu-fazyrv-hachure) (`CAFE_chip_top_12_0`): 101k logic cells, 7k SC/mm² core (14% of max). mcu7t5v0. 40 SRAM blocks. Peak grid cell: 21k SC/mm² (42% of max). 75 pads.
-
-[^16]: [GD04](https://github.com/gregdavill/gf180mcu-racquet-1x0.5) (`GD04_chip_top`, 2 placements): 36k logic cells in half-height slot. Core 6k SC/mm² (15% of 9t max). mcu9t5v0. 12 SRAM blocks, 73 pads.
-
-[^17]: [JKU2](https://github.com/iic-jku/gf180mcu-jku-atbs-adc) (`JKU2_chip_top_0_8`): 22k logic cells in half-height slot. Core 4k SC/mm² (10% of 9t max). Primarily mcu9t5v0. No SRAM.
-
-[^18]: [KIAN](https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32/) (`KIAN_chip_top_8_0`): 89k logic cells, 6k SC/mm² core (16% of 9t max). mcu9t5v0 exclusively. 42 SRAM blocks. Notably uniform logic density: only 1.1x variation across its logic area. 75 pads.
-
-[^19]: [GD03](https://github.com/gregdavill/gf180mcu-racquet/) (`GD03_chip_top_6_6`): 78k logic cells, 5k SC/mm² core (11% of max). mcu7t5v0. 46 SRAM blocks — SRAM covers nearly all non-pad-ring grid cells. 75 pads.
-
-[^20]: [GD02](https://github.com/gregdavill/gf180mcu-racquet-0.5x1) (`GD02_chip_top_14_4`): 35k logic cells in half-width slot. Core 6k SC/mm² (13% of max). mcu7t5v0. 18 SRAM blocks, 73 pads.
-
-[^21]: [TZ01](https://github.com/ZeduloTech/gf180mcu-testchip2025) (`TZ01_chip_top`, 2 placements): 58k logic cells, 4k SC/mm² core (8% of max). mcu7t5v0. 16 SRAM blocks, 75 pads.
-
-[^22]: [RBOY](https://github.com/wren6991/riscboy-180) (`RBOY_chip_top_12_6`): 70k logic cells, 5k SC/mm² core (12% of 9t max). mcu9t5v0. 60 SRAM blocks — the most of any design. SRAM dominates so completely that no grid cells show non-zero logic stdcell counts. 75 pads.
-
-[^23]: [RZ80](https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu?tab=readme-ov-file) (`RZ80_chip_top`, 2 placements): 5k logic cells, <1k SC/mm² core (<1% of 9t max). mcu9t5v0. No SRAM, 75 pads.
-
-[^24]: [HZ80](https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu) (`HZ80_chip_top_14_0`): 5k logic cells in half-width slot. Core 1k SC/mm² (2% of 9t max). mcu9t5v0. No SRAM, 73 pads.
-
-[^25]: [BTAP](https://github.com/polyfractal/BreakingTTAPs) (`BTAP_chip_top`, 2 placements): 43k logic cells, 3k SC/mm² core (8% of 9t max). mcu9t5v0. 56 SRAM blocks dominate die area. 75 pads.
-
-[^26]: [WSLG](https://github.com/89Mods/ws-logo-die) (`WSLG_chip_top_10_2`): 14k logic cells, 1k SC/mm² core (2% of max). mcu7t5v0. No SRAM, 75 pads. Has a distinctive hollow center (zero transistors in middle grid cells), suggesting a large unused region or decorative structure.
-
-[^27]: BRWN (`BRWN_ENGN2912E_TOP_8_2`): 4k logic cells, <1k SC/mm² core (<1% of max). mcu7t5v0. No SRAM, 75 pads. Brown University course project.
-
-[^28]: MOSB (`MOSB_chip_top`, 2 placements): 18k logic cells, 1k SC/mm² core (3% of 9t max). mcu9t5v0. No SRAM, 75 pads.
-
-[^29]: [OCD2](https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test): 122 logic cells (120 mcu7t3v3 + 2 mcu7t5v0), 8 SRAM blocks. [MOS2](https://github.com/AutoMOS-project/AutoMOS-chipathon2025/tree/update-for-ws): 0 logic cells (all stdcells were infrastructure), 163 pads. [ISHI](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_WaferSapce-GF180-1): 0 logic cells, 196 pads. [TRID](https://github.com/Scafir/gf180mcu-project-trident-gf180-teststructure): 0 stdcells of any kind, 95 pads.
-
-[^30]: [2975](https://github.com/ThorbenMoos/Cloneless1)'s peak of 31k logic SC/mm² represents 62% of the 7t buf theoretical max of 50k/mm². The remaining 38% is consumed by routing channels, infrastructure cells (~59% of all stdcell instances in 2975), power rails, and clock distribution.
-
-[^32]: Comparing 7-track 5V vs 9-track 5V achieved logic density: 7-track best = 22k (44% of 50k max), 9-track best = 10k (25% of 40k max). 7-track median = 5k (10% of max), 9-track median = 4k (10% of max). The theoretical ratio from row heights alone is 5.94/4.78 = 1.24x.
-
-[^33]: SRAM block counts determined by merging all shapes on GDS layer 108/5 (SramCore) within each design's cell hierarchy and counting distinct merged polygons.
-
-[^34]: [RBOY](https://github.com/wren6991/riscboy-180) uses 60 SRAM blocks in a 20.1mm² die — approximately 3.0 blocks per mm².
-
-[^35]: [OCD1](https://github.com/RTimothyEdwards/gf180mcu_ocd_openframe) (`OCD1_caravel_openframe_top`): Caravel OpenFrame design with 16 SRAM blocks and 34k logic cells — almost entirely from the 3.3V library (mcu7t3v3: 34,429 logic cells). This is the only design on the reticle making significant use of the 3.3V standard cell library. 1,529k transistors, 64 pads. Core density 2k SC/mm² (5% of buf max).
-
-[^36]: [OCD2](https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test) (`OCD2_gf180mcu_ocd_sram_top`): OpenRAM SRAM characterization design. 8 SRAM blocks, 122 logic cells (120 mcu7t3v3 + 2 mcu7t5v0), 251k transistors in a half-height slot.
-
-[^37]: Transistor count methodology: shapes on the COMP layer (GDS 22/0, diffusion/active area) are boolean-AND'd with shapes on the Poly2 layer (GDS 30/0, gate polysilicon). Each distinct merged polygon in the result represents one transistor gate crossing. This counts NMOS and PMOS gates separately.
-
-[^38]: SRAM macro transistor density measured by applying the COMP & Poly2 intersection methodology to individual SRAM macro cells. "Standard" macros (`gf180mcu_fd_ip_sram`) are 432um wide; "OCD" variants (`gf180mcu_ocd_ip_sram`) are 301um wide. Size variants: 64x8, 128x8, 256x8, 512x8, 1024x8 (words x bits).
-
-[^39]: Peak stdcell transistor density from the 1mm x 1mm grid analysis, excluding grid cells that overlap SRAM regions. [MOLE](https://github.com/mole99/gf180mcu-fabulous-fpga) peak: 305k trans/mm². [TTPG](https://github.com/TinyTapeout/tinytapeout-gf-0p2): 297k. [CAFE](https://github.com/meiniKi/gf180mcu-fazyrv-hachure): 296k. [2975](https://github.com/ThorbenMoos/Cloneless1): 292k.
-
-[^40]: SRAM macros contain: (1) the bitcell array — extremely dense 6-transistor cells; (2) row decoders; (3) column multiplexers; (4) sense amplifiers; (5) write drivers; (6) control logic; (7) power rings and guard bands. Categories 2–7 ("peripherals") surround the bitcell array, and their area overhead is proportionally larger for smaller macros — which explains the density progression from sram64x8 (79k/mm²) to sram1024x8 (385k/mm²).
-
-[^41]: The OCD SRAM variants (270k–385k trans/mm²) are 2–3x denser than the standard variants (79k–154k trans/mm²).
-
-[^42]: Whole-chip transistor density comparison: [BTAP](https://github.com/polyfractal/BreakingTTAPs) (56 SRAM blocks) achieves 153k trans/mm² core average. [2975](https://github.com/ThorbenMoos/Cloneless1) (pure stdcell) achieves 253k trans/mm² core average — 65% higher despite having no hand-optimized SRAM.
-
-[^44]: Infrastructure cell analysis: across the 24 unique designs, infrastructure cells (fill, fillcap, endcap, filltie, tap, antenna, diode, tiel, tieh) total 5,572k instances vs 2,054k logic cell instances. 14,050 unique logic cell definitions were identified across 455 distinct cell types, while 2,347 infrastructure definitions span 47 types. The exclusion list was validated by reviewing all cell types for logic function.
-
-[^45]: Cell type usage computed by the `count_stdcell_usage` bottom-up hierarchy walk with per-cell caching. Counts are summed across unique designs (duplicate slot placements counted once). Combined NAND2 total: 221k (7t-5V) + 76k (9t-5V) = 297k. Combined flip-flop total: 87k dffq_1 (7t-5V) + 14k dffq_1 (9t-5V) = 101k.
-
-[^46]: Transistor-per-cell counts measured by applying the COMP & Poly2 intersection methodology (see footnote 37) to individual standard cell definitions. inv\_1: 2 transistors (1 NMOS + 1 PMOS). buf\_1: 4 transistors (two inverter stages). nand2\_1: 4 transistors (2 NMOS series + 2 PMOS parallel). dffq\_1: 24 transistors (transmission-gate master-slave flip-flop with output buffer). Theoretical transistor density max = (transistors/cell) x (cells/mm²). The dffq\_1 theoretical max (294k trans/mm² for 7-track) is the highest because flip-flops pack 24 transistors into 17.10um width — a higher transistor-to-area ratio than simpler cells. The fact that some designs exceed 100% of this theoretical max indicates that the real cell mix, combined with transistors in infrastructure cells, can exceed the density of any single cell type packed alone.
+The first version of the Run 1 report measured cell width and row height from each cell's overall bounding box. That box includes n-well and implant shapes which deliberately overhang the cell and overlap its neighbours, so it is larger than the area a placed cell occupies: 4.22 x 4.78um instead of 3.36 x 3.92um for a 7-track buffer. Theoretical maximum densities in that version were therefore about 35% too low, and every "% of max" figure correspondingly too high. This report uses the placement boundary. It also reported SRAM "blocks" by counting SramCore marker shapes, which gave twice the number of macros. Logic cell counts, transistor counts and achieved densities are unchanged.
 
 ---
 
-*Data source: `analyze_layout.py` applied to `ws-run1/reticle.oas` (320MB). Analysis method: KLayout boolean geometry operations on GDS layers. Grid resolution: 1mm x 1mm. All density figures rounded to nearest 1k. Standard cell counts exclude infrastructure cells (fill, endcap, filltie, fillcap, tap, antenna, diode, tiel, tieh). Three standard cell library prefixes matched: `gf180mcu_fd_sc_`, `gf180mcu_as_sc_`, `gf180mcu_as_ex_`. Project links from [ws-run1 README](https://github.com/wafer-space/ws-run1).*
+*Generated by [ws-run-reports](https://github.com/wafer-space/ws-run-reports) from `G801.oas` (md5 `3ae7349e205f60d9f997cf7d3a688500`) in [wafer-space/ws-run1](https://github.com/wafer-space/ws-run1). Analysis method: KLayout boolean geometry operations on GDS layers. Grid resolution: 1mm x 1mm. Density figures are rounded to the nearest 1k.*
