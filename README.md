@@ -9,8 +9,8 @@
 <div align="center">
 <table width="100%">
   <tr>
-  <td width="50%"><img src="images/reticle_white.png" width="95%"/></td>
-  <td width="50%"><img src="images/reticle.svg" width="95%"/></td>
+  <td width="50%"><img src="images/G801.png" width="95%"/></td>
+  <td width="50%"><img src="images/G801.svg" width="95%"/></td>
   </tr>
 </table>
 </div>
@@ -22,6 +22,8 @@ The "?" indicate private projects that have been obfuscated to hide their layout
 | Code | Project | Slot Size | Project Details | Repository |
 |---|---|---|---|---|
 | 2975 | Cloneless1 | 1x1 | Cloneless1 is a cryptographic ASIC that implements a physically secure block cipher instance with tamper-resistant long-term secret via physically unclonable function and leakage-resilient secret sharing. | https://github.com/ThorbenMoos/Cloneless1 |
+| AF01 | Private | 1x1 | Private | Private |
+| AF02 | Private | 1x1 | Private | Private |
 | AS03 | WS-Multi | 1x1 | Multi-project die | https://github.com/AvalonSemiconductors/ws-submission-2025/ |
 | BRWN | FA25_Engn2912e_Saligane_Brown | 1x1 | FA25 ENGN2912e@Brown Course Project |  |
 | BTAP | BreakingTTAPs | 1x1 | Transport Triggered Architecture processor | https://github.com/polyfractal/BreakingTTAPs |
@@ -42,6 +44,7 @@ The "?" indicate private projects that have been obfuscated to hide their layout
 | OCD2 | ocd_sram_test | 1x0p5 | Test chip for the 3.3V SRAM macros (256 byte, 512 byte, and 1kbyte) from the library gf180mcu_ocd_ip_sram. The test chip consists of one each of the 1kB and 512B SRAM cores and two 256B cores pinned out to individual GPIO pins. Also there is a POR macro with a test output.  | https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test |
 | RBOY | RISCBoy-180 | 1x1 | A video games console on a chip. RISC-V CPU, RISC-V APU and custom graphics hardware.  | https://github.com/wren6991/riscboy-180 |
 | RZ80 | FOSSi open-source replacement for Z80 classic 8-bit CPU | 1x1 | Silicon proven, pin compatible, open-source replacement for Zilog Z80 a classic 8-bit CPU. https://github.com/rejunity/z80-open-silicon  | https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu?tab=readme-ov-file |
+| RZML | LGN FashionMNIST - Logic Gate Network trained on FashioMNIST | 1x1 | EXPERIMENTAL!!! The world smallest image classifier. Differential Logic / Logic Gate Network trained to classify tiny 28x28 images based on FashionMNIST dataset.  | https://gitlab.com/rejunity/ws0-lgn-fxnist-gf180mcu-tapeout |
 | TQVA | TinyQV - Crowdsourced Risc-V SoC | 0p5x0p5 | A Risc-V RV32EC SoC with peripherals from the Tiny Tapeout Risc-V competition. This version uses a quarter sized slot.  | https://github.com/MichaelBell/ws01-tinyQV |
 | TQVB | TinyQV - Crowdsourced Risc-V SoC (0.5x1) | 0p5x1 | A Risc-V RV32EC SoC with peripherals from the Tiny Tapeout Risc-V competition. This version uses a half width slot (but is otherwise identical to the quarter size version)  | https://github.com/MichaelBell/ws01-tinyQV |
 | TQVC | TinyQV - Crowdsourced Risc-V SoC (1x0.5) | 1x0p5 | A Risc-V RV32EC SoC with peripherals from the Tiny Tapeout Risc-V competition. This version uses a half height slot (but is otherwise identical to the quarter size version)  | https://github.com/MichaelBell/ws01-tinyQV |
@@ -54,11 +57,11 @@ The "?" indicate private projects that have been obfuscated to hide their layout
 # View the Reticle Layout
 
 1. To view the reticle layout, please install [KLayout](https://www.klayout.de/).
-2. Next, assemble `reticle.oas` from the individual files: `cd layout; cat reticle-part-?? >reticle.oas`
-3. The assembled `reticle.oas` file can then be opened with KLayout.
+2. Next, assemble `G801.oas` from the individual files: `cd layout; cat G801-part-?? >G801.oas`
+3. The assembled `G801.oas` file can then be opened with KLayout.
 4. Finally, load the layer properties file in KLayout: "File → Load Layer Properties" and choose `lyp/gf180mcu.lyp`.
 
-Note: The `reticle.oas` file was split with `split -b 90M reticle.oas reticle-part-`
+Note: The `G801.oas` file was split with `split -b 90M G801.oas G801-part-`
 
 # License
 
