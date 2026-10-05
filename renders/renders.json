@@ -1,0 +1,718 @@
+{
+ "px_per_mm": 400,
+ "reticle": {
+  "file": "reticle.webp",
+  "width_mm": 30.0,
+  "height_mm": 23.379,
+  "width_px": 3000,
+  "height_px": 2338
+ },
+ "styles": {
+  "full": "All layers",
+  "devices": "Transistors",
+  "routing": "Signal routing",
+  "power": "Power and pads"
+ },
+ "layers": {
+  "nwell": {
+   "label": "Nwell",
+   "colour": "#282c46"
+  },
+  "comp": {
+   "label": "Diffusion",
+   "colour": "#3cbe5a"
+  },
+  "poly": {
+   "label": "Polysilicon",
+   "colour": "#eb4646"
+  },
+  "metal1": {
+   "label": "Metal 1",
+   "colour": "#3c78ff"
+  },
+  "metal2": {
+   "label": "Metal 2",
+   "colour": "#c850e6"
+  },
+  "metal3": {
+   "label": "Metal 3",
+   "colour": "#32d2dc"
+  },
+  "metal4": {
+   "label": "Metal 4",
+   "colour": "#f0c83c"
+  },
+  "metal5": {
+   "label": "Metal 5",
+   "colour": "#f58c32"
+  },
+  "metaltop": {
+   "label": "Top metal",
+   "colour": "#e6e6eb"
+  },
+  "pad": {
+   "label": "Pad openings",
+   "colour": "#ffffff"
+  }
+ },
+ "placements": [
+  {
+   "code": "BTAP",
+   "x_mm": 0.06,
+   "y_mm": 0.06,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "RZ80",
+   "x_mm": 0.06,
+   "y_mm": 5.242,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "TZ01",
+   "x_mm": 0.06,
+   "y_mm": 10.424,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "2975",
+   "x_mm": 0.06,
+   "y_mm": 15.606,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "JKU2",
+   "x_mm": 0.06,
+   "y_mm": 20.788,
+   "width_mm": 3.932,
+   "height_mm": 2.531
+  },
+  {
+   "code": "BTAP",
+   "x_mm": 4.052,
+   "y_mm": 0.06,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "RZ80",
+   "x_mm": 4.052,
+   "y_mm": 5.242,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "TZ01",
+   "x_mm": 4.052,
+   "y_mm": 10.424,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "2975",
+   "x_mm": 4.052,
+   "y_mm": 15.606,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "OCD2",
+   "x_mm": 4.052,
+   "y_mm": 20.788,
+   "width_mm": 3.932,
+   "height_mm": 2.531
+  },
+  {
+   "code": "MOSB",
+   "x_mm": 8.044,
+   "y_mm": 0.06,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "MOSB",
+   "x_mm": 8.044,
+   "y_mm": 5.242,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "OCD2",
+   "x_mm": 8.044,
+   "y_mm": 20.788,
+   "width_mm": 3.932,
+   "height_mm": 2.531
+  },
+  {
+   "code": "AS03",
+   "x_mm": 12.036,
+   "y_mm": 0.06,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "TTPG",
+   "x_mm": 12.036,
+   "y_mm": 5.242,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "TTP2",
+   "x_mm": 12.036,
+   "y_mm": 10.424,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "GD03",
+   "x_mm": 12.036,
+   "y_mm": 15.606,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "GD04",
+   "x_mm": 12.036,
+   "y_mm": 20.788,
+   "width_mm": 3.932,
+   "height_mm": 2.531
+  },
+  {
+   "code": "KIAN",
+   "x_mm": 16.028,
+   "y_mm": 0.06,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "BRWN",
+   "x_mm": 16.028,
+   "y_mm": 5.242,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "MOLE",
+   "x_mm": 16.028,
+   "y_mm": 10.424,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "OCD1",
+   "x_mm": 16.028,
+   "y_mm": 15.606,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "TQVC",
+   "x_mm": 16.028,
+   "y_mm": 20.788,
+   "width_mm": 3.932,
+   "height_mm": 2.531
+  },
+  {
+   "code": "JKU1",
+   "x_mm": 20.02,
+   "y_mm": 0.06,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "WSLG",
+   "x_mm": 20.02,
+   "y_mm": 5.242,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "CHES",
+   "x_mm": 20.02,
+   "y_mm": 10.424,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "MOS2",
+   "x_mm": 20.02,
+   "y_mm": 15.606,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "GD04",
+   "x_mm": 20.02,
+   "y_mm": 20.788,
+   "width_mm": 3.932,
+   "height_mm": 2.531
+  },
+  {
+   "code": "CAFE",
+   "x_mm": 24.012,
+   "y_mm": 0.06,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "RZML",
+   "x_mm": 24.012,
+   "y_mm": 5.242,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "ISHI",
+   "x_mm": 24.012,
+   "y_mm": 10.424,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "RBOY",
+   "x_mm": 24.012,
+   "y_mm": 15.606,
+   "width_mm": 3.932,
+   "height_mm": 5.122
+  },
+  {
+   "code": "TQVC",
+   "x_mm": 24.012,
+   "y_mm": 20.788,
+   "width_mm": 3.932,
+   "height_mm": 2.531
+  },
+  {
+   "code": "HZ80",
+   "x_mm": 28.004,
+   "y_mm": 0.06,
+   "width_mm": 1.936,
+   "height_mm": 5.122
+  },
+  {
+   "code": "TRID",
+   "x_mm": 28.004,
+   "y_mm": 5.242,
+   "width_mm": 1.936,
+   "height_mm": 5.122
+  },
+  {
+   "code": "GD02",
+   "x_mm": 28.004,
+   "y_mm": 10.424,
+   "width_mm": 1.936,
+   "height_mm": 5.122
+  },
+  {
+   "code": "TQVB",
+   "x_mm": 28.004,
+   "y_mm": 15.606,
+   "width_mm": 1.936,
+   "height_mm": 5.122
+  },
+  {
+   "code": "TQVA",
+   "x_mm": 28.004,
+   "y_mm": 20.788,
+   "width_mm": 1.936,
+   "height_mm": 2.531
+  }
+ ],
+ "designs": {
+  "2975": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "2975_full.webp",
+    "thumb": "2975_thumb.webp",
+    "devices": "2975_devices.webp",
+    "routing": "2975_routing.webp",
+    "power": "2975_power.webp"
+   }
+  },
+  "AS03": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "AS03_full.webp",
+    "thumb": "AS03_thumb.webp",
+    "devices": "AS03_devices.webp",
+    "routing": "AS03_routing.webp",
+    "power": "AS03_power.webp"
+   }
+  },
+  "BRWN": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "BRWN_full.webp",
+    "thumb": "BRWN_thumb.webp",
+    "devices": "BRWN_devices.webp",
+    "routing": "BRWN_routing.webp",
+    "power": "BRWN_power.webp"
+   }
+  },
+  "BTAP": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "BTAP_full.webp",
+    "thumb": "BTAP_thumb.webp",
+    "devices": "BTAP_devices.webp",
+    "routing": "BTAP_routing.webp",
+    "power": "BTAP_power.webp"
+   }
+  },
+  "CAFE": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "CAFE_full.webp",
+    "thumb": "CAFE_thumb.webp",
+    "devices": "CAFE_devices.webp",
+    "routing": "CAFE_routing.webp",
+    "power": "CAFE_power.webp"
+   }
+  },
+  "CHES": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "CHES_full.webp",
+    "thumb": "CHES_thumb.webp",
+    "devices": "CHES_devices.webp",
+    "routing": "CHES_routing.webp",
+    "power": "CHES_power.webp"
+   }
+  },
+  "GD02": {
+   "width_px": 774,
+   "height_px": 2049,
+   "width_mm": 1.936,
+   "height_mm": 5.122,
+   "files": {
+    "full": "GD02_full.webp",
+    "thumb": "GD02_thumb.webp",
+    "devices": "GD02_devices.webp",
+    "routing": "GD02_routing.webp",
+    "power": "GD02_power.webp"
+   }
+  },
+  "GD03": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "GD03_full.webp",
+    "thumb": "GD03_thumb.webp",
+    "devices": "GD03_devices.webp",
+    "routing": "GD03_routing.webp",
+    "power": "GD03_power.webp"
+   }
+  },
+  "GD04": {
+   "width_px": 1573,
+   "height_px": 1012,
+   "width_mm": 3.932,
+   "height_mm": 2.531,
+   "files": {
+    "full": "GD04_full.webp",
+    "thumb": "GD04_thumb.webp",
+    "devices": "GD04_devices.webp",
+    "routing": "GD04_routing.webp",
+    "power": "GD04_power.webp"
+   }
+  },
+  "HZ80": {
+   "width_px": 774,
+   "height_px": 2049,
+   "width_mm": 1.936,
+   "height_mm": 5.122,
+   "files": {
+    "full": "HZ80_full.webp",
+    "thumb": "HZ80_thumb.webp",
+    "devices": "HZ80_devices.webp",
+    "routing": "HZ80_routing.webp",
+    "power": "HZ80_power.webp"
+   }
+  },
+  "ISHI": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "ISHI_full.webp",
+    "thumb": "ISHI_thumb.webp",
+    "devices": "ISHI_devices.webp",
+    "routing": "ISHI_routing.webp",
+    "power": "ISHI_power.webp"
+   }
+  },
+  "JKU1": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "JKU1_full.webp",
+    "thumb": "JKU1_thumb.webp",
+    "devices": "JKU1_devices.webp",
+    "routing": "JKU1_routing.webp",
+    "power": "JKU1_power.webp"
+   }
+  },
+  "JKU2": {
+   "width_px": 1573,
+   "height_px": 1012,
+   "width_mm": 3.932,
+   "height_mm": 2.531,
+   "files": {
+    "full": "JKU2_full.webp",
+    "thumb": "JKU2_thumb.webp",
+    "devices": "JKU2_devices.webp",
+    "routing": "JKU2_routing.webp",
+    "power": "JKU2_power.webp"
+   }
+  },
+  "KIAN": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "KIAN_full.webp",
+    "thumb": "KIAN_thumb.webp",
+    "devices": "KIAN_devices.webp",
+    "routing": "KIAN_routing.webp",
+    "power": "KIAN_power.webp"
+   }
+  },
+  "MOLE": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "MOLE_full.webp",
+    "thumb": "MOLE_thumb.webp",
+    "devices": "MOLE_devices.webp",
+    "routing": "MOLE_routing.webp",
+    "power": "MOLE_power.webp"
+   }
+  },
+  "MOS2": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "MOS2_full.webp",
+    "thumb": "MOS2_thumb.webp",
+    "devices": "MOS2_devices.webp",
+    "routing": "MOS2_routing.webp",
+    "power": "MOS2_power.webp"
+   }
+  },
+  "MOSB": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "MOSB_full.webp",
+    "thumb": "MOSB_thumb.webp",
+    "devices": "MOSB_devices.webp",
+    "routing": "MOSB_routing.webp",
+    "power": "MOSB_power.webp"
+   }
+  },
+  "OCD1": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "OCD1_full.webp",
+    "thumb": "OCD1_thumb.webp",
+    "devices": "OCD1_devices.webp",
+    "routing": "OCD1_routing.webp",
+    "power": "OCD1_power.webp"
+   }
+  },
+  "OCD2": {
+   "width_px": 1573,
+   "height_px": 1012,
+   "width_mm": 3.932,
+   "height_mm": 2.531,
+   "files": {
+    "full": "OCD2_full.webp",
+    "thumb": "OCD2_thumb.webp",
+    "devices": "OCD2_devices.webp",
+    "routing": "OCD2_routing.webp",
+    "power": "OCD2_power.webp"
+   }
+  },
+  "RBOY": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "RBOY_full.webp",
+    "thumb": "RBOY_thumb.webp",
+    "devices": "RBOY_devices.webp",
+    "routing": "RBOY_routing.webp",
+    "power": "RBOY_power.webp"
+   }
+  },
+  "RZ80": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "RZ80_full.webp",
+    "thumb": "RZ80_thumb.webp",
+    "devices": "RZ80_devices.webp",
+    "routing": "RZ80_routing.webp",
+    "power": "RZ80_power.webp"
+   }
+  },
+  "RZML": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "RZML_full.webp",
+    "thumb": "RZML_thumb.webp",
+    "devices": "RZML_devices.webp",
+    "routing": "RZML_routing.webp",
+    "power": "RZML_power.webp"
+   }
+  },
+  "TQVA": {
+   "width_px": 774,
+   "height_px": 1012,
+   "width_mm": 1.936,
+   "height_mm": 2.531,
+   "files": {
+    "full": "TQVA_full.webp",
+    "thumb": "TQVA_thumb.webp",
+    "devices": "TQVA_devices.webp",
+    "routing": "TQVA_routing.webp",
+    "power": "TQVA_power.webp"
+   }
+  },
+  "TQVB": {
+   "width_px": 774,
+   "height_px": 2049,
+   "width_mm": 1.936,
+   "height_mm": 5.122,
+   "files": {
+    "full": "TQVB_full.webp",
+    "thumb": "TQVB_thumb.webp",
+    "devices": "TQVB_devices.webp",
+    "routing": "TQVB_routing.webp",
+    "power": "TQVB_power.webp"
+   }
+  },
+  "TQVC": {
+   "width_px": 1573,
+   "height_px": 1012,
+   "width_mm": 3.932,
+   "height_mm": 2.531,
+   "files": {
+    "full": "TQVC_full.webp",
+    "thumb": "TQVC_thumb.webp",
+    "devices": "TQVC_devices.webp",
+    "routing": "TQVC_routing.webp",
+    "power": "TQVC_power.webp"
+   }
+  },
+  "TRID": {
+   "width_px": 774,
+   "height_px": 2049,
+   "width_mm": 1.936,
+   "height_mm": 5.122,
+   "files": {
+    "full": "TRID_full.webp",
+    "thumb": "TRID_thumb.webp",
+    "devices": "TRID_devices.webp",
+    "routing": "TRID_routing.webp",
+    "power": "TRID_power.webp"
+   }
+  },
+  "TTP2": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "TTP2_full.webp",
+    "thumb": "TTP2_thumb.webp",
+    "devices": "TTP2_devices.webp",
+    "routing": "TTP2_routing.webp",
+    "power": "TTP2_power.webp"
+   }
+  },
+  "TTPG": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "TTPG_full.webp",
+    "thumb": "TTPG_thumb.webp",
+    "devices": "TTPG_devices.webp",
+    "routing": "TTPG_routing.webp",
+    "power": "TTPG_power.webp"
+   }
+  },
+  "TZ01": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "TZ01_full.webp",
+    "thumb": "TZ01_thumb.webp",
+    "devices": "TZ01_devices.webp",
+    "routing": "TZ01_routing.webp",
+    "power": "TZ01_power.webp"
+   }
+  },
+  "WSLG": {
+   "width_px": 1573,
+   "height_px": 2049,
+   "width_mm": 3.932,
+   "height_mm": 5.122,
+   "files": {
+    "full": "WSLG_full.webp",
+    "thumb": "WSLG_thumb.webp",
+    "devices": "WSLG_devices.webp",
+    "routing": "WSLG_routing.webp",
+    "power": "WSLG_power.webp"
+   }
+  }
+ }
+}

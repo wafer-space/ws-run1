@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>TQVA TinyQV - Crowdsourced Risc-V SoC — GF180MCU Run 1</title>
+  <meta name="description" content="A Risc-V RV32EC SoC with peripherals from the Tiny Tapeout Risc-V competition. This version uses a quarter sized slot.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TQVA TinyQV - Crowdsourced Risc-V SoC — GF180MCU Run 1">
+  <meta property="og:description" content="A Risc-V RV32EC SoC with peripherals from the Tiny Tapeout Risc-V competition. This version uses a quarter sized slot.">
+<meta property="og:image" content="https://wafer.space/ws-run1/renders/reticle.webp">
+  <script>
+    // Same theme preference as the main website, applied before first paint.
+    (function () {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <style>
+    [data-theme="dark"], [data-theme="dark"] body { background-color: #1a1a1a !important; color: #e0e0e0; }
+  </style>
+  <link rel="shortcut icon" href="https://wafer.space/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/plugins.css" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/type/type.css" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
+  <link rel="stylesheet" type="text/css" href="../run.css">
+</head>
+<body>
+  <div class="content-wrapper">
+    <nav class="navbar wide absolute dark-wrapper inverse-text navbar-hover-opacity navbar-expand-lg nav-uppercase">
+      <div class="container-fluid flex-row justify-content-center">
+        <div class="navbar-brand" data-default-logo="white">
+          <a href="https://wafer.space/"><img src="https://wafer.space/assets/images/logo-light.webp"
+            srcset="https://wafer.space/assets/images/logo-light.webp 1x, https://wafer.space/assets/images/logo-light@2x.webp 2x"
+            class="logo-light" alt="wafer.space - Budget silicon manufacturing" /></a>
+          <a href="https://wafer.space/"><img src="https://wafer.space/assets/images/logo.webp"
+            srcset="https://wafer.space/assets/images/logo.webp 1x, https://wafer.space/assets/images/logo@2x.webp 2x"
+            class="logo-dark d-none" alt="wafer.space - Budget silicon manufacturing" /></a>
+        </div>
+        <div class="navbar-other ms-auto order-lg-3">
+          <ul class="navbar-nav flex-row align-items-center" data-sm-skip="true">
+            <li class="nav-item">
+              <div class="navbar-hamburger d-lg-none d-xl-none ms-auto">
+                <button class="hamburger animate plain" data-bs-toggle="offcanvas-nav"><span></span></button>
+              </div>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <button id="runThemeToggle" class="btn btn-sm btn-circle btn-outline-primary theme-toggle me-2"
+                aria-label="Switch between light and dark mode"><i class="icofont-moon"></i></button>
+            </li>
+            <li class="nav-item d-none d-lg-block"><a href="https://wafer.space/free.html" class="btn btn-default">Free Silicon?</a></li>
+          </ul>
+        </div>
+        <div class="navbar-collapse offcanvas-nav">
+          <div class="offcanvas-header d-lg-none d-xl-none">
+            <a href="https://wafer.space/"><img src="https://wafer.space/assets/images/logo-light.webp" alt="wafer.space" /></a>
+            <button class="plain offcanvas-close offcanvas-nav-close"><i class="jam jam-close"></i></button>
+          </div>
+          <ul class="navbar-nav mx-auto" data-sm-skip-collapsible-behavior="true">
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/price.html">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/technology.html">Technology</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/design-help.html">Design Help</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/news">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<div class="wrapper image-wrapper bg-image page-title-wrapper inverse-text"
+     data-image-src="https://wafer.space/assets/images/header/mpw-one-partial-dice-top-1.jpg">
+  <div class="container inner text-center">
+    <div class="space90"></div>
+    <p class="mb-10"><a class="run-crumb" href="../index.html">GF180MCU Run 1</a></p>
+    <h1 class="page-title">TinyQV - Crowdsourced Risc-V SoC</h1>
+    <p class="lead"><span class="run-code-inline">TQVA</span> · RISC-V and CPUs · ½ × ½ slot</p>
+  </div>
+</div>
+
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <div class="row gutter-50">
+      <div class="col-lg-7 mb-30">
+        <div class="run-viewer shadow">
+          <a id="render-link" href="../renders/TQVA_full.webp">
+            <img id="render-image" src="../renders/TQVA_full.webp"
+                 width="774" height="1012" alt="Layout render of TinyQV - Crowdsourced Risc-V SoC">
+          </a>
+        </div>
+        <div class="run-viewer-tabs" role="group" aria-label="Layers to show">
+          <button type="button" class="btn btn-sm btn-default"
+                  data-render="../renders/TQVA_full.webp">All layers</button>
+          <button type="button" class="btn btn-sm btn-outline-primary"
+                  data-render="../renders/TQVA_devices.webp">Transistors</button>
+          <button type="button" class="btn btn-sm btn-outline-primary"
+                  data-render="../renders/TQVA_routing.webp">Signal routing</button>
+          <button type="button" class="btn btn-sm btn-outline-primary"
+                  data-render="../renders/TQVA_power.webp">Power and pads</button>
+        </div>
+        <p class="small text-muted mt-10 mb-0">Rendered from the layout at 2.5 µm
+          per pixel. Layers:
+<span class="run-swatch"><i style="background: #282c46"></i>Nwell</span><span class="run-swatch"><i style="background: #3cbe5a"></i>Diffusion</span><span class="run-swatch"><i style="background: #eb4646"></i>Polysilicon</span><span class="run-swatch"><i style="background: #3c78ff"></i>Metal 1</span><span class="run-swatch"><i style="background: #c850e6"></i>Metal 2</span><span class="run-swatch"><i style="background: #32d2dc"></i>Metal 3</span><span class="run-swatch"><i style="background: #f0c83c"></i>Metal 4</span><span class="run-swatch"><i style="background: #f58c32"></i>Metal 5</span><span class="run-swatch"><i style="background: #e6e6eb"></i>Top metal</span><span class="run-swatch"><i style="background: #ffffff"></i>Pad openings</span>        </p>
+      </div>
+
+      <div class="col-lg-5">
+<p class="lead">A Risc-V RV32EC SoC with peripherals from the Tiny Tapeout Risc-V competition. This version uses a quarter sized slot.</p>        <p>
+          <a class="btn btn-default btn-sm mb-10" href="https://github.com/MichaelBell/ws01-tinyQV">Source repository</a>
+<a class="btn btn-outline-primary btn-sm mb-10" href="#photo">Die photograph</a><a class="btn btn-outline-primary btn-sm mb-10" href="#bonding">Bonding results</a>        </p>
+        <table class="table table-sm run-table">
+          <tbody>
+            <tr><th>Die</th><td>1.94 × 2.53 mm
+              (4.9 mm²)</td></tr>
+            <tr><th>Core area</th><td>2.3 mm² inside the pad ring</td></tr>
+            <tr><th>Placements</th><td>1 on the reticle</td></tr>
+            <tr><th>Bond pads</th><td>57</td></tr>
+            <tr><th>Transistors</th><td>480,963</td></tr>
+            <tr><th>Logic cells</th><td>35,711
+<span class="text-muted">+ 62,585 filler and tap cells</span></td></tr>
+            <tr><th>Libraries</th><td>
+              7t-5V <span class="text-muted">(36k)</span>
+</td></tr>
+            <tr><th>SRAM</th><td>1 macros,
+              4,096 bits</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="mb-10">Logic density</h4>
+        <table class="table table-sm run-table">
+          <tbody>
+            <tr><th>Core average</th><td>16k cells/mm²
+              <span class="text-muted">(21% of buffer maximum)</span></td></tr>
+            <tr><th>Core covered by logic</th><td>36%</td></tr>
+            <tr><th>Transistor density</th><td>212k/mm² average,
+              143k in the densest mm²</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper gray-wrapper">
+  <div class="container inner">
+    <div class="row gutter-50">
+      <div class="col-lg-7 mb-30">
+        <h3 class="mb-10">Where the area went</h3>
+        <div class="run-bar run-bar-large mb-10">
+          <div style="width: 16.50%; background: #5ca7db"
+               title="Logic cells: 0.81 mm²">
+<span>16%</span>          </div>
+          <div style="width: 4.27%; background: #9b6bd6"
+               title="SRAM: 0.21 mm²">
+          </div>
+          <div style="width: 13.98%; background: #b9c7d6"
+               title="Filler and tap cells: 0.69 mm²">
+<span>14%</span>          </div>
+          <div style="width: 11.49%; background: #e6ebf0"
+               title="Other: 0.56 mm²">
+<span>11%</span>          </div>
+          <div style="width: 53.77%; background: #f0b84c"
+               title="Pad ring: 2.64 mm²">
+<span>54%</span>          </div>
+        </div>
+        <ul class="run-legend">
+          <li><i style="background: #5ca7db"></i><strong>Logic cells</strong>
+            0.81 mm² <span class="text-muted">(16%)</span></li>
+          <li><i style="background: #9b6bd6"></i><strong>SRAM</strong>
+            0.21 mm² <span class="text-muted">(4%)</span></li>
+          <li><i style="background: #b9c7d6"></i><strong>Filler and tap cells</strong>
+            0.69 mm² <span class="text-muted">(14%)</span></li>
+          <li><i style="background: #e6ebf0"></i><strong>Other</strong>
+            0.56 mm² <span class="text-muted">(11%)</span></li>
+          <li><i style="background: #f0b84c"></i><strong>Pad ring</strong>
+            2.64 mm² <span class="text-muted">(54%)</span></li>
+        </ul>
+
+        <h3 class="mt-30 mb-10">Most used cells</h3>
+        <table class="table table-sm run-table bg-white">
+          <thead><tr><th>Cell</th><th>Library</th><th class="text-end">Instances</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td class="run-mono">nand2_1</td><td>7t-5V</td>
+              <td class="text-end">8,812</td><td class="text-muted">2-input NAND gate</td></tr>
+            <tr><td class="run-mono">oai21_1</td><td>7t-5V</td>
+              <td class="text-end">3,200</td><td class="text-muted">OR-AND-Invert compound gate</td></tr>
+            <tr><td class="run-mono">clkinv_1</td><td>7t-5V</td>
+              <td class="text-end">3,114</td><td class="text-muted">Clock inverter</td></tr>
+            <tr><td class="run-mono">dffq_1</td><td>7t-5V</td>
+              <td class="text-end">2,987</td><td class="text-muted">D flip-flop (1 bit storage)</td></tr>
+            <tr><td class="run-mono">buf_2</td><td>7t-5V</td>
+              <td class="text-end">2,138</td><td class="text-muted">Buffer (2x drive)</td></tr>
+            <tr><td class="run-mono">nand3_1</td><td>7t-5V</td>
+              <td class="text-end">1,661</td><td class="text-muted">3-input NAND gate</td></tr>
+            <tr><td class="run-mono">nor2_1</td><td>7t-5V</td>
+              <td class="text-end">1,364</td><td class="text-muted">2-input NOR gate</td></tr>
+            <tr><td class="run-mono">aoi21_1</td><td>7t-5V</td>
+              <td class="text-end">1,259</td><td class="text-muted">AND-OR-Invert compound gate</td></tr>
+            <tr><td class="run-mono">latq_1</td><td>7t-5V</td>
+              <td class="text-end">955</td><td class="text-muted">Latch (level-sensitive)</td></tr>
+            <tr><td class="run-mono">buf_1</td><td>7t-5V</td>
+              <td class="text-end">913</td><td class="text-muted">Buffer</td></tr>
+          </tbody>
+        </table>
+
+        <h3 class="mt-30 mb-10">SRAM macros</h3>
+        <table class="table table-sm run-table bg-white">
+          <thead><tr><th>Macro</th><th class="text-end">Count</th><th class="text-end">Bits each</th></tr></thead>
+          <tbody>
+            <tr><td class="run-mono">gf180mcu_fd_ip_sram__sram512x8m8wm1</td><td class="text-end">1</td>
+              <td class="text-end">4,096</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-lg-5 mb-30">
+        <h3 class="mb-10">Logic density map</h3>
+        <svg class="run-heatmap" viewBox="0 0 1.94 2.53" role="img"
+             aria-label="Logic cells per square millimetre across the die">
+          <rect x="0.000" y="1.530" width="1.000" height="1.000" style="fill-opacity: 0.611"><title>6,885 logic cells, 96,321 transistors</title></rect>
+<text x="0.500" y="2.030" class="light">7k</text>          <rect x="1.000" y="1.530" width="0.940" height="1.000" style="fill-opacity: 0.597"><title>6,703 logic cells, 83,051 transistors</title></rect>
+<text x="1.470" y="2.030" class="light">7k</text>          <rect x="0.000" y="0.530" width="1.000" height="1.000" class="sram"><title>SRAM</title></rect>
+          <rect x="1.000" y="0.530" width="0.940" height="1.000" style="fill-opacity: 1.000"><title>11,740 logic cells, 143,071 transistors</title></rect>
+<text x="1.470" y="1.030" class="light">12k</text>          <rect x="0.000" y="0.000" width="1.000" height="0.530" style="fill-opacity: 0.161"><title>1,256 logic cells, 16,483 transistors</title></rect>
+          <rect x="1.000" y="0.000" width="0.940" height="0.530" style="fill-opacity: 0.132"><title>899 logic cells, 15,122 transistors</title></rect>
+        </svg>
+        <p class="small text-muted mb-0">Logic cells in each square millimetre of the die. Hatched squares overlap an
+          SRAM macro and are not counted. Edge squares are smaller than 1 mm².</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="photo" class="wrapper light-wrapper">
+  <div class="container inner">
+    <h2 class="section-title mb-10 text-center">The fabricated die</h2>
+    <p class="lead text-center mb-30">Optical micrograph by InfoSec DJ</p>
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <a class="run-viewer shadow d-inline-block" href="https://data.wafer.space/infosecdj.net/release-1/wafer-space_gf180mcu-ws1-tqva_mz_nikpa40x_th.jpg">
+          <img src="../photos/TQVA.webp" alt="Die photograph of TinyQV - Crowdsourced Risc-V SoC" loading="lazy">
+        </a>
+        <p class="small text-muted mt-10 mb-0">
+          <a href="https://data.wafer.space/infosecdj.net/release-1/wafer-space_gf180mcu-ws1-tqva_mz_nikpa40x_th.jpg">Larger image</a> ·
+          <a href="https://data.wafer.space/infosecdj.net/release-1/wafer-space_gf180mcu-ws1-tqva_mz_nikpa40x.jpg">full resolution (very large file)</a> ·
+          <a href="https://data.wafer.space/infosecdj.net/release-1/">all photographs</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="bonding" class="wrapper gray-wrapper">
+  <div class="container inner">
+    <h2 class="section-title mb-10 text-center">Chip-on-board bonding</h2>
+    <p class="lead text-center mb-30">Wire bonding results for TQVA</p>
+    <div class="run-embed shadow">
+      <iframe src="https://wafer.space/ws-run1-cob/TQVA/" title="Chip-on-board bonding results for TQVA" loading="lazy"></iframe>
+    </div>
+    <p class="small text-muted text-center mt-10 mb-0">Embedded from <a href="https://wafer.space/ws-run1-cob/TQVA/">https://wafer.space/ws-run1-cob/TQVA/</a></p>
+  </div>
+</div>
+
+<div class="wrapper dark-wrapper inverse-text">
+  <div class="container inner run-pager">
+    <a href="RZML.html">← RZML <span>LGN FashionMNIST - Logic Gate Network trained on FashioMNIST</span></a>
+    <a href="../index.html#projects">All projects</a>
+    <a href="TQVB.html"><span>TinyQV - Crowdsourced Risc-V SoC (0.5x1)</span> TQVB →</a>
+  </div>
+</div>
+
+    <footer class="dark-wrapper inverse-text">
+      <div class="container inner">
+        <div class="row">
+          <div class="col-md-12 col-lg-4 text-center text-lg-start">
+            <div class="widget">
+              <a href="https://wafer.space"><img src="https://wafer.space/assets/images/logo-light.webp" alt="wafer.space - Budget silicon manufacturing" /></a>
+              <div class="space20"></div>
+              <p>Budget silicon manufacturing.</p>
+            </div>
+          </div>
+          <div class="space30 d-lg-none d-xl-none"></div>
+          <div class="col-6 col-lg-4">
+            <div class="widget">
+              <h5 class="widget-title">GF180MCU Run 1</h5>
+              <ul class="list-unstyled mb-0">
+                <li><a href="../index.html">Run overview</a></li>
+                <li><a href="https://github.com/wafer-space/ws-run1">Layout and manifest on GitHub</a></li>
+                <li><a href="https://github.com/wafer-space/ws-run1/blob/density-report/reticle_density_report.md">Density report</a></li>
+<li><a href="https://www.crowdsupply.com/wafer-space/gf180mcu-run-1">Campaign page</a></li>              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="widget">
+              <h5 class="widget-title">About this page</h5>
+              <p class="small mb-0">Generated on 2026-10-05 by
+                <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a> from the public reticle
+                layout. Every figure is measured from the layout; the data files are linked from the overview.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://wafer.space/assets/js/jquery.min.js"></script>
+  <script src="https://wafer.space/assets/js/popper.min.js"></script>
+  <script src="https://wafer.space/assets/js/bootstrap.min.js"></script>
+  <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+  <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+  <script src="https://wafer.space/assets/js/plugins.js"></script>
+  <script src="https://wafer.space/assets/js/scripts.js"></script>
+  <script src="../run.js"></script>
+</body>
+</html>

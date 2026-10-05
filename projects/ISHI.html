@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>ISHI ISHI-KAI&#39;s Multiple Users Project — GF180MCU Run 1</title>
+  <meta name="description" content="We, ISHI-KAI, are a community that promotes open source PDK &amp; EDA. This time, we brought together 14 novice semiconductor designers (most of whom were new to semiconductor design), each of whom created an analog circuit, such as an Inverter or OPAMP, ADC, PLL, BGR, CS, made using xschem &amp; klayout with P-Cells . All schematics and layouts are released under an open source license. In addition, pads for probing were added to all circuits, taking into account that only bare dies are received. Since ISHI-KAI has university professors and semiconductor companies as collaborators, we are able to borrow probers through the generosity of professors and companies.Therefore, we plan to run analog circuits by probing.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ISHI ISHI-KAI&#39;s Multiple Users Project — GF180MCU Run 1">
+  <meta property="og:description" content="We, ISHI-KAI, are a community that promotes open source PDK &amp; EDA. This time, we brought together 14 novice semiconductor designers (most of whom were new to semiconductor design), each of whom created an analog circuit, such as an Inverter or OPAMP, ADC, PLL, BGR, CS, made using xschem &amp; klayout with P-Cells . All schematics and layouts are released under an open source license. In addition, pads for probing were added to all circuits, taking into account that only bare dies are received. Since ISHI-KAI has university professors and semiconductor companies as collaborators, we are able to borrow probers through the generosity of professors and companies.Therefore, we plan to run analog circuits by probing.">
+<meta property="og:image" content="https://wafer.space/ws-run1/renders/reticle.webp">
+  <script>
+    // Same theme preference as the main website, applied before first paint.
+    (function () {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <style>
+    [data-theme="dark"], [data-theme="dark"] body { background-color: #1a1a1a !important; color: #e0e0e0; }
+  </style>
+  <link rel="shortcut icon" href="https://wafer.space/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/plugins.css" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/type/type.css" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
+  <link rel="stylesheet" type="text/css" href="../run.css">
+</head>
+<body>
+  <div class="content-wrapper">
+    <nav class="navbar wide absolute dark-wrapper inverse-text navbar-hover-opacity navbar-expand-lg nav-uppercase">
+      <div class="container-fluid flex-row justify-content-center">
+        <div class="navbar-brand" data-default-logo="white">
+          <a href="https://wafer.space/"><img src="https://wafer.space/assets/images/logo-light.webp"
+            srcset="https://wafer.space/assets/images/logo-light.webp 1x, https://wafer.space/assets/images/logo-light@2x.webp 2x"
+            class="logo-light" alt="wafer.space - Budget silicon manufacturing" /></a>
+          <a href="https://wafer.space/"><img src="https://wafer.space/assets/images/logo.webp"
+            srcset="https://wafer.space/assets/images/logo.webp 1x, https://wafer.space/assets/images/logo@2x.webp 2x"
+            class="logo-dark d-none" alt="wafer.space - Budget silicon manufacturing" /></a>
+        </div>
+        <div class="navbar-other ms-auto order-lg-3">
+          <ul class="navbar-nav flex-row align-items-center" data-sm-skip="true">
+            <li class="nav-item">
+              <div class="navbar-hamburger d-lg-none d-xl-none ms-auto">
+                <button class="hamburger animate plain" data-bs-toggle="offcanvas-nav"><span></span></button>
+              </div>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <button id="runThemeToggle" class="btn btn-sm btn-circle btn-outline-primary theme-toggle me-2"
+                aria-label="Switch between light and dark mode"><i class="icofont-moon"></i></button>
+            </li>
+            <li class="nav-item d-none d-lg-block"><a href="https://wafer.space/free.html" class="btn btn-default">Free Silicon?</a></li>
+          </ul>
+        </div>
+        <div class="navbar-collapse offcanvas-nav">
+          <div class="offcanvas-header d-lg-none d-xl-none">
+            <a href="https://wafer.space/"><img src="https://wafer.space/assets/images/logo-light.webp" alt="wafer.space" /></a>
+            <button class="plain offcanvas-close offcanvas-nav-close"><i class="jam jam-close"></i></button>
+          </div>
+          <ul class="navbar-nav mx-auto" data-sm-skip-collapsible-behavior="true">
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/price.html">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/technology.html">Technology</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/design-help.html">Design Help</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/news">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<div class="wrapper image-wrapper bg-image page-title-wrapper inverse-text"
+     data-image-src="https://wafer.space/assets/images/header/mpw-one-partial-dice-top-1.jpg">
+  <div class="container inner text-center">
+    <div class="space90"></div>
+    <p class="mb-10"><a class="run-crumb" href="../index.html">GF180MCU Run 1</a></p>
+    <h1 class="page-title">ISHI-KAI&#39;s Multiple Users Project</h1>
+    <p class="lead"><span class="run-code-inline">ISHI</span> · Multi-project die · 1 × 1 slot</p>
+  </div>
+</div>
+
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <div class="row gutter-50">
+      <div class="col-lg-7 mb-30">
+        <div class="run-viewer shadow">
+          <a id="render-link" href="../renders/ISHI_full.webp">
+            <img id="render-image" src="../renders/ISHI_full.webp"
+                 width="1573" height="2049" alt="Layout render of ISHI-KAI&#39;s Multiple Users Project">
+          </a>
+        </div>
+        <div class="run-viewer-tabs" role="group" aria-label="Layers to show">
+          <button type="button" class="btn btn-sm btn-default"
+                  data-render="../renders/ISHI_full.webp">All layers</button>
+          <button type="button" class="btn btn-sm btn-outline-primary"
+                  data-render="../renders/ISHI_devices.webp">Transistors</button>
+          <button type="button" class="btn btn-sm btn-outline-primary"
+                  data-render="../renders/ISHI_routing.webp">Signal routing</button>
+          <button type="button" class="btn btn-sm btn-outline-primary"
+                  data-render="../renders/ISHI_power.webp">Power and pads</button>
+        </div>
+        <p class="small text-muted mt-10 mb-0">Rendered from the layout at 2.5 µm
+          per pixel. Layers:
+<span class="run-swatch"><i style="background: #282c46"></i>Nwell</span><span class="run-swatch"><i style="background: #3cbe5a"></i>Diffusion</span><span class="run-swatch"><i style="background: #eb4646"></i>Polysilicon</span><span class="run-swatch"><i style="background: #3c78ff"></i>Metal 1</span><span class="run-swatch"><i style="background: #c850e6"></i>Metal 2</span><span class="run-swatch"><i style="background: #32d2dc"></i>Metal 3</span><span class="run-swatch"><i style="background: #f0c83c"></i>Metal 4</span><span class="run-swatch"><i style="background: #f58c32"></i>Metal 5</span><span class="run-swatch"><i style="background: #e6e6eb"></i>Top metal</span><span class="run-swatch"><i style="background: #ffffff"></i>Pad openings</span>        </p>
+      </div>
+
+      <div class="col-lg-5">
+<p class="lead">We, ISHI-KAI, are a community that promotes open source PDK &amp; EDA. This time, we brought together 14 novice semiconductor designers (most of whom were new to semiconductor design), each of whom created an analog circuit, such as an Inverter or OPAMP, ADC, PLL, BGR, CS, made using xschem &amp; klayout with P-Cells . All schematics and layouts are released under an open source license. In addition, pads for probing were added to all circuits, taking into account that only bare dies are received. Since ISHI-KAI has university professors and semiconductor companies as collaborators, we are able to borrow probers through the generosity of professors and companies.Therefore, we plan to run analog circuits by probing.</p>        <p>
+          <a class="btn btn-default btn-sm mb-10" href="https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_WaferSapce-GF180-1">Source repository</a>
+<a class="btn btn-outline-primary btn-sm mb-10" href="#photo">Die photograph</a><a class="btn btn-outline-primary btn-sm mb-10" href="#bonding">Bonding results</a>        </p>
+        <table class="table table-sm run-table">
+          <tbody>
+            <tr><th>Die</th><td>3.93 × 5.12 mm
+              (20.1 mm²)</td></tr>
+            <tr><th>Core area</th><td>14.3 mm² inside the pad ring</td></tr>
+            <tr><th>Placements</th><td>1 on the reticle</td></tr>
+            <tr><th>Bond pads</th><td>196</td></tr>
+            <tr><th>Transistors</th><td>227,230</td></tr>
+            <tr><th>Logic cells</th><td>0
+<span class="text-muted">+ 63 filler and tap cells</span></td></tr>
+            <tr><th>SRAM</th><td>0 macros</td></tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper gray-wrapper">
+  <div class="container inner">
+    <div class="row gutter-50">
+      <div class="col-lg-7 mb-30">
+        <h3 class="mb-10">Where the area went</h3>
+        <div class="run-bar run-bar-large mb-10">
+          <div style="width: 70.95%; background: #e6ebf0"
+               title="Other: 14.28 mm²">
+<span>71%</span>          </div>
+          <div style="width: 29.05%; background: #f0b84c"
+               title="Pad ring: 5.84 mm²">
+<span>29%</span>          </div>
+        </div>
+        <ul class="run-legend">
+          <li><i style="background: #5ca7db"></i><strong>Logic cells</strong>
+            0.00 mm² <span class="text-muted">(0%)</span></li>
+          <li><i style="background: #9b6bd6"></i><strong>SRAM</strong>
+            0.00 mm² <span class="text-muted">(0%)</span></li>
+          <li><i style="background: #b9c7d6"></i><strong>Filler and tap cells</strong>
+            0.00 mm² <span class="text-muted">(&lt;1%)</span></li>
+          <li><i style="background: #e6ebf0"></i><strong>Other</strong>
+            14.28 mm² <span class="text-muted">(71%)</span></li>
+          <li><i style="background: #f0b84c"></i><strong>Pad ring</strong>
+            5.84 mm² <span class="text-muted">(29%)</span></li>
+        </ul>
+
+
+      </div>
+
+      <div class="col-lg-5 mb-30">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="photo" class="wrapper light-wrapper">
+  <div class="container inner">
+    <h2 class="section-title mb-10 text-center">The fabricated die</h2>
+    <p class="lead text-center mb-30">Optical micrograph by InfoSec DJ</p>
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <a class="run-viewer shadow d-inline-block" href="https://data.wafer.space/infosecdj.net/release-1/wafer-space_gf180mcu-ws1-ishi_mz_nikpa40x_th.jpg">
+          <img src="../photos/ISHI.webp" alt="Die photograph of ISHI-KAI&#39;s Multiple Users Project" loading="lazy">
+        </a>
+        <p class="small text-muted mt-10 mb-0">
+          <a href="https://data.wafer.space/infosecdj.net/release-1/wafer-space_gf180mcu-ws1-ishi_mz_nikpa40x_th.jpg">Larger image</a> ·
+          <a href="https://data.wafer.space/infosecdj.net/release-1/wafer-space_gf180mcu-ws1-ishi_mz_nikpa40x_66p.jpg">full resolution (very large file)</a> ·
+          <a href="https://data.wafer.space/infosecdj.net/release-1/">all photographs</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="bonding" class="wrapper gray-wrapper">
+  <div class="container inner">
+    <h2 class="section-title mb-10 text-center">Chip-on-board bonding</h2>
+    <p class="lead text-center mb-30">Wire bonding results for ISHI</p>
+    <div class="run-embed shadow">
+      <iframe src="https://wafer.space/ws-run1-cob/ISHI/" title="Chip-on-board bonding results for ISHI" loading="lazy"></iframe>
+    </div>
+    <p class="small text-muted text-center mt-10 mb-0">Embedded from <a href="https://wafer.space/ws-run1-cob/ISHI/">https://wafer.space/ws-run1-cob/ISHI/</a></p>
+  </div>
+</div>
+
+<div class="wrapper dark-wrapper inverse-text">
+  <div class="container inner run-pager">
+    <a href="HZ80.html">← HZ80 <span>FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 1 slot)</span></a>
+    <a href="../index.html#projects">All projects</a>
+    <a href="JKU1.html"><span>gf180mcu-jku-projects</span> JKU1 →</a>
+  </div>
+</div>
+
+    <footer class="dark-wrapper inverse-text">
+      <div class="container inner">
+        <div class="row">
+          <div class="col-md-12 col-lg-4 text-center text-lg-start">
+            <div class="widget">
+              <a href="https://wafer.space"><img src="https://wafer.space/assets/images/logo-light.webp" alt="wafer.space - Budget silicon manufacturing" /></a>
+              <div class="space20"></div>
+              <p>Budget silicon manufacturing.</p>
+            </div>
+          </div>
+          <div class="space30 d-lg-none d-xl-none"></div>
+          <div class="col-6 col-lg-4">
+            <div class="widget">
+              <h5 class="widget-title">GF180MCU Run 1</h5>
+              <ul class="list-unstyled mb-0">
+                <li><a href="../index.html">Run overview</a></li>
+                <li><a href="https://github.com/wafer-space/ws-run1">Layout and manifest on GitHub</a></li>
+                <li><a href="https://github.com/wafer-space/ws-run1/blob/density-report/reticle_density_report.md">Density report</a></li>
+<li><a href="https://www.crowdsupply.com/wafer-space/gf180mcu-run-1">Campaign page</a></li>              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="widget">
+              <h5 class="widget-title">About this page</h5>
+              <p class="small mb-0">Generated on 2026-10-05 by
+                <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a> from the public reticle
+                layout. Every figure is measured from the layout; the data files are linked from the overview.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://wafer.space/assets/js/jquery.min.js"></script>
+  <script src="https://wafer.space/assets/js/popper.min.js"></script>
+  <script src="https://wafer.space/assets/js/bootstrap.min.js"></script>
+  <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+  <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+  <script src="https://wafer.space/assets/js/plugins.js"></script>
+  <script src="https://wafer.space/assets/js/scripts.js"></script>
+  <script src="../run.js"></script>
+</body>
+</html>
