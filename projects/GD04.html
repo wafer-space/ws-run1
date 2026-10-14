@@ -3,11 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <title>GD04 Racquet Wide 1x0.5 — GF180MCU Run 1</title>
-  <meta name="description" content="A Configuration of racquet, a multicore Serv based SoC - 9t 5v0 standard cells - Difetto to incorporate DFT scan chain into design - 6 cores">
+  <meta name="description" content="A Configuration of racquet, a multicore Serv based SoC
+ - 9t 5v0 standard cells
+ - Difetto to incorporate DFT scan chain into design
+ - 6 cores">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="og:type" content="website">
   <meta property="og:title" content="GD04 Racquet Wide 1x0.5 — GF180MCU Run 1">
-  <meta property="og:description" content="A Configuration of racquet, a multicore Serv based SoC - 9t 5v0 standard cells - Difetto to incorporate DFT scan chain into design - 6 cores">
+  <meta property="og:description" content="A Configuration of racquet, a multicore Serv based SoC
+ - 9t 5v0 standard cells
+ - Difetto to incorporate DFT scan chain into design
+ - 6 cores">
 <meta property="og:image" content="https://wafer.space/ws-run1/renders/reticle.webp">
   <script>
     // Same theme preference as the main website, applied before first paint.
@@ -112,7 +118,8 @@
       </div>
 
       <div class="col-lg-5">
-<p class="lead">A Configuration of racquet, a multicore Serv based SoC - 9t 5v0 standard cells - Difetto to incorporate DFT scan chain into design - 6 cores</p>        <p>
+        <div class="run-description"><p class="lead">A Configuration of racquet, a multicore Serv based SoC</p><p> - 9t 5v0 standard cells</p><p> - Difetto to incorporate DFT scan chain into design</p><p> - 6 cores</p></div>
+        <p>
           <a class="btn btn-default btn-sm mb-10" href="https://github.com/gregdavill/gf180mcu-racquet-1x0.5">Source repository</a>
 <a class="btn btn-outline-primary btn-sm mb-10" href="#photo">Die photograph</a><a class="btn btn-outline-primary btn-sm mb-10" href="#bonding">Bonding results</a>        </p>
         <table class="table table-sm run-table">
@@ -133,14 +140,40 @@
           </tbody>
         </table>
 
+        <h4 class="mb-10">Submission</h4>
+        <table class="table table-sm run-table">
+          <tbody>
+            <tr><th>Licence</th><td>BSD-3-Clause <span class="text-muted">declared</span>
+<br><span class="run-warn">Repository: Apache-2.0 — differs from the declared licence</span>
+<br><span class="small text-muted">Repository checked at <span class="run-mono">a64a899dabd2</span></span></td></tr>
+            <tr><th>Chip-on-board</th><td>Not selected at submission
+· <a href="#bonding">bonding results</a></td></tr>
+            <tr><th>Precheck</th><td>Passed
+              <span class="text-muted">on 2026-07-30,
+                gf180mcu-precheck 1.7.3</span>
+</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="mb-10">Process features</h4>
+        <table class="table table-sm run-table">
+          <tbody>
+            <tr><th>5 V</th><td>9t-5V standard cells, fd SRAM</td></tr>
+            <tr><th>I/O library</th><td><span class="run-mono">gf180mcu_fd_io</span> <span class="text-muted">(742 cells)</span>, <span class="run-mono">gf180mcu_ws_io</span> <span class="text-muted">(16 cells)</span></td></tr>
+          </tbody>
+        </table>
+        <p class="small text-muted">Devices the designer drew, outside standard cells, SRAM macros and pads.</p>
+
         <h4 class="mb-10">Logic density</h4>
         <table class="table table-sm run-table">
           <tbody>
             <tr><th>Core average</th><td>6k cells/mm²
               <span class="text-muted">(10% of buffer maximum)</span></td></tr>
+            <tr><th>Densest mm²</th><td>18k cells
+              <span class="text-muted">(31% of buffer maximum)</span></td></tr>
             <tr><th>Core covered by logic</th><td>24%</td></tr>
             <tr><th>Transistor density</th><td>170k/mm² average,
-              24k in the densest mm²</td></tr>
+              234k in the densest mm²</td></tr>
           </tbody>
         </table>
       </div>
@@ -224,21 +257,37 @@
         <h3 class="mb-10">Logic density map</h3>
         <svg class="run-heatmap" viewBox="0 0 3.93 2.53" role="img"
              aria-label="Logic cells per square millimetre across the die">
-          <rect x="0.000" y="1.530" width="1.000" height="1.000" class="sram"><title>SRAM</title></rect>
-          <rect x="1.000" y="1.530" width="1.000" height="1.000" class="sram"><title>SRAM</title></rect>
-          <rect x="2.000" y="1.530" width="1.000" height="1.000" class="sram"><title>SRAM</title></rect>
-          <rect x="3.000" y="1.530" width="0.930" height="1.000" class="sram"><title>SRAM</title></rect>
-          <rect x="0.000" y="0.530" width="1.000" height="1.000" class="sram"><title>SRAM</title></rect>
-          <rect x="1.000" y="0.530" width="1.000" height="1.000" class="sram"><title>SRAM</title></rect>
-          <rect x="2.000" y="0.530" width="1.000" height="1.000" class="sram"><title>SRAM</title></rect>
-          <rect x="3.000" y="0.530" width="0.930" height="1.000" class="sram"><title>SRAM</title></rect>
-          <rect x="0.000" y="0.000" width="1.000" height="0.530" style="fill-opacity: 0.085"><title>31 logic cells, 11,618 transistors</title></rect>
-          <rect x="1.000" y="0.000" width="1.000" height="0.530" style="fill-opacity: 1.000"><title>1,151 logic cells, 23,991 transistors</title></rect>
-          <rect x="2.000" y="0.000" width="1.000" height="0.530" style="fill-opacity: 0.088"><title>34 logic cells, 19,142 transistors</title></rect>
-          <rect x="3.000" y="0.000" width="0.930" height="0.530" style="fill-opacity: 0.079"><title>23 logic cells, 10,308 transistors</title></rect>
+          <rect x="0.000" y="1.530" width="1.000" height="1.000" style="fill-opacity: 0.063"><title>47 logic cells, 52,839 transistors, 17% SRAM</title></rect>
+          <rect x="1.000" y="1.530" width="1.000" height="1.000" style="fill-opacity: 0.370"><title>4,222 logic cells, 115,221 transistors, 4% SRAM</title></rect>
+          <rect x="2.000" y="1.530" width="1.000" height="1.000" style="fill-opacity: 0.409"><title>4,750 logic cells, 120,035 transistors, 4% SRAM</title></rect>
+          <rect x="3.000" y="1.530" width="0.932" height="1.000" style="fill-opacity: 0.072"><title>156 logic cells, 46,647 transistors, 18% SRAM</title></rect>
+          <rect x="0.000" y="0.530" width="1.000" height="1.000" style="fill-opacity: 0.066"><title>85 logic cells, 87,977 transistors, 34% SRAM</title></rect>
+          <rect x="1.000" y="0.530" width="1.000" height="1.000" style="fill-opacity: 1.000"><title>12,811 logic cells, 220,686 transistors, 7% SRAM</title></rect>
+          <rect x="2.000" y="0.530" width="1.000" height="1.000" style="fill-opacity: 0.934"><title>11,916 logic cells, 218,752 transistors, 9% SRAM</title></rect>
+          <rect x="3.000" y="0.530" width="0.932" height="1.000" style="fill-opacity: 0.084"><title>299 logic cells, 76,444 transistors, 36% SRAM</title></rect>
+          <rect x="0.000" y="-0.001" width="1.000" height="0.531" style="fill-opacity: 0.064"><title>31 logic cells, 11,535 transistors, &lt;1% SRAM</title></rect>
+          <rect x="1.000" y="-0.001" width="1.000" height="0.531" style="fill-opacity: 0.219"><title>1,151 logic cells, 23,492 transistors</title></rect>
+          <rect x="2.000" y="-0.001" width="1.000" height="0.531" style="fill-opacity: 0.065"><title>34 logic cells, 18,729 transistors</title></rect>
+          <rect x="3.000" y="-0.001" width="0.932" height="0.531" style="fill-opacity: 0.063"><title>23 logic cells, 10,248 transistors, &lt;1% SRAM</title></rect>
+          <rect class="sram-macro" x="2.900" y="1.049" width="0.485" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="sram-macro" x="0.600" y="1.049" width="0.485" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="sram-macro" x="2.900" y="0.529" width="0.485" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="sram-macro" x="0.600" y="0.529" width="0.485" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="sram-macro" x="0.600" y="1.569" width="0.485" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="sram-macro" x="2.900" y="1.569" width="0.485" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="window" x="1.500" y="0.830" width="1" height="1"><title>Densest SRAM-free mm²: 18,167 logic cells</title></rect>
+          <text x="0.500" y="2.030" class="">&lt;1k</text>
+          <text x="1.500" y="2.030" class="">4k</text>
+          <text x="2.500" y="2.030" class="">5k</text>
+          <text x="3.466" y="2.030" class="">&lt;1k</text>
+          <text x="0.500" y="1.030" class="">&lt;1k</text>
+          <text x="1.500" y="1.030" class="light">13k</text>
+          <text x="2.500" y="1.030" class="light">12k</text>
+          <text x="3.466" y="1.030" class="">&lt;1k</text>
         </svg>
-        <p class="small text-muted mb-0">Logic cells in each square millimetre of the die. Hatched squares overlap an
-          SRAM macro and are not counted. Edge squares are smaller than 1 mm².</p>
+        <p class="small text-muted mb-0">Logic cells in each square millimetre of the die. Hatched outlines are SRAM
+          macros; the bold outline is the densest 1 mm² that avoids them, found by sliding a
+          1 mm square over the die in 0.1 mm steps. Edge squares are smaller than 1 mm².</p>
       </div>
     </div>
   </div>
@@ -307,7 +356,7 @@
           <div class="col-6 col-lg-4">
             <div class="widget">
               <h5 class="widget-title">About this page</h5>
-              <p class="small mb-0">Generated on 2026-10-06 by
+              <p class="small mb-0">Generated on 2026-10-15 by
                 <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a> from the public reticle
                 layout. Every figure is measured from the layout; the data files are linked from the overview.</p>
             </div>

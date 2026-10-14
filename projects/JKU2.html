@@ -3,11 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <title>JKU2 gf180mcu-jku-atbs-adc — GF180MCU Run 1</title>
-  <meta name="description" content="This wafer.space tapeout includes the digital core of an ATBS ADC from the IICQC at JKU.">
+  <meta name="description" content="This wafer.space tapeout includes the digital core of an ATBS ADC from the IICQC at JKU.
+GitHub Link: https://github.com/iic-jku/gf180mcu-jku-atbs-adc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="og:type" content="website">
   <meta property="og:title" content="JKU2 gf180mcu-jku-atbs-adc — GF180MCU Run 1">
-  <meta property="og:description" content="This wafer.space tapeout includes the digital core of an ATBS ADC from the IICQC at JKU.">
+  <meta property="og:description" content="This wafer.space tapeout includes the digital core of an ATBS ADC from the IICQC at JKU.
+GitHub Link: https://github.com/iic-jku/gf180mcu-jku-atbs-adc">
 <meta property="og:image" content="https://wafer.space/ws-run1/renders/reticle.webp">
   <script>
     // Same theme preference as the main website, applied before first paint.
@@ -112,7 +114,8 @@
       </div>
 
       <div class="col-lg-5">
-<p class="lead">This wafer.space tapeout includes the digital core of an ATBS ADC from the IICQC at JKU.</p>        <p>
+        <div class="run-description"><p class="lead">This wafer.space tapeout includes the digital core of an ATBS ADC from the IICQC at JKU.</p><p>GitHub Link: https://github.com/iic-jku/gf180mcu-jku-atbs-adc</p></div>
+        <p>
           <a class="btn btn-default btn-sm mb-10" href="https://github.com/iic-jku/gf180mcu-jku-atbs-adc">Source repository</a>
 <a class="btn btn-outline-primary btn-sm mb-10" href="#photo">Die photograph</a><a class="btn btn-outline-primary btn-sm mb-10" href="#bonding">Bonding results</a>        </p>
         <table class="table table-sm run-table">
@@ -133,16 +136,39 @@
           </tbody>
         </table>
 
+        <h4 class="mb-10">Submission</h4>
+        <table class="table table-sm run-table">
+          <tbody>
+            <tr><th>Licence</th><td>Apache-2.0 <span class="text-muted">declared</span>
+<br><span class="run-warn">Repository: SHL-2.1 — differs from the declared licence</span>
+<br><span class="small text-muted">Repository checked at <span class="run-mono">2fae3a6c0ffd</span></span></td></tr>
+            <tr><th>Chip-on-board</th><td>Not selected at submission
+· <a href="#bonding">bonding results</a></td></tr>
+            <tr><th>Precheck</th><td>Passed
+              <span class="text-muted">on 2025-12-17</span>
+</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="mb-10">Process features</h4>
+        <table class="table table-sm run-table">
+          <tbody>
+            <tr><th>5 V</th><td>9t-5V standard cells, 7t-5V standard cells</td></tr>
+            <tr><th>I/O library</th><td><span class="run-mono">gf180mcu_fd_io</span> <span class="text-muted">(733 cells)</span>, <span class="run-mono">gf180mcu_ws_io</span> <span class="text-muted">(25 cells)</span></td></tr>
+          </tbody>
+        </table>
+        <p class="small text-muted">Devices the designer drew, outside standard cells, SRAM macros and pads.</p>
+
         <h4 class="mb-10">Logic density</h4>
         <table class="table table-sm run-table">
           <tbody>
             <tr><th>Core average</th><td>4k cells/mm²
               <span class="text-muted">(6% of buffer maximum)</span></td></tr>
-            <tr><th>Densest mm²</th><td>7k cells
-              <span class="text-muted">(12% of buffer maximum)</span></td></tr>
+            <tr><th>Densest mm²</th><td>9k cells
+              <span class="text-muted">(15% of buffer maximum)</span></td></tr>
             <tr><th>Core covered by logic</th><td>16%</td></tr>
             <tr><th>Transistor density</th><td>169k/mm² average,
-              196k in the densest mm²</td></tr>
+              207k in the densest mm²</td></tr>
           </tbody>
         </table>
       </div>
@@ -215,21 +241,31 @@
         <h3 class="mb-10">Logic density map</h3>
         <svg class="run-heatmap" viewBox="0 0 3.93 2.53" role="img"
              aria-label="Logic cells per square millimetre across the die">
-          <rect x="0.000" y="1.530" width="1.000" height="1.000" style="fill-opacity: 0.177"><title>871 logic cells, 67,289 transistors</title></rect>
-<text x="0.500" y="2.030" class="">1k</text>          <rect x="1.000" y="1.530" width="1.000" height="1.000" style="fill-opacity: 0.394"><title>2,489 logic cells, 109,553 transistors</title></rect>
-<text x="1.500" y="2.030" class="">2k</text>          <rect x="2.000" y="1.530" width="1.000" height="1.000" style="fill-opacity: 0.341"><title>2,093 logic cells, 110,168 transistors</title></rect>
-<text x="2.500" y="2.030" class="">2k</text>          <rect x="3.000" y="1.530" width="0.930" height="1.000" style="fill-opacity: 0.139"><title>588 logic cells, 58,089 transistors</title></rect>
-<text x="3.465" y="2.030" class="">1k</text>          <rect x="0.000" y="0.530" width="1.000" height="1.000" style="fill-opacity: 0.340"><title>2,088 logic cells, 109,067 transistors</title></rect>
-<text x="0.500" y="1.030" class="">2k</text>          <rect x="1.000" y="0.530" width="1.000" height="1.000" style="fill-opacity: 1.000"><title>6,999 logic cells, 193,931 transistors</title></rect>
-<text x="1.500" y="1.030" class="light">7k</text>          <rect x="2.000" y="0.530" width="1.000" height="1.000" style="fill-opacity: 0.837"><title>5,784 logic cells, 195,861 transistors</title></rect>
-<text x="2.500" y="1.030" class="light">6k</text>          <rect x="3.000" y="0.530" width="0.930" height="1.000" style="fill-opacity: 0.270"><title>1,564 logic cells, 98,062 transistors</title></rect>
-<text x="3.465" y="1.030" class="">2k</text>          <rect x="0.000" y="0.000" width="1.000" height="0.530" style="fill-opacity: 0.060"><title>0 logic cells, 14,535 transistors</title></rect>
-          <rect x="1.000" y="0.000" width="1.000" height="0.530" style="fill-opacity: 0.060"><title>0 logic cells, 17,690 transistors</title></rect>
-          <rect x="2.000" y="0.000" width="1.000" height="0.530" style="fill-opacity: 0.060"><title>0 logic cells, 18,256 transistors</title></rect>
-          <rect x="3.000" y="0.000" width="0.930" height="0.530" style="fill-opacity: 0.060"><title>0 logic cells, 13,000 transistors</title></rect>
+          <rect x="0.000" y="1.530" width="1.000" height="1.000" style="fill-opacity: 0.177"><title>871 logic cells, 66,995 transistors</title></rect>
+          <rect x="1.000" y="1.530" width="1.000" height="1.000" style="fill-opacity: 0.394"><title>2,489 logic cells, 108,950 transistors</title></rect>
+          <rect x="2.000" y="1.530" width="1.000" height="1.000" style="fill-opacity: 0.341"><title>2,093 logic cells, 109,633 transistors</title></rect>
+          <rect x="3.000" y="1.530" width="0.932" height="1.000" style="fill-opacity: 0.145"><title>588 logic cells, 57,795 transistors</title></rect>
+          <rect x="0.000" y="0.530" width="1.000" height="1.000" style="fill-opacity: 0.340"><title>2,088 logic cells, 108,648 transistors</title></rect>
+          <rect x="1.000" y="0.530" width="1.000" height="1.000" style="fill-opacity: 1.000"><title>6,999 logic cells, 193,497 transistors</title></rect>
+          <rect x="2.000" y="0.530" width="1.000" height="1.000" style="fill-opacity: 0.837"><title>5,784 logic cells, 195,395 transistors</title></rect>
+          <rect x="3.000" y="0.530" width="0.932" height="1.000" style="fill-opacity: 0.285"><title>1,564 logic cells, 97,660 transistors</title></rect>
+          <rect x="0.000" y="-0.001" width="1.000" height="0.531" style="fill-opacity: 0.060"><title>0 logic cells, 14,509 transistors</title></rect>
+          <rect x="1.000" y="-0.001" width="1.000" height="0.531" style="fill-opacity: 0.060"><title>0 logic cells, 17,599 transistors</title></rect>
+          <rect x="2.000" y="-0.001" width="1.000" height="0.531" style="fill-opacity: 0.060"><title>0 logic cells, 18,243 transistors</title></rect>
+          <rect x="3.000" y="-0.001" width="0.932" height="0.531" style="fill-opacity: 0.060"><title>0 logic cells, 12,973 transistors</title></rect>
+          <rect class="window" x="0.800" y="0.730" width="1" height="1"><title>Densest SRAM-free mm²: 8,798 logic cells</title></rect>
+          <text x="0.500" y="2.030" class="">1k</text>
+          <text x="1.500" y="2.030" class="">2k</text>
+          <text x="2.500" y="2.030" class="">2k</text>
+          <text x="3.466" y="2.030" class="">1k</text>
+          <text x="0.500" y="1.030" class="">2k</text>
+          <text x="1.500" y="1.030" class="light">7k</text>
+          <text x="2.500" y="1.030" class="light">6k</text>
+          <text x="3.466" y="1.030" class="">2k</text>
         </svg>
-        <p class="small text-muted mb-0">Logic cells in each square millimetre of the die. Hatched squares overlap an
-          SRAM macro and are not counted. Edge squares are smaller than 1 mm².</p>
+        <p class="small text-muted mb-0">Logic cells in each square millimetre of the die. Hatched outlines are SRAM
+          macros; the bold outline is the densest 1 mm² that avoids them, found by sliding a
+          1 mm square over the die in 0.1 mm steps. Edge squares are smaller than 1 mm².</p>
       </div>
     </div>
   </div>
@@ -298,7 +334,7 @@
           <div class="col-6 col-lg-4">
             <div class="widget">
               <h5 class="widget-title">About this page</h5>
-              <p class="small mb-0">Generated on 2026-10-06 by
+              <p class="small mb-0">Generated on 2026-10-15 by
                 <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a> from the public reticle
                 layout. Every figure is measured from the layout; the data files are linked from the overview.</p>
             </div>

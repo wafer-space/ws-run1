@@ -105,7 +105,9 @@
 .run-heatmap { width: 100%; max-height: 520px; background: var(--run-surface); border-radius: 6px; }
 .run-heatmap rect { fill: var(--run-accent); stroke: var(--run-surface); stroke-width: 0.03; }
 .run-heatmap rect.sram { fill: var(--run-track); fill-opacity: 1; stroke-dasharray: 0.08 0.06; stroke: var(--run-muted); }
-.run-heatmap text { font-size: 0.22px; text-anchor: middle; dominant-baseline: central; fill: var(--run-ink); font-variant-numeric: tabular-nums; pointer-events: none; }
+.run-heatmap rect.sram-macro { fill: none; stroke: var(--run-ink); stroke-width: 0.025; stroke-dasharray: 0.06 0.04; }
+.run-heatmap rect.window { fill: none; stroke: #e2626b; stroke-width: 0.04; stroke-opacity: 0.9; }
+.run-heatmap text { paint-order: stroke; font-size: 0.22px; text-anchor: middle; dominant-baseline: central; fill: var(--run-ink); font-variant-numeric: tabular-nums; pointer-events: none; }
 .run-heatmap text.light { fill: #fff; }
 
 /* Small pieces */
@@ -128,3 +130,7 @@
 @media (prefers-reduced-motion: reduce) {
   .run-card, .run-photo img, .run-reticle-slot span { transition: none; }
 }
+.run-warn { color: #c0392b; }
+[data-theme="dark"] .run-warn { color: #ff8a80; }
+.run-description p { margin-bottom: 0.6rem; }
+.run-chip { display: inline-block; font-size: 0.7rem; padding: 0 0.4rem; margin: 0.1rem 0.15rem 0 0; border-radius: 0.6rem; background: var(--run-track); color: var(--run-ink); }

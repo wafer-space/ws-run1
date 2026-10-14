@@ -1,0 +1,13 @@
+{
+ "top_cell": "reticle",
+ "stdcell_prefixes": [
+  "gf180mcu_fd_sc_",
+  "gf180mcu_as_sc_",
+  "gf180mcu_as_ex_",
+  "gf180mcu_osu_sc_"
+ ],
+ "library_names": "qualified",
+ "exclude": {},
+ "keep": [],
+ "core_cell": ""
+}

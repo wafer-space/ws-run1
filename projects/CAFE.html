@@ -112,7 +112,8 @@
       </div>
 
       <div class="col-lg-5">
-<p class="lead">FazyRV Hachure is a System on Chip that integrates seven different variants of the bit-serial FazyRV RISC-V core in one chip for testing and research purposes.</p>        <p>
+        <div class="run-description"><p class="lead">FazyRV Hachure is a System on Chip that integrates seven different variants of the bit-serial FazyRV RISC-V core in one chip for testing and research purposes.</p></div>
+        <p>
           <a class="btn btn-default btn-sm mb-10" href="https://github.com/meiniKi/gf180mcu-fazyrv-hachure">Source repository</a>
 <a class="btn btn-outline-primary btn-sm mb-10" href="#photo">Die photograph</a>        </p>
         <table class="table table-sm run-table">
@@ -133,16 +134,41 @@
           </tbody>
         </table>
 
+        <h4 class="mb-10">Submission</h4>
+        <table class="table table-sm run-table">
+          <tbody>
+            <tr><th>Licence</th><td>Apache-2.0 <span class="text-muted">declared</span>
+<br><span class="text-muted">Repository: Apache-2.0
+ — agrees</span>
+<br><span class="small text-muted">Repository checked at <span class="run-mono">51047e6350b7</span></span></td></tr>
+            <tr><th>Chip-on-board</th><td>Not selected at submission
+</td></tr>
+            <tr><th>Precheck</th><td>Passed
+              <span class="text-muted">on 2026-08-02,
+                gf180mcu-precheck 1.7.3</span>
+</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="mb-10">Process features</h4>
+        <table class="table table-sm run-table">
+          <tbody>
+            <tr><th>5 V</th><td>7t-5V standard cells, fd SRAM</td></tr>
+            <tr><th>I/O library</th><td><span class="run-mono">gf180mcu_fd_io</span> <span class="text-muted">(1122 cells)</span>, <span class="run-mono">gf180mcu_ws_io</span> <span class="text-muted">(18 cells)</span></td></tr>
+          </tbody>
+        </table>
+        <p class="small text-muted">Devices the designer drew, outside standard cells, SRAM macros and pads.</p>
+
         <h4 class="mb-10">Logic density</h4>
         <table class="table table-sm run-table">
           <tbody>
             <tr><th>Core average</th><td>7k cells/mm²
               <span class="text-muted">(9% of buffer maximum)</span></td></tr>
             <tr><th>Densest mm²</th><td>21k cells
-              <span class="text-muted">(27% of buffer maximum)</span></td></tr>
+              <span class="text-muted">(28% of buffer maximum)</span></td></tr>
             <tr><th>Core covered by logic</th><td>24%</td></tr>
             <tr><th>Transistor density</th><td>206k/mm² average,
-              296k in the densest mm²</td></tr>
+              292k in the densest mm²</td></tr>
           </tbody>
         </table>
       </div>
@@ -226,33 +252,75 @@
         <h3 class="mb-10">Logic density map</h3>
         <svg class="run-heatmap" viewBox="0 0 3.93 5.12" role="img"
              aria-label="Logic cells per square millimetre across the die">
-          <rect x="0.000" y="4.120" width="1.000" height="1.000" style="fill-opacity: 0.192"><title>2,931 logic cells, 84,243 transistors</title></rect>
-<text x="0.500" y="4.620" class="">3k</text>          <rect x="1.000" y="4.120" width="1.000" height="1.000" style="fill-opacity: 0.403"><title>7,596 logic cells, 154,073 transistors</title></rect>
-<text x="1.500" y="4.620" class="">8k</text>          <rect x="2.000" y="4.120" width="1.000" height="1.000" style="fill-opacity: 0.422"><title>8,024 logic cells, 156,330 transistors</title></rect>
-<text x="2.500" y="4.620" class="">8k</text>          <rect x="3.000" y="4.120" width="0.930" height="1.000" style="fill-opacity: 0.237"><title>3,910 logic cells, 76,448 transistors</title></rect>
-<text x="3.465" y="4.620" class="">4k</text>          <rect x="0.000" y="3.120" width="1.000" height="1.000" style="fill-opacity: 0.301"><title>5,338 logic cells, 145,933 transistors</title></rect>
-<text x="0.500" y="3.620" class="">5k</text>          <rect x="1.000" y="3.120" width="1.000" height="1.000" style="fill-opacity: 1.000"><title>20,811 logic cells, 293,375 transistors</title></rect>
-<text x="1.500" y="3.620" class="light">21k</text>          <rect x="2.000" y="3.120" width="1.000" height="1.000" style="fill-opacity: 0.748"><title>15,233 logic cells, 296,058 transistors</title></rect>
-<text x="2.500" y="3.620" class="light">15k</text>          <rect x="3.000" y="3.120" width="0.930" height="1.000" style="fill-opacity: 0.065"><title>100 logic cells, 112,973 transistors</title></rect>
-<text x="3.465" y="3.620" class="">&lt;1k</text>          <rect x="0.000" y="2.120" width="1.000" height="1.000" class="sram"><title>SRAM</title></rect>
-          <rect x="1.000" y="2.120" width="1.000" height="1.000" class="sram"><title>SRAM</title></rect>
-          <rect x="2.000" y="2.120" width="1.000" height="1.000" class="sram"><title>SRAM</title></rect>
-          <rect x="3.000" y="2.120" width="0.930" height="1.000" class="sram"><title>SRAM</title></rect>
-          <rect x="0.000" y="1.120" width="1.000" height="1.000" class="sram"><title>SRAM</title></rect>
-          <rect x="1.000" y="1.120" width="1.000" height="1.000" class="sram"><title>SRAM</title></rect>
-          <rect x="2.000" y="1.120" width="1.000" height="1.000" class="sram"><title>SRAM</title></rect>
-          <rect x="3.000" y="1.120" width="0.930" height="1.000" class="sram"><title>SRAM</title></rect>
-          <rect x="0.000" y="0.120" width="1.000" height="1.000" class="sram"><title>SRAM</title></rect>
-          <rect x="1.000" y="0.120" width="1.000" height="1.000" class="sram"><title>SRAM</title></rect>
-          <rect x="2.000" y="0.120" width="1.000" height="1.000" class="sram"><title>SRAM</title></rect>
-          <rect x="3.000" y="0.120" width="0.930" height="1.000" class="sram"><title>SRAM</title></rect>
-          <rect x="0.000" y="0.000" width="1.000" height="0.120" style="fill-opacity: 0.060"><title>0 logic cells, 738 transistors</title></rect>
-          <rect x="1.000" y="0.000" width="1.000" height="0.120" style="fill-opacity: 0.060"><title>0 logic cells, 739 transistors</title></rect>
-          <rect x="2.000" y="0.000" width="1.000" height="0.120" style="fill-opacity: 0.060"><title>0 logic cells, 801 transistors</title></rect>
-          <rect x="3.000" y="0.000" width="0.930" height="0.120" style="fill-opacity: 0.060"><title>0 logic cells, 654 transistors</title></rect>
+          <rect x="0.000" y="4.120" width="1.000" height="1.000" style="fill-opacity: 0.192"><title>2,931 logic cells, 83,996 transistors</title></rect>
+          <rect x="1.000" y="4.120" width="1.000" height="1.000" style="fill-opacity: 0.403"><title>7,596 logic cells, 153,585 transistors</title></rect>
+          <rect x="2.000" y="4.120" width="1.000" height="1.000" style="fill-opacity: 0.422"><title>8,024 logic cells, 155,686 transistors</title></rect>
+          <rect x="3.000" y="4.120" width="0.932" height="1.000" style="fill-opacity: 0.249"><title>3,910 logic cells, 76,137 transistors</title></rect>
+          <rect x="0.000" y="3.120" width="1.000" height="1.000" style="fill-opacity: 0.301"><title>5,338 logic cells, 145,432 transistors</title></rect>
+          <rect x="1.000" y="3.120" width="1.000" height="1.000" style="fill-opacity: 1.000"><title>20,811 logic cells, 292,781 transistors</title></rect>
+          <rect x="2.000" y="3.120" width="1.000" height="1.000" style="fill-opacity: 0.748"><title>15,233 logic cells, 295,484 transistors</title></rect>
+          <rect x="3.000" y="3.120" width="0.932" height="1.000" style="fill-opacity: 0.065"><title>100 logic cells, 112,503 transistors</title></rect>
+          <rect x="0.000" y="2.120" width="1.000" height="1.000" style="fill-opacity: 0.275"><title>4,762 logic cells, 124,852 transistors, 19% SRAM</title></rect>
+          <rect x="1.000" y="2.120" width="1.000" height="1.000" style="fill-opacity: 0.528"><title>10,370 logic cells, 237,897 transistors, 30% SRAM</title></rect>
+          <rect x="2.000" y="2.120" width="1.000" height="1.000" style="fill-opacity: 0.507"><title>9,904 logic cells, 242,830 transistors, 29% SRAM</title></rect>
+          <rect x="3.000" y="2.120" width="0.932" height="1.000" style="fill-opacity: 0.214"><title>3,175 logic cells, 109,081 transistors, 18% SRAM</title></rect>
+          <rect x="0.000" y="1.120" width="1.000" height="1.000" style="fill-opacity: 0.068"><title>175 logic cells, 88,262 transistors, 38% SRAM</title></rect>
+          <rect x="1.000" y="1.120" width="1.000" height="1.000" style="fill-opacity: 0.223"><title>3,609 logic cells, 168,259 transistors, 60% SRAM</title></rect>
+          <rect x="2.000" y="1.120" width="1.000" height="1.000" style="fill-opacity: 0.236"><title>3,887 logic cells, 181,673 transistors, 59% SRAM</title></rect>
+          <rect x="3.000" y="1.120" width="0.932" height="1.000" style="fill-opacity: 0.061"><title>22 logic cells, 82,124 transistors, 37% SRAM</title></rect>
+          <rect x="0.000" y="0.120" width="1.000" height="1.000" style="fill-opacity: 0.064"><title>95 logic cells, 70,262 transistors, 26% SRAM</title></rect>
+          <rect x="1.000" y="0.120" width="1.000" height="1.000" style="fill-opacity: 0.075"><title>331 logic cells, 117,203 transistors, 41% SRAM</title></rect>
+          <rect x="2.000" y="0.120" width="1.000" height="1.000" style="fill-opacity: 0.072"><title>261 logic cells, 127,751 transistors, 40% SRAM</title></rect>
+          <rect x="3.000" y="0.120" width="0.932" height="1.000" style="fill-opacity: 0.061"><title>12 logic cells, 65,300 transistors, 25% SRAM</title></rect>
+          <rect x="0.000" y="-0.002" width="1.000" height="0.122" style="fill-opacity: 0.060"><title>0 logic cells, 730 transistors</title></rect>
+          <rect x="1.000" y="-0.002" width="1.000" height="0.122" style="fill-opacity: 0.060"><title>0 logic cells, 734 transistors</title></rect>
+          <rect x="2.000" y="-0.002" width="1.000" height="0.122" style="fill-opacity: 0.060"><title>0 logic cells, 799 transistors</title></rect>
+          <rect x="3.000" y="-0.002" width="0.932" height="0.122" style="fill-opacity: 0.060"><title>0 logic cells, 640 transistors</title></rect>
+          <rect class="sram-macro" x="1.724" y="1.011" width="0.484" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="sram-macro" x="1.724" y="1.535" width="0.484" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="sram-macro" x="1.724" y="2.081" width="0.484" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="sram-macro" x="1.724" y="0.481" width="0.484" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="sram-macro" x="2.947" y="1.011" width="0.485" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="sram-macro" x="2.357" y="1.011" width="0.485" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="sram-macro" x="2.947" y="0.481" width="0.485" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="sram-macro" x="2.357" y="0.481" width="0.485" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="sram-macro" x="2.357" y="1.535" width="0.485" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="sram-macro" x="2.357" y="2.081" width="0.485" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="sram-macro" x="2.947" y="1.535" width="0.485" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="sram-macro" x="2.947" y="2.081" width="0.485" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="sram-macro" x="1.090" y="1.011" width="0.485" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="sram-macro" x="0.500" y="1.011" width="0.485" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="sram-macro" x="1.090" y="0.481" width="0.485" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="sram-macro" x="0.500" y="0.481" width="0.485" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="sram-macro" x="0.500" y="2.081" width="0.485" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="sram-macro" x="0.500" y="1.535" width="0.485" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="sram-macro" x="1.090" y="2.081" width="0.485" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="sram-macro" x="1.090" y="1.535" width="0.485" height="0.432"><title>gf180mcu_fd_ip_sram__sram512x8m8wm1</title></rect>
+          <rect class="window" x="0.900" y="3.320" width="1" height="1"><title>Densest SRAM-free mm²: 21,486 logic cells</title></rect>
+          <text x="0.500" y="4.620" class="">3k</text>
+          <text x="1.500" y="4.620" class="">8k</text>
+          <text x="2.500" y="4.620" class="">8k</text>
+          <text x="3.466" y="4.620" class="">4k</text>
+          <text x="0.500" y="3.620" class="">5k</text>
+          <text x="1.500" y="3.620" class="light">21k</text>
+          <text x="2.500" y="3.620" class="light">15k</text>
+          <text x="3.466" y="3.620" class="">&lt;1k</text>
+          <text x="0.500" y="2.620" class="">5k</text>
+          <text x="1.500" y="2.620" class="">10k</text>
+          <text x="2.500" y="2.620" class="">10k</text>
+          <text x="3.466" y="2.620" class="">3k</text>
+          <text x="0.500" y="1.620" class="">&lt;1k</text>
+          <text x="1.500" y="1.620" class="">4k</text>
+          <text x="2.500" y="1.620" class="">4k</text>
+          <text x="3.466" y="1.620" class="">&lt;1k</text>
+          <text x="0.500" y="0.620" class="">&lt;1k</text>
+          <text x="1.500" y="0.620" class="">&lt;1k</text>
+          <text x="2.500" y="0.620" class="">&lt;1k</text>
+          <text x="3.466" y="0.620" class="">&lt;1k</text>
         </svg>
-        <p class="small text-muted mb-0">Logic cells in each square millimetre of the die. Hatched squares overlap an
-          SRAM macro and are not counted. Edge squares are smaller than 1 mm².</p>
+        <p class="small text-muted mb-0">Logic cells in each square millimetre of the die. Hatched outlines are SRAM
+          macros; the bold outline is the densest 1 mm² that avoids them, found by sliding a
+          1 mm square over the die in 0.1 mm steps. Edge squares are smaller than 1 mm².</p>
       </div>
     </div>
   </div>
@@ -311,7 +379,7 @@
           <div class="col-6 col-lg-4">
             <div class="widget">
               <h5 class="widget-title">About this page</h5>
-              <p class="small mb-0">Generated on 2026-10-06 by
+              <p class="small mb-0">Generated on 2026-10-15 by
                 <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a> from the public reticle
                 layout. Every figure is measured from the layout; the data files are linked from the overview.</p>
             </div>
