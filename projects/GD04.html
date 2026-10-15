@@ -16,17 +16,22 @@
  - 6 cores">
 <meta property="og:image" content="https://wafer.space/ws-run1/renders/reticle.webp">
   <script>
-    // Same theme preference as the main website, applied before first paint.
+    // The main website's dark-mode-init: the same 'theme' preference, applied
+    // before first paint. Its scripts.js then runs the toggle.
     (function () {
       var theme = localStorage.getItem('theme');
       if (!theme) {
         theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
       }
       document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark-mode-init');
+      }
     })();
   </script>
   <style>
-    [data-theme="dark"], [data-theme="dark"] body { background-color: #1a1a1a !important; color: #e0e0e0; }
+    [data-theme="dark"] body, .dark-mode-init body { background-color: #1a1a1a !important; color: #e0e0e0; }
+    [data-theme="dark"], .dark-mode-init { background-color: #1a1a1a !important; }
   </style>
   <link rel="shortcut icon" href="https://wafer.space/favicon.png" />
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/bootstrap.min.css" />
@@ -36,7 +41,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=1deffd7630">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=9ea53b34f4">
 </head>
 <body>
   <div class="content-wrapper">
@@ -58,8 +63,7 @@
               </div>
             </li>
             <li class="nav-item d-none d-lg-block">
-              <button type="button" class="btn btn-sm btn-circle btn-outline-primary theme-toggle me-2"
-                aria-label="Switch between light and dark mode"><i class="icofont-moon"></i></button>
+              <button id="darkModeToggle" class="btn btn-sm btn-circle btn-outline-primary theme-toggle me-2" aria-label="Switch theme mode" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Click to toggle, right-click for auto"><i class="icofont-moon"></i></button>
             </li>
             <li class="nav-item d-none d-lg-block"><a href="https://wafer.space/free.html" class="btn btn-default">Free Silicon?</a></li>
           </ul>
@@ -373,6 +377,6 @@
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=1deffd7630"></script>
+  <script src="../run.js?v=9ea53b34f4"></script>
 </body>
 </html>

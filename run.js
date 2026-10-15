@@ -2,26 +2,6 @@
 (function () {
   'use strict';
 
-  // Light/dark toggle, sharing the 'theme' preference with wafer.space. The
-  // theme's scripts clone the navbar into a sticky copy after scrolling, so the
-  // click is handled on the document for every .theme-toggle, copies included.
-  function showTheme() {
-    var dark = document.documentElement.getAttribute('data-theme') === 'dark';
-    document.querySelectorAll('.theme-toggle i').forEach(function (icon) {
-      icon.className = dark ? 'icofont-sun' : 'icofont-moon';
-    });
-  }
-  document.addEventListener('click', function (event) {
-    if (!event.target.closest('.theme-toggle')) {
-      return;
-    }
-    var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', next);
-    try { localStorage.setItem('theme', next); } catch (e) { /* private browsing */ }
-    showTheme();
-  });
-  showTheme();
-
   // Layer selector on the project pages: swap the render and mark the active button.
   var image = document.getElementById('render-image');
   var link = document.getElementById('render-link');
