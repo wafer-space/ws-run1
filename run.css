@@ -72,6 +72,14 @@
 [data-theme="dark"] .run-card.bg-white { background: var(--run-surface) !important; }
 
 /* Reticle map */
+.run-reticle-frame.with-labels { display: grid; grid-template-columns: 1.8em 1fr; grid-template-rows: 1.8em auto; }
+.run-reticle-frame.with-labels .run-reticle { grid-column: 2; grid-row: 2; }
+.run-reticle-cols, .run-reticle-rows { position: relative; font-size: 0.8rem; font-weight: 600; color: var(--run-muted); font-variant-numeric: tabular-nums; }
+.run-reticle-cols { grid-column: 2; grid-row: 1; }
+.run-reticle-rows { grid-column: 1; grid-row: 2; }
+.run-reticle-cols span, .run-reticle-rows span { position: absolute; display: flex; align-items: center; justify-content: center; border-radius: 3px; transition: background 0.12s ease, color 0.12s ease; }
+.run-reticle-cols span { top: 0; bottom: 0.25em; }
+.run-reticle-rows span { left: 0; right: 0.25em; }
 .run-reticle { position: relative; background: #0a0c14; border-radius: 6px; overflow: hidden; line-height: 0; }
 .run-reticle img { width: 100%; height: auto; }
 .run-reticle-slot { position: absolute; display: flex; align-items: flex-end; justify-content: flex-start; border: 1px solid transparent; text-decoration: none; line-height: 1; }
@@ -128,7 +136,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .run-card, .run-photo img, .run-reticle-slot span { transition: none; }
+  .run-card, .run-photo img, .run-reticle-slot span, .run-reticle-cols span, .run-reticle-rows span { transition: none; }
 }
 .run-warn { color: #c0392b; }
 [data-theme="dark"] .run-warn { color: #ff8a80; }
