@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This report analyzes the standard cell and SRAM density achieved by the 30 unique public chip designs on the [wafer.space](https://wafer.space/) GF180MCU Run 1 reticle. The reticle has 40 slots; the public layout contains 38 slot placements (some designs appear more than once, and private designs are not included).
+This report analyzes the standard cell and SRAM density achieved by the 30 unique public chip designs on the wafer.space GF180MCU Run 1 reticle. The reticle has 40 slots; the public layout contains 38 slot placements (some designs appear more than once, and private designs are not included).
 
 All designs were fabricated on GlobalFoundries' GF180MCU process, a 180-nanometer (0.18um) technology node. This is a mature, relatively large-geometry process — for comparison, modern smartphone chips use 3nm or 5nm processes with features roughly 50x smaller.
 
