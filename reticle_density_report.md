@@ -105,10 +105,10 @@ These designs contain fewer than 1,000 logic standard cells:
 
 | Design | Logic SC | Transistors | SRAM | Pads | Project |
 |---|---|---|---|---|---|
-| [ISHI](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_WaferSapce-GF180-1) | 0 | 227k | 0 | 195 | ISHI-KAI's Multiple Users Project |
-| [MOS2](https://github.com/AutoMOS-project/AutoMOS-chipathon2025/tree/update-for-ws) | 0 | 241k | 0 | 162 | AutoMOS-Chipathon-2025 full size |
-| [OCD2](https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test) | 122 | 251k | 4 | 72 | ocd_sram_test |
-| [TRID](https://github.com/Scafir/gf180mcu-project-trident-gf180-teststructure) | 0 | 102k | 0 | 94 | gf180mcu-project-trident-gf180-teststructure |
+| [ISHI](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_WaferSapce-GF180-1) | 0 | 58k | 0 | 195 | ISHI-KAI's Multiple Users Project |
+| [MOS2](https://github.com/AutoMOS-project/AutoMOS-chipathon2025/tree/update-for-ws) | 0 | 80k | 0 | 162 | AutoMOS-Chipathon-2025 full size |
+| [OCD2](https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test) | 122 | 169k | 4 | 72 | ocd_sram_test |
+| [TRID](https://github.com/Scafir/gf180mcu-project-trident-gf180-teststructure) | 0 | 20k | 0 | 94 | gf180mcu-project-trident-gf180-teststructure |
 
 ## Achieved Density — Peak 1mm x 1mm Regions
 
@@ -337,41 +337,41 @@ Detection uses the open GF180MCU layers: a transistor is gate polysilicon (30/0)
 
 | Design | Cell | Die (mm) | Core mm² | Placements | Pads | Logic SC | Infra SC | Transistors | SRAM | Libraries |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [2975](https://github.com/ThorbenMoos/Cloneless1) | `2975_chip_top_0_6` | 3.93 x 5.12 | 14.3 | 2 | 32 | 316,440 | 463,577 | 3,615,126 | 0 | mcu7t5v0: 316,440 |
-| [AS03](https://github.com/AvalonSemiconductors/ws-submission-2025/) | `AS03_chip_top_6_0` | 3.93 x 5.12 | 14.3 | 1 | 74 | 86,629 | 302,626 | 2,446,849 | 0 | mcu7t5v0: 80,672, as_ex_mcu7t5v0: 3,587, mcu9t5v0: 2,370 |
-| BRWN | `BRWN_ENGN2912E_TOP_8_2` | 3.93 x 5.12 | 14.3 | 1 | 74 | 4,379 | 64,895 | 821,902 | 0 | mcu7t5v0: 4,379 |
-| [BTAP](https://github.com/polyfractal/BreakingTTAPs) | `BTAP_chip_top_0_0` | 3.93 x 5.12 | 14.3 | 2 | 74 | 43,225 | 156,483 | 2,180,953 | 28 | mcu9t5v0: 43,225 |
-| [CAFE](https://github.com/meiniKi/gf180mcu-fazyrv-hachure) | `CAFE_chip_top_12_0` | 3.93 x 5.12 | 14.3 | 1 | 74 | 100,546 | 266,996 | 2,934,001 | 20 | mcu7t5v0: 100,546 |
-| [CHES](https://github.com/Ravenslofty/gf180mcu-chess) | `CHES_chip_top_10_4` | 3.93 x 5.12 | 14.3 | 1 | 74 | 145,076 | 406,519 | 2,716,746 | 0 | mcu9t5v0: 145,076 |
-| [GD02](https://github.com/gregdavill/gf180mcu-racquet-0.5x1) | `GD02_chip_top_14_4` | 1.94 x 5.12 | 5.5 | 1 | 72 | 34,564 | 78,256 | 976,848 | 9 | mcu7t5v0: 34,564 |
-| [GD03](https://github.com/gregdavill/gf180mcu-racquet/) | `GD03_chip_top_6_6` | 3.93 x 5.12 | 14.3 | 1 | 74 | 78,208 | 241,732 | 2,744,447 | 23 | mcu7t5v0: 78,208 |
-| [GD04](https://github.com/gregdavill/gf180mcu-racquet-1x0.5) | `GD04_chip_top_6_8` | 3.93 x 2.53 | 5.9 | 2 | 72 | 35,525 | 104,165 | 1,002,605 | 6 | mcu9t5v0: 35,525 |
-| [HZ80](https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu) | `HZ80_chip_top_14_0` | 1.94 x 5.12 | 5.5 | 1 | 72 | 5,143 | 80,093 | 831,740 | 0 | mcu9t5v0: 5,143 |
-| [ISHI](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_WaferSapce-GF180-1) | `ISHI_ISHI-KAI_WS_RUN1_12_4` | 3.93 x 5.12 | 14.3 | 1 | 195 | 0 | 63 | 227,230 | 0 | — |
-| [JKU1](https://github.com/iic-jku/gf180mcu-jku-projects) | `JKU1_chip_top_10_0` | 3.93 x 5.12 | 14.3 | 1 | 74 | 174,469 | 395,678 | 3,154,664 | 0 | mcu7t5v0: 174,469 |
-| [JKU2](https://github.com/iic-jku/gf180mcu-jku-atbs-adc) | `JKU2_chip_top_0_8` | 3.93 x 2.53 | 5.9 | 1 | 72 | 22,476 | 118,209 | 1,001,897 | 0 | mcu9t5v0: 22,471, mcu7t5v0: 5 |
-| [KIAN](https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32/) | `KIAN_chip_top_8_0` | 3.93 x 5.12 | 14.3 | 1 | 74 | 88,941 | 246,524 | 2,456,450 | 21 | mcu9t5v0: 88,941 |
-| [MOLE](https://github.com/mole99/gf180mcu-fabulous-fpga) | `MOLE_chip_top_8_4` | 3.93 x 5.12 | 14.3 | 1 | 74 | 203,757 | 295,366 | 3,418,507 | 6 | mcu7t5v0: 203,757 |
-| [MOS2](https://github.com/AutoMOS-project/AutoMOS-chipathon2025/tree/update-for-ws) | `MOS2_chip_top_10_6` | 3.93 x 5.12 | 14.3 | 1 | 162 | 0 | 52 | 240,673 | 0 | — |
-| MOSB | `MOSB_chip_top_4_0` | 3.93 x 5.12 | 14.3 | 2 | 74 | 17,889 | 8,134 | 432,098 | 0 | mcu9t5v0: 17,889 |
-| [OCD1](https://github.com/RTimothyEdwards/gf180mcu_ocd_openframe) | `OCD1_caravel_openframe_top_8_6` | 3.93 x 5.12 | 14.3 | 1 | 63 | 34,431 | 524,019 | 1,528,880 | 8 | as_sc_mcu7t3v3: 34,429, mcu7t5v0: 2 |
-| [OCD2](https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test) | `OCD2_gf180mcu_ocd_sram_top_2_8` | 3.93 x 2.53 | 5.9 | 2 | 72 | 122 | 445 | 250,621 | 4 | as_sc_mcu7t3v3: 120, mcu7t5v0: 2 |
-| [RBOY](https://github.com/wren6991/riscboy-180) | `RBOY_chip_top_12_6` | 3.93 x 5.12 | 14.3 | 1 | 74 | 69,949 | 179,358 | 2,395,590 | 30 | mcu9t5v0: 69,949 |
-| [RZ80](https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu?tab=readme-ov-file) | `RZ80_chip_top_0_2` | 3.93 x 5.12 | 14.3 | 2 | 74 | 5,209 | 208,620 | 2,307,517 | 0 | mcu9t5v0: 5,209 |
-| [RZML](https://gitlab.com/rejunity/ws0-lgn-fxnist-gf180mcu-tapeout) | `RZML_chip_top_12_2` | 3.93 x 5.12 | 14.3 | 1 | 74 | 88,407 | 434,355 | 3,299,354 | 0 | mcu7t5v0: 88,407 |
-| [TQVA](https://github.com/MichaelBell/ws01-tinyQV) | `TQVA_chip_top_14_8` | 1.94 x 2.53 | 2.3 | 1 | 56 | 35,711 | 62,585 | 480,963 | 1 | mcu7t5v0: 35,711 |
-| [TQVB](https://github.com/MichaelBell/ws01-tinyQV) | `TQVB_chip_top_14_6` | 1.94 x 5.12 | 5.5 | 1 | 72 | 35,416 | 123,968 | 1,098,008 | 1 | mcu7t5v0: 35,416 |
-| [TQVC](https://github.com/MichaelBell/ws01-tinyQV) | `TQVC_chip_top_8_8` | 3.93 x 2.53 | 5.9 | 2 | 72 | 36,116 | 137,094 | 1,219,676 | 1 | mcu7t5v0: 36,116 |
-| [TRID](https://github.com/Scafir/gf180mcu-project-trident-gf180-teststructure) | `TRID_TOP_14_2` | 1.94 x 5.12 | 5.5 | 1 | 94 | 0 | 0 | 102,336 | 0 | — |
-| [TTP2](https://github.com/TinyTapeout/tinytapeout-gf-0p2) | `TTP2_tt_gf_wrapper_6_4` | 3.93 x 5.12 | 14.3 | 1 | 74 | 203,781 | 366,289 | 3,274,885 | 0 | mcu7t5v0: 200,156, mcu9t5v0: 3,625 |
-| [TTPG](https://github.com/TinyTapeout/tinytapeout-gf-0p2) | `TTPG_tt_gf_wrapper_6_2` | 3.93 x 5.12 | 14.3 | 1 | 74 | 203,780 | 366,311 | 3,291,757 | 0 | mcu7t5v0: 200,155, mcu9t5v0: 3,625 |
-| [TZ01](https://github.com/ZeduloTech/gf180mcu-testchip2025) | `TZ01_chip_top_0_4` | 3.93 x 5.12 | 14.3 | 2 | 74 | 58,018 | 228,360 | 2,034,655 | 8 | mcu7t5v0: 58,018 |
-| [WSLG](https://github.com/89Mods/ws-logo-die) | `WSLG_chip_top_10_2` | 3.93 x 5.12 | 14.3 | 1 | 74 | 14,290 | 145,520 | 1,521,509 | 0 | mcu7t5v0: 12,598, as_ex_mcu7t5v0: 1,692 |
+| [2975](https://github.com/ThorbenMoos/Cloneless1) | `2975_chip_top_0_6` | 3.93 x 5.12 | 14.3 | 2 | 32 | 316,440 | 463,577 | 3,596,371 | 0 | mcu7t5v0: 316,440 |
+| [AS03](https://github.com/AvalonSemiconductors/ws-submission-2025/) | `AS03_chip_top_6_0` | 3.93 x 5.12 | 14.3 | 1 | 74 | 86,629 | 302,626 | 2,430,570 | 0 | mcu7t5v0: 80,672, as_ex_mcu7t5v0: 3,587, mcu9t5v0: 2,370 |
+| BRWN | `BRWN_ENGN2912E_TOP_8_2` | 3.93 x 5.12 | 14.3 | 1 | 74 | 4,379 | 64,895 | 649,130 | 0 | mcu7t5v0: 4,379 |
+| [BTAP](https://github.com/polyfractal/BreakingTTAPs) | `BTAP_chip_top_0_0` | 3.93 x 5.12 | 14.3 | 2 | 74 | 43,225 | 156,483 | 2,166,150 | 28 | mcu9t5v0: 43,225 |
+| [CAFE](https://github.com/meiniKi/gf180mcu-fazyrv-hachure) | `CAFE_chip_top_12_0` | 3.93 x 5.12 | 14.3 | 1 | 74 | 100,546 | 266,996 | 2,919,680 | 20 | mcu7t5v0: 100,546 |
+| [CHES](https://github.com/Ravenslofty/gf180mcu-chess) | `CHES_chip_top_10_4` | 3.93 x 5.12 | 14.3 | 1 | 74 | 145,076 | 406,519 | 2,701,676 | 0 | mcu9t5v0: 145,076 |
+| [GD02](https://github.com/gregdavill/gf180mcu-racquet-0.5x1) | `GD02_chip_top_14_4` | 1.94 x 5.12 | 5.5 | 1 | 72 | 34,564 | 78,256 | 968,782 | 9 | mcu7t5v0: 34,564 |
+| [GD03](https://github.com/gregdavill/gf180mcu-racquet/) | `GD03_chip_top_6_6` | 3.93 x 5.12 | 14.3 | 1 | 74 | 78,208 | 241,732 | 2,730,062 | 23 | mcu7t5v0: 78,208 |
+| [GD04](https://github.com/gregdavill/gf180mcu-racquet-1x0.5) | `GD04_chip_top_6_8` | 3.93 x 2.53 | 5.9 | 2 | 72 | 35,525 | 104,165 | 992,924 | 6 | mcu9t5v0: 35,525 |
+| [HZ80](https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu) | `HZ80_chip_top_14_0` | 1.94 x 5.12 | 5.5 | 1 | 72 | 5,143 | 80,093 | 823,230 | 0 | mcu9t5v0: 5,143 |
+| [ISHI](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_WaferSapce-GF180-1) | `ISHI_ISHI-KAI_WS_RUN1_12_4` | 3.93 x 5.12 | 14.3 | 1 | 195 | 0 | 63 | 58,233 | 0 | — |
+| [JKU1](https://github.com/iic-jku/gf180mcu-jku-projects) | `JKU1_chip_top_10_0` | 3.93 x 5.12 | 14.3 | 1 | 74 | 174,469 | 395,678 | 3,136,970 | 0 | mcu7t5v0: 174,469 |
+| [JKU2](https://github.com/iic-jku/gf180mcu-jku-atbs-adc) | `JKU2_chip_top_0_8` | 3.93 x 2.53 | 5.9 | 1 | 72 | 22,476 | 118,209 | 990,939 | 0 | mcu9t5v0: 22,471, mcu7t5v0: 5 |
+| [KIAN](https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32/) | `KIAN_chip_top_8_0` | 3.93 x 5.12 | 14.3 | 1 | 74 | 88,941 | 246,524 | 2,442,357 | 21 | mcu9t5v0: 88,941 |
+| [MOLE](https://github.com/mole99/gf180mcu-fabulous-fpga) | `MOLE_chip_top_8_4` | 3.93 x 5.12 | 14.3 | 1 | 74 | 203,757 | 295,366 | 3,404,438 | 6 | mcu7t5v0: 203,757 |
+| [MOS2](https://github.com/AutoMOS-project/AutoMOS-chipathon2025/tree/update-for-ws) | `MOS2_chip_top_10_6` | 3.93 x 5.12 | 14.3 | 1 | 162 | 0 | 52 | 80,297 | 0 | — |
+| MOSB | `MOSB_chip_top_4_0` | 3.93 x 5.12 | 14.3 | 2 | 74 | 17,889 | 8,134 | 287,770 | 0 | mcu9t5v0: 17,889 |
+| [OCD1](https://github.com/RTimothyEdwards/gf180mcu_ocd_openframe) | `OCD1_caravel_openframe_top_8_6` | 3.93 x 5.12 | 14.3 | 1 | 63 | 34,431 | 524,019 | 1,515,877 | 8 | as_sc_mcu7t3v3: 34,429, mcu7t5v0: 2 |
+| [OCD2](https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test) | `OCD2_gf180mcu_ocd_sram_top_2_8` | 3.93 x 2.53 | 5.9 | 2 | 72 | 122 | 445 | 168,624 | 4 | as_sc_mcu7t3v3: 120, mcu7t5v0: 2 |
+| [RBOY](https://github.com/wren6991/riscboy-180) | `RBOY_chip_top_12_6` | 3.93 x 5.12 | 14.3 | 1 | 74 | 69,949 | 179,358 | 2,380,904 | 30 | mcu9t5v0: 69,949 |
+| [RZ80](https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu?tab=readme-ov-file) | `RZ80_chip_top_0_2` | 3.93 x 5.12 | 14.3 | 2 | 74 | 5,209 | 208,620 | 2,292,402 | 0 | mcu9t5v0: 5,209 |
+| [RZML](https://gitlab.com/rejunity/ws0-lgn-fxnist-gf180mcu-tapeout) | `RZML_chip_top_12_2` | 3.93 x 5.12 | 14.3 | 1 | 74 | 88,407 | 434,355 | 3,284,303 | 0 | mcu7t5v0: 88,407 |
+| [TQVA](https://github.com/MichaelBell/ws01-tinyQV) | `TQVA_chip_top_14_8` | 1.94 x 2.53 | 2.3 | 1 | 56 | 35,711 | 62,585 | 475,963 | 1 | mcu7t5v0: 35,711 |
+| [TQVB](https://github.com/MichaelBell/ws01-tinyQV) | `TQVB_chip_top_14_6` | 1.94 x 5.12 | 5.5 | 1 | 72 | 35,416 | 123,968 | 1,089,232 | 1 | mcu7t5v0: 35,416 |
+| [TQVC](https://github.com/MichaelBell/ws01-tinyQV) | `TQVC_chip_top_8_8` | 3.93 x 2.53 | 5.9 | 2 | 72 | 36,116 | 137,094 | 1,209,812 | 1 | mcu7t5v0: 36,116 |
+| [TRID](https://github.com/Scafir/gf180mcu-project-trident-gf180-teststructure) | `TRID_TOP_14_2` | 1.94 x 5.12 | 5.5 | 1 | 94 | 0 | 0 | 20,114 | 0 | — |
+| [TTP2](https://github.com/TinyTapeout/tinytapeout-gf-0p2) | `TTP2_tt_gf_wrapper_6_4` | 3.93 x 5.12 | 14.3 | 1 | 74 | 203,781 | 366,289 | 3,234,274 | 0 | mcu7t5v0: 200,156, mcu9t5v0: 3,625 |
+| [TTPG](https://github.com/TinyTapeout/tinytapeout-gf-0p2) | `TTPG_tt_gf_wrapper_6_2` | 3.93 x 5.12 | 14.3 | 1 | 74 | 203,780 | 366,311 | 3,254,189 | 0 | mcu7t5v0: 200,155, mcu9t5v0: 3,625 |
+| [TZ01](https://github.com/ZeduloTech/gf180mcu-testchip2025) | `TZ01_chip_top_0_4` | 3.93 x 5.12 | 14.3 | 2 | 74 | 58,018 | 228,360 | 2,014,212 | 8 | mcu7t5v0: 58,018 |
+| [WSLG](https://github.com/89Mods/ws-logo-die) | `WSLG_chip_top_10_2` | 3.93 x 5.12 | 14.3 | 1 | 74 | 14,290 | 145,520 | 1,506,245 | 0 | mcu7t5v0: 12,598, as_ex_mcu7t5v0: 1,692 |
 
 ## Methodology
 
 - **Logic cell counts** come from walking the layout hierarchy and counting instances of every cell whose name contains a standard cell library prefix, excluding types starting with `fill`, `endcap`, `filltie`, `fillcap`, `tap`, `antenna`, `diode`, `tiel`, `tieh`.
-- **Transistor counts** are the number of merged polygons in the boolean AND of the diffusion (22/0) and gate polysilicon (30/0) layers.
+- **Transistor counts** are the number of merged polygons in the boolean AND of the diffusion (22/0) and gate polysilicon (30/0) layers, leaving out dummy fill cells, whose diffusion and polysilicon squares overlap without forming transistors.
 - **Core area** is (die width − 0.70mm) x (die height − 0.70mm), removing a 350um pad ring from each side.
 - **Cell dimensions** are the width and height of each standard cell's placement boundary (GDS 0/0), measured from the cells present in this layout.
 - **Theoretical maximum** = (1000um / cell width) x (1000um / row height).
