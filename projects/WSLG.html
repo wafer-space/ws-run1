@@ -148,9 +148,9 @@
             <tr><th>Chip-on-board</th><td>Not selected at submission
 </td></tr>
             <tr><th>Precheck</th><td>Passed
-              <span class="text-muted">latest platform check, 2026-08-02,
-                gf180mcu-precheck 1.7.3</span>
-</td></tr>
+              <span class="text-muted">the check it was accepted on, 2026-01-04</span>
+<br>Passed
+              <span class="text-muted">latest re-run, 2026-08-02, gf180mcu-precheck 1.7.3</span>              <br><a href="#precheck">step results and logs</a></td></tr>
           </tbody>
         </table>
 
@@ -320,6 +320,53 @@
 </div>
 
 
+<div id="precheck" class="wrapper gray-wrapper">
+  <div class="container inner">
+    <h2 class="section-title mb-10 text-center">Precheck</h2>
+    <p class="lead text-center mb-30">The platform precheck WSLG was accepted on, and its latest re-run</p>
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="table-responsive">
+        <table class="table table-sm run-table run-precheck bg-white">
+          <thead><tr><th>Step</th><th>Accepted on<br>
+            <span class="small text-muted fw-normal">check 242, 2026-01-04, <span class="run-mono">initial</span></span></th><th>Latest re-run<br>
+            <span class="small text-muted fw-normal">check 732, 2026-08-02, <span class="run-mono">drc_update</span>,
+              gf180mcu-precheck 1.7.3</span></th></tr></thead>
+          <tbody>
+            <tr><td class="run-mono">KLayout.ReadLayout</td><td>passed</td><td>passed</td></tr>
+            <tr><td class="run-mono">KLayout.CheckTopLevel</td><td>passed</td><td>passed</td></tr>
+            <tr><td class="run-mono">KLayout.CheckSize</td><td>passed</td><td>passed</td></tr>
+            <tr><td class="run-mono">KLayout.GenerateID</td><td>passed</td><td>passed</td></tr>
+            <tr><td class="run-mono">KLayout.Render</td><td><span class="text-muted">not in this flow</span></td><td>passed</td></tr>
+            <tr><td class="run-mono">KLayout.Density</td><td>passed</td><td>passed</td></tr>
+            <tr><td class="run-mono">Checker.KLayoutDensity</td><td>passed</td><td>passed</td></tr>
+            <tr><td class="run-mono">KLayout.ZeroAreaPolygons</td><td>passed</td><td>passed</td></tr>
+            <tr><td class="run-mono">Checker.KLayoutZeroAreaPolygons</td><td>passed</td><td>passed</td></tr>
+            <tr><td class="run-mono">KLayout.Antenna</td><td>passed</td><td>passed</td></tr>
+            <tr><td class="run-mono">Checker.KLayoutAntenna</td><td>passed</td><td>passed</td></tr>
+            <tr><td class="run-mono">Magic.DRC</td><td>passed</td><td>passed</td></tr>
+            <tr><td class="run-mono">Checker.MagicDRC</td><td>passed</td><td>passed</td></tr>
+            <tr><td class="run-mono">KLayout.DRC</td><td>passed</td><td>passed</td></tr>
+            <tr><td class="run-mono">Checker.KLayoutDRC</td><td>passed</td><td>passed</td></tr>
+            <tr><td class="run-mono">KLayout.WriteLayout</td><td>passed</td><td>passed</td></tr>
+            <tr><th>KLayout DRC errors</th><td>0</td><td>0</td></tr>
+            <tr><th>Magic DRC errors <span class="text-muted fw-normal">(advisory)</span></th><td>0</td><td>0</td></tr>
+            <tr><th>Files</th><td><a href="../data/precheck/WSLG.acceptance.json">steps</a>
+              · <a href="../data/precheck/WSLG.acceptance.precheck.log.gz">log</a> <span class="small text-muted">(gzip)</span></td><td><a href="../data/precheck/WSLG.json">steps</a>
+              · <a href="../data/precheck/WSLG.precheck.log.gz">log</a> <span class="small text-muted">(gzip)</span></td></tr>
+          </tbody>
+        </table>
+        </div>
+        <p class="small text-muted">The steps of the gf180mcu-precheck LibreLane flow, as run by platform.wafer.space. The
+          design was accepted on the newest finished check before it was submitted; later re-runs check the same file with
+          updated rules. KLayout DRC is the sign-off check. Magic DRC is advisory: its count does not stop a design. In the
+          logs, Magic's "Error while reading cell" lines about fill cells are messages from its reader, not check failures.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div class="wrapper dark-wrapper inverse-text">
   <div class="container inner run-pager">
     <a href="TZ01.html">← TZ01 <span>TillitisZedulo-testchip2025</span></a>
@@ -352,7 +399,7 @@
           <div class="col-6 col-lg-4">
             <div class="widget">
               <h5 class="widget-title">About this page</h5>
-              <p class="small mb-0">Generated on 2026-10-16 by
+              <p class="small mb-0">Generated on 2026-10-17 by
                 <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a> from the public reticle
                 layout. Every figure is measured from the layout; the data files are linked from the overview.</p>
             </div>
