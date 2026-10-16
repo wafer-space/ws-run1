@@ -1,0 +1,183 @@
+{
+ "run": "ws-run1",
+ "shuttle": "G801",
+ "code": "JKU1",
+ "role": "acceptance",
+ "check": {
+  "id": "103",
+  "created_at": "2025-12-15T08:14:09.207778+00:00",
+  "trigger": "initial",
+  "is_manufacturable": true,
+  "precheck_version": "",
+  "docker_image": "ghcr.io/wafer-space/gf180mcu-precheck:latest",
+  "docker_image_digest": "sha256:4548ca1351d21cdd7e628e7f21d9567803d704784816e4fa69adcbd77073996f",
+  "runs_archive_sha256": "5def6cbec8df7a11aba8879435178b0e89372a3a5218c46c1379240b1098fbf5"
+ },
+ "chip_on_board": false,
+ "pad_mask_check": "not in flow",
+ "flow_complete": true,
+ "final_metrics": {
+  "klayout__density_error__count": 0,
+  "klayout__zero_area_polygons__count": 0,
+  "klayout__antenna_error__count": 0,
+  "magic__drc_error__count": 0,
+  "klayout__drc_error__count": 0
+ },
+ "warnings": [],
+ "errors": [],
+ "step_order": [
+  "KLayout.ReadLayout",
+  "KLayout.CheckTopLevel",
+  "KLayout.CheckSize",
+  "KLayout.GenerateID",
+  "KLayout.Density",
+  "Checker.KLayoutDensity",
+  "KLayout.ZeroAreaPolygons",
+  "Checker.KLayoutZeroAreaPolygons",
+  "KLayout.Antenna",
+  "Checker.KLayoutAntenna",
+  "Magic.DRC",
+  "Checker.MagicDRC",
+  "KLayout.DRC",
+  "Checker.KLayoutDRC",
+  "KLayout.WriteLayout"
+ ],
+ "steps": [
+  {
+   "id": "KLayout.ReadLayout",
+   "result": "passed",
+   "runtime": "00:00:04.825",
+   "metrics": {},
+   "messages": []
+  },
+  {
+   "id": "KLayout.CheckTopLevel",
+   "result": "passed",
+   "runtime": "00:00:03.620",
+   "metrics": {},
+   "messages": []
+  },
+  {
+   "id": "KLayout.CheckSize",
+   "result": "passed",
+   "runtime": "00:00:03.721",
+   "metrics": {},
+   "messages": []
+  },
+  {
+   "id": "KLayout.GenerateID",
+   "result": "passed",
+   "runtime": "00:00:04.926",
+   "metrics": {},
+   "messages": []
+  },
+  {
+   "id": "KLayout.Density",
+   "result": "passed",
+   "runtime": "00:01:08.518",
+   "metrics": {
+    "klayout__density_error__count": 0
+   },
+   "messages": [
+    "Running KLayout density check with 20 threads\u2026"
+   ]
+  },
+  {
+   "id": "Checker.KLayoutDensity",
+   "result": "passed",
+   "runtime": "00:00:00.000",
+   "metrics": {},
+   "messages": [
+    "Check for KLayout density errors clear."
+   ]
+  },
+  {
+   "id": "KLayout.ZeroAreaPolygons",
+   "result": "passed",
+   "runtime": "00:00:16.208",
+   "metrics": {
+    "klayout__zero_area_polygons__count": 0
+   },
+   "messages": [
+    "Running KLayout zero area polygons check\u2026"
+   ]
+  },
+  {
+   "id": "Checker.KLayoutZeroAreaPolygons",
+   "result": "passed",
+   "runtime": "00:00:00.000",
+   "metrics": {},
+   "messages": [
+    "Check for KLayout zero area polygons count clear."
+   ]
+  },
+  {
+   "id": "KLayout.Antenna",
+   "result": "passed",
+   "runtime": "00:35:55.469",
+   "metrics": {
+    "klayout__antenna_error__count": 0
+   },
+   "messages": [
+    "Running KLayout antenna check\u2026"
+   ]
+  },
+  {
+   "id": "Checker.KLayoutAntenna",
+   "result": "passed",
+   "runtime": "00:00:00.000",
+   "metrics": {},
+   "messages": [
+    "Check for KLayout antenna errors clear."
+   ]
+  },
+  {
+   "id": "Magic.DRC",
+   "result": "passed",
+   "runtime": "00:25:17.077",
+   "metrics": {
+    "magic__drc_error__count": 0
+   },
+   "messages": []
+  },
+  {
+   "id": "Checker.MagicDRC",
+   "result": "passed",
+   "runtime": "00:00:00.000",
+   "metrics": {},
+   "messages": [
+    "Check for Magic DRC errors clear."
+   ]
+  },
+  {
+   "id": "KLayout.DRC",
+   "result": "passed",
+   "runtime": "01:12:28.400",
+   "metrics": {
+    "klayout__drc_error__count": 0
+   },
+   "messages": [
+    "Running KLayout DRC with 20 threads\u2026"
+   ]
+  },
+  {
+   "id": "Checker.KLayoutDRC",
+   "result": "passed",
+   "runtime": "00:00:00.000",
+   "metrics": {},
+   "messages": [
+    "Check for KLayout DRC errors clear."
+   ]
+  },
+  {
+   "id": "KLayout.WriteLayout",
+   "result": "passed",
+   "runtime": "00:00:04.924",
+   "metrics": {},
+   "messages": [
+    "Saving views to '/workspace/runs/RUN_2025-12-15_08-14-35/final'\u2026",
+    "Flow complete."
+   ]
+  }
+ ]
+}
