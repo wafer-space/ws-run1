@@ -148,6 +148,11 @@
 .page-title-sub { display: block; font-size: 0.5em; line-height: 1.3; }
 .page-title-sub:first-of-type { margin-top: 0.3em; }
 .run-guidance { font-size: 0.85rem; }
+.run-guidance thead th { vertical-align: bottom; white-space: nowrap; }
+.run-guidance .run-groups th { border-bottom: 0; padding-bottom: 0; }
+.run-guidance .run-group { text-align: center; font-weight: 600; border-bottom: 1px solid var(--run-line); }
+.run-guidance .run-group, .run-guidance .run-group-start { border-left: 1px solid var(--run-line); }
+.run-guidance .run-note { display: block; font-size: 0.75rem; font-weight: 400; color: var(--run-muted); }
 .run-ip-only { opacity: 0.55; }
 
 /* Who owns a timeline step, where two schedules meet (a Tiny Tapeout die on a wafer.space run). */

@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="run.css?v=587cf594be">
+  <link rel="stylesheet" type="text/css" href="run.css?v=5110e7fdfc">
 </head>
 <body>
   <div class="content-wrapper">
@@ -1016,56 +1016,61 @@ data-col="7" data-row="0"               style="left: 93.347%; top: 0.257%; width
     <p class="lead text-center mb-40">What each slot size held on this run, and what it would hold at this run's densities</p>
     <div class="table-responsive">
       <table class="table table-sm run-table run-guidance bg-white shadow">
-        <thead><tr>
-          <th rowspan="2">Slot</th><th rowspan="2">Die</th>
-          <th rowspan="2" class="text-end">Core area</th><th rowspan="2" class="text-end">Designs</th>
-          <th rowspan="2" class="text-end">Most logic<br>cells</th><th rowspan="2" class="text-end">Median</th>
-          <th rowspan="2" class="text-end">At typical<br>density <span class="small text-muted fw-normal">(per mm²)</span><br><span class="small text-muted">6k</span></th>
-          <th rowspan="2" class="text-end">At best<br>density <span class="small text-muted fw-normal">(per mm²)</span><br><span class="small text-muted">22k</span></th>
-          <th colspan="3" class="text-center">Max</th>
+        <thead><tr class="run-groups">
+          <th colspan="4"></th>
+          <th colspan="2" class="run-group">Logic cells in its designs</th>
+          <th colspan="3" class="run-group">Logic cells at this run's density</th>
+          <th colspan="2" class="run-group">Theoretical maximum</th>
         </tr><tr>
-          <th class="text-end">NAND gates<br><span class="small text-muted fw-normal">theoretical<br><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/nand2/gf180mcu_fd_sc_mcu7t5v0__nand2_1.html"><span class="run-mono">nand2_1</span></a></span></th>
-          <th class="text-end">Flip-flops<br><span class="small text-muted fw-normal">theoretical<br><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/dffq/gf180mcu_fd_sc_mcu7t5v0__dffq_1.html"><span class="run-mono">dffq_1</span></a></span></th>
-          <th class="text-end">At densest<br>achieved <span class="small text-muted fw-normal">(per mm²)</span><br><span class="small text-muted fw-normal">40k</span></th>
+          <th class="">Slot<span class="run-note"> </span></th><th class="">Die<span class="run-note"> </span></th>
+          <th class="text-end">Core area<span class="run-note"> </span></th><th class="text-end">Designs<span class="run-note"> </span></th>
+          <th class="text-end run-group-start">Most<span class="run-note"> </span></th><th class="text-end">Median<span class="run-note"> </span></th>
+          <th class="text-end run-group-start">Typical<span class="run-note">6k / mm²</span></th><th class="text-end">Best<span class="run-note">22k / mm²</span></th>
+          <th class="text-end">Densest<span class="run-note">40k / mm²</span></th>
+          <th class="text-end run-group-start">NAND gates<span class="run-note"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/nand2/gf180mcu_fd_sc_mcu7t5v0__nand2_1.html"><span class="run-mono">nand2_1</span></a></span></th><th class="text-end">Flip-flops<span class="run-note"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/dffq/gf180mcu_fd_sc_mcu7t5v0__dffq_1.html"><span class="run-mono">dffq_1</span></a></span></th>
         </tr></thead>
         <tbody>
           <tr><td class="text-nowrap"><strong>1 × 1</strong></td><td class="text-nowrap">3.93 × 5.12 mm</td>
             <td class="text-end">14.3 mm²</td><td class="text-end">21</td>
-            <td class="text-end">316k</td><td class="text-end">87k</td>
-            <td class="text-end">87k</td>
+            <td class="text-end run-group-start">316k</td><td class="text-end">87k</td>
+            <td class="text-end run-group-start">87k</td>
             <td class="text-end">316k</td>
-            <td class="text-end">1.3M</td><td class="text-end">224k</td>
-            <td class="text-end">567k</td></tr>
+            <td class="text-end">567k</td>
+            <td class="text-end run-group-start">1.3M</td>
+            <td class="text-end">224k</td></tr>
           <tr><td class="text-nowrap"><strong>1 × ½</strong></td><td class="text-nowrap">3.93 × 2.53 mm</td>
             <td class="text-end">5.9 mm²</td><td class="text-end">4</td>
-            <td class="text-end">36k</td><td class="text-end">36k</td>
-            <td class="text-end">36k</td>
+            <td class="text-end run-group-start">36k</td><td class="text-end">36k</td>
+            <td class="text-end run-group-start">36k</td>
             <td class="text-end">131k</td>
-            <td class="text-end">539k</td><td class="text-end">93k</td>
-            <td class="text-end">235k</td></tr>
+            <td class="text-end">235k</td>
+            <td class="text-end run-group-start">539k</td>
+            <td class="text-end">93k</td></tr>
           <tr><td class="text-nowrap"><strong>½ × 1</strong></td><td class="text-nowrap">1.94 × 5.12 mm</td>
             <td class="text-end">5.5 mm²</td><td class="text-end">4</td>
-            <td class="text-end">35k</td><td class="text-end">35k</td>
-            <td class="text-end">33k</td>
+            <td class="text-end run-group-start">35k</td><td class="text-end">35k</td>
+            <td class="text-end run-group-start">33k</td>
             <td class="text-end">121k</td>
-            <td class="text-end">499k</td><td class="text-end">86k</td>
-            <td class="text-end">218k</td></tr>
+            <td class="text-end">218k</td>
+            <td class="text-end run-group-start">499k</td>
+            <td class="text-end">86k</td></tr>
           <tr><td class="text-nowrap"><strong>½ × ½</strong></td><td class="text-nowrap">1.94 × 2.53 mm</td>
             <td class="text-end">2.3 mm²</td><td class="text-end">1</td>
-            <td class="text-end">36k</td><td class="text-end">36k</td>
-            <td class="text-end">14k</td>
+            <td class="text-end run-group-start">36k</td><td class="text-end">36k</td>
+            <td class="text-end run-group-start">14k</td>
             <td class="text-end">50k</td>
-            <td class="text-end">207k</td><td class="text-end">36k</td>
-            <td class="text-end">90k</td></tr>
+            <td class="text-end">90k</td>
+            <td class="text-end run-group-start">207k</td>
+            <td class="text-end">36k</td></tr>
         </tbody>
       </table>
     </div>
-    <p class="small text-muted mb-40">Core area is the die minus a 350 µm pad ring on each side. "At typical density"
-      and "at best density" multiply the core area by this run's median and best whole-die densities; SRAM and analog
+    <p class="small text-muted mb-40">Core area is the die minus a 350 µm pad ring on each side. "Typical"
+      and "best" multiply the core area by this run's median and best whole-die logic densities, and "densest" by the
+      densest 1 mm² any design on this run reached; SRAM and analog
       blocks take their area out of that. The theoretical maxima fill the core with nothing but that one cell of
       <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a>, the
-      library most used on this run, edge to edge with no routing; "at densest achieved" multiplies the core area by the
-      densest 1 mm² any design on this run reached.</p>
+      library most used on this run, edge to edge with no routing.</p>
 
     <h3 class="mb-10">Logic density of every digital design</h3>
     <p class="text-muted small mb-20">Solid bar: average over the core. Outlined bar: the densest single mm² outside SRAM (a dash where memory covers most of the die). The scale
@@ -2130,6 +2135,6 @@ Each project page links to a zoomable viewer of its die. Full resolution images:
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="run.js?v=587cf594be"></script>
+  <script src="run.js?v=5110e7fdfc"></script>
 </body>
 </html>
