@@ -1,0 +1,487 @@
+slot_id,cell_name,device,source_class,ip_cell,ip_origin,count,area_um2,avg_area_um2,basis
+BTAP,BTAP_chip_top_0_0,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1122,,,confirmed: library cell name prefix
+BTAP,BTAP_chip_top_0_0,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),18,,,confirmed: library cell name prefix
+BTAP,BTAP_chip_top_0_0,sram_macros,foundry,gf180mcu_fd_ip_sram,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),28,,,confirmed: library cell name prefix
+BTAP,BTAP_chip_top_0_0,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu9t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),199708,,,confirmed: library cell name prefix
+BTAP,BTAP_chip_top_0_0,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7856,40078.64,5.102,confirmed: inside pad library cells
+BTAP,BTAP_chip_top_0_0,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),448,14952.8,33.377,confirmed: inside pad library cells
+BTAP,BTAP_chip_top_0_0,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),35468,1321325.0,37.254,confirmed: inside pad library cells
+BTAP,BTAP_chip_top_0_0,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7192,31157.84,4.332,confirmed: inside pad library cells
+BTAP,BTAP_chip_top_0_0,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),672,25704.0,38.25,confirmed: inside pad library cells
+BTAP,BTAP_chip_top_0_0,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1674,51219.0,30.597,confirmed: inside pad library cells
+BTAP,BTAP_chip_top_0_0,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),216,52200.0,241.667,confirmed: inside pad library cells
+BTAP,BTAP_chip_top_0_0,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),558,1953.0,3.5,confirmed: inside pad library cells
+RZ80,RZ80_chip_top_0_2,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1122,,,confirmed: library cell name prefix
+RZ80,RZ80_chip_top_0_2,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),18,,,confirmed: library cell name prefix
+RZ80,RZ80_chip_top_0_2,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu9t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),213829,,,confirmed: library cell name prefix
+RZ80,RZ80_chip_top_0_2,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7856,40078.64,5.102,confirmed: inside pad library cells
+RZ80,RZ80_chip_top_0_2,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),448,15968.0,35.643,confirmed: inside pad library cells
+RZ80,RZ80_chip_top_0_2,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),35468,1321325.0,37.254,confirmed: inside pad library cells
+RZ80,RZ80_chip_top_0_2,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7192,31157.84,4.332,confirmed: inside pad library cells
+RZ80,RZ80_chip_top_0_2,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),672,24192.0,36.0,confirmed: inside pad library cells
+RZ80,RZ80_chip_top_0_2,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1674,51219.0,30.597,confirmed: inside pad library cells
+RZ80,RZ80_chip_top_0_2,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),216,52200.0,241.667,confirmed: inside pad library cells
+RZ80,RZ80_chip_top_0_2,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),558,1953.0,3.5,confirmed: inside pad library cells
+TZ01,TZ01_chip_top_0_4,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1122,,,confirmed: library cell name prefix
+TZ01,TZ01_chip_top_0_4,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),18,,,confirmed: library cell name prefix
+TZ01,TZ01_chip_top_0_4,sram_macros,foundry,gf180mcu_fd_ip_sram,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),8,,,confirmed: library cell name prefix
+TZ01,TZ01_chip_top_0_4,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),286378,,,confirmed: library cell name prefix
+TZ01,TZ01_chip_top_0_4,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7856,40078.64,5.102,confirmed: inside pad library cells
+TZ01,TZ01_chip_top_0_4,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),448,14840.0,33.125,confirmed: inside pad library cells
+TZ01,TZ01_chip_top_0_4,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),35468,1321325.0,37.254,confirmed: inside pad library cells
+TZ01,TZ01_chip_top_0_4,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7192,31157.84,4.332,confirmed: inside pad library cells
+TZ01,TZ01_chip_top_0_4,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),672,25872.0,38.5,confirmed: inside pad library cells
+TZ01,TZ01_chip_top_0_4,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1674,51219.0,30.597,confirmed: inside pad library cells
+TZ01,TZ01_chip_top_0_4,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),216,52200.0,241.667,confirmed: inside pad library cells
+TZ01,TZ01_chip_top_0_4,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),558,1953.0,3.5,confirmed: inside pad library cells
+TZ01,TZ01_chip_top_0_4,custom_6v,third_party,simple_por,"Caravel harness power-on reset, vendored at ip/simple_por",44,67.9,1.543,confirmed: cell name on the die; the vendored GDS is byte-identical in the five repositories
+TZ01,TZ01_chip_top_0_4,hres,third_party,simple_por,"Caravel harness power-on reset, vendored at ip/simple_por",88,2200.0,25.0,confirmed: cell name on the die; the vendored GDS is byte-identical in the five repositories
+TZ01,TZ01_chip_top_0_4,mim,third_party,simple_por,"Caravel harness power-on reset, vendored at ip/simple_por",9,900.0,100.0,confirmed: cell name on the die; the vendored GDS is byte-identical in the five repositories
+TZ01,TZ01_chip_top_0_4,custom_5v,own,,,47064,749992.72,15.936,not in a recognised library or reused block
+TZ01,TZ01_chip_top_0_4,efuse,own,,,2424,417153.499,172.093,not in a recognised library or reused block
+2975,2975_chip_top_0_6,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1373,,,confirmed: library cell name prefix
+2975,2975_chip_top_0_6,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),17,,,confirmed: library cell name prefix
+2975,2975_chip_top_0_6,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),780017,,,confirmed: library cell name prefix
+2975,2975_chip_top_0_6,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),2649,27401.85,10.344,confirmed: inside pad library cells
+2975,2975_chip_top_0_6,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),120,4792.8,39.94,confirmed: inside pad library cells
+2975,2975_chip_top_0_6,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),42636,1767104.0,41.446,confirmed: inside pad library cells
+2975,2975_chip_top_0_6,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),2108,8981.35,4.261,confirmed: inside pad library cells
+2975,2975_chip_top_0_6,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),180,5712.0,31.733,confirmed: inside pad library cells
+2975,2975_chip_top_0_6,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1581,48373.5,30.597,confirmed: inside pad library cells
+2975,2975_chip_top_0_6,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),204,49300.0,241.667,confirmed: inside pad library cells
+2975,2975_chip_top_0_6,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),527,1844.5,3.5,confirmed: inside pad library cells
+JKU2,JKU2_chip_top_0_8,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),733,,,confirmed: library cell name prefix
+JKU2,JKU2_chip_top_0_8,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),25,,,confirmed: library cell name prefix
+JKU2,JKU2_chip_top_0_8,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),29739,,,confirmed: library cell name prefix
+JKU2,JKU2_chip_top_0_8,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu9t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),110946,,,confirmed: library cell name prefix
+JKU2,JKU2_chip_top_0_8,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),6713,37295.93,5.556,confirmed: inside pad library cells
+JKU2,JKU2_chip_top_0_8,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),376,12708.8,33.8,confirmed: inside pad library cells
+JKU2,JKU2_chip_top_0_8,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),15696,650393.0,41.437,confirmed: inside pad library cells
+JKU2,JKU2_chip_top_0_8,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),6076,26289.83,4.327,confirmed: inside pad library cells
+JKU2,JKU2_chip_top_0_8,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),564,21336.0,37.83,confirmed: inside pad library cells
+JKU2,JKU2_chip_top_0_8,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),2325,71137.5,30.597,confirmed: inside pad library cells
+JKU2,JKU2_chip_top_0_8,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),300,72500.0,241.667,confirmed: inside pad library cells
+JKU2,JKU2_chip_top_0_8,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),775,2712.5,3.5,confirmed: inside pad library cells
+BTAP,BTAP_chip_top_2_0,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1122,,,confirmed: library cell name prefix
+BTAP,BTAP_chip_top_2_0,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),18,,,confirmed: library cell name prefix
+BTAP,BTAP_chip_top_2_0,sram_macros,foundry,gf180mcu_fd_ip_sram,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),28,,,confirmed: library cell name prefix
+BTAP,BTAP_chip_top_2_0,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu9t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),199708,,,confirmed: library cell name prefix
+BTAP,BTAP_chip_top_2_0,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7856,40078.64,5.102,confirmed: inside pad library cells
+BTAP,BTAP_chip_top_2_0,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),448,14952.8,33.377,confirmed: inside pad library cells
+BTAP,BTAP_chip_top_2_0,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),35468,1321325.0,37.254,confirmed: inside pad library cells
+BTAP,BTAP_chip_top_2_0,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7192,31157.84,4.332,confirmed: inside pad library cells
+BTAP,BTAP_chip_top_2_0,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),672,25704.0,38.25,confirmed: inside pad library cells
+BTAP,BTAP_chip_top_2_0,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1674,51219.0,30.597,confirmed: inside pad library cells
+BTAP,BTAP_chip_top_2_0,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),216,52200.0,241.667,confirmed: inside pad library cells
+BTAP,BTAP_chip_top_2_0,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),558,1953.0,3.5,confirmed: inside pad library cells
+RZ80,RZ80_chip_top_2_2,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1122,,,confirmed: library cell name prefix
+RZ80,RZ80_chip_top_2_2,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),18,,,confirmed: library cell name prefix
+RZ80,RZ80_chip_top_2_2,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu9t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),213829,,,confirmed: library cell name prefix
+RZ80,RZ80_chip_top_2_2,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7856,40078.64,5.102,confirmed: inside pad library cells
+RZ80,RZ80_chip_top_2_2,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),448,15968.0,35.643,confirmed: inside pad library cells
+RZ80,RZ80_chip_top_2_2,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),35468,1321325.0,37.254,confirmed: inside pad library cells
+RZ80,RZ80_chip_top_2_2,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7192,31157.84,4.332,confirmed: inside pad library cells
+RZ80,RZ80_chip_top_2_2,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),672,24192.0,36.0,confirmed: inside pad library cells
+RZ80,RZ80_chip_top_2_2,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1674,51219.0,30.597,confirmed: inside pad library cells
+RZ80,RZ80_chip_top_2_2,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),216,52200.0,241.667,confirmed: inside pad library cells
+RZ80,RZ80_chip_top_2_2,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),558,1953.0,3.5,confirmed: inside pad library cells
+TZ01,TZ01_chip_top_2_4,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1122,,,confirmed: library cell name prefix
+TZ01,TZ01_chip_top_2_4,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),18,,,confirmed: library cell name prefix
+TZ01,TZ01_chip_top_2_4,sram_macros,foundry,gf180mcu_fd_ip_sram,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),8,,,confirmed: library cell name prefix
+TZ01,TZ01_chip_top_2_4,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),286378,,,confirmed: library cell name prefix
+TZ01,TZ01_chip_top_2_4,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7856,40078.64,5.102,confirmed: inside pad library cells
+TZ01,TZ01_chip_top_2_4,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),448,14840.0,33.125,confirmed: inside pad library cells
+TZ01,TZ01_chip_top_2_4,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),35468,1321325.0,37.254,confirmed: inside pad library cells
+TZ01,TZ01_chip_top_2_4,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7192,31157.84,4.332,confirmed: inside pad library cells
+TZ01,TZ01_chip_top_2_4,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),672,25872.0,38.5,confirmed: inside pad library cells
+TZ01,TZ01_chip_top_2_4,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1674,51219.0,30.597,confirmed: inside pad library cells
+TZ01,TZ01_chip_top_2_4,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),216,52200.0,241.667,confirmed: inside pad library cells
+TZ01,TZ01_chip_top_2_4,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),558,1953.0,3.5,confirmed: inside pad library cells
+TZ01,TZ01_chip_top_2_4,custom_6v,third_party,simple_por,"Caravel harness power-on reset, vendored at ip/simple_por",44,67.9,1.543,confirmed: cell name on the die; the vendored GDS is byte-identical in the five repositories
+TZ01,TZ01_chip_top_2_4,hres,third_party,simple_por,"Caravel harness power-on reset, vendored at ip/simple_por",88,2200.0,25.0,confirmed: cell name on the die; the vendored GDS is byte-identical in the five repositories
+TZ01,TZ01_chip_top_2_4,mim,third_party,simple_por,"Caravel harness power-on reset, vendored at ip/simple_por",9,900.0,100.0,confirmed: cell name on the die; the vendored GDS is byte-identical in the five repositories
+TZ01,TZ01_chip_top_2_4,custom_5v,own,,,47064,749992.72,15.936,not in a recognised library or reused block
+TZ01,TZ01_chip_top_2_4,efuse,own,,,2424,417153.499,172.093,not in a recognised library or reused block
+2975,2975_chip_top_2_6,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1373,,,confirmed: library cell name prefix
+2975,2975_chip_top_2_6,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),17,,,confirmed: library cell name prefix
+2975,2975_chip_top_2_6,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),780017,,,confirmed: library cell name prefix
+2975,2975_chip_top_2_6,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),2649,27401.85,10.344,confirmed: inside pad library cells
+2975,2975_chip_top_2_6,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),120,4792.8,39.94,confirmed: inside pad library cells
+2975,2975_chip_top_2_6,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),42636,1767104.0,41.446,confirmed: inside pad library cells
+2975,2975_chip_top_2_6,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),2108,8981.35,4.261,confirmed: inside pad library cells
+2975,2975_chip_top_2_6,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),180,5712.0,31.733,confirmed: inside pad library cells
+2975,2975_chip_top_2_6,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1581,48373.5,30.597,confirmed: inside pad library cells
+2975,2975_chip_top_2_6,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),204,49300.0,241.667,confirmed: inside pad library cells
+2975,2975_chip_top_2_6,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),527,1844.5,3.5,confirmed: inside pad library cells
+OCD2,OCD2_gf180mcu_ocd_sram_top_2_8,pad_cells,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),758,,,confirmed: library cell name prefix
+OCD2,OCD2_gf180mcu_ocd_sram_top_2_8,sram_macros,third_party,gf180mcu_ocd_ip_sram,Open Circuit Design (gf180mcu_ocd_*),4,,,confirmed: library cell name prefix
+OCD2,OCD2_gf180mcu_ocd_sram_top_2_8,standard_cells_3v3,third_party,gf180mcu_as_sc_mcu7t3v3,Avalon Semiconductors (gf180mcu_as_*),38,,,confirmed: library cell name prefix
+OCD2,OCD2_gf180mcu_ocd_sram_top_2_8,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),9,,,confirmed: library cell name prefix
+OCD2,OCD2_gf180mcu_ocd_sram_top_2_8,pad_nmos_3v3,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),3744,916.656,0.245,confirmed: inside pad library cells
+OCD2,OCD2_gf180mcu_ocd_sram_top_2_8,pad_nmos_6v,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),8368,83223.28,9.945,confirmed: inside pad library cells
+OCD2,OCD2_gf180mcu_ocd_sram_top_2_8,pad_nmos_sab_6v,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),416,18179.2,43.7,confirmed: inside pad library cells
+OCD2,OCD2_gf180mcu_ocd_sram_top_2_8,pad_nmoscap_6v,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),15976,721627.0,45.169,confirmed: inside pad library cells
+OCD2,OCD2_gf180mcu_ocd_sram_top_2_8,pad_pmos_3v3,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),3744,1445.309,0.386,confirmed: inside pad library cells
+OCD2,OCD2_gf180mcu_ocd_sram_top_2_8,pad_pmos_6v,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),6724,28655.48,4.262,confirmed: inside pad library cells
+OCD2,OCD2_gf180mcu_ocd_sram_top_2_8,pad_pmos_sab_5v,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),624,17472.0,28.0,confirmed: inside pad library cells
+OCD2,OCD2_gf180mcu_ocd_sram_top_2_8,custom_5v,third_party,simple_por,"Caravel harness power-on reset, vendored at ip/simple_por",44,67.9,1.543,confirmed: cell name on the die; the vendored GDS is byte-identical in the five repositories
+OCD2,OCD2_gf180mcu_ocd_sram_top_2_8,hres,third_party,simple_por,"Caravel harness power-on reset, vendored at ip/simple_por",88,2200.0,25.0,confirmed: cell name on the die; the vendored GDS is byte-identical in the five repositories
+OCD2,OCD2_gf180mcu_ocd_sram_top_2_8,mim,third_party,simple_por,"Caravel harness power-on reset, vendored at ip/simple_por",9,900.0,100.0,confirmed: cell name on the die; the vendored GDS is byte-identical in the five repositories
+MOSB,MOSB_chip_top_4_0,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1138,,,confirmed: library cell name prefix
+MOSB,MOSB_chip_top_4_0,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),2,,,confirmed: library cell name prefix
+MOSB,MOSB_chip_top_4_0,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu9t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),26023,,,confirmed: library cell name prefix
+MOSB,MOSB_chip_top_4_0,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1116,34146.0,30.597,confirmed: inside pad library cells
+MOSB,MOSB_chip_top_4_0,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),37292,1878349.0,50.369,confirmed: inside pad library cells
+MOSB,MOSB_chip_top_4_0,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),372,1302.0,3.5,confirmed: inside pad library cells
+MOSB,MOSB_chip_top_4_0,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),186,5691.0,30.597,confirmed: inside pad library cells
+MOSB,MOSB_chip_top_4_0,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),24,5800.0,241.667,confirmed: inside pad library cells
+MOSB,MOSB_chip_top_4_0,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),62,217.0,3.5,confirmed: inside pad library cells
+MOSB,MOSB_chip_top_4_0,custom_3v3,own,,,81762,184125.0,2.252,not in a recognised library or reused block
+MOSB,MOSB_chip_top_4_0,custom_6v,own,,,448,2056.4,4.59,not in a recognised library or reused block
+MOSB,MOSB_chip_top_4_0,diode,own,,,816,68726.566,84.224,not in a recognised library or reused block
+MOSB,MOSB_chip_top_4_0,moscap,own,,,1524,138000.0,90.551,not in a recognised library or reused block
+MOSB,MOSB_chip_top_4_0,nmoscap_6v,own,,,1524,138000.0,90.551,not in a recognised library or reused block
+MOSB,MOSB_chip_top_4_0,poly_sal,own,,,68,13600.0,200.0,not in a recognised library or reused block
+MOSB,MOSB_chip_top_4_0,poly_unsal,own,,,6,330.0,55.0,not in a recognised library or reused block
+MOSB,MOSB_chip_top_4_2,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1138,,,confirmed: library cell name prefix
+MOSB,MOSB_chip_top_4_2,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),2,,,confirmed: library cell name prefix
+MOSB,MOSB_chip_top_4_2,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu9t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),26023,,,confirmed: library cell name prefix
+MOSB,MOSB_chip_top_4_2,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1116,34146.0,30.597,confirmed: inside pad library cells
+MOSB,MOSB_chip_top_4_2,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),37292,1878349.0,50.369,confirmed: inside pad library cells
+MOSB,MOSB_chip_top_4_2,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),372,1302.0,3.5,confirmed: inside pad library cells
+MOSB,MOSB_chip_top_4_2,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),186,5691.0,30.597,confirmed: inside pad library cells
+MOSB,MOSB_chip_top_4_2,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),24,5800.0,241.667,confirmed: inside pad library cells
+MOSB,MOSB_chip_top_4_2,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),62,217.0,3.5,confirmed: inside pad library cells
+MOSB,MOSB_chip_top_4_2,custom_3v3,own,,,81762,184125.0,2.252,not in a recognised library or reused block
+MOSB,MOSB_chip_top_4_2,custom_6v,own,,,448,2056.4,4.59,not in a recognised library or reused block
+MOSB,MOSB_chip_top_4_2,diode,own,,,816,68726.566,84.224,not in a recognised library or reused block
+MOSB,MOSB_chip_top_4_2,moscap,own,,,1524,138000.0,90.551,not in a recognised library or reused block
+MOSB,MOSB_chip_top_4_2,nmoscap_6v,own,,,1524,138000.0,90.551,not in a recognised library or reused block
+MOSB,MOSB_chip_top_4_2,poly_sal,own,,,68,13600.0,200.0,not in a recognised library or reused block
+MOSB,MOSB_chip_top_4_2,poly_unsal,own,,,6,330.0,55.0,not in a recognised library or reused block
+OCD2,OCD2_gf180mcu_ocd_sram_top_4_8,pad_cells,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),758,,,confirmed: library cell name prefix
+OCD2,OCD2_gf180mcu_ocd_sram_top_4_8,sram_macros,third_party,gf180mcu_ocd_ip_sram,Open Circuit Design (gf180mcu_ocd_*),4,,,confirmed: library cell name prefix
+OCD2,OCD2_gf180mcu_ocd_sram_top_4_8,standard_cells_3v3,third_party,gf180mcu_as_sc_mcu7t3v3,Avalon Semiconductors (gf180mcu_as_*),38,,,confirmed: library cell name prefix
+OCD2,OCD2_gf180mcu_ocd_sram_top_4_8,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),9,,,confirmed: library cell name prefix
+OCD2,OCD2_gf180mcu_ocd_sram_top_4_8,pad_nmos_3v3,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),3744,916.656,0.245,confirmed: inside pad library cells
+OCD2,OCD2_gf180mcu_ocd_sram_top_4_8,pad_nmos_6v,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),8368,83223.28,9.945,confirmed: inside pad library cells
+OCD2,OCD2_gf180mcu_ocd_sram_top_4_8,pad_nmos_sab_6v,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),416,18179.2,43.7,confirmed: inside pad library cells
+OCD2,OCD2_gf180mcu_ocd_sram_top_4_8,pad_nmoscap_6v,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),15976,721627.0,45.169,confirmed: inside pad library cells
+OCD2,OCD2_gf180mcu_ocd_sram_top_4_8,pad_pmos_3v3,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),3744,1445.309,0.386,confirmed: inside pad library cells
+OCD2,OCD2_gf180mcu_ocd_sram_top_4_8,pad_pmos_6v,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),6724,28655.48,4.262,confirmed: inside pad library cells
+OCD2,OCD2_gf180mcu_ocd_sram_top_4_8,pad_pmos_sab_5v,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),624,17472.0,28.0,confirmed: inside pad library cells
+OCD2,OCD2_gf180mcu_ocd_sram_top_4_8,custom_5v,third_party,simple_por,"Caravel harness power-on reset, vendored at ip/simple_por",44,67.9,1.543,confirmed: cell name on the die; the vendored GDS is byte-identical in the five repositories
+OCD2,OCD2_gf180mcu_ocd_sram_top_4_8,hres,third_party,simple_por,"Caravel harness power-on reset, vendored at ip/simple_por",88,2200.0,25.0,confirmed: cell name on the die; the vendored GDS is byte-identical in the five repositories
+OCD2,OCD2_gf180mcu_ocd_sram_top_4_8,mim,third_party,simple_por,"Caravel harness power-on reset, vendored at ip/simple_por",9,900.0,100.0,confirmed: cell name on the die; the vendored GDS is byte-identical in the five repositories
+AS03,AS03_chip_top_6_0,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1127,,,confirmed: library cell name prefix
+AS03,AS03_chip_top_6_0,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),13,,,confirmed: library cell name prefix
+AS03,AS03_chip_top_6_0,standard_cells_5v0,third_party,gf180mcu_as_ex_mcu7t5v0,Avalon Semiconductors (gf180mcu_as_*),3587,,,confirmed: library cell name prefix
+AS03,AS03_chip_top_6_0,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),367871,,,confirmed: library cell name prefix
+AS03,AS03_chip_top_6_0,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu9t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),17797,,,confirmed: library cell name prefix
+AS03,AS03_chip_top_6_0,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),6933,40450.62,5.835,confirmed: inside pad library cells
+AS03,AS03_chip_top_6_0,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),384,12043.2,31.363,confirmed: inside pad library cells
+AS03,AS03_chip_top_6_0,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),35816,1420657.0,39.665,confirmed: inside pad library cells
+AS03,AS03_chip_top_6_0,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),6231,26939.22,4.323,confirmed: inside pad library cells
+AS03,AS03_chip_top_6_0,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),576,23184.0,40.25,confirmed: inside pad library cells
+AS03,AS03_chip_top_6_0,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1209,36991.5,30.597,confirmed: inside pad library cells
+AS03,AS03_chip_top_6_0,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),156,37700.0,241.667,confirmed: inside pad library cells
+AS03,AS03_chip_top_6_0,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),403,1410.5,3.5,confirmed: inside pad library cells
+AS03,AS03_chip_top_6_0,custom_5v,own,,,990,55941.6,56.507,not in a recognised library or reused block
+AS03,AS03_chip_top_6_0,hres,own,,,319,1621.4,5.083,not in a recognised library or reused block
+TTPG,TTPG_tt_gf_wrapper_6_2,pad_cells,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),1140,,,confirmed: library cell name prefix
+TTPG,TTPG_tt_gf_wrapper_6_2,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),560478,,,confirmed: library cell name prefix
+TTPG,TTPG_tt_gf_wrapper_6_2,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu9t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),9613,,,confirmed: library cell name prefix
+TTPG,TTPG_tt_gf_wrapper_6_2,pad_nmos_3v3,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),1044,175.392,0.168,confirmed: inside pad library cells
+TTPG,TTPG_tt_gf_wrapper_6_2,pad_nmos_6v,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),5654,76619.06,13.551,confirmed: inside pad library cells
+TTPG,TTPG_tt_gf_wrapper_6_2,pad_nmos_sab_6v,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),232,8333.6,35.921,confirmed: inside pad library cells
+TTPG,TTPG_tt_gf_wrapper_6_2,pad_nmoscap_6v,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),36380,1600033.0,43.981,confirmed: inside pad library cells
+TTPG,TTPG_tt_gf_wrapper_6_2,pad_pmos_3v3,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),1044,360.528,0.345,confirmed: inside pad library cells
+TTPG,TTPG_tt_gf_wrapper_6_2,pad_pmos_6v,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),4079,17132.71,4.2,confirmed: inside pad library cells
+TTPG,TTPG_tt_gf_wrapper_6_2,pad_pmos_sab_5v,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),348,12432.0,35.724,confirmed: inside pad library cells
+TTPG,TTPG_tt_gf_wrapper_6_2,custom_3v3,third_party,tt_pg / tt_asw,Tiny Tapeout power gates and analog switch (smunaut/tt-multiplexer),18377,42699.113,2.324,confirmed: cell name on the die and in the repository's tt-multiplexer submodule
+TTP2,TTP2_tt_gf_wrapper_6_4,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1140,,,confirmed: library cell name prefix
+TTP2,TTP2_tt_gf_wrapper_6_4,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),560457,,,confirmed: library cell name prefix
+TTP2,TTP2_tt_gf_wrapper_6_4,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu9t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),9613,,,confirmed: library cell name prefix
+TTP2,TTP2_tt_gf_wrapper_6_4,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),5915,77258.51,13.061,confirmed: inside pad library cells
+TTP2,TTP2_tt_gf_wrapper_6_4,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),232,8333.6,35.921,confirmed: inside pad library cells
+TTP2,TTP2_tt_gf_wrapper_6_4,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),36380,1600033.0,43.981,confirmed: inside pad library cells
+TTP2,TTP2_tt_gf_wrapper_6_4,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),4340,18289.81,4.214,confirmed: inside pad library cells
+TTP2,TTP2_tt_gf_wrapper_6_4,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),348,12432.0,35.724,confirmed: inside pad library cells
+GD03,GD03_chip_top_6_6,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1122,,,confirmed: library cell name prefix
+GD03,GD03_chip_top_6_6,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),18,,,confirmed: library cell name prefix
+GD03,GD03_chip_top_6_6,sram_macros,foundry,gf180mcu_fd_ip_sram,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),23,,,confirmed: library cell name prefix
+GD03,GD03_chip_top_6_6,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),319940,,,confirmed: library cell name prefix
+GD03,GD03_chip_top_6_6,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7856,40078.64,5.102,confirmed: inside pad library cells
+GD03,GD03_chip_top_6_6,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),448,13486.4,30.104,confirmed: inside pad library cells
+GD03,GD03_chip_top_6_6,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),35468,1321325.0,37.254,confirmed: inside pad library cells
+GD03,GD03_chip_top_6_6,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7192,31157.84,4.332,confirmed: inside pad library cells
+GD03,GD03_chip_top_6_6,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),672,27888.0,41.5,confirmed: inside pad library cells
+GD03,GD03_chip_top_6_6,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1674,51219.0,30.597,confirmed: inside pad library cells
+GD03,GD03_chip_top_6_6,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),216,52200.0,241.667,confirmed: inside pad library cells
+GD03,GD03_chip_top_6_6,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),558,1953.0,3.5,confirmed: inside pad library cells
+GD04,GD04_chip_top_6_8,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),742,,,confirmed: library cell name prefix
+GD04,GD04_chip_top_6_8,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),16,,,confirmed: library cell name prefix
+GD04,GD04_chip_top_6_8,sram_macros,foundry,gf180mcu_fd_ip_sram,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),6,,,confirmed: library cell name prefix
+GD04,GD04_chip_top_6_8,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu9t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),139690,,,confirmed: library cell name prefix
+GD04,GD04_chip_top_6_8,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7856,40078.64,5.102,confirmed: inside pad library cells
+GD04,GD04_chip_top_6_8,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),448,13824.8,30.859,confirmed: inside pad library cells
+GD04,GD04_chip_top_6_8,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),15804,651257.0,41.208,confirmed: inside pad library cells
+GD04,GD04_chip_top_6_8,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7192,31157.84,4.332,confirmed: inside pad library cells
+GD04,GD04_chip_top_6_8,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),672,27384.0,40.75,confirmed: inside pad library cells
+GD04,GD04_chip_top_6_8,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1488,45528.0,30.597,confirmed: inside pad library cells
+GD04,GD04_chip_top_6_8,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),192,46400.0,241.667,confirmed: inside pad library cells
+GD04,GD04_chip_top_6_8,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),496,1736.0,3.5,confirmed: inside pad library cells
+KIAN,KIAN_chip_top_8_0,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1122,,,confirmed: library cell name prefix
+KIAN,KIAN_chip_top_8_0,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),18,,,confirmed: library cell name prefix
+KIAN,KIAN_chip_top_8_0,sram_macros,foundry,gf180mcu_fd_ip_sram,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),21,,,confirmed: library cell name prefix
+KIAN,KIAN_chip_top_8_0,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu9t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),335465,,,confirmed: library cell name prefix
+KIAN,KIAN_chip_top_8_0,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7856,40078.64,5.102,confirmed: inside pad library cells
+KIAN,KIAN_chip_top_8_0,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),448,13486.4,30.104,confirmed: inside pad library cells
+KIAN,KIAN_chip_top_8_0,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),35468,1321325.0,37.254,confirmed: inside pad library cells
+KIAN,KIAN_chip_top_8_0,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7192,31157.84,4.332,confirmed: inside pad library cells
+KIAN,KIAN_chip_top_8_0,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),672,27888.0,41.5,confirmed: inside pad library cells
+KIAN,KIAN_chip_top_8_0,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1674,51219.0,30.597,confirmed: inside pad library cells
+KIAN,KIAN_chip_top_8_0,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),216,52200.0,241.667,confirmed: inside pad library cells
+KIAN,KIAN_chip_top_8_0,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),558,1953.0,3.5,confirmed: inside pad library cells
+BRWN,BRWN_ENGN2912E_TOP_8_2,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1122,,,confirmed: library cell name prefix
+BRWN,BRWN_ENGN2912E_TOP_8_2,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),18,,,confirmed: library cell name prefix
+BRWN,BRWN_ENGN2912E_TOP_8_2,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),23845,,,confirmed: library cell name prefix
+BRWN,BRWN_ENGN2912E_TOP_8_2,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu9t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),45429,,,confirmed: library cell name prefix
+BRWN,BRWN_ENGN2912E_TOP_8_2,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),6967,37914.31,5.442,confirmed: inside pad library cells
+BRWN,BRWN_ENGN2912E_TOP_8_2,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),392,15664.0,39.959,confirmed: inside pad library cells
+BRWN,BRWN_ENGN2912E_TOP_8_2,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),35636,1377353.0,38.651,confirmed: inside pad library cells
+BRWN,BRWN_ENGN2912E_TOP_8_2,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),6324,27371.61,4.328,confirmed: inside pad library cells
+BRWN,BRWN_ENGN2912E_TOP_8_2,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),588,18648.0,31.714,confirmed: inside pad library cells
+BRWN,BRWN_ENGN2912E_TOP_8_2,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1674,51219.0,30.597,confirmed: inside pad library cells
+BRWN,BRWN_ENGN2912E_TOP_8_2,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),216,52200.0,241.667,confirmed: inside pad library cells
+BRWN,BRWN_ENGN2912E_TOP_8_2,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),558,1953.0,3.5,confirmed: inside pad library cells
+BRWN,BRWN_ENGN2912E_TOP_8_2,custom_3v3,own,,,67982,10655.612,0.157,not in a recognised library or reused block
+MOLE,MOLE_chip_top_8_4,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1122,,,confirmed: library cell name prefix
+MOLE,MOLE_chip_top_8_4,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),18,,,confirmed: library cell name prefix
+MOLE,MOLE_chip_top_8_4,sram_macros,foundry,gf180mcu_fd_ip_sram,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),6,,,confirmed: library cell name prefix
+MOLE,MOLE_chip_top_8_4,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),499123,,,confirmed: library cell name prefix
+MOLE,MOLE_chip_top_8_4,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7856,40078.64,5.102,confirmed: inside pad library cells
+MOLE,MOLE_chip_top_8_4,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),448,13599.2,30.355,confirmed: inside pad library cells
+MOLE,MOLE_chip_top_8_4,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),35468,1321325.0,37.254,confirmed: inside pad library cells
+MOLE,MOLE_chip_top_8_4,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7192,31157.84,4.332,confirmed: inside pad library cells
+MOLE,MOLE_chip_top_8_4,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),672,27720.0,41.25,confirmed: inside pad library cells
+MOLE,MOLE_chip_top_8_4,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1674,51219.0,30.597,confirmed: inside pad library cells
+MOLE,MOLE_chip_top_8_4,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),216,52200.0,241.667,confirmed: inside pad library cells
+MOLE,MOLE_chip_top_8_4,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),558,1953.0,3.5,confirmed: inside pad library cells
+OCD1,OCD1_caravel_openframe_top_8_6,pad_cells,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),1102,,,confirmed: library cell name prefix
+OCD1,OCD1_caravel_openframe_top_8_6,sram_macros,third_party,gf180mcu_ocd_ip_sram,Open Circuit Design (gf180mcu_ocd_*),8,,,confirmed: library cell name prefix
+OCD1,OCD1_caravel_openframe_top_8_6,standard_cells_3v3,third_party,gf180mcu_as_sc_mcu7t3v3,Avalon Semiconductors (gf180mcu_as_*),557991,,,confirmed: library cell name prefix
+OCD1,OCD1_caravel_openframe_top_8_6,pad_nmos_3v3,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),3240,793.26,0.245,confirmed: inside pad library cells
+OCD1,OCD1_caravel_openframe_top_8_6,pad_nmos_5v,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),22,11.48,0.522,confirmed: inside pad library cells
+OCD1,OCD1_caravel_openframe_top_8_6,pad_nmos_6v,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),7728,86904.3,11.245,confirmed: inside pad library cells
+OCD1,OCD1_caravel_openframe_top_8_6,pad_nmos_sab_6v,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),360,15732.0,43.7,confirmed: inside pad library cells
+OCD1,OCD1_caravel_openframe_top_8_6,pad_nmoscap_6v,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),34238,1522932.5,44.481,confirmed: inside pad library cells
+OCD1,OCD1_caravel_openframe_top_8_6,pad_pmos_3v3,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),3240,1250.748,0.386,confirmed: inside pad library cells
+OCD1,OCD1_caravel_openframe_top_8_6,pad_pmos_5v,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),22,14.64,0.665,confirmed: inside pad library cells
+OCD1,OCD1_caravel_openframe_top_8_6,pad_pmos_6v,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),5981,25365.55,4.241,confirmed: inside pad library cells
+OCD1,OCD1_caravel_openframe_top_8_6,pad_pmos_sab_5v,third_party,gf180mcu_ocd_io,Open Circuit Design (gf180mcu_ocd_*),540,15120.0,28.0,confirmed: inside pad library cells
+OCD1,OCD1_caravel_openframe_top_8_6,custom_6v,third_party,simple_por,"Caravel harness power-on reset, vendored at ip/simple_por",44,67.9,1.543,confirmed: cell name on the die; the vendored GDS is byte-identical in the five repositories
+OCD1,OCD1_caravel_openframe_top_8_6,hres,third_party,simple_por,"Caravel harness power-on reset, vendored at ip/simple_por",88,2200.0,25.0,confirmed: cell name on the die; the vendored GDS is byte-identical in the five repositories
+OCD1,OCD1_caravel_openframe_top_8_6,mim,third_party,simple_por,"Caravel harness power-on reset, vendored at ip/simple_por",9,900.0,100.0,confirmed: cell name on the die; the vendored GDS is byte-identical in the five repositories
+TQVC,TQVC_chip_top_8_8,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),742,,,confirmed: library cell name prefix
+TQVC,TQVC_chip_top_8_8,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),16,,,confirmed: library cell name prefix
+TQVC,TQVC_chip_top_8_8,sram_macros,foundry,gf180mcu_fd_ip_sram,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1,,,confirmed: library cell name prefix
+TQVC,TQVC_chip_top_8_8,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),173210,,,confirmed: library cell name prefix
+TQVC,TQVC_chip_top_8_8,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7348,38841.88,5.286,confirmed: inside pad library cells
+TQVC,TQVC_chip_top_8_8,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),416,12990.4,31.227,confirmed: inside pad library cells
+TQVC,TQVC_chip_top_8_8,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),15900,683273.0,42.973,confirmed: inside pad library cells
+TQVC,TQVC_chip_top_8_8,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),6696,28994.28,4.33,confirmed: inside pad library cells
+TQVC,TQVC_chip_top_8_8,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),624,25200.0,40.385,confirmed: inside pad library cells
+TQVC,TQVC_chip_top_8_8,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1488,45528.0,30.597,confirmed: inside pad library cells
+TQVC,TQVC_chip_top_8_8,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),192,46400.0,241.667,confirmed: inside pad library cells
+TQVC,TQVC_chip_top_8_8,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),496,1736.0,3.5,confirmed: inside pad library cells
+JKU1,JKU1_chip_top_10_0,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1124,,,confirmed: library cell name prefix
+JKU1,JKU1_chip_top_10_0,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),16,,,confirmed: library cell name prefix
+JKU1,JKU1_chip_top_10_0,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),570147,,,confirmed: library cell name prefix
+JKU1,JKU1_chip_top_10_0,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),8110,40697.02,5.018,confirmed: inside pad library cells
+JKU1,JKU1_chip_top_10_0,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),464,15652.0,33.733,confirmed: inside pad library cells
+JKU1,JKU1_chip_top_10_0,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),35492,1321517.0,37.234,confirmed: inside pad library cells
+JKU1,JKU1_chip_top_10_0,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7440,32239.62,4.333,confirmed: inside pad library cells
+JKU1,JKU1_chip_top_10_0,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),696,26376.0,37.897,confirmed: inside pad library cells
+JKU1,JKU1_chip_top_10_0,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1488,45528.0,30.597,confirmed: inside pad library cells
+JKU1,JKU1_chip_top_10_0,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),192,46400.0,241.667,confirmed: inside pad library cells
+JKU1,JKU1_chip_top_10_0,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),496,1736.0,3.5,confirmed: inside pad library cells
+WSLG,WSLG_chip_top_10_2,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1122,,,confirmed: library cell name prefix
+WSLG,WSLG_chip_top_10_2,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),18,,,confirmed: library cell name prefix
+WSLG,WSLG_chip_top_10_2,standard_cells_5v0,third_party,gf180mcu_as_ex_mcu7t5v0,Avalon Semiconductors (gf180mcu_as_*),1692,,,confirmed: library cell name prefix
+WSLG,WSLG_chip_top_10_2,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),158118,,,confirmed: library cell name prefix
+WSLG,WSLG_chip_top_10_2,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7602,39460.26,5.191,confirmed: inside pad library cells
+WSLG,WSLG_chip_top_10_2,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),432,14366.4,33.256,confirmed: inside pad library cells
+WSLG,WSLG_chip_top_10_2,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),35516,1337333.0,37.654,confirmed: inside pad library cells
+WSLG,WSLG_chip_top_10_2,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),6944,30076.06,4.331,confirmed: inside pad library cells
+WSLG,WSLG_chip_top_10_2,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),648,24864.0,38.37,confirmed: inside pad library cells
+WSLG,WSLG_chip_top_10_2,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1674,51219.0,30.597,confirmed: inside pad library cells
+WSLG,WSLG_chip_top_10_2,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),216,52200.0,241.667,confirmed: inside pad library cells
+WSLG,WSLG_chip_top_10_2,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),558,1953.0,3.5,confirmed: inside pad library cells
+CHES,CHES_chip_top_10_4,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1122,,,confirmed: library cell name prefix
+CHES,CHES_chip_top_10_4,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),18,,,confirmed: library cell name prefix
+CHES,CHES_chip_top_10_4,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu9t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),551595,,,confirmed: library cell name prefix
+CHES,CHES_chip_top_10_4,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7602,39460.26,5.191,confirmed: inside pad library cells
+CHES,CHES_chip_top_10_4,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),432,14366.4,33.256,confirmed: inside pad library cells
+CHES,CHES_chip_top_10_4,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),35516,1337333.0,37.654,confirmed: inside pad library cells
+CHES,CHES_chip_top_10_4,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),6944,30076.06,4.331,confirmed: inside pad library cells
+CHES,CHES_chip_top_10_4,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),648,24864.0,38.37,confirmed: inside pad library cells
+CHES,CHES_chip_top_10_4,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1674,51219.0,30.597,confirmed: inside pad library cells
+CHES,CHES_chip_top_10_4,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),216,52200.0,241.667,confirmed: inside pad library cells
+CHES,CHES_chip_top_10_4,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),558,1953.0,3.5,confirmed: inside pad library cells
+MOS2,MOS2_chip_top_10_6,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1490,,,confirmed: library cell name prefix
+MOS2,MOS2_chip_top_10_6,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),18,,,confirmed: library cell name prefix
+MOS2,MOS2_chip_top_10_6,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu9t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),52,,,confirmed: library cell name prefix
+MOS2,MOS2_chip_top_10_6,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),11959,115544.8,9.662,confirmed: inside pad library cells
+MOS2,MOS2_chip_top_10_6,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),560,19960.0,35.643,confirmed: inside pad library cells
+MOS2,MOS2_chip_top_10_6,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),49966,2180277.5,43.635,confirmed: inside pad library cells
+MOS2,MOS2_chip_top_10_6,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),9703,41442.8,4.271,confirmed: inside pad library cells
+MOS2,MOS2_chip_top_10_6,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),840,30240.0,36.0,confirmed: inside pad library cells
+MOS2,MOS2_chip_top_10_6,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1674,51219.0,30.597,confirmed: inside pad library cells
+MOS2,MOS2_chip_top_10_6,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),216,52200.0,241.667,confirmed: inside pad library cells
+MOS2,MOS2_chip_top_10_6,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),558,1953.0,3.5,confirmed: inside pad library cells
+MOS2,MOS2_chip_top_10_6,bjt,own,,,32,67.2,2.1,not in a recognised library or reused block
+MOS2,MOS2_chip_top_10_6,custom_3v3,own,,,3440,13759.445,4.0,not in a recognised library or reused block
+MOS2,MOS2_chip_top_10_6,custom_5v,own,,,1329,2622.52,1.973,not in a recognised library or reused block
+MOS2,MOS2_chip_top_10_6,diode,own,,,242,24008.781,99.21,not in a recognised library or reused block
+MOS2,MOS2_chip_top_10_6,dnwell,own,,,13,39091.173,3007.013,not in a recognised library or reused block
+MOS2,MOS2_chip_top_10_6,hres,own,,,275,1809.7,6.581,not in a recognised library or reused block
+MOS2,MOS2_chip_top_10_6,mim,own,,,50,5897.0,117.94,not in a recognised library or reused block
+MOS2,MOS2_chip_top_10_6,poly_unsal,own,,,31,12004.0,387.226,not in a recognised library or reused block
+GD04,GD04_chip_top_10_8,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),742,,,confirmed: library cell name prefix
+GD04,GD04_chip_top_10_8,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),16,,,confirmed: library cell name prefix
+GD04,GD04_chip_top_10_8,sram_macros,foundry,gf180mcu_fd_ip_sram,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),6,,,confirmed: library cell name prefix
+GD04,GD04_chip_top_10_8,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu9t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),139690,,,confirmed: library cell name prefix
+GD04,GD04_chip_top_10_8,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7856,40078.64,5.102,confirmed: inside pad library cells
+GD04,GD04_chip_top_10_8,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),448,13824.8,30.859,confirmed: inside pad library cells
+GD04,GD04_chip_top_10_8,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),15804,651257.0,41.208,confirmed: inside pad library cells
+GD04,GD04_chip_top_10_8,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7192,31157.84,4.332,confirmed: inside pad library cells
+GD04,GD04_chip_top_10_8,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),672,27384.0,40.75,confirmed: inside pad library cells
+GD04,GD04_chip_top_10_8,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1488,45528.0,30.597,confirmed: inside pad library cells
+GD04,GD04_chip_top_10_8,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),192,46400.0,241.667,confirmed: inside pad library cells
+GD04,GD04_chip_top_10_8,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),496,1736.0,3.5,confirmed: inside pad library cells
+CAFE,CAFE_chip_top_12_0,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1122,,,confirmed: library cell name prefix
+CAFE,CAFE_chip_top_12_0,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),18,,,confirmed: library cell name prefix
+CAFE,CAFE_chip_top_12_0,sram_macros,foundry,gf180mcu_fd_ip_sram,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),20,,,confirmed: library cell name prefix
+CAFE,CAFE_chip_top_12_0,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),367542,,,confirmed: library cell name prefix
+CAFE,CAFE_chip_top_12_0,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7729,39769.45,5.145,confirmed: inside pad library cells
+CAFE,CAFE_chip_top_12_0,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),440,15054.4,34.215,confirmed: inside pad library cells
+CAFE,CAFE_chip_top_12_0,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),35492,1329329.0,37.454,confirmed: inside pad library cells
+CAFE,CAFE_chip_top_12_0,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7068,30616.95,4.332,confirmed: inside pad library cells
+CAFE,CAFE_chip_top_12_0,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),660,24696.0,37.418,confirmed: inside pad library cells
+CAFE,CAFE_chip_top_12_0,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1674,51219.0,30.597,confirmed: inside pad library cells
+CAFE,CAFE_chip_top_12_0,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),216,52200.0,241.667,confirmed: inside pad library cells
+CAFE,CAFE_chip_top_12_0,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),558,1953.0,3.5,confirmed: inside pad library cells
+RZML,RZML_chip_top_12_2,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1122,,,confirmed: library cell name prefix
+RZML,RZML_chip_top_12_2,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),18,,,confirmed: library cell name prefix
+RZML,RZML_chip_top_12_2,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),522762,,,confirmed: library cell name prefix
+RZML,RZML_chip_top_12_2,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7856,40078.64,5.102,confirmed: inside pad library cells
+RZML,RZML_chip_top_12_2,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),448,14840.0,33.125,confirmed: inside pad library cells
+RZML,RZML_chip_top_12_2,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),35468,1321325.0,37.254,confirmed: inside pad library cells
+RZML,RZML_chip_top_12_2,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7192,31157.84,4.332,confirmed: inside pad library cells
+RZML,RZML_chip_top_12_2,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),672,25872.0,38.5,confirmed: inside pad library cells
+RZML,RZML_chip_top_12_2,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1674,51219.0,30.597,confirmed: inside pad library cells
+RZML,RZML_chip_top_12_2,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),216,52200.0,241.667,confirmed: inside pad library cells
+RZML,RZML_chip_top_12_2,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),558,1953.0,3.5,confirmed: inside pad library cells
+ISHI,ISHI_ISHI-KAI_WS_RUN1_12_4,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1119,,,confirmed: library cell name prefix
+ISHI,ISHI_ISHI-KAI_WS_RUN1_12_4,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),21,,,confirmed: library cell name prefix
+ISHI,ISHI_ISHI-KAI_WS_RUN1_12_4,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),63,,,confirmed: library cell name prefix
+ISHI,ISHI_ISHI-KAI_WS_RUN1_12_4,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),2522,27092.66,10.743,confirmed: inside pad library cells
+ISHI,ISHI_ISHI-KAI_WS_RUN1_12_4,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),112,3879.2,34.636,confirmed: inside pad library cells
+ISHI,ISHI_ISHI-KAI_WS_RUN1_12_4,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),36368,1633193.0,44.907,confirmed: inside pad library cells
+ISHI,ISHI_ISHI-KAI_WS_RUN1_12_4,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1984,8440.46,4.254,confirmed: inside pad library cells
+ISHI,ISHI_ISHI-KAI_WS_RUN1_12_4,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),168,6216.0,37.0,confirmed: inside pad library cells
+ISHI,ISHI_ISHI-KAI_WS_RUN1_12_4,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1953,59755.5,30.597,confirmed: inside pad library cells
+ISHI,ISHI_ISHI-KAI_WS_RUN1_12_4,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),252,60900.0,241.667,confirmed: inside pad library cells
+ISHI,ISHI_ISHI-KAI_WS_RUN1_12_4,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),651,2278.5,3.5,confirmed: inside pad library cells
+ISHI,ISHI_ISHI-KAI_WS_RUN1_12_4,custom_3v3,own,,,9268,22570.343,2.435,not in a recognised library or reused block
+ISHI,ISHI_ISHI-KAI_WS_RUN1_12_4,custom_5v,own,,,4781,3150.405,0.659,not in a recognised library or reused block
+ISHI,ISHI_ISHI-KAI_WS_RUN1_12_4,custom_6v,own,,,90,527.0,5.856,not in a recognised library or reused block
+ISHI,ISHI_ISHI-KAI_WS_RUN1_12_4,diode,own,,,64,307.328,4.802,not in a recognised library or reused block
+ISHI,ISHI_ISHI-KAI_WS_RUN1_12_4,dnwell,own,,,73,19484.035,266.905,not in a recognised library or reused block
+ISHI,ISHI_ISHI-KAI_WS_RUN1_12_4,hres,own,,,33,660.0,20.0,not in a recognised library or reused block
+ISHI,ISHI_ISHI-KAI_WS_RUN1_12_4,mim,own,,,95,13936.97,146.705,not in a recognised library or reused block
+ISHI,ISHI_ISHI-KAI_WS_RUN1_12_4,poly_unsal,own,,,438,32464.64,74.12,not in a recognised library or reused block
+RBOY,RBOY_chip_top_12_6,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1122,,,confirmed: library cell name prefix
+RBOY,RBOY_chip_top_12_6,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),18,,,confirmed: library cell name prefix
+RBOY,RBOY_chip_top_12_6,sram_macros,foundry,gf180mcu_fd_ip_sram,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),30,,,confirmed: library cell name prefix
+RBOY,RBOY_chip_top_12_6,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu9t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),249307,,,confirmed: library cell name prefix
+RBOY,RBOY_chip_top_12_6,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7856,40078.64,5.102,confirmed: inside pad library cells
+RBOY,RBOY_chip_top_12_6,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),448,19577.6,43.7,confirmed: inside pad library cells
+RBOY,RBOY_chip_top_12_6,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),35574,1322120.0,37.165,confirmed: inside pad library cells
+RBOY,RBOY_chip_top_12_6,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7192,31157.84,4.332,confirmed: inside pad library cells
+RBOY,RBOY_chip_top_12_6,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),672,18816.0,28.0,confirmed: inside pad library cells
+RBOY,RBOY_chip_top_12_6,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1674,51219.0,30.597,confirmed: inside pad library cells
+RBOY,RBOY_chip_top_12_6,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),216,52200.0,241.667,confirmed: inside pad library cells
+RBOY,RBOY_chip_top_12_6,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),558,1953.0,3.5,confirmed: inside pad library cells
+TQVC,TQVC_chip_top_12_8,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),742,,,confirmed: library cell name prefix
+TQVC,TQVC_chip_top_12_8,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),16,,,confirmed: library cell name prefix
+TQVC,TQVC_chip_top_12_8,sram_macros,foundry,gf180mcu_fd_ip_sram,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1,,,confirmed: library cell name prefix
+TQVC,TQVC_chip_top_12_8,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),173210,,,confirmed: library cell name prefix
+TQVC,TQVC_chip_top_12_8,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7348,38841.88,5.286,confirmed: inside pad library cells
+TQVC,TQVC_chip_top_12_8,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),416,12990.4,31.227,confirmed: inside pad library cells
+TQVC,TQVC_chip_top_12_8,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),15900,683273.0,42.973,confirmed: inside pad library cells
+TQVC,TQVC_chip_top_12_8,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),6696,28994.28,4.33,confirmed: inside pad library cells
+TQVC,TQVC_chip_top_12_8,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),624,25200.0,40.385,confirmed: inside pad library cells
+TQVC,TQVC_chip_top_12_8,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1488,45528.0,30.597,confirmed: inside pad library cells
+TQVC,TQVC_chip_top_12_8,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),192,46400.0,241.667,confirmed: inside pad library cells
+TQVC,TQVC_chip_top_12_8,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),496,1736.0,3.5,confirmed: inside pad library cells
+HZ80,HZ80_chip_top_14_0,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),834,,,confirmed: library cell name prefix
+HZ80,HZ80_chip_top_14_0,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),16,,,confirmed: library cell name prefix
+HZ80,HZ80_chip_top_14_0,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu9t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),85236,,,confirmed: library cell name prefix
+HZ80,HZ80_chip_top_14_0,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7856,40078.64,5.102,confirmed: inside pad library cells
+HZ80,HZ80_chip_top_14_0,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),448,15968.0,35.643,confirmed: inside pad library cells
+HZ80,HZ80_chip_top_14_0,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),21780,802079.0,36.826,confirmed: inside pad library cells
+HZ80,HZ80_chip_top_14_0,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7192,31157.84,4.332,confirmed: inside pad library cells
+HZ80,HZ80_chip_top_14_0,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),672,24192.0,36.0,confirmed: inside pad library cells
+HZ80,HZ80_chip_top_14_0,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1488,45528.0,30.597,confirmed: inside pad library cells
+HZ80,HZ80_chip_top_14_0,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),192,46400.0,241.667,confirmed: inside pad library cells
+HZ80,HZ80_chip_top_14_0,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),496,1736.0,3.5,confirmed: inside pad library cells
+TRID,TRID_TOP_14_2,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),509,,,confirmed: library cell name prefix
+TRID,TRID_TOP_14_2,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1860,56910.0,30.597,confirmed: inside pad library cells
+TRID,TRID_TOP_14_2,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),17574,990018.5,56.334,confirmed: inside pad library cells
+TRID,TRID_TOP_14_2,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),620,2170.0,3.5,confirmed: inside pad library cells
+TRID,TRID_TOP_14_2,custom_3v3,own,,,12,102.24,8.52,not in a recognised library or reused block
+TRID,TRID_TOP_14_2,custom_6v,own,,,8,5.39,0.674,not in a recognised library or reused block
+TRID,TRID_TOP_14_2,diode,own,,,276,33165.954,120.166,not in a recognised library or reused block
+TRID,TRID_TOP_14_2,dnwell,own,,,12,28203.934,2350.328,not in a recognised library or reused block
+TRID,TRID_TOP_14_2,hres,own,,,36,272.0,7.556,not in a recognised library or reused block
+TRID,TRID_TOP_14_2,mim,own,,,2,8192.0,4096.0,not in a recognised library or reused block
+TRID,TRID_TOP_14_2,moscap,own,,,40,9000.0,225.0,not in a recognised library or reused block
+TRID,TRID_TOP_14_2,nmoscap_6v,own,,,40,9000.0,225.0,not in a recognised library or reused block
+GD02,GD02_chip_top_14_4,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),834,,,confirmed: library cell name prefix
+GD02,GD02_chip_top_14_4,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),16,,,confirmed: library cell name prefix
+GD02,GD02_chip_top_14_4,sram_macros,foundry,gf180mcu_fd_ip_sram,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),9,,,confirmed: library cell name prefix
+GD02,GD02_chip_top_14_4,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),112820,,,confirmed: library cell name prefix
+GD02,GD02_chip_top_14_4,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7856,40078.64,5.102,confirmed: inside pad library cells
+GD02,GD02_chip_top_14_4,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),448,13486.4,30.104,confirmed: inside pad library cells
+GD02,GD02_chip_top_14_4,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),21780,802079.0,36.826,confirmed: inside pad library cells
+GD02,GD02_chip_top_14_4,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7192,31157.84,4.332,confirmed: inside pad library cells
+GD02,GD02_chip_top_14_4,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),672,27888.0,41.5,confirmed: inside pad library cells
+GD02,GD02_chip_top_14_4,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1488,45528.0,30.597,confirmed: inside pad library cells
+GD02,GD02_chip_top_14_4,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),192,46400.0,241.667,confirmed: inside pad library cells
+GD02,GD02_chip_top_14_4,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),496,1736.0,3.5,confirmed: inside pad library cells
+TQVB,TQVB_chip_top_14_6,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),834,,,confirmed: library cell name prefix
+TQVB,TQVB_chip_top_14_6,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),16,,,confirmed: library cell name prefix
+TQVB,TQVB_chip_top_14_6,sram_macros,foundry,gf180mcu_fd_ip_sram,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1,,,confirmed: library cell name prefix
+TQVB,TQVB_chip_top_14_6,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),159384,,,confirmed: library cell name prefix
+TQVB,TQVB_chip_top_14_6,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),7094,38223.5,5.388,confirmed: inside pad library cells
+TQVB,TQVB_chip_top_14_6,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),400,12516.8,31.292,confirmed: inside pad library cells
+TQVB,TQVB_chip_top_14_6,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),21924,850103.0,38.775,confirmed: inside pad library cells
+TQVB,TQVB_chip_top_14_6,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),6448,27912.5,4.329,confirmed: inside pad library cells
+TQVB,TQVB_chip_top_14_6,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),600,24192.0,40.32,confirmed: inside pad library cells
+TQVB,TQVB_chip_top_14_6,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),1488,45528.0,30.597,confirmed: inside pad library cells
+TQVB,TQVB_chip_top_14_6,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),192,46400.0,241.667,confirmed: inside pad library cells
+TQVB,TQVB_chip_top_14_6,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),496,1736.0,3.5,confirmed: inside pad library cells
+TQVA,TQVA_chip_top_14_8,pad_cells,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),416,,,confirmed: library cell name prefix
+TQVA,TQVA_chip_top_14_8,pad_cells,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),8,,,confirmed: library cell name prefix
+TQVA,TQVA_chip_top_14_8,sram_macros,foundry,gf180mcu_fd_ip_sram,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),1,,,confirmed: library cell name prefix
+TQVA,TQVA_chip_top_14_8,standard_cells_5v0,foundry,gf180mcu_fd_sc_mcu7t5v0,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),98296,,,confirmed: library cell name prefix
+TQVA,TQVA_chip_top_14_8,pad_nmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),6332,36368.36,5.744,confirmed: inside pad library cells
+TQVA,TQVA_chip_top_14_8,pad_nmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),352,11096.0,31.523,confirmed: inside pad library cells
+TQVA,TQVA_chip_top_14_8,pad_nmoscap_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),8904,298100.0,33.479,confirmed: inside pad library cells
+TQVA,TQVA_chip_top_14_8,pad_pmos_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),5704,24667.16,4.325,confirmed: inside pad library cells
+TQVA,TQVA_chip_top_14_8,pad_pmos_sab_6v,foundry,gf180mcu_fd_io,GlobalFoundries GF180MCU PDK (gf180mcu_fd_*),528,21168.0,40.091,confirmed: inside pad library cells
+TQVA,TQVA_chip_top_14_8,pad_nmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),744,22764.0,30.597,confirmed: inside pad library cells
+TQVA,TQVA_chip_top_14_8,pad_nmoscap_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),96,23200.0,241.667,confirmed: inside pad library cells
+TQVA,TQVA_chip_top_14_8,pad_pmos_6v,third_party,gf180mcu_ws_io,wafer.space (gf180mcu_ws_*),248,868.0,3.5,confirmed: inside pad library cells
