@@ -105,7 +105,7 @@ These designs contain fewer than 1,000 logic standard cells:
 
 | Design | Logic SC | Transistors | SRAM | Pads | Project |
 |---|---|---|---|---|---|
-| [ISHI](https://wafer.space/ws-run1/projects/ISHI.html) | 0 | 58k | 0 | 195 | [ISHI-KAI's Multiple Users Project](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_WaferSapce-GF180-1) |
+| [ISHI](https://wafer.space/ws-run1/projects/ISHI.html) | 0 | 58k | 0 | 74 + 109 probe | [ISHI-KAI's Multiple Users Project](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_WaferSapce-GF180-1) |
 | [MOS2](https://wafer.space/ws-run1/projects/MOS2.html) | 0 | 80k | 0 | 162 | [AutoMOS-Chipathon-2025 full size](https://github.com/AutoMOS-project/AutoMOS-chipathon2025/tree/update-for-ws) |
 | [OCD2](https://wafer.space/ws-run1/projects/OCD2.html) | 122 | 169k | 4 | 72 | [ocd_sram_test](https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test) |
 | [TRID](https://wafer.space/ws-run1/projects/TRID.html) | 0 | 20k | 0 | 94 | [gf180mcu-project-trident-gf180-teststructure](https://github.com/Scafir/gf180mcu-project-trident-gf180-teststructure) |
@@ -351,7 +351,7 @@ Detection uses the open GF180MCU layers: a transistor is gate polysilicon ([30/0
 | [GD03](https://wafer.space/ws-run1/projects/GD03.html) | `GD03_chip_top_6_6` | 3.93 x 5.12 | 14.3 | 1 | 74 | 78,208 | 241,732 | 2,730,062 | 23 | [7t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html): 78,208 |
 | [GD04](https://wafer.space/ws-run1/projects/GD04.html) | `GD04_chip_top_6_8` | 3.93 x 2.53 | 5.9 | 2 | 72 | 35,525 | 104,165 | 992,924 | 6 | [9t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html): 35,525 |
 | [HZ80](https://wafer.space/ws-run1/projects/HZ80.html) | `HZ80_chip_top_14_0` | 1.94 x 5.12 | 5.5 | 1 | 72 | 5,143 | 80,093 | 823,230 | 0 | [9t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html): 5,143 |
-| [ISHI](https://wafer.space/ws-run1/projects/ISHI.html) | `ISHI_ISHI-KAI_WS_RUN1_12_4` | 3.93 x 5.12 | 14.3 | 1 | 195 | 0 | 63 | 58,233 | 0 | — |
+| [ISHI](https://wafer.space/ws-run1/projects/ISHI.html) | `ISHI_ISHI-KAI_WS_RUN1_12_4` | 3.93 x 5.12 | 14.3 | 1 | 74 + 109 probe | 0 | 63 | 58,233 | 0 | — |
 | [JKU1](https://wafer.space/ws-run1/projects/JKU1.html) | `JKU1_chip_top_10_0` | 3.93 x 5.12 | 14.3 | 1 | 74 | 174,469 | 395,678 | 3,136,970 | 0 | [7t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html): 174,469 |
 | [JKU2](https://wafer.space/ws-run1/projects/JKU2.html) | `JKU2_chip_top_0_8` | 3.93 x 2.53 | 5.9 | 1 | 72 | 22,476 | 118,209 | 990,939 | 0 | [9t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html): 22,471, [7t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html): 5 |
 | [KIAN](https://wafer.space/ws-run1/projects/KIAN.html) | `KIAN_chip_top_8_0` | 3.93 x 5.12 | 14.3 | 1 | 74 | 88,941 | 246,524 | 2,442,357 | 21 | [9t-5V](https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html): 88,941 |
@@ -379,6 +379,7 @@ Detection uses the open GF180MCU layers: a transistor is gate polysilicon ([30/0
 - **Core area** is (die width − 0.70mm) x (die height − 0.70mm), removing a 350um pad ring from each side.
 - **Cell dimensions** are the width and height of each standard cell's placement boundary ([GDS 0/0](https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_04_1.html#drawn-layer-definition-and-abbreviation)), measured from the cells present in this layout.
 - **Theoretical maximum** = (1000um / cell width) x (1000um / row height).
+- **Pads** are openings on the pad layer ([37/0](https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_04_1.html#drawn-layer-definition-and-abbreviation)) at least 20um across. Those in the pad ring (within 400um of the die edge) or in a second ring of pads inside it are bond pads; the others are probe pads, shown as "+ N probe". Letters and logos on the pad layer are not pads.
 - **Peak figures** are the densest 1mm x 1mm square anywhere inside each die, found by sliding the square in 100um steps over the die and skipping positions that touch an SRAM macro. Logic cells are placed by their origin and transistors by the centre of their gate.
 - **SRAM macros** are counted by cell name. The `sram_block_count` column of the summary CSV is kept for comparison with earlier results; it counts SramCore marker shapes, of which each GF180MCU macro has two.
 - Designs placed more than once on the reticle are counted once.
