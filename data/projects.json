@@ -383,7 +383,7 @@
      "precheck": "unknown"
     }
    },
-   "repository": "https://github.com/AvalonSemiconductors/ws-submission-2025/",
+   "repository": "https://github.com/AvalonSemiconductors/ws-submission-2025",
    "slot_size": "1x1",
    "submitted_at": "2026-01-04T13:38:20.663655+00:00"
   },
@@ -1551,7 +1551,7 @@
      "precheck": "unknown"
     }
    },
-   "repository": "https://github.com/gregdavill/gf180mcu-racquet/",
+   "repository": "https://github.com/gregdavill/gf180mcu-racquet",
    "slot_size": "1x1",
    "submitted_at": "2025-12-18T01:30:57.479399+00:00"
   },
@@ -2711,7 +2711,7 @@
      "nix-eda": "6.24.0 @ ebee72ea7826"
     }
    },
-   "repository": "https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32/",
+   "repository": "https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32",
    "slot_size": "1x1",
    "submitted_at": "2025-12-16T22:38:43.183054+00:00"
   },

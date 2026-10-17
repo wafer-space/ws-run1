@@ -29,7 +29,7 @@ The "density" of standard cells — how many fit per square millimeter — is a 
 
 Row height is the height of the cells' placement boundary, which is what rows are stacked at. Taller rows hold fewer cells per mm² but leave more room for wiring inside the cell.
 
-Most designs use one library exclusively. The designs that mix libraries are: [AS03](https://github.com/AvalonSemiconductors/ws-submission-2025/) (81k mcu7t5v0 + 4k as_ex_mcu7t5v0 + 2k mcu9t5v0); [OCD2](https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test) (120 as_sc_mcu7t3v3 + 2 mcu7t5v0); [TTP2](https://github.com/TinyTapeout/tinytapeout-gf-0p2) (200k mcu7t5v0 + 4k mcu9t5v0); [TTPG](https://github.com/TinyTapeout/tinytapeout-gf-0p2) (200k mcu7t5v0 + 4k mcu9t5v0); [WSLG](https://github.com/89Mods/ws-logo-die) (13k mcu7t5v0 + 2k as_ex_mcu7t5v0).
+Most designs use one library exclusively. The designs that mix libraries are: [AS03](https://github.com/AvalonSemiconductors/ws-submission-2025) (81k mcu7t5v0 + 4k as_ex_mcu7t5v0 + 2k mcu9t5v0); [OCD2](https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test) (120 as_sc_mcu7t3v3 + 2 mcu7t5v0); [TTP2](https://github.com/TinyTapeout/tinytapeout-gf-0p2) (200k mcu7t5v0 + 4k mcu9t5v0); [TTPG](https://github.com/TinyTapeout/tinytapeout-gf-0p2) (200k mcu7t5v0 + 4k mcu9t5v0); [WSLG](https://github.com/89Mods/ws-logo-die) (13k mcu7t5v0 + 2k as_ex_mcu7t5v0).
 
 ## Theoretical Maximum Standard Cell Density
 
@@ -77,12 +77,12 @@ The following tables show the average logic standard cell density for each desig
 | [CAFE](https://github.com/meiniKi/gf180mcu-fazyrv-hachure) | 7t-5V | 7k | 9% | 24% | 101k | 20 | FazyRV Hachure |
 | [TQVB](https://github.com/MichaelBell/ws01-tinyQV) | 7t-5V | 6k | 9% | 15% | 35k | 1 | TinyQV - Crowdsourced Risc-V SoC (0.5x1) |
 | [GD02](https://github.com/gregdavill/gf180mcu-racquet-0.5x1) | 7t-5V | 6k | 8% | 17% | 35k | 9 | Racquet Half r1p0 (1/2 slot) |
-| [KIAN](https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32/) | 9t-5V | 6k | 11% | 22% | 89k | 21 | KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU |
+| [KIAN](https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32) | 9t-5V | 6k | 11% | 22% | 89k | 21 | KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU |
 | [RZML](https://gitlab.com/rejunity/ws0-lgn-fxnist-gf180mcu-tapeout) | 7t-5V | 6k | 8% | 20% | 88k | 0 | LGN FashionMNIST - Logic Gate Network trained on FashioMNIST |
 | [TQVC](https://github.com/MichaelBell/ws01-tinyQV) | 7t-5V | 6k | 8% | 14% | 36k | 1 | TinyQV - Crowdsourced Risc-V SoC (1x0.5) |
-| [AS03](https://github.com/AvalonSemiconductors/ws-submission-2025/) | mixed | 6k | 8% | 17% | 87k | 0 | WS-Multi |
+| [AS03](https://github.com/AvalonSemiconductors/ws-submission-2025) | mixed | 6k | 8% | 17% | 87k | 0 | WS-Multi |
 | [GD04](https://github.com/gregdavill/gf180mcu-racquet-1x0.5) | 9t-5V | 6k | 10% | 24% | 36k | 6 | Racquet Wide 1x0.5 |
-| [GD03](https://github.com/gregdavill/gf180mcu-racquet/) | 7t-5V | 5k | 7% | 15% | 78k | 23 | Racquet r2p0 - 23 core SoC |
+| [GD03](https://github.com/gregdavill/gf180mcu-racquet) | 7t-5V | 5k | 7% | 15% | 78k | 23 | Racquet r2p0 - 23 core SoC |
 | [RBOY](https://github.com/wren6991/riscboy-180) | 9t-5V | 5k | 8% | 21% | 70k | 30 | RISCBoy-180 |
 | [TZ01](https://github.com/ZeduloTech/gf180mcu-testchip2025) | 7t-5V | 4k | 5% | 12% | 58k | 8 | TillitisZedulo-testchip2025 |
 | [JKU2](https://github.com/iic-jku/gf180mcu-jku-atbs-adc) | 9t-5V | 4k | 6% | 16% | 22k | 0 | gf180mcu-jku-atbs-adc |
@@ -124,13 +124,13 @@ While the averages above include sparse regions, the densest 1mm x 1mm square fo
 | [TQVB](https://github.com/MichaelBell/ws01-tinyQV) | 24k | 31% of 76k | 7t-5V |
 | [TQVA](https://github.com/MichaelBell/ws01-tinyQV) | 23k | 30% of 76k | 7t-5V |
 | [CAFE](https://github.com/meiniKi/gf180mcu-fazyrv-hachure) | 21k | 28% of 76k | 7t-5V |
-| [AS03](https://github.com/AvalonSemiconductors/ws-submission-2025/) | 21k | 28% of 76k | mixed |
+| [AS03](https://github.com/AvalonSemiconductors/ws-submission-2025) | 21k | 28% of 76k | mixed |
 | [BTAP](https://github.com/polyfractal/BreakingTTAPs) | 21k | 35% of 59k | 9t-5V |
 | [GD04](https://github.com/gregdavill/gf180mcu-racquet-1x0.5) | 18k | 31% of 59k | 9t-5V |
 | [TZ01](https://github.com/ZeduloTech/gf180mcu-testchip2025) | 18k | 24% of 76k | 7t-5V |
 | [TQVC](https://github.com/MichaelBell/ws01-tinyQV) | 16k | 21% of 76k | 7t-5V |
 | [RBOY](https://github.com/wren6991/riscboy-180) | 14k | 23% of 59k | 9t-5V |
-| [KIAN](https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32/) | 13k | 22% of 59k | 9t-5V |
+| [KIAN](https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32) | 13k | 22% of 59k | 9t-5V |
 
 The highest achieved density on this reticle is 52% of the buffer theoretical maximum, observed in the densest 1mm² region of [JKU1](https://github.com/iic-jku/gf180mcu-jku-projects). The rest of that area is consumed by larger cells, infrastructure cells and the gaps left for routing.
 
@@ -181,8 +181,8 @@ SRAM (Static Random-Access Memory) blocks are pre-designed memory macros. Unlike
 |---|---|---|---|---|---|
 | [RBOY](https://github.com/wren6991/riscboy-180) | 30 | 118,784 | 6.16 mm² (43% of core) | 70k | RISCBoy-180 |
 | [BTAP](https://github.com/polyfractal/BreakingTTAPs) | 28 | 106,496 | 5.61 mm² (39% of core) | 43k | BreakingTTAPs |
-| [GD03](https://github.com/gregdavill/gf180mcu-racquet/) | 23 | 94,208 | 4.82 mm² (34% of core) | 78k | Racquet r2p0 - 23 core SoC |
-| [KIAN](https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32/) | 21 | 86,016 | 4.40 mm² (31% of core) | 89k | KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU |
+| [GD03](https://github.com/gregdavill/gf180mcu-racquet) | 23 | 94,208 | 4.82 mm² (34% of core) | 78k | Racquet r2p0 - 23 core SoC |
+| [KIAN](https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32) | 21 | 86,016 | 4.40 mm² (31% of core) | 89k | KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU |
 | [CAFE](https://github.com/meiniKi/gf180mcu-fazyrv-hachure) | 20 | 81,920 | 4.19 mm² (29% of core) | 101k | FazyRV Hachure |
 | [GD02](https://github.com/gregdavill/gf180mcu-racquet-0.5x1) | 9 | 36,864 | 1.88 mm² (34% of core) | 35k | Racquet Half r1p0 (1/2 slot) |
 | [OCD1](https://github.com/RTimothyEdwards/gf180mcu_ocd_openframe) | 8 | 24,576 | 0.66 mm² (5% of core) | 34k | openframe_caravel_picorv32 |
@@ -252,7 +252,7 @@ The macro density includes the peripheral circuits (address decoders, sense ampl
 | [2975](https://github.com/ThorbenMoos/Cloneless1) | 293k/mm² | 67% | 7t-5V |
 | [CAFE](https://github.com/meiniKi/gf180mcu-fazyrv-hachure) | 292k/mm² | 67% | 7t-5V |
 | [TQVB](https://github.com/MichaelBell/ws01-tinyQV) | 276k/mm² | 63% | 7t-5V |
-| [AS03](https://github.com/AvalonSemiconductors/ws-submission-2025/) | 272k/mm² | 62% | mixed |
+| [AS03](https://github.com/AvalonSemiconductors/ws-submission-2025) | 272k/mm² | 62% | mixed |
 
 Infrastructure cells are excluded from logic cell counts but their transistors (decoupling capacitors in particular) are included in transistor counts.
 
@@ -287,19 +287,19 @@ Which transistor voltages and optional devices of the GF180MCU process the 30 de
 | Design | Voltages | Custom transistors 3.3 / 5 / 6 V | Devices drawn | I/O library |
 |---|---|---|---|---|
 | [2975](https://github.com/ThorbenMoos/Cloneless1) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
-| [AS03](https://github.com/AvalonSemiconductors/ws-submission-2025/) | 5 V | 0 / 990 / 0 | High-resistance poly resistors | fd_io, ws_io |
+| [AS03](https://github.com/AvalonSemiconductors/ws-submission-2025) | 5 V | 0 / 990 / 0 | High-resistance poly resistors | fd_io, ws_io |
 | BRWN | 3.3 V, 5 V | 67,982 / 0 / 0 | — | fd_io, ws_io |
 | [BTAP](https://github.com/polyfractal/BreakingTTAPs) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 | [CAFE](https://github.com/meiniKi/gf180mcu-fazyrv-hachure) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 | [CHES](https://github.com/Ravenslofty/gf180mcu-chess) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 | [GD02](https://github.com/gregdavill/gf180mcu-racquet-0.5x1) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
-| [GD03](https://github.com/gregdavill/gf180mcu-racquet/) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
+| [GD03](https://github.com/gregdavill/gf180mcu-racquet) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 | [GD04](https://github.com/gregdavill/gf180mcu-racquet-1x0.5) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 | [HZ80](https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 | [ISHI](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_WaferSapce-GF180-1) | 3.3 V, 5 V, 6 V | 9,268 / 4,781 / 90 | MIM capacitors (Metal4), High-resistance poly resistors, Unsalicided poly resistors, Deep N-well | fd_io, ws_io |
 | [JKU1](https://github.com/iic-jku/gf180mcu-jku-projects) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 | [JKU2](https://github.com/iic-jku/gf180mcu-jku-atbs-adc) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
-| [KIAN](https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32/) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
+| [KIAN](https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 | [MOLE](https://github.com/mole99/gf180mcu-fabulous-fpga) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 | [MOS2](https://github.com/AutoMOS-project/AutoMOS-chipathon2025/tree/update-for-ws) | 3.3 V, 5 V | 3,440 / 1,329 / 0 | MIM capacitors (Metal4), High-resistance poly resistors, Unsalicided poly resistors, Deep N-well, Bipolar transistors | fd_io, ws_io |
 | MOSB | 3.3 V, 5 V, 6 V | 81,570 / 0 / 448 | MOS capacitors, Unsalicided poly resistors, Salicided poly resistors | fd_io, ws_io |
@@ -338,19 +338,19 @@ Detection uses the open GF180MCU layers: a transistor is gate polysilicon (30/0)
 | Design | Cell | Die (mm) | Core mm² | Placements | Pads | Logic SC | Infra SC | Transistors | SRAM | Libraries |
 |---|---|---|---|---|---|---|---|---|---|---|
 | [2975](https://github.com/ThorbenMoos/Cloneless1) | `2975_chip_top_0_6` | 3.93 x 5.12 | 14.3 | 2 | 32 | 316,440 | 463,577 | 3,596,371 | 0 | mcu7t5v0: 316,440 |
-| [AS03](https://github.com/AvalonSemiconductors/ws-submission-2025/) | `AS03_chip_top_6_0` | 3.93 x 5.12 | 14.3 | 1 | 74 | 86,629 | 302,626 | 2,430,570 | 0 | mcu7t5v0: 80,672, as_ex_mcu7t5v0: 3,587, mcu9t5v0: 2,370 |
+| [AS03](https://github.com/AvalonSemiconductors/ws-submission-2025) | `AS03_chip_top_6_0` | 3.93 x 5.12 | 14.3 | 1 | 74 | 86,629 | 302,626 | 2,430,570 | 0 | mcu7t5v0: 80,672, as_ex_mcu7t5v0: 3,587, mcu9t5v0: 2,370 |
 | BRWN | `BRWN_ENGN2912E_TOP_8_2` | 3.93 x 5.12 | 14.3 | 1 | 74 | 4,379 | 64,895 | 649,130 | 0 | mcu7t5v0: 4,379 |
 | [BTAP](https://github.com/polyfractal/BreakingTTAPs) | `BTAP_chip_top_0_0` | 3.93 x 5.12 | 14.3 | 2 | 74 | 43,225 | 156,483 | 2,166,150 | 28 | mcu9t5v0: 43,225 |
 | [CAFE](https://github.com/meiniKi/gf180mcu-fazyrv-hachure) | `CAFE_chip_top_12_0` | 3.93 x 5.12 | 14.3 | 1 | 74 | 100,546 | 266,996 | 2,919,680 | 20 | mcu7t5v0: 100,546 |
 | [CHES](https://github.com/Ravenslofty/gf180mcu-chess) | `CHES_chip_top_10_4` | 3.93 x 5.12 | 14.3 | 1 | 74 | 145,076 | 406,519 | 2,701,676 | 0 | mcu9t5v0: 145,076 |
 | [GD02](https://github.com/gregdavill/gf180mcu-racquet-0.5x1) | `GD02_chip_top_14_4` | 1.94 x 5.12 | 5.5 | 1 | 72 | 34,564 | 78,256 | 968,782 | 9 | mcu7t5v0: 34,564 |
-| [GD03](https://github.com/gregdavill/gf180mcu-racquet/) | `GD03_chip_top_6_6` | 3.93 x 5.12 | 14.3 | 1 | 74 | 78,208 | 241,732 | 2,730,062 | 23 | mcu7t5v0: 78,208 |
+| [GD03](https://github.com/gregdavill/gf180mcu-racquet) | `GD03_chip_top_6_6` | 3.93 x 5.12 | 14.3 | 1 | 74 | 78,208 | 241,732 | 2,730,062 | 23 | mcu7t5v0: 78,208 |
 | [GD04](https://github.com/gregdavill/gf180mcu-racquet-1x0.5) | `GD04_chip_top_6_8` | 3.93 x 2.53 | 5.9 | 2 | 72 | 35,525 | 104,165 | 992,924 | 6 | mcu9t5v0: 35,525 |
 | [HZ80](https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu) | `HZ80_chip_top_14_0` | 1.94 x 5.12 | 5.5 | 1 | 72 | 5,143 | 80,093 | 823,230 | 0 | mcu9t5v0: 5,143 |
 | [ISHI](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_WaferSapce-GF180-1) | `ISHI_ISHI-KAI_WS_RUN1_12_4` | 3.93 x 5.12 | 14.3 | 1 | 195 | 0 | 63 | 58,233 | 0 | — |
 | [JKU1](https://github.com/iic-jku/gf180mcu-jku-projects) | `JKU1_chip_top_10_0` | 3.93 x 5.12 | 14.3 | 1 | 74 | 174,469 | 395,678 | 3,136,970 | 0 | mcu7t5v0: 174,469 |
 | [JKU2](https://github.com/iic-jku/gf180mcu-jku-atbs-adc) | `JKU2_chip_top_0_8` | 3.93 x 2.53 | 5.9 | 1 | 72 | 22,476 | 118,209 | 990,939 | 0 | mcu9t5v0: 22,471, mcu7t5v0: 5 |
-| [KIAN](https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32/) | `KIAN_chip_top_8_0` | 3.93 x 5.12 | 14.3 | 1 | 74 | 88,941 | 246,524 | 2,442,357 | 21 | mcu9t5v0: 88,941 |
+| [KIAN](https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32) | `KIAN_chip_top_8_0` | 3.93 x 5.12 | 14.3 | 1 | 74 | 88,941 | 246,524 | 2,442,357 | 21 | mcu9t5v0: 88,941 |
 | [MOLE](https://github.com/mole99/gf180mcu-fabulous-fpga) | `MOLE_chip_top_8_4` | 3.93 x 5.12 | 14.3 | 1 | 74 | 203,757 | 295,366 | 3,404,438 | 6 | mcu7t5v0: 203,757 |
 | [MOS2](https://github.com/AutoMOS-project/AutoMOS-chipathon2025/tree/update-for-ws) | `MOS2_chip_top_10_6` | 3.93 x 5.12 | 14.3 | 1 | 162 | 0 | 52 | 80,297 | 0 | — |
 | MOSB | `MOSB_chip_top_4_0` | 3.93 x 5.12 | 14.3 | 2 | 74 | 17,889 | 8,134 | 287,770 | 0 | mcu9t5v0: 17,889 |
