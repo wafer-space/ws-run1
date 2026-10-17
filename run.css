@@ -148,3 +148,12 @@
 .page-title-sub { display: block; font-size: 0.5em; line-height: 1.3; }
 .page-title-sub:first-of-type { margin-top: 0.3em; }
 .run-guidance { font-size: 0.85rem; }
+.run-ip-only { opacity: 0.55; }
+
+/* Who owns a timeline step, where two schedules meet (a Tiny Tapeout die on a wafer.space run). */
+.run-owner { display: inline-block; font-size: 0.7rem; font-weight: 600; line-height: 1.4; padding: 0 6px; border-radius: 3px;
+  margin-right: 6px; color: #fff; vertical-align: 1px; }
+.run-owner-tt { background: #7b4fa3; }
+.run-owner-ws { background: var(--run-accent); }
+.run-timeline li.run-timeline-tt::before { border-color: #7b4fa3; }
+.run-timeline li.run-timeline-tt.done::before { background: #7b4fa3; border-color: #7b4fa3; }

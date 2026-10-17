@@ -270,6 +270,7 @@ Which transistor voltages and optional devices of the GF180MCU process the 30 de
 |---|---|---|
 | High-resistance poly resistors | 7 of 30 | [AS03](https://wafer.space/ws-run1/projects/AS03.html), [ISHI](https://wafer.space/ws-run1/projects/ISHI.html), [MOS2](https://wafer.space/ws-run1/projects/MOS2.html), [OCD1](https://wafer.space/ws-run1/projects/OCD1.html), [OCD2](https://wafer.space/ws-run1/projects/OCD2.html), [TRID](https://wafer.space/ws-run1/projects/TRID.html), [TZ01](https://wafer.space/ws-run1/projects/TZ01.html) |
 | MIM capacitors | 6 of 30 | [ISHI](https://wafer.space/ws-run1/projects/ISHI.html), [MOS2](https://wafer.space/ws-run1/projects/MOS2.html), [OCD1](https://wafer.space/ws-run1/projects/OCD1.html), [OCD2](https://wafer.space/ws-run1/projects/OCD2.html), [TRID](https://wafer.space/ws-run1/projects/TRID.html), [TZ01](https://wafer.space/ws-run1/projects/TZ01.html) |
+| Diodes (DIODE_MK) | 4 of 30 | [ISHI](https://wafer.space/ws-run1/projects/ISHI.html), [MOS2](https://wafer.space/ws-run1/projects/MOS2.html), [MOSB](https://wafer.space/ws-run1/projects/MOSB.html), [TRID](https://wafer.space/ws-run1/projects/TRID.html) |
 | Unsalicided poly resistors | 3 of 30 | [ISHI](https://wafer.space/ws-run1/projects/ISHI.html), [MOS2](https://wafer.space/ws-run1/projects/MOS2.html), [MOSB](https://wafer.space/ws-run1/projects/MOSB.html) |
 | Deep N-well | 3 of 30 | [ISHI](https://wafer.space/ws-run1/projects/ISHI.html), [MOS2](https://wafer.space/ws-run1/projects/MOS2.html), [TRID](https://wafer.space/ws-run1/projects/TRID.html) |
 | MOS capacitors | 2 of 30 | [MOSB](https://wafer.space/ws-run1/projects/MOSB.html), [TRID](https://wafer.space/ws-run1/projects/TRID.html) |
@@ -279,6 +280,9 @@ Which transistor voltages and optional devices of the GF180MCU process the 30 de
 | Native transistors | 0 of 30 | — |
 | 10 V LDMOS | 0 of 30 | — |
 | Diffusion resistors | 0 of 30 | — |
+| N-well resistors | 0 of 30 | — |
+| Metal resistors | 0 of 30 | — |
+| Well diodes | 0 of 30 | — |
 | Schottky diodes | 0 of 30 | — |
 | Zener diodes | 0 of 30 | — |
 | One-time programmable memory | 0 of 30 | — |
@@ -296,25 +300,25 @@ Which transistor voltages and optional devices of the GF180MCU process the 30 de
 | [GD03](https://wafer.space/ws-run1/projects/GD03.html) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 | [GD04](https://wafer.space/ws-run1/projects/GD04.html) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 | [HZ80](https://wafer.space/ws-run1/projects/HZ80.html) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
-| [ISHI](https://wafer.space/ws-run1/projects/ISHI.html) | 3.3 V, 5 V, 6 V | 9,268 / 4,781 / 90 | MIM capacitors (Metal4), High-resistance poly resistors, Unsalicided poly resistors, Deep N-well | fd_io, ws_io |
+| [ISHI](https://wafer.space/ws-run1/projects/ISHI.html) | 3.3 V, 5 V, 6 V | 9,268 / 4,781 / 90 | MIM capacitors (Metal4-Metal5), High-resistance poly resistors, Unsalicided poly resistors, Diodes (DIODE_MK), Deep N-well | fd_io, ws_io |
 | [JKU1](https://wafer.space/ws-run1/projects/JKU1.html) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 | [JKU2](https://wafer.space/ws-run1/projects/JKU2.html) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 | [KIAN](https://wafer.space/ws-run1/projects/KIAN.html) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 | [MOLE](https://wafer.space/ws-run1/projects/MOLE.html) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
-| [MOS2](https://wafer.space/ws-run1/projects/MOS2.html) | 3.3 V, 5 V | 3,440 / 1,329 / 0 | MIM capacitors (Metal4), High-resistance poly resistors, Unsalicided poly resistors, Deep N-well, Bipolar transistors | fd_io, ws_io |
-| [MOSB](https://wafer.space/ws-run1/projects/MOSB.html) | 3.3 V, 5 V, 6 V | 81,570 / 0 / 448 | MOS capacitors, Unsalicided poly resistors, Salicided poly resistors | fd_io, ws_io |
-| [OCD1](https://wafer.space/ws-run1/projects/OCD1.html) | 3.3 V, 5 V, 6 V | 0 / 0 / 44 | MIM capacitors (Metal4), High-resistance poly resistors | ocd_io |
-| [OCD2](https://wafer.space/ws-run1/projects/OCD2.html) | 3.3 V, 5 V | 0 / 44 / 0 | MIM capacitors (Metal4), High-resistance poly resistors | ocd_io |
+| [MOS2](https://wafer.space/ws-run1/projects/MOS2.html) | 3.3 V, 5 V | 3,440 / 1,329 / 0 | MIM capacitors (Metal4-Metal5), High-resistance poly resistors, Unsalicided poly resistors, Diodes (DIODE_MK), Deep N-well, Bipolar transistors | fd_io, ws_io |
+| [MOSB](https://wafer.space/ws-run1/projects/MOSB.html) | 3.3 V, 5 V, 6 V | 81,762 / 0 / 448 | MOS capacitors, Unsalicided poly resistors, Salicided poly resistors, Diodes (DIODE_MK) | fd_io, ws_io |
+| [OCD1](https://wafer.space/ws-run1/projects/OCD1.html) | 3.3 V, 5 V, 6 V | 0 / 0 / 44 | MIM capacitors (Metal4-Metal5; only in simple_por), High-resistance poly resistors (only in simple_por) | ocd_io |
+| [OCD2](https://wafer.space/ws-run1/projects/OCD2.html) | 3.3 V, 5 V | 0 / 44 / 0 | MIM capacitors (Metal4-Metal5; only in simple_por), High-resistance poly resistors (only in simple_por) | ocd_io |
 | [RBOY](https://wafer.space/ws-run1/projects/RBOY.html) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 | [RZ80](https://wafer.space/ws-run1/projects/RZ80.html) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 | [RZML](https://wafer.space/ws-run1/projects/RZML.html) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 | [TQVA](https://wafer.space/ws-run1/projects/TQVA.html) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 | [TQVB](https://wafer.space/ws-run1/projects/TQVB.html) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 | [TQVC](https://wafer.space/ws-run1/projects/TQVC.html) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
-| [TRID](https://wafer.space/ws-run1/projects/TRID.html) | 3.3 V, 6 V | 12 / 0 / 8 | MIM capacitors (Metal4), MOS capacitors, High-resistance poly resistors, Deep N-well | fd_io |
+| [TRID](https://wafer.space/ws-run1/projects/TRID.html) | 3.3 V, 6 V | 12 / 0 / 8 | MIM capacitors (Metal4-Metal5), MOS capacitors, High-resistance poly resistors, Diodes (DIODE_MK), Deep N-well | fd_io |
 | [TTP2](https://wafer.space/ws-run1/projects/TTP2.html) | 5 V | 0 / 0 / 0 | — | fd_io |
 | [TTPG](https://wafer.space/ws-run1/projects/TTPG.html) | 3.3 V, 5 V | 18,377 / 0 / 0 | — | ocd_io |
-| [TZ01](https://wafer.space/ws-run1/projects/TZ01.html) | 5 V, 6 V | 0 / 47,064 / 44 | MIM capacitors (Metal2, Metal4), High-resistance poly resistors, eFuses | fd_io, ws_io |
+| [TZ01](https://wafer.space/ws-run1/projects/TZ01.html) | 5 V, 6 V | 0 / 47,064 / 44 | MIM capacitors (Metal4-Metal5; only in simple_por), High-resistance poly resistors (only in simple_por), eFuses | fd_io, ws_io |
 | [WSLG](https://wafer.space/ws-run1/projects/WSLG.html) | 5 V | 0 / 0 / 0 | — | fd_io, ws_io |
 
 Detection uses the open GF180MCU layers: a transistor is gate polysilicon ([30/0](https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_04_1.html#drawn-layer-definition-and-abbreviation)) over diffusion ([22/0](https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_04_1.html#drawn-layer-definition-and-abbreviation)), thick oxide inside Dualgate ([55/0](https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_04_1.html#drawn-layer-definition-and-abbreviation)), 5 V where V5_XTOR ([112/1](https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_04_1.html#drawn-layer-definition-and-abbreviation)) also covers it and 6 V where it does not; MIM capacitors are FuseTop ([75/0](https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_04_1.html#drawn-layer-definition-and-abbreviation)) shapes; poly resistors are Poly2 under RES_MK ([110/5](https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_04_1.html#drawn-layer-definition-and-abbreviation)), high resistance under the Resistor layer ([62/0](https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_04_1.html#drawn-layer-definition-and-abbreviation)) and otherwise unsalicided under SAB ([49/0](https://gf180mcu-pdk.readthedocs.io/en/latest/physical_verification/design_manual/drm_04_1.html#drawn-layer-definition-and-abbreviation)) or salicided. Other devices are found by their marker layers.

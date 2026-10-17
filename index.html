@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="run.css?v=5a9bb072ca">
+  <link rel="stylesheet" type="text/css" href="run.css?v=587cf594be">
 </head>
 <body>
   <div class="content-wrapper">
@@ -860,9 +860,17 @@ data-col="7" data-row="0"               style="left: 93.347%; top: 0.257%; width
           <thead><tr><th>Device</th><th class="text-end">Designs</th><th>Which</th></tr></thead>
           <tbody>
             <tr><td>High-resistance poly resistors</td><td class="text-end">7</td>
-              <td><a class="run-mono" href="projects/AS03.html">AS03</a> <a class="run-mono" href="projects/ISHI.html">ISHI</a> <a class="run-mono" href="projects/MOS2.html">MOS2</a> <a class="run-mono" href="projects/OCD1.html">OCD1</a> <a class="run-mono" href="projects/OCD2.html">OCD2</a> <a class="run-mono" href="projects/TRID.html">TRID</a> <a class="run-mono" href="projects/TZ01.html">TZ01</a></td></tr>
+              <td><a class="run-mono" href="projects/AS03.html">AS03</a> <a class="run-mono" href="projects/ISHI.html">ISHI</a> <a class="run-mono" href="projects/MOS2.html">MOS2</a> <a class="run-mono run-ip-only" href="projects/OCD1.html"
+                title="Only inside reused simple_por">OCD1</a> <a class="run-mono run-ip-only" href="projects/OCD2.html"
+                title="Only inside reused simple_por">OCD2</a> <a class="run-mono" href="projects/TRID.html">TRID</a> <a class="run-mono run-ip-only" href="projects/TZ01.html"
+                title="Only inside reused simple_por">TZ01</a></td></tr>
             <tr><td>MIM capacitors</td><td class="text-end">6</td>
-              <td><a class="run-mono" href="projects/ISHI.html">ISHI</a> <a class="run-mono" href="projects/MOS2.html">MOS2</a> <a class="run-mono" href="projects/OCD1.html">OCD1</a> <a class="run-mono" href="projects/OCD2.html">OCD2</a> <a class="run-mono" href="projects/TRID.html">TRID</a> <a class="run-mono" href="projects/TZ01.html">TZ01</a></td></tr>
+              <td><a class="run-mono" href="projects/ISHI.html">ISHI</a> <a class="run-mono" href="projects/MOS2.html">MOS2</a> <a class="run-mono run-ip-only" href="projects/OCD1.html"
+                title="Only inside reused simple_por">OCD1</a> <a class="run-mono run-ip-only" href="projects/OCD2.html"
+                title="Only inside reused simple_por">OCD2</a> <a class="run-mono" href="projects/TRID.html">TRID</a> <a class="run-mono run-ip-only" href="projects/TZ01.html"
+                title="Only inside reused simple_por">TZ01</a></td></tr>
+            <tr><td>Diodes (DIODE_MK)</td><td class="text-end">4</td>
+              <td><a class="run-mono" href="projects/ISHI.html">ISHI</a> <a class="run-mono" href="projects/MOS2.html">MOS2</a> <a class="run-mono" href="projects/MOSB.html">MOSB</a> <a class="run-mono" href="projects/TRID.html">TRID</a></td></tr>
             <tr><td>Unsalicided poly resistors</td><td class="text-end">3</td>
               <td><a class="run-mono" href="projects/ISHI.html">ISHI</a> <a class="run-mono" href="projects/MOS2.html">MOS2</a> <a class="run-mono" href="projects/MOSB.html">MOSB</a></td></tr>
             <tr><td>Deep N-well</td><td class="text-end">3</td>
@@ -877,8 +885,9 @@ data-col="7" data-row="0"               style="left: 93.347%; top: 0.257%; width
               <td><a class="run-mono" href="projects/TZ01.html">TZ01</a></td></tr>
           </tbody>
         </table>
-<p class="small text-muted mb-0">Not drawn by any design: Native transistors, 10 V LDMOS, Diffusion resistors, Schottky diodes, Zener diodes, One-time programmable memory, Inductors.</p>        <p class="small text-muted">Only devices outside standard cells, SRAM macros and I/O pads count, since every
-          die has those. A single test structure counts the same as a large block.</p>
+<p class="small text-muted mb-0">Not drawn by any design: Native transistors, 10 V LDMOS, Diffusion resistors, N-well resistors, Metal resistors, Well diodes, Schottky diodes, Zener diodes, One-time programmable memory, Inductors.</p>        <p class="small text-muted">Only devices outside standard cells, SRAM macros and I/O pads count, since every
+          die has those. A single test structure counts the same as a large block.          <span class="run-mono run-ip-only">Faded</span> codes have the device only inside a reused block, such as
+          Caravel's power-on reset; hover over one to see which.</p>
       </div>
     </div>
     <div class="row gutter-50">
@@ -1504,7 +1513,7 @@ data-col="7" data-row="0"               style="left: 93.347%; top: 0.257%; width
       <p class="mb-0 small run-card-icons">
 <span title="Die photograph available"><i class="jam jam-camera"></i> photo</span><span title="Chip-on-board bonding results available"><i class="jam jam-cpu"></i> bonded</span>      </p>
 <p class="mb-0 small text-muted run-card-features">3.3 V · 5 V · 6 V
-<span class="run-chip">MIM capacitors</span><span class="run-chip">High-resistance poly resistors</span><span class="run-chip">Unsalicided poly resistors</span><span class="run-chip">Deep N-well</span></p>    </div>
+<span class="run-chip">MIM capacitors</span><span class="run-chip">High-resistance poly resistors</span><span class="run-chip">Unsalicided poly resistors</span><span class="run-chip">Diodes (DIODE_MK)</span><span class="run-chip">Deep N-well</span></p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1600,7 +1609,7 @@ data-col="7" data-row="0"               style="left: 93.347%; top: 0.257%; width
       <p class="mb-0 small run-card-icons">
       </p>
 <p class="mb-0 small text-muted run-card-features">3.3 V · 5 V
-<span class="run-chip">MIM capacitors</span><span class="run-chip">High-resistance poly resistors</span><span class="run-chip">Unsalicided poly resistors</span><span class="run-chip">Deep N-well</span><span class="run-chip">Bipolar transistors</span></p>    </div>
+<span class="run-chip">MIM capacitors</span><span class="run-chip">High-resistance poly resistors</span><span class="run-chip">Unsalicided poly resistors</span><span class="run-chip">Diodes (DIODE_MK)</span><span class="run-chip">Deep N-well</span><span class="run-chip">Bipolar transistors</span></p>    </div>
   </a>
 </div>
 <div class="col-sm-6 col-lg-4 col-xl-3 mb-30">
@@ -1618,7 +1627,7 @@ data-col="7" data-row="0"               style="left: 93.347%; top: 0.257%; width
       <p class="mb-0 small run-card-icons">
 <span title="Die photograph available"><i class="jam jam-camera"></i> photo</span><span title="Chip-on-board bonding results available"><i class="jam jam-cpu"></i> bonded</span><span title="Placed 2 times on the reticle">× 2</span>      </p>
 <p class="mb-0 small text-muted run-card-features">3.3 V · 5 V · 6 V
-<span class="run-chip">MOS capacitors</span><span class="run-chip">Unsalicided poly resistors</span><span class="run-chip">Salicided poly resistors</span></p>    </div>
+<span class="run-chip">MOS capacitors</span><span class="run-chip">Unsalicided poly resistors</span><span class="run-chip">Salicided poly resistors</span><span class="run-chip">Diodes (DIODE_MK)</span></p>    </div>
   </a>
 </div>
     </div>
@@ -1858,7 +1867,7 @@ data-col="7" data-row="0"               style="left: 93.347%; top: 0.257%; width
       <p class="mb-0 small run-card-icons">
       </p>
 <p class="mb-0 small text-muted run-card-features">3.3 V · 6 V
-<span class="run-chip">MIM capacitors</span><span class="run-chip">MOS capacitors</span><span class="run-chip">High-resistance poly resistors</span><span class="run-chip">Deep N-well</span></p>    </div>
+<span class="run-chip">MIM capacitors</span><span class="run-chip">MOS capacitors</span><span class="run-chip">High-resistance poly resistors</span><span class="run-chip">Diodes (DIODE_MK)</span><span class="run-chip">Deep N-well</span></p>    </div>
   </a>
 </div>
     </div>
@@ -2071,7 +2080,7 @@ Each project page links to a zoomable viewer of its die. Full resolution images:
           <a href="https://github.com/wafer-space/ws-run1/blob/density-report/reticle_density_report.md">density report</a>.
           The measurements behind it:</p>
         <ul class="run-files">
-<li><a href="data/projects.json">projects.json</a></li><li><a href="data/reticle_analysis.csv">reticle_analysis.csv</a></li><li><a href="data/reticle_analysis_cells.csv">reticle_analysis_cells.csv</a></li><li><a href="data/reticle_analysis_features.csv">reticle_analysis_features.csv</a></li><li><a href="data/reticle_analysis_grid.csv">reticle_analysis_grid.csv</a></li><li><a href="data/reticle_analysis_library.csv">reticle_analysis_library.csv</a></li><li><a href="data/reticle_analysis_macros.csv">reticle_analysis_macros.csv</a></li><li><a href="data/reticle_analysis_map.csv">reticle_analysis_map.csv</a></li><li><a href="data/reticle_analysis_meta.json">reticle_analysis_meta.json</a></li><li><a href="data/reticle_analysis_slot_areas.csv">reticle_analysis_slot_areas.csv</a></li><li><a href="data/reticle_analysis_slot_macros.csv">reticle_analysis_slot_macros.csv</a></li><li><a href="data/reticle_analysis_sram_rects.csv">reticle_analysis_sram_rects.csv</a></li><li><a href="data/reticle_analysis_windows.csv">reticle_analysis_windows.csv</a></li><li><a href="data/reticle_density_report.md">reticle_density_report.md</a></li>        </ul>
+<li><a href="data/projects.json">projects.json</a></li><li><a href="data/reticle_analysis.csv">reticle_analysis.csv</a></li><li><a href="data/reticle_analysis_cells.csv">reticle_analysis_cells.csv</a></li><li><a href="data/reticle_analysis_content.csv">reticle_analysis_content.csv</a></li><li><a href="data/reticle_analysis_features.csv">reticle_analysis_features.csv</a></li><li><a href="data/reticle_analysis_grid.csv">reticle_analysis_grid.csv</a></li><li><a href="data/reticle_analysis_library.csv">reticle_analysis_library.csv</a></li><li><a href="data/reticle_analysis_macros.csv">reticle_analysis_macros.csv</a></li><li><a href="data/reticle_analysis_map.csv">reticle_analysis_map.csv</a></li><li><a href="data/reticle_analysis_meta.json">reticle_analysis_meta.json</a></li><li><a href="data/reticle_analysis_metal.csv">reticle_analysis_metal.csv</a></li><li><a href="data/reticle_analysis_provenance.csv">reticle_analysis_provenance.csv</a></li><li><a href="data/reticle_analysis_slot_areas.csv">reticle_analysis_slot_areas.csv</a></li><li><a href="data/reticle_analysis_slot_macros.csv">reticle_analysis_slot_macros.csv</a></li><li><a href="data/reticle_analysis_sram_rects.csv">reticle_analysis_sram_rects.csv</a></li><li><a href="data/reticle_analysis_usage.csv">reticle_analysis_usage.csv</a></li><li><a href="data/reticle_analysis_windows.csv">reticle_analysis_windows.csv</a></li><li><a href="data/reticle_density_report.md">reticle_density_report.md</a></li>        </ul>
         <p class="small text-muted mb-0">Generated by
           <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a> from
           <span class="run-mono">layout/G801.oas</span> (md5 <span class="run-mono">3ae7349e205f60d9f997cf7d3a688500</span>).</p>
@@ -2121,6 +2130,6 @@ Each project page links to a zoomable viewer of its die. Full resolution images:
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="run.js?v=5a9bb072ca"></script>
+  <script src="run.js?v=587cf594be"></script>
 </body>
 </html>
