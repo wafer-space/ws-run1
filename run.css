@@ -23,6 +23,8 @@
 
 /* Tables */
 .run-table { color: var(--run-ink); font-variant-numeric: tabular-nums; }
+/* Bootstrap colours table cells from its own variables, which the dark theme does not set. */
+.run-table { --bs-table-color: var(--run-ink); --bs-table-bg: transparent; }
 .run-table th { font-weight: 600; white-space: nowrap; }
 .run-table td, .run-table th { border-color: var(--run-line); vertical-align: middle; }
 [data-theme="dark"] .run-table.bg-white { background: var(--run-surface) !important; }
@@ -82,6 +84,7 @@
 .run-reticle-rows span { left: 0; right: 0.25em; }
 .run-reticle { position: relative; background: #0a0c14; border-radius: 6px; overflow: hidden; line-height: 0; }
 .run-reticle img { width: 100%; height: auto; }
+.run-reticle.framed { background: transparent; border-radius: 0; outline: 1px dashed var(--run-line); }
 .run-reticle-slot { position: absolute; display: flex; align-items: flex-end; justify-content: flex-start; border: 1px solid transparent; text-decoration: none; line-height: 1; }
 .run-reticle-slot span { margin: 3px; padding: 1px 4px; border-radius: 2px; background: rgba(10, 12, 20, 0.7); color: #fff; font-size: 10px; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; opacity: 0; transition: opacity 0.12s ease; }
 .run-reticle-slot:hover, .run-reticle-slot:focus-visible { border-color: #fff; background: rgba(255, 255, 255, 0.12); }
