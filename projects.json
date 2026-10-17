@@ -5,6 +5,7 @@
     "accepted": {
      "created_at": "2025-12-19T05:53:25.160410+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "197",
      "is_manufacturable": true,
@@ -12,7 +13,8 @@
      "log_file": "precheck/2975.acceptance.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -81,6 +83,7 @@
     "latest": {
      "created_at": "2026-08-02T01:24:16.867222+00:00",
      "details": true,
+     "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
      "flow_complete": true,
      "id": "708",
      "is_manufacturable": true,
@@ -170,6 +173,12 @@
      "GPL-3.0"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSE",
+      "spdx": "GPL-3.0"
+     }
+    ],
     "status": "match"
    },
    "name": "Cloneless1",
@@ -193,13 +202,23 @@
    },
    "repository": "https://github.com/ThorbenMoos/Cloneless1",
    "slot_size": "1x1",
-   "submitted_at": "2025-12-19T10:29:31.762246+00:00"
+   "submitted_at": "2025-12-19T10:29:31.762246+00:00",
+   "template": {
+    "pin": {
+     "PDK_TAG": "1.6.6"
+    },
+    "repo": "wafer-space/gf180mcu-project-template",
+    "versions": [
+     "1.3.5"
+    ]
+   }
   },
   "AS03": {
    "checks": {
     "accepted": {
      "created_at": "2026-01-04T09:35:57.974601+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "243",
      "is_manufacturable": true,
@@ -207,7 +226,8 @@
      "log_file": "precheck/AS03.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "same_as_latest": true,
      "steps": [
       [
@@ -277,6 +297,7 @@
     "latest": {
      "created_at": "2026-01-04T09:35:57.974601+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "243",
      "is_manufacturable": true,
@@ -284,7 +305,8 @@
      "log_file": "precheck/AS03.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -356,12 +378,18 @@
    "licence": {
     "declared": "Apache-2.0",
     "declared_raw": "Apache-2.0",
-    "repo_checked": "https://github.com/AvalonSemiconductors/ws-submission-2025/",
+    "repo_checked": "https://github.com/AvalonSemiconductors/ws-submission-2025",
     "repo_commit": "ef1e1212213b",
     "repo_files": [
      "Apache-2.0"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSE",
+      "spdx": "Apache-2.0"
+     }
+    ],
     "status": "match"
    },
    "name": "WS-Multi",
@@ -377,7 +405,8 @@
     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
     "id": "243",
     "is_manufacturable": true,
-    "precheck_version": "",
+    "precheck_version": "1.5.5",
+    "precheck_version_from": "image",
     "status": "finished",
     "tool_versions": {
      "precheck": "unknown"
@@ -385,13 +414,23 @@
    },
    "repository": "https://github.com/AvalonSemiconductors/ws-submission-2025",
    "slot_size": "1x1",
-   "submitted_at": "2026-01-04T13:38:20.663655+00:00"
+   "submitted_at": "2026-01-04T13:38:20.663655+00:00",
+   "template": {
+    "pin": {
+     "PDK_TAG": "1.6.6"
+    },
+    "repo": "wafer-space/gf180mcu-project-template",
+    "versions": [
+     "1.3.5"
+    ]
+   }
   },
   "BRWN": {
    "checks": {
     "accepted": {
      "created_at": "2025-12-18T06:09:26.408349+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "188",
      "is_manufacturable": true,
@@ -399,7 +438,8 @@
      "log_file": "precheck/BRWN.acceptance.precheck.log.gz",
      "magic_drc_errors": 6577,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -468,6 +508,7 @@
     "latest": {
      "created_at": "2026-07-30T13:15:48.823640+00:00",
      "details": true,
+     "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
      "flow_complete": true,
      "id": "703",
      "is_manufacturable": true,
@@ -555,6 +596,7 @@
     "repo_commit": "",
     "repo_files": [],
     "repo_headers": [],
+    "repo_licence_files": [],
     "status": "no repository"
    },
    "name": "FA25_Engn2912e_Saligane_Brown",
@@ -578,13 +620,15 @@
    },
    "repository": "",
    "slot_size": "1x1",
-   "submitted_at": "2025-12-18T11:38:22.171884+00:00"
+   "submitted_at": "2025-12-18T11:38:22.171884+00:00",
+   "template": null
   },
   "BTAP": {
    "checks": {
     "accepted": {
      "created_at": "2025-12-25T16:22:16.493804+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "208",
      "is_manufacturable": true,
@@ -592,7 +636,8 @@
      "log_file": "precheck/BTAP.acceptance.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -661,6 +706,7 @@
     "latest": {
      "created_at": "2026-08-02T05:32:06.729816+00:00",
      "details": true,
+     "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
      "flow_complete": true,
      "id": "719",
      "is_manufacturable": true,
@@ -750,6 +796,12 @@
      "Apache-2.0"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSE",
+      "spdx": "Apache-2.0"
+     }
+    ],
     "status": "mismatch"
    },
    "name": "BreakingTTAPs",
@@ -773,13 +825,23 @@
    },
    "repository": "",
    "slot_size": "1x1",
-   "submitted_at": "2025-12-25T18:31:15.905297+00:00"
+   "submitted_at": "2025-12-25T18:31:15.905297+00:00",
+   "template": {
+    "pin": {
+     "PDK_TAG": "1.6.6"
+    },
+    "repo": "wafer-space/gf180mcu-project-template",
+    "versions": [
+     "1.3.5"
+    ]
+   }
   },
   "CAFE": {
    "checks": {
     "accepted": {
      "created_at": "2026-01-04T09:32:42.445032+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "241",
      "is_manufacturable": true,
@@ -787,7 +849,8 @@
      "log_file": "precheck/CAFE.acceptance.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -856,6 +919,7 @@
     "latest": {
      "created_at": "2026-08-02T09:48:31.135507+00:00",
      "details": true,
+     "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
      "flow_complete": true,
      "id": "731",
      "is_manufacturable": true,
@@ -945,6 +1009,12 @@
      "Apache-2.0"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSE",
+      "spdx": "Apache-2.0"
+     }
+    ],
     "status": "match"
    },
    "name": "FazyRV Hachure",
@@ -968,13 +1038,24 @@
    },
    "repository": "https://github.com/meiniKi/gf180mcu-fazyrv-hachure",
    "slot_size": "1x1",
-   "submitted_at": "2026-01-04T13:38:09.566425+00:00"
+   "submitted_at": "2026-01-04T13:38:09.566425+00:00",
+   "template": {
+    "pin": {
+     "PDK_TAG": "1.6.4"
+    },
+    "repo": "wafer-space/gf180mcu-project-template",
+    "versions": [
+     "1.3.1",
+     "1.3.2"
+    ]
+   }
   },
   "CHES": {
    "checks": {
     "accepted": {
      "created_at": "2025-12-11T22:39:42.912193+00:00",
      "details": true,
+     "docker_image_digest": "sha256:344919c644f3031315b338b83ecf841434e704e20da3959800b0438b379c0c79",
      "flow_complete": true,
      "id": "88",
      "is_manufacturable": true,
@@ -1051,6 +1132,7 @@
     "latest": {
      "created_at": "2026-08-02T23:18:33.719399+00:00",
      "details": true,
+     "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
      "flow_complete": true,
      "id": "767",
      "is_manufacturable": true,
@@ -1140,6 +1222,12 @@
      "Apache-2.0"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSE",
+      "spdx": "Apache-2.0"
+     }
+    ],
     "status": "match"
    },
    "name": "chess-move-generator",
@@ -1163,13 +1251,24 @@
    },
    "repository": "https://github.com/Ravenslofty/gf180mcu-chess",
    "slot_size": "1x1",
-   "submitted_at": "2025-12-12T01:25:25.125851+00:00"
+   "submitted_at": "2025-12-12T01:25:25.125851+00:00",
+   "template": {
+    "pin": {
+     "PDK_TAG": "1.6.4"
+    },
+    "repo": "wafer-space/gf180mcu-project-template",
+    "versions": [
+     "1.3.1",
+     "1.3.2"
+    ]
+   }
   },
   "GD02": {
    "checks": {
     "accepted": {
      "created_at": "2025-12-17T11:50:40.721972+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "129",
      "is_manufacturable": true,
@@ -1177,7 +1276,8 @@
      "log_file": "precheck/GD02.acceptance.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -1246,6 +1346,7 @@
     "latest": {
      "created_at": "2026-08-02T20:11:38.289809+00:00",
      "details": true,
+     "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
      "flow_complete": true,
      "id": "759",
      "is_manufacturable": true,
@@ -1335,6 +1436,12 @@
      "Apache-2.0"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSE",
+      "spdx": "Apache-2.0"
+     }
+    ],
     "status": "match"
    },
    "name": "Racquet Half r1p0 (1/2 slot)",
@@ -1358,13 +1465,23 @@
    },
    "repository": "https://github.com/gregdavill/gf180mcu-racquet-0.5x1",
    "slot_size": "0p5x1",
-   "submitted_at": "2025-12-17T13:25:37.323448+00:00"
+   "submitted_at": "2025-12-17T13:25:37.323448+00:00",
+   "template": {
+    "pin": {
+     "PDK_TAG": "1.6.6"
+    },
+    "repo": "wafer-space/gf180mcu-project-template",
+    "versions": [
+     "1.3.5"
+    ]
+   }
   },
   "GD03": {
    "checks": {
     "accepted": {
      "created_at": "2025-12-17T13:34:57.927886+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "156",
      "is_manufacturable": true,
@@ -1372,7 +1489,8 @@
      "log_file": "precheck/GD03.acceptance.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -1441,6 +1559,7 @@
     "latest": {
      "created_at": "2026-07-09T06:15:16.184921+00:00",
      "details": true,
+     "docker_image_digest": "sha256:7aa4baf798acbbfc21807c913dfa05c3ee9250401d332ad584fb21da89a090d0",
      "flow_complete": true,
      "id": "414",
      "is_manufacturable": true,
@@ -1448,7 +1567,8 @@
      "log_file": "precheck/GD03.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.7.1",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -1524,12 +1644,18 @@
    "licence": {
     "declared": "Apache-2.0",
     "declared_raw": "Apache-2.0",
-    "repo_checked": "https://github.com/gregdavill/gf180mcu-racquet/",
+    "repo_checked": "https://github.com/gregdavill/gf180mcu-racquet",
     "repo_commit": "5ef4901d472d",
     "repo_files": [
      "Apache-2.0"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSE",
+      "spdx": "Apache-2.0"
+     }
+    ],
     "status": "match"
    },
    "name": "Racquet r2p0 - 23 core SoC",
@@ -1545,7 +1671,8 @@
     "docker_image_digest": "sha256:7aa4baf798acbbfc21807c913dfa05c3ee9250401d332ad584fb21da89a090d0",
     "id": "414",
     "is_manufacturable": true,
-    "precheck_version": "",
+    "precheck_version": "1.7.1",
+    "precheck_version_from": "image",
     "status": "finished",
     "tool_versions": {
      "precheck": "unknown"
@@ -1553,13 +1680,24 @@
    },
    "repository": "https://github.com/gregdavill/gf180mcu-racquet",
    "slot_size": "1x1",
-   "submitted_at": "2025-12-18T01:30:57.479399+00:00"
+   "submitted_at": "2025-12-18T01:30:57.479399+00:00",
+   "template": {
+    "pin": {
+     "PDK_TAG": "1.6.4"
+    },
+    "repo": "wafer-space/gf180mcu-project-template",
+    "versions": [
+     "1.3.1",
+     "1.3.2"
+    ]
+   }
   },
   "GD04": {
    "checks": {
     "accepted": {
      "created_at": "2025-12-17T13:34:52.967053+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "155",
      "is_manufacturable": true,
@@ -1567,7 +1705,8 @@
      "log_file": "precheck/GD04.acceptance.precheck.log.gz",
      "magic_drc_errors": 3122,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -1636,6 +1775,7 @@
     "latest": {
      "created_at": "2026-07-30T12:41:48.831966+00:00",
      "details": true,
+     "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
      "flow_complete": true,
      "id": "701",
      "is_manufacturable": true,
@@ -1725,6 +1865,12 @@
      "Apache-2.0"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSE",
+      "spdx": "Apache-2.0"
+     }
+    ],
     "status": "mismatch"
    },
    "name": "Racquet Wide 1x0.5",
@@ -1748,13 +1894,24 @@
    },
    "repository": "https://github.com/gregdavill/gf180mcu-racquet-1x0.5",
    "slot_size": "1x0p5",
-   "submitted_at": "2025-12-18T01:30:18.176965+00:00"
+   "submitted_at": "2025-12-18T01:30:18.176965+00:00",
+   "template": {
+    "pin": {
+     "PDK_TAG": "1.6.4"
+    },
+    "repo": "wafer-space/gf180mcu-project-template",
+    "versions": [
+     "1.3.1",
+     "1.3.2"
+    ]
+   }
   },
   "HZ80": {
    "checks": {
     "accepted": {
      "created_at": "2025-12-20T09:36:14.468148+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "203",
      "is_manufacturable": true,
@@ -1762,7 +1919,8 @@
      "log_file": "precheck/HZ80.acceptance.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -1831,6 +1989,7 @@
     "latest": {
      "created_at": "2026-08-02T03:28:29.700135+00:00",
      "details": true,
+     "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
      "flow_complete": true,
      "id": "711",
      "is_manufacturable": true,
@@ -1920,6 +2079,12 @@
      "Apache-2.0"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSE",
+      "spdx": "Apache-2.0"
+     }
+    ],
     "status": "match"
    },
    "name": "FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 1 slot)",
@@ -1943,13 +2108,23 @@
    },
    "repository": "https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu",
    "slot_size": "0p5x1",
-   "submitted_at": "2025-12-20T20:45:59.099829+00:00"
+   "submitted_at": "2025-12-20T20:45:59.099829+00:00",
+   "template": {
+    "pin": {
+     "PDK_TAG": "1.6.6"
+    },
+    "repo": "wafer-space/gf180mcu-project-template",
+    "versions": [
+     "1.3.5"
+    ]
+   }
   },
   "ISHI": {
    "checks": {
     "accepted": {
      "created_at": "2026-01-04T09:28:27.749427+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "240",
      "is_manufacturable": true,
@@ -1957,7 +2132,8 @@
      "log_file": "precheck/ISHI.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "same_as_latest": true,
      "steps": [
       [
@@ -2027,6 +2203,7 @@
     "latest": {
      "created_at": "2026-01-04T09:28:27.749427+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "240",
      "is_manufacturable": true,
@@ -2034,7 +2211,8 @@
      "log_file": "precheck/ISHI.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -2112,6 +2290,12 @@
      "Apache-2.0"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSE",
+      "spdx": "Apache-2.0"
+     }
+    ],
     "status": "match"
    },
    "name": "ISHI-KAI's Multiple Users Project",
@@ -2127,7 +2311,8 @@
     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
     "id": "240",
     "is_manufacturable": true,
-    "precheck_version": "",
+    "precheck_version": "1.5.5",
+    "precheck_version_from": "image",
     "status": "finished",
     "tool_versions": {
      "precheck": "unknown"
@@ -2135,13 +2320,15 @@
    },
    "repository": "https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_WaferSapce-GF180-1",
    "slot_size": "1x1",
-   "submitted_at": "2026-01-04T13:35:28.453878+00:00"
+   "submitted_at": "2026-01-04T13:35:28.453878+00:00",
+   "template": null
   },
   "JKU1": {
    "checks": {
     "accepted": {
      "created_at": "2025-12-15T08:14:09.207778+00:00",
      "details": true,
+     "docker_image_digest": "sha256:4548ca1351d21cdd7e628e7f21d9567803d704784816e4fa69adcbd77073996f",
      "flow_complete": true,
      "id": "103",
      "is_manufacturable": true,
@@ -2218,6 +2405,7 @@
     "latest": {
      "created_at": "2025-12-17T13:23:57.688889+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "141",
      "is_manufacturable": true,
@@ -2225,7 +2413,8 @@
      "log_file": "precheck/JKU1.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -2303,6 +2492,12 @@
      "SHL-2.1"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSE",
+      "spdx": "SHL-2.1"
+     }
+    ],
     "status": "mismatch"
    },
    "name": "gf180mcu-jku-projects",
@@ -2318,7 +2513,8 @@
     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
     "id": "141",
     "is_manufacturable": true,
-    "precheck_version": "",
+    "precheck_version": "1.5.5",
+    "precheck_version_from": "image",
     "status": "finished",
     "tool_versions": {
      "precheck": "unknown"
@@ -2326,13 +2522,23 @@
    },
    "repository": "https://github.com/iic-jku/gf180mcu-jku-projects",
    "slot_size": "1x1",
-   "submitted_at": "2025-12-15T11:42:44.246350+00:00"
+   "submitted_at": "2025-12-15T11:42:44.246350+00:00",
+   "template": {
+    "pin": {
+     "PDK_TAG": "1.6.6"
+    },
+    "repo": "wafer-space/gf180mcu-project-template",
+    "versions": [
+     "1.3.5"
+    ]
+   }
   },
   "JKU2": {
    "checks": {
     "accepted": {
      "created_at": "2025-12-17T16:13:09.274157+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "168",
      "is_manufacturable": true,
@@ -2340,7 +2546,8 @@
      "log_file": "precheck/JKU2.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "same_as_latest": true,
      "steps": [
       [
@@ -2410,6 +2617,7 @@
     "latest": {
      "created_at": "2025-12-17T16:13:09.274157+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "168",
      "is_manufacturable": true,
@@ -2417,7 +2625,8 @@
      "log_file": "precheck/JKU2.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -2495,6 +2704,12 @@
      "SHL-2.1"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSE",
+      "spdx": "SHL-2.1"
+     }
+    ],
     "status": "mismatch"
    },
    "name": "gf180mcu-jku-atbs-adc",
@@ -2510,7 +2725,8 @@
     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
     "id": "168",
     "is_manufacturable": true,
-    "precheck_version": "",
+    "precheck_version": "1.5.5",
+    "precheck_version_from": "image",
     "status": "finished",
     "tool_versions": {
      "precheck": "unknown"
@@ -2518,13 +2734,23 @@
    },
    "repository": "https://github.com/iic-jku/gf180mcu-jku-atbs-adc",
    "slot_size": "1x0p5",
-   "submitted_at": "2025-12-17T22:02:28.155828+00:00"
+   "submitted_at": "2025-12-17T22:02:28.155828+00:00",
+   "template": {
+    "pin": {
+     "PDK_TAG": "1.6.6"
+    },
+    "repo": "wafer-space/gf180mcu-project-template",
+    "versions": [
+     "1.3.5"
+    ]
+   }
   },
   "KIAN": {
    "checks": {
     "accepted": {
      "created_at": "2025-12-16T20:14:37.608692+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "117",
      "is_manufacturable": true,
@@ -2532,7 +2758,8 @@
      "log_file": "precheck/KIAN.acceptance.precheck.log.gz",
      "magic_drc_errors": 2,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -2601,6 +2828,7 @@
     "latest": {
      "created_at": "2026-08-02T18:54:24.080471+00:00",
      "details": true,
+     "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
      "flow_complete": true,
      "id": "755",
      "is_manufacturable": true,
@@ -2684,12 +2912,18 @@
    "licence": {
     "declared": "Apache-2.0",
     "declared_raw": "Apache-2.0",
-    "repo_checked": "https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32/",
+    "repo_checked": "https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32",
     "repo_commit": "2483ecb9cc00",
     "repo_files": [
      "Apache-2.0"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSE",
+      "spdx": "Apache-2.0"
+     }
+    ],
     "status": "match"
    },
    "name": "KianV: A 32-bit RISC-V Linux SoC taped out on GF180MCU",
@@ -2713,13 +2947,23 @@
    },
    "repository": "https://github.com/splinedrive/gf180mcu-kianv-rv32ima-sv32",
    "slot_size": "1x1",
-   "submitted_at": "2025-12-16T22:38:43.183054+00:00"
+   "submitted_at": "2025-12-16T22:38:43.183054+00:00",
+   "template": {
+    "pin": {
+     "PDK_TAG": "1.6.6"
+    },
+    "repo": "wafer-space/gf180mcu-project-template",
+    "versions": [
+     "1.3.5"
+    ]
+   }
   },
   "MOLE": {
    "checks": {
     "accepted": {
      "created_at": "2025-12-16T18:29:22.178741+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "115",
      "is_manufacturable": true,
@@ -2727,7 +2971,8 @@
      "log_file": "precheck/MOLE.acceptance.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -2796,6 +3041,7 @@
     "latest": {
      "created_at": "2026-08-02T18:32:18.152412+00:00",
      "details": true,
+     "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
      "flow_complete": true,
      "id": "753",
      "is_manufacturable": true,
@@ -2885,6 +3131,12 @@
      "Apache-2.0"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSE",
+      "spdx": "Apache-2.0"
+     }
+    ],
     "status": "match"
    },
    "name": "FABulous FPGA",
@@ -2908,13 +3160,23 @@
    },
    "repository": "https://github.com/mole99/gf180mcu-fabulous-fpga",
    "slot_size": "1x1",
-   "submitted_at": "2025-12-17T07:41:14.945898+00:00"
+   "submitted_at": "2025-12-17T07:41:14.945898+00:00",
+   "template": {
+    "pin": {
+     "PDK_TAG": "1.6.6"
+    },
+    "repo": "wafer-space/gf180mcu-project-template",
+    "versions": [
+     "1.3.5"
+    ]
+   }
   },
   "MOS2": {
    "checks": {
     "accepted": {
      "created_at": "2026-01-03T15:00:41.725654+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "215",
      "is_manufacturable": true,
@@ -2922,7 +3184,8 @@
      "log_file": "precheck/MOS2.acceptance.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -2991,6 +3254,7 @@
     "latest": {
      "created_at": "2026-08-02T08:54:20.357067+00:00",
      "details": true,
+     "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
      "flow_complete": true,
      "id": "729",
      "is_manufacturable": true,
@@ -3080,6 +3344,12 @@
      "MIT"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSE",
+      "spdx": "MIT"
+     }
+    ],
     "status": "match"
    },
    "name": "AutoMOS-Chipathon-2025 full size",
@@ -3103,13 +3373,19 @@
    },
    "repository": "https://github.com/AutoMOS-project/AutoMOS-chipathon2025/tree/update-for-ws",
    "slot_size": "1x1",
-   "submitted_at": "2026-01-04T13:38:47.271751+00:00"
+   "submitted_at": "2026-01-04T13:38:47.271751+00:00",
+   "template": {
+    "pin": {},
+    "repo": "wafer-space/gf180mcu-project-template",
+    "versions": []
+   }
   },
   "MOSB": {
    "checks": {
     "accepted": {
      "created_at": "2025-12-17T13:24:15.561568+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "142",
      "is_manufacturable": true,
@@ -3117,7 +3393,8 @@
      "log_file": "precheck/MOSB.acceptance.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -3186,6 +3463,7 @@
     "latest": {
      "created_at": "2026-08-03T01:19:00.608747+00:00",
      "details": true,
+     "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
      "flow_complete": true,
      "id": "772",
      "is_manufacturable": true,
@@ -3273,6 +3551,7 @@
     "repo_commit": "",
     "repo_files": [],
     "repo_headers": [],
+    "repo_licence_files": [],
     "status": "no repository"
    },
    "name": "MOSbiusV3",
@@ -3296,13 +3575,15 @@
    },
    "repository": "",
    "slot_size": "1x1",
-   "submitted_at": "2025-12-18T08:59:15.410898+00:00"
+   "submitted_at": "2025-12-18T08:59:15.410898+00:00",
+   "template": null
   },
   "OCD1": {
    "checks": {
     "accepted": {
      "created_at": "2026-01-02T19:33:55.689979+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "214",
      "is_manufacturable": true,
@@ -3310,7 +3591,8 @@
      "log_file": "precheck/OCD1.acceptance.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -3379,6 +3661,7 @@
     "latest": {
      "created_at": "2026-08-02T08:54:20.507889+00:00",
      "details": true,
+     "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
      "flow_complete": true,
      "id": "730",
      "is_manufacturable": true,
@@ -3468,6 +3751,7 @@
     "repo_headers": [
      "Apache-2.0"
     ],
+    "repo_licence_files": [],
     "status": "match"
    },
    "name": "openframe_caravel_picorv32",
@@ -3491,13 +3775,15 @@
    },
    "repository": "https://github.com/RTimothyEdwards/gf180mcu_ocd_openframe",
    "slot_size": "1x1",
-   "submitted_at": "2026-01-03T00:19:22.111853+00:00"
+   "submitted_at": "2026-01-03T00:19:22.111853+00:00",
+   "template": null
   },
   "OCD2": {
    "checks": {
     "accepted": {
      "created_at": "2026-01-02T17:56:09.938580+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "209",
      "is_manufacturable": true,
@@ -3505,7 +3791,8 @@
      "log_file": "precheck/OCD2.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "same_as_latest": true,
      "steps": [
       [
@@ -3575,6 +3862,7 @@
     "latest": {
      "created_at": "2026-01-02T17:56:09.938580+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "209",
      "is_manufacturable": true,
@@ -3582,7 +3870,8 @@
      "log_file": "precheck/OCD2.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -3660,6 +3949,7 @@
     "repo_headers": [
      "Apache-2.0"
     ],
+    "repo_licence_files": [],
     "status": "match"
    },
    "name": "ocd_sram_test",
@@ -3675,7 +3965,8 @@
     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
     "id": "209",
     "is_manufacturable": true,
-    "precheck_version": "",
+    "precheck_version": "1.5.5",
+    "precheck_version_from": "image",
     "status": "finished",
     "tool_versions": {
      "precheck": "unknown"
@@ -3683,7 +3974,8 @@
    },
    "repository": "https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test",
    "slot_size": "1x0p5",
-   "submitted_at": "2026-01-02T19:36:24.936962+00:00"
+   "submitted_at": "2026-01-02T19:36:24.936962+00:00",
+   "template": null
   },
   "RBOY": {
    "checks": {},
@@ -3698,19 +3990,36 @@
      "Apache-2.0"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSE",
+      "spdx": "Apache-2.0"
+     }
+    ],
     "status": "match"
    },
    "name": "RISCBoy-180",
    "precheck": null,
    "repository": "https://github.com/wren6991/riscboy-180",
    "slot_size": "1x1",
-   "submitted_at": ""
+   "submitted_at": "",
+   "template": {
+    "pin": {
+     "PDK_TAG": "1.6.4"
+    },
+    "repo": "wafer-space/gf180mcu-project-template",
+    "versions": [
+     "1.3.1",
+     "1.3.2"
+    ]
+   }
   },
   "RZ80": {
    "checks": {
     "accepted": {
      "created_at": "2025-12-20T10:06:13.438441+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "204",
      "is_manufacturable": true,
@@ -3718,7 +4027,8 @@
      "log_file": "precheck/RZ80.acceptance.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -3787,6 +4097,7 @@
     "latest": {
      "created_at": "2026-08-02T03:55:44.951221+00:00",
      "details": true,
+     "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
      "flow_complete": true,
      "id": "714",
      "is_manufacturable": true,
@@ -3876,6 +4187,12 @@
      "Apache-2.0"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSE",
+      "spdx": "Apache-2.0"
+     }
+    ],
     "status": "match"
    },
    "name": "FOSSi open-source replacement for Z80 classic 8-bit CPU",
@@ -3899,13 +4216,23 @@
    },
    "repository": "https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu?tab=readme-ov-file",
    "slot_size": "1x1",
-   "submitted_at": "2025-12-20T20:44:46.213778+00:00"
+   "submitted_at": "2025-12-20T20:44:46.213778+00:00",
+   "template": {
+    "pin": {
+     "PDK_TAG": "1.6.6"
+    },
+    "repo": "wafer-space/gf180mcu-project-template",
+    "versions": [
+     "1.3.5"
+    ]
+   }
   },
   "RZML": {
    "checks": {
     "accepted": {
      "created_at": "2025-12-20T15:39:13.532450+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "205",
      "is_manufacturable": true,
@@ -3913,7 +4240,8 @@
      "log_file": "precheck/RZML.acceptance.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -3982,6 +4310,7 @@
     "latest": {
      "created_at": "2026-08-02T04:57:32.022537+00:00",
      "details": true,
+     "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
      "flow_complete": true,
      "id": "716",
      "is_manufacturable": true,
@@ -4069,6 +4398,7 @@
     "repo_commit": "ddbd922a1e9d",
     "repo_files": [],
     "repo_headers": [],
+    "repo_licence_files": [],
     "status": "no licence file"
    },
    "name": "LGN FashionMNIST - Logic Gate Network trained on FashioMNIST",
@@ -4092,13 +4422,19 @@
    },
    "repository": "",
    "slot_size": "1x1",
-   "submitted_at": "2025-12-20T20:44:29.272145+00:00"
+   "submitted_at": "2025-12-20T20:44:29.272145+00:00",
+   "template": {
+    "pin": {},
+    "repo": "egorxe/gf180mcu-caravel-template",
+    "versions": []
+   }
   },
   "TQVA": {
    "checks": {
     "accepted": {
      "created_at": "2025-12-17T13:31:21.611684+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "151",
      "is_manufacturable": true,
@@ -4106,7 +4442,8 @@
      "log_file": "precheck/TQVA.acceptance.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -4175,6 +4512,7 @@
     "latest": {
      "created_at": "2026-07-30T12:22:48.467922+00:00",
      "details": true,
+     "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
      "flow_complete": true,
      "id": "700",
      "is_manufacturable": true,
@@ -4264,6 +4602,12 @@
      "Apache-2.0"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSE",
+      "spdx": "Apache-2.0"
+     }
+    ],
     "status": "match"
    },
    "name": "TinyQV - Crowdsourced Risc-V SoC",
@@ -4287,13 +4631,24 @@
    },
    "repository": "https://github.com/MichaelBell/ws01-tinyQV",
    "slot_size": "0p5x0p5",
-   "submitted_at": "2025-12-17T16:12:56.349165+00:00"
+   "submitted_at": "2025-12-17T16:12:56.349165+00:00",
+   "template": {
+    "pin": {
+     "PDK_TAG": "1.6.5"
+    },
+    "repo": "wafer-space/gf180mcu-project-template",
+    "versions": [
+     "1.3.3",
+     "1.3.4"
+    ]
+   }
   },
   "TQVB": {
    "checks": {
     "accepted": {
      "created_at": "2025-12-17T13:30:21.285264+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "150",
      "is_manufacturable": true,
@@ -4301,7 +4656,8 @@
      "log_file": "precheck/TQVB.acceptance.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -4370,6 +4726,7 @@
     "latest": {
      "created_at": "2026-07-30T12:21:48.283686+00:00",
      "details": true,
+     "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
      "flow_complete": true,
      "id": "699",
      "is_manufacturable": true,
@@ -4459,6 +4816,12 @@
      "Apache-2.0"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSE",
+      "spdx": "Apache-2.0"
+     }
+    ],
     "status": "match"
    },
    "name": "TinyQV - Crowdsourced Risc-V SoC (0.5x1)",
@@ -4482,13 +4845,24 @@
    },
    "repository": "https://github.com/MichaelBell/ws01-tinyQV",
    "slot_size": "0p5x1",
-   "submitted_at": "2025-12-17T16:11:31.015042+00:00"
+   "submitted_at": "2025-12-17T16:11:31.015042+00:00",
+   "template": {
+    "pin": {
+     "PDK_TAG": "1.6.5"
+    },
+    "repo": "wafer-space/gf180mcu-project-template",
+    "versions": [
+     "1.3.3",
+     "1.3.4"
+    ]
+   }
   },
   "TQVC": {
    "checks": {
     "accepted": {
      "created_at": "2025-12-17T13:28:20.921044+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "149",
      "is_manufacturable": true,
@@ -4496,7 +4870,8 @@
      "log_file": "precheck/TQVC.acceptance.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -4565,6 +4940,7 @@
     "latest": {
      "created_at": "2026-08-03T02:41:20.334771+00:00",
      "details": true,
+     "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
      "flow_complete": true,
      "id": "776",
      "is_manufacturable": true,
@@ -4654,6 +5030,12 @@
      "Apache-2.0"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSE",
+      "spdx": "Apache-2.0"
+     }
+    ],
     "status": "match"
    },
    "name": "TinyQV - Crowdsourced Risc-V SoC (1x0.5)",
@@ -4677,13 +5059,24 @@
    },
    "repository": "https://github.com/MichaelBell/ws01-tinyQV",
    "slot_size": "1x0p5",
-   "submitted_at": "2025-12-17T16:10:22.404998+00:00"
+   "submitted_at": "2025-12-17T16:10:22.404998+00:00",
+   "template": {
+    "pin": {
+     "PDK_TAG": "1.6.5"
+    },
+    "repo": "wafer-space/gf180mcu-project-template",
+    "versions": [
+     "1.3.3",
+     "1.3.4"
+    ]
+   }
   },
   "TRID": {
    "checks": {
     "accepted": {
      "created_at": "2026-01-03T15:13:33.254066+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "220",
      "is_manufacturable": true,
@@ -4691,7 +5084,8 @@
      "log_file": "precheck/TRID.precheck.log.gz",
      "magic_drc_errors": 8,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "same_as_latest": true,
      "steps": [
       [
@@ -4761,6 +5155,7 @@
     "latest": {
      "created_at": "2026-01-03T15:13:33.254066+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "220",
      "is_manufacturable": true,
@@ -4768,7 +5163,8 @@
      "log_file": "precheck/TRID.precheck.log.gz",
      "magic_drc_errors": 8,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -4850,6 +5246,28 @@
      "LicenseRef-CERNLogo"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSES/Apache-2.0.txt",
+      "spdx": "Apache-2.0"
+     },
+     {
+      "file": "LICENSES/CC-BY-4.0.txt",
+      "spdx": "CC-BY-4.0"
+     },
+     {
+      "file": "LICENSES/CERN-OHL-W-2.0.txt",
+      "spdx": "CERN-OHL-W-2.0"
+     },
+     {
+      "file": "LICENSES/LPPL-1.3c.txt",
+      "spdx": "LPPL-1.3c"
+     },
+     {
+      "file": "LICENSES/LicenseRef-CERNLogo.txt",
+      "spdx": "LicenseRef-CERNLogo"
+     }
+    ],
     "status": "match"
    },
    "name": "gf180mcu-project-trident-gf180-teststructure",
@@ -4865,7 +5283,8 @@
     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
     "id": "220",
     "is_manufacturable": true,
-    "precheck_version": "",
+    "precheck_version": "1.5.5",
+    "precheck_version_from": "image",
     "status": "finished",
     "tool_versions": {
      "precheck": "unknown"
@@ -4873,7 +5292,8 @@
    },
    "repository": "https://github.com/Scafir/gf180mcu-project-trident-gf180-teststructure",
    "slot_size": "0p5x1",
-   "submitted_at": "2026-01-04T13:38:53.963768+00:00"
+   "submitted_at": "2026-01-04T13:38:53.963768+00:00",
+   "template": null
   },
   "TTP2": {
    "checks": {
@@ -4888,6 +5308,7 @@
     "latest": {
      "created_at": "2026-08-02T22:25:36.599108+00:00",
      "details": true,
+     "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
      "flow_complete": true,
      "id": "764",
      "is_manufacturable": true,
@@ -4977,6 +5398,12 @@
      "Apache-2.0"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSE",
+      "spdx": "Apache-2.0"
+     }
+    ],
     "status": "match"
    },
    "name": "Tiny Tapeout GF 0.2",
@@ -5000,7 +5427,8 @@
    },
    "repository": "https://github.com/TinyTapeout/tinytapeout-gf-0p2",
    "slot_size": "1x1",
-   "submitted_at": "2025-12-11T05:06:40.764867+00:00"
+   "submitted_at": "2025-12-11T05:06:40.764867+00:00",
+   "template": null
   },
   "TTPG": {
    "checks": {
@@ -5015,6 +5443,7 @@
     "latest": {
      "created_at": "2026-08-02T21:13:06.023880+00:00",
      "details": true,
+     "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
      "flow_complete": true,
      "id": "761",
      "is_manufacturable": true,
@@ -5104,6 +5533,12 @@
      "Apache-2.0"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSE",
+      "spdx": "Apache-2.0"
+     }
+    ],
     "status": "match"
    },
    "name": "Tiny Tapeout GF 0p2 - Power Gated Variant",
@@ -5127,13 +5562,15 @@
    },
    "repository": "https://github.com/TinyTapeout/tinytapeout-gf-0p2",
    "slot_size": "1x1",
-   "submitted_at": "2025-12-11T14:04:59.196246+00:00"
+   "submitted_at": "2025-12-11T14:04:59.196246+00:00",
+   "template": null
   },
   "TZ01": {
    "checks": {
     "accepted": {
      "created_at": "2025-12-15T14:19:23.916286+00:00",
      "details": true,
+     "docker_image_digest": "sha256:4548ca1351d21cdd7e628e7f21d9567803d704784816e4fa69adcbd77073996f",
      "flow_complete": true,
      "id": "105",
      "is_manufacturable": true,
@@ -5210,6 +5647,7 @@
     "latest": {
      "created_at": "2026-08-03T01:55:09.140457+00:00",
      "details": true,
+     "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
      "flow_complete": true,
      "id": "774",
      "is_manufacturable": true,
@@ -5299,6 +5737,12 @@
      "Apache-2.0"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSE",
+      "spdx": "Apache-2.0"
+     }
+    ],
     "status": "match"
    },
    "name": "TillitisZedulo-testchip2025",
@@ -5322,13 +5766,24 @@
    },
    "repository": "https://github.com/ZeduloTech/gf180mcu-testchip2025",
    "slot_size": "1x1",
-   "submitted_at": "2025-12-17T07:01:51.522152+00:00"
+   "submitted_at": "2025-12-17T07:01:51.522152+00:00",
+   "template": {
+    "pin": {
+     "PDK_TAG": "1.6.4"
+    },
+    "repo": "wafer-space/gf180mcu-project-template",
+    "versions": [
+     "1.3.1",
+     "1.3.2"
+    ]
+   }
   },
   "WSLG": {
    "checks": {
     "accepted": {
      "created_at": "2026-01-04T09:33:13.029071+00:00",
      "details": true,
+     "docker_image_digest": "sha256:d28f6a50f7854865571b2161f7099dc1d2666237ffcc49cd143152f9e6aab14b",
      "flow_complete": true,
      "id": "242",
      "is_manufacturable": true,
@@ -5336,7 +5791,8 @@
      "log_file": "precheck/WSLG.acceptance.precheck.log.gz",
      "magic_drc_errors": 0,
      "pad_mask_check": "not in flow",
-     "precheck_version": "",
+     "precheck_version": "1.5.5",
+     "precheck_version_from": "image",
      "steps": [
       [
        "KLayout.ReadLayout",
@@ -5405,6 +5861,7 @@
     "latest": {
      "created_at": "2026-08-02T09:54:49.724024+00:00",
      "details": true,
+     "docker_image_digest": "sha256:f6c0cb88efce8769ec87de5a2035ada731fd8fffb1b3e5e1968078f6dd191c2f",
      "flow_complete": true,
      "id": "732",
      "is_manufacturable": true,
@@ -5494,6 +5951,12 @@
      "Apache-2.0"
     ],
     "repo_headers": [],
+    "repo_licence_files": [
+     {
+      "file": "LICENSE",
+      "spdx": "Apache-2.0"
+     }
+    ],
     "status": "match"
    },
    "name": "Wafer.Space Logo",
@@ -5517,7 +5980,17 @@
    },
    "repository": "https://github.com/89Mods/ws-logo-die",
    "slot_size": "1x1",
-   "submitted_at": "2026-01-04T13:38:16.025185+00:00"
+   "submitted_at": "2026-01-04T13:38:16.025185+00:00",
+   "template": {
+    "pin": {
+     "PDK_TAG": "1.6.4"
+    },
+    "repo": "wafer-space/gf180mcu-project-template",
+    "versions": [
+     "1.3.1",
+     "1.3.2"
+    ]
+   }
   }
  },
  "run": "ws-run1"
