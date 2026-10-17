@@ -137,14 +137,14 @@
         <h4 class="mb-10">Submission</h4>
         <table class="table table-sm run-table">
           <tbody>
-            <tr><th>Licence</th><td>CERN-OHL-W-2.0 <span class="text-muted">declared</span>
-<br><span class="text-muted">Repository: Apache-2.0, CC-BY-4.0, CERN-OHL-W-2.0, LPPL-1.3c, LicenseRef-CERNLogo
+            <tr><th>Licence</th><td><a href="https://github.com/Scafir/gf180mcu-project-trident-gf180-teststructure/blob/f81200d5f0b3/LICENSES/CERN-OHL-W-2.0.txt">CERN-OHL-W-2.0</a> <span class="text-muted">declared</span>
+<br><span class="text-muted">Repository: <a href="https://github.com/Scafir/gf180mcu-project-trident-gf180-teststructure/blob/f81200d5f0b3/LICENSES/Apache-2.0.txt">Apache-2.0</a> <span class="small">in <span class="run-mono">LICENSES/Apache-2.0.txt</span></span>, <a href="https://github.com/Scafir/gf180mcu-project-trident-gf180-teststructure/blob/f81200d5f0b3/LICENSES/CC-BY-4.0.txt">CC-BY-4.0</a> <span class="small">in <span class="run-mono">LICENSES/CC-BY-4.0.txt</span></span>, <a href="https://github.com/Scafir/gf180mcu-project-trident-gf180-teststructure/blob/f81200d5f0b3/LICENSES/CERN-OHL-W-2.0.txt">CERN-OHL-W-2.0</a> <span class="small">in <span class="run-mono">LICENSES/CERN-OHL-W-2.0.txt</span></span>, <a href="https://github.com/Scafir/gf180mcu-project-trident-gf180-teststructure/blob/f81200d5f0b3/LICENSES/LPPL-1.3c.txt">LPPL-1.3c</a> <span class="small">in <span class="run-mono">LICENSES/LPPL-1.3c.txt</span></span>, <a href="https://github.com/Scafir/gf180mcu-project-trident-gf180-teststructure/blob/f81200d5f0b3/LICENSES/LicenseRef-CERNLogo.txt">LicenseRef-CERNLogo</a> <span class="small">in <span class="run-mono">LICENSES/LicenseRef-CERNLogo.txt</span></span>
  — agrees</span>
-<br><span class="small text-muted">Repository checked at <span class="run-mono">f81200d5f0b3</span></span></td></tr>
+<br><span class="small text-muted">Repository checked at <a href="https://github.com/Scafir/gf180mcu-project-trident-gf180-teststructure/commit/f81200d5f0b3"><span class="run-mono">f81200d5f0b3</span></a></span></td></tr>
             <tr><th>Chip-on-board</th><td>Not selected at submission
 </td></tr>
             <tr><th>Precheck</th><td>Passed
-              <span class="text-muted">the check it was accepted on, 2026-01-03</span>
+              <span class="text-muted">the check it was accepted on, 2026-01-03, <a href="https://github.com/wafer-space/gf180mcu-precheck/tree/1.5.5">gf180mcu-precheck 1.5.5</a> <span class="small">(from its image)</span></span>
               <br><a href="#precheck">step results and logs</a></td></tr>
           </tbody>
         </table>
@@ -162,7 +162,7 @@
               <span class="text-muted">(272 µm²)</span></td></tr>
             <tr><th>Deep N-well</th><td>12
               <span class="text-muted">(28,204 µm²)</span></td></tr>
-            <tr><th>I/O library</th><td><span class="run-mono">gf180mcu_fd_io</span> <span class="text-muted">(509 cells)</span></td></tr>
+            <tr><th>I/O library</th><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/IPs/IO/gf180mcu_fd_io/datasheet.html#cell-list"><span class="run-mono">gf180mcu_fd_io</span></a> <span class="text-muted">(509 cells)</span></td></tr>
           </tbody>
         </table>
         <p class="small text-muted">Devices the designer drew, outside standard cells, SRAM macros and pads.</p>
@@ -218,23 +218,25 @@
         <div class="table-responsive">
         <table class="table table-sm run-table run-precheck bg-white">
           <thead><tr><th>Step</th><th>Accepted on, and latest<br>
-            <span class="small text-muted fw-normal">check 220, 2026-01-03, <span class="run-mono">retry</span></span></th></tr></thead>
+            <span class="small text-muted fw-normal">check 220, 2026-01-03, <span class="run-mono">retry</span>,
+              <a href="https://github.com/wafer-space/gf180mcu-precheck/tree/1.5.5">gf180mcu-precheck 1.5.5</a> <span class="small">(from its image)</span><br>PDK <a href="https://github.com/wafer-space/gf180mcu/tree/1.6.6">wafer-space/gf180mcu 1.6.6</a>,
+              LibreLane <a href="https://github.com/librelane/librelane/tree/e2f0b0e71f0394dc8e3e9b3376a3ceea41837d06"><span class="run-mono">e2f0b0e</span></a></span></th></tr></thead>
           <tbody>
-            <tr><td class="run-mono">KLayout.ReadLayout</td><td>passed</td></tr>
-            <tr><td class="run-mono">KLayout.CheckTopLevel</td><td>passed</td></tr>
-            <tr><td class="run-mono">KLayout.CheckSize</td><td>passed</td></tr>
-            <tr><td class="run-mono">KLayout.GenerateID</td><td>passed</td></tr>
-            <tr><td class="run-mono">KLayout.Density</td><td>passed</td></tr>
-            <tr><td class="run-mono">Checker.KLayoutDensity</td><td>passed</td></tr>
-            <tr><td class="run-mono">KLayout.ZeroAreaPolygons</td><td>passed</td></tr>
-            <tr><td class="run-mono">Checker.KLayoutZeroAreaPolygons</td><td>passed</td></tr>
-            <tr><td class="run-mono">KLayout.Antenna</td><td>passed</td></tr>
-            <tr><td class="run-mono">Checker.KLayoutAntenna</td><td>passed</td></tr>
-            <tr><td class="run-mono">Magic.DRC</td><td>passed</td></tr>
-            <tr><td class="run-mono">Checker.MagicDRC</td><td><span class="text-muted">advisory warning</span></td></tr>
-            <tr><td class="run-mono">KLayout.DRC</td><td>passed</td></tr>
-            <tr><td class="run-mono">Checker.KLayoutDRC</td><td>passed</td></tr>
-            <tr><td class="run-mono">KLayout.WriteLayout</td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-klayout-readlayout"><span class="run-mono">KLayout.ReadLayout</span></a></td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-klayout-checktoplevel"><span class="run-mono">KLayout.CheckTopLevel</span></a></td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-klayout-checksize"><span class="run-mono">KLayout.CheckSize</span></a></td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-klayout-generateid"><span class="run-mono">KLayout.GenerateID</span></a></td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-klayout-density"><span class="run-mono">KLayout.Density</span></a></td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-checker-klayoutdensity"><span class="run-mono">Checker.KLayoutDensity</span></a></td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-klayout-zeroareapolygons"><span class="run-mono">KLayout.ZeroAreaPolygons</span></a></td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-checker-klayoutzeroareapolygons"><span class="run-mono">Checker.KLayoutZeroAreaPolygons</span></a></td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-klayout-antenna"><span class="run-mono">KLayout.Antenna</span></a></td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-checker-klayoutantenna"><span class="run-mono">Checker.KLayoutAntenna</span></a></td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-magic-drc"><span class="run-mono">Magic.DRC</span></a></td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-checker-magicdrc"><span class="run-mono">Checker.MagicDRC</span></a></td><td><span class="text-muted">advisory warning</span></td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-klayout-drc"><span class="run-mono">KLayout.DRC</span></a></td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-checker-klayoutdrc"><span class="run-mono">Checker.KLayoutDRC</span></a></td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-klayout-writelayout"><span class="run-mono">KLayout.WriteLayout</span></a></td><td>passed</td></tr>
             <tr><th>KLayout DRC errors</th><td>0</td></tr>
             <tr><th>Magic DRC errors <span class="text-muted fw-normal">(advisory)</span></th><td>8</td></tr>
             <tr><th>Files</th><td><a href="../data/precheck/TRID.json">steps</a>
@@ -242,9 +244,11 @@
           </tbody>
         </table>
         </div>
-        <p class="small text-muted">The steps of the gf180mcu-precheck LibreLane flow, as run by platform.wafer.space. The
+        <p class="small text-muted">The steps of the <a href="https://github.com/wafer-space/gf180mcu-precheck">gf180mcu-precheck</a> <a href="https://librelane.readthedocs.io/">LibreLane</a>
+          flow, as run by <a href="https://platform.wafer.space/">platform.wafer.space</a>. The
           design was accepted on the newest finished check before it was submitted; later re-runs check the same file with
-          updated rules. KLayout DRC is the sign-off check. Magic DRC is advisory: its count does not stop a design. In the
+          updated rules. <a href="https://www.klayout.de/">KLayout</a> DRC is the sign-off check. <a href="http://opencircuitdesign.com/magic/">Magic</a>
+          DRC is advisory: its count does not stop a design. In the
           logs, Magic's "Error while reading cell" lines about fill cells are messages from its reader, not check failures.</p>
       </div>
     </div>

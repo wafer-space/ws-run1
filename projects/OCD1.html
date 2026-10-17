@@ -131,8 +131,8 @@
             <tr><th>Logic cells</th><td>34,431
 <span class="text-muted">+ 524,019 filler and tap cells</span></td></tr>
             <tr><th>Libraries</th><td>
-              AS 7t-3.3V <span class="text-muted">(34k)</span>, 
-              7t-5V <span class="text-muted">(2)</span>
+              <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a> <span class="text-muted">(34k)</span>, 
+              <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a> <span class="text-muted">(2)</span>
 </td></tr>
             <tr><th>SRAM</th><td>8 macros,
               24,576 bits</td></tr>
@@ -142,30 +142,30 @@
         <h4 class="mb-10">Submission</h4>
         <table class="table table-sm run-table">
           <tbody>
-            <tr><th>Licence</th><td>Apache-2.0 <span class="text-muted">declared</span>
+            <tr><th>Licence</th><td><a href="https://spdx.org/licenses/Apache-2.0.html">Apache-2.0</a> <span class="text-muted">declared</span>
 <br><span class="text-muted">Repository: Apache-2.0
-(in source file headers) — agrees</span>
-<br><span class="small text-muted">Repository checked at <span class="run-mono">9ef4567172df</span></span></td></tr>
+(in <a href="https://github.com/RTimothyEdwards/gf180mcu_ocd_openframe/tree/9ef4567172df">source file headers</a>) — agrees</span>
+<br><span class="small text-muted">Repository checked at <a href="https://github.com/RTimothyEdwards/gf180mcu_ocd_openframe/commit/9ef4567172df"><span class="run-mono">9ef4567172df</span></a></span></td></tr>
             <tr><th>Chip-on-board</th><td>Not selected at submission
 </td></tr>
             <tr><th>Precheck</th><td>Passed
-              <span class="text-muted">the check it was accepted on, 2026-01-02</span>
+              <span class="text-muted">the check it was accepted on, 2026-01-02, <a href="https://github.com/wafer-space/gf180mcu-precheck/tree/1.5.5">gf180mcu-precheck 1.5.5</a> <span class="small">(from its image)</span></span>
 <br>Passed
-              <span class="text-muted">latest re-run, 2026-08-02, gf180mcu-precheck 1.7.3</span>              <br><a href="#precheck">step results and logs</a></td></tr>
+              <span class="text-muted">latest re-run, 2026-08-02, <a href="https://github.com/wafer-space/gf180mcu-precheck/tree/1.7.3">gf180mcu-precheck 1.7.3</a></span>              <br><a href="#precheck">step results and logs</a></td></tr>
           </tbody>
         </table>
 
         <h4 class="mb-10">Process features</h4>
         <table class="table table-sm run-table">
           <tbody>
-            <tr><th>3.3 V</th><td>AS 7t-3.3V standard cells, ocd SRAM, ocd SRAM</td></tr>
+            <tr><th>3.3 V</th><td>AS 7t-3.3V standard cells, ocd SRAM</td></tr>
             <tr><th>5 V</th><td>7t-5V standard cells</td></tr>
             <tr><th>6 V</th><td>44 custom transistors</td></tr>
             <tr><th>MIM capacitors</th><td>9
               <span class="text-muted">(900 µm², on Metal4)</span></td></tr>
             <tr><th>High-resistance poly resistors</th><td>88
               <span class="text-muted">(2,200 µm²)</span></td></tr>
-            <tr><th>I/O library</th><td><span class="run-mono">gf180mcu_ocd_io</span> <span class="text-muted">(1102 cells)</span></td></tr>
+            <tr><th>I/O library</th><td><a href="https://github.com/RTimothyEdwards/gf180mcu_ocd_io/blob/main/docs/datasheet.rst"><span class="run-mono">gf180mcu_ocd_io</span></a> <span class="text-muted">(1102 cells)</span></td></tr>
           </tbody>
         </table>
         <p class="small text-muted">Devices the designer drew, outside standard cells, SRAM macros and pads.</p>
@@ -226,25 +226,25 @@
         <table class="table table-sm run-table bg-white">
           <thead><tr><th>Cell</th><th>Library</th><th class="text-end">Instances</th><th>What it does</th></tr></thead>
           <tbody>
-            <tr><td class="run-mono">inv_2</td><td>AS 7t-3.3V</td>
+            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">inv_2</span></a></td><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">5,088</td><td class="text-muted">Inverter (2x drive)</td></tr>
-            <tr><td class="run-mono">mux2_2</td><td>AS 7t-3.3V</td>
+            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">mux2_2</span></a></td><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">4,669</td><td class="text-muted">2-input multiplexer (2x drive)</td></tr>
-            <tr><td class="run-mono">buff_2</td><td>AS 7t-3.3V</td>
+            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">buff_2</span></a></td><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">3,598</td><td class="text-muted">Buffer (2x drive)</td></tr>
-            <tr><td class="run-mono">dfxtp_2</td><td>AS 7t-3.3V</td>
+            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">dfxtp_2</span></a></td><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">3,452</td><td class="text-muted">D flip-flop (1 bit storage) (2x drive)</td></tr>
-            <tr><td class="run-mono">buff_8</td><td>AS 7t-3.3V</td>
+            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">buff_8</span></a></td><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">2,472</td><td class="text-muted">Buffer (8x drive)</td></tr>
-            <tr><td class="run-mono">and2_2</td><td>AS 7t-3.3V</td>
+            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">and2_2</span></a></td><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">1,701</td><td class="text-muted">2-input AND gate (2x drive)</td></tr>
-            <tr><td class="run-mono">ao22_2</td><td>AS 7t-3.3V</td>
+            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">ao22_2</span></a></td><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">1,593</td><td class="text-muted"></td></tr>
-            <tr><td class="run-mono">clkbuff_12</td><td>AS 7t-3.3V</td>
+            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">clkbuff_12</span></a></td><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">1,307</td><td class="text-muted">Clock buffer (12x drive)</td></tr>
-            <tr><td class="run-mono">dfsrtp_2</td><td>AS 7t-3.3V</td>
+            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">dfsrtp_2</span></a></td><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">1,194</td><td class="text-muted"></td></tr>
-            <tr><td class="run-mono">or2_2</td><td>AS 7t-3.3V</td>
+            <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3"><span class="run-mono">or2_2</span></a></td><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_sc_mcu7t3v3">AS 7t-3.3V</a></td>
               <td class="text-end">1,174</td><td class="text-muted">2-input OR gate (2x drive)</td></tr>
           </tbody>
         </table>
@@ -253,9 +253,9 @@
         <table class="table table-sm run-table bg-white">
           <thead><tr><th>Macro</th><th class="text-end">Count</th><th class="text-end">Bits each</th></tr></thead>
           <tbody>
-            <tr><td class="run-mono">gf180mcu_ocd_ip_sram__sram256x8m8wm1</td><td class="text-end">4</td>
+            <tr><td><a href="https://github.com/RTimothyEdwards/gf180mcu_ocd_ip_sram/blob/main/cells/gf180mcu_ocd_ip_sram__sram256x8m8wm1/gf180mcu_ocd_ip_sram__sram256x8m8wm1.rst"><span class="run-mono">gf180mcu_ocd_ip_sram__sram256x8m8wm1</span></a></td><td class="text-end">4</td>
               <td class="text-end">2,048</td></tr>
-            <tr><td class="run-mono">gf180mcu_ocd_ip_sram__sram512x8m8wm1</td><td class="text-end">4</td>
+            <tr><td><a href="https://github.com/RTimothyEdwards/gf180mcu_ocd_ip_sram/blob/main/cells/gf180mcu_ocd_ip_sram__sram512x8m8wm1/gf180mcu_ocd_ip_sram__sram512x8m8wm1.rst"><span class="run-mono">gf180mcu_ocd_ip_sram__sram512x8m8wm1</span></a></td><td class="text-end">4</td>
               <td class="text-end">4,096</td></tr>
           </tbody>
         </table>
@@ -357,26 +357,29 @@
         <div class="table-responsive">
         <table class="table table-sm run-table run-precheck bg-white">
           <thead><tr><th>Step</th><th>Accepted on<br>
-            <span class="small text-muted fw-normal">check 214, 2026-01-02, <span class="run-mono">initial</span></span></th><th>Latest re-run<br>
+            <span class="small text-muted fw-normal">check 214, 2026-01-02, <span class="run-mono">initial</span>,
+              <a href="https://github.com/wafer-space/gf180mcu-precheck/tree/1.5.5">gf180mcu-precheck 1.5.5</a> <span class="small">(from its image)</span><br>PDK <a href="https://github.com/wafer-space/gf180mcu/tree/1.6.6">wafer-space/gf180mcu 1.6.6</a>,
+              LibreLane <a href="https://github.com/librelane/librelane/tree/e2f0b0e71f0394dc8e3e9b3376a3ceea41837d06"><span class="run-mono">e2f0b0e</span></a></span></th><th>Latest re-run<br>
             <span class="small text-muted fw-normal">check 730, 2026-08-02, <span class="run-mono">retry</span>,
-              gf180mcu-precheck 1.7.3</span></th></tr></thead>
+              <a href="https://github.com/wafer-space/gf180mcu-precheck/tree/1.7.3">gf180mcu-precheck 1.7.3</a><br>PDK <a href="https://github.com/fossi-foundation/open-pdks/tree/1.0.604">open_pdks 1.0.604</a>,
+              LibreLane <a href="https://github.com/librelane/librelane/tree/5fe3db1bbea68aa9973a9e7b045d24af1a089571"><span class="run-mono">5fe3db1</span></a></span></th></tr></thead>
           <tbody>
-            <tr><td class="run-mono">KLayout.ReadLayout</td><td>passed</td><td>passed</td></tr>
-            <tr><td class="run-mono">KLayout.CheckTopLevel</td><td>passed</td><td>passed</td></tr>
-            <tr><td class="run-mono">KLayout.CheckSize</td><td>passed</td><td>passed</td></tr>
-            <tr><td class="run-mono">KLayout.GenerateID</td><td>passed</td><td>passed</td></tr>
-            <tr><td class="run-mono">KLayout.Render</td><td><span class="text-muted">not in this flow</span></td><td>passed</td></tr>
-            <tr><td class="run-mono">KLayout.Density</td><td>passed</td><td>passed</td></tr>
-            <tr><td class="run-mono">Checker.KLayoutDensity</td><td>passed</td><td>passed</td></tr>
-            <tr><td class="run-mono">KLayout.ZeroAreaPolygons</td><td>passed</td><td>passed</td></tr>
-            <tr><td class="run-mono">Checker.KLayoutZeroAreaPolygons</td><td>passed</td><td>passed</td></tr>
-            <tr><td class="run-mono">KLayout.Antenna</td><td>passed</td><td>passed</td></tr>
-            <tr><td class="run-mono">Checker.KLayoutAntenna</td><td>passed</td><td>passed</td></tr>
-            <tr><td class="run-mono">Magic.DRC</td><td>passed</td><td>passed</td></tr>
-            <tr><td class="run-mono">Checker.MagicDRC</td><td>passed</td><td>passed</td></tr>
-            <tr><td class="run-mono">KLayout.DRC</td><td>passed</td><td>passed</td></tr>
-            <tr><td class="run-mono">Checker.KLayoutDRC</td><td>passed</td><td>passed</td></tr>
-            <tr><td class="run-mono">KLayout.WriteLayout</td><td>passed</td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-klayout-readlayout"><span class="run-mono">KLayout.ReadLayout</span></a></td><td>passed</td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-klayout-checktoplevel"><span class="run-mono">KLayout.CheckTopLevel</span></a></td><td>passed</td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-klayout-checksize"><span class="run-mono">KLayout.CheckSize</span></a></td><td>passed</td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-klayout-generateid"><span class="run-mono">KLayout.GenerateID</span></a></td><td>passed</td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-klayout-render"><span class="run-mono">KLayout.Render</span></a></td><td><span class="text-muted">not in this flow</span></td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-klayout-density"><span class="run-mono">KLayout.Density</span></a></td><td>passed</td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-checker-klayoutdensity"><span class="run-mono">Checker.KLayoutDensity</span></a></td><td>passed</td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-klayout-zeroareapolygons"><span class="run-mono">KLayout.ZeroAreaPolygons</span></a></td><td>passed</td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-checker-klayoutzeroareapolygons"><span class="run-mono">Checker.KLayoutZeroAreaPolygons</span></a></td><td>passed</td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-klayout-antenna"><span class="run-mono">KLayout.Antenna</span></a></td><td>passed</td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-checker-klayoutantenna"><span class="run-mono">Checker.KLayoutAntenna</span></a></td><td>passed</td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-magic-drc"><span class="run-mono">Magic.DRC</span></a></td><td>passed</td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-checker-magicdrc"><span class="run-mono">Checker.MagicDRC</span></a></td><td>passed</td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-klayout-drc"><span class="run-mono">KLayout.DRC</span></a></td><td>passed</td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-checker-klayoutdrc"><span class="run-mono">Checker.KLayoutDRC</span></a></td><td>passed</td><td>passed</td></tr>
+            <tr><td><a href="https://librelane.readthedocs.io/en/latest/reference/step_config_vars.html#step-klayout-writelayout"><span class="run-mono">KLayout.WriteLayout</span></a></td><td>passed</td><td>passed</td></tr>
             <tr><th>KLayout DRC errors</th><td>0</td><td>0</td></tr>
             <tr><th>Magic DRC errors <span class="text-muted fw-normal">(advisory)</span></th><td>0</td><td>0</td></tr>
             <tr><th>Files</th><td><a href="../data/precheck/OCD1.acceptance.json">steps</a>
@@ -385,9 +388,11 @@
           </tbody>
         </table>
         </div>
-        <p class="small text-muted">The steps of the gf180mcu-precheck LibreLane flow, as run by platform.wafer.space. The
+        <p class="small text-muted">The steps of the <a href="https://github.com/wafer-space/gf180mcu-precheck">gf180mcu-precheck</a> <a href="https://librelane.readthedocs.io/">LibreLane</a>
+          flow, as run by <a href="https://platform.wafer.space/">platform.wafer.space</a>. The
           design was accepted on the newest finished check before it was submitted; later re-runs check the same file with
-          updated rules. KLayout DRC is the sign-off check. Magic DRC is advisory: its count does not stop a design. In the
+          updated rules. <a href="https://www.klayout.de/">KLayout</a> DRC is the sign-off check. <a href="http://opencircuitdesign.com/magic/">Magic</a>
+          DRC is advisory: its count does not stop a design. In the
           logs, Magic's "Error while reading cell" lines about fill cells are messages from its reader, not check failures.</p>
       </div>
     </div>
