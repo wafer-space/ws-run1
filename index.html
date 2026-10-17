@@ -132,7 +132,7 @@
   <div class="box bg-white shadow p-20 text-center h-100">
     <h3 class="mb-5 color-dark run-stat">2k</h3>
     <p class="mb-0 font-weight-600 color-dark small">Bond pads</p>
-  </div>
+<p class="mb-0 small text-muted">and 109 probe pads</p>  </div>
 </div>
 
     </div>
@@ -2075,6 +2075,9 @@ Each project page links to a zoomable viewer of its die. Full resolution images:
           <li><strong>Logic cells</strong> are standard cell instances, excluding fillers, taps, antenna diodes and tie cells.</li>
           <li><strong>Transistors</strong> are places where gate polysilicon crosses diffusion, not counting dummy fill.</li>
           <li><strong>Core area:</strong> Core area is the die minus a 350 µm pad ring on each side.</li>
+          <li><strong>Bond pads</strong> are the pad openings in the pad ring, or in a second ring of pads inside it
+            for chip-on-board bonding; <strong>probe pads</strong> are the others, next to the blocks they test.
+            Letters and logos on the pad layer are not pads.</li>
           <li><strong>Theoretical maximum</strong> tiles one cell at its placement boundary with no routing.</li>
 <li><strong>Densest mm²</strong> is the best 1 mm square anywhere in each die, sliding in
             0.1 mm steps and avoiding SRAM.</li>        </ul>
