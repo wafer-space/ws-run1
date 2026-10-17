@@ -162,3 +162,12 @@
 .run-owner-ws { background: var(--run-accent); }
 .run-timeline li.run-timeline-tt::before { border-color: #7b4fa3; }
 .run-timeline li.run-timeline-tt.done::before { background: #7b4fa3; border-color: #7b4fa3; }
+
+/* The top of the run pages: the theme's hero and section padding leave most of the first screen empty.
+   The hero only needs to clear the 82 px navbar that sits over it. */
+.page-title-wrapper.run-hero .inner { padding-top: 112px; padding-bottom: 48px; }
+.wrapper.run-first .inner { padding-top: 56px; padding-bottom: 56px; }
+@media (max-width: 767px) {
+  .page-title-wrapper.run-hero .inner { padding-bottom: 36px; }
+  .wrapper.run-first .inner { padding-top: 40px; padding-bottom: 40px; }
+}
