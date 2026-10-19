@@ -25,20 +25,35 @@
   var pending = false;
   function updateHash() {
     pending = false;
-    // The current section is the last one whose top has scrolled past a quarter of the way down the window.
+    // The current section is the one whose top is nearest above a line a quarter of the way down the window.
+    // Nearest, rather than last in the page, because some headings sit side by side in columns.
     var line = Math.max(120, window.innerHeight / 4);
     var current = null;
+    var best = -Infinity;
     sections.forEach(function (section) {
-      if (section.getBoundingClientRect().top <= line) { current = section; }
+      var top = section.getBoundingClientRect().top;
+      if (top <= line && top >= best) { current = section; best = top; }
     });
     var hash = current ? '#' + current.id : '';
     if (hash !== location.hash) {
       history.replaceState(history.state, '', hash || location.pathname + location.search);
     }
   }
+  // After a followed link (or a page opened at one), leave its #fragment alone until that scroll has
+  // finished: the theme scrolls smoothly past other sections, and a section near the bottom of the page
+  // may not reach the line at all.
+  var following = Boolean(location.hash);
+  var settle = null;
+  window.addEventListener('hashchange', function () { following = true; });
   if (sections.length) {
     window.addEventListener('scroll', function () {
-      if (!pending) { pending = true; window.requestAnimationFrame(updateHash); }
+      if (following) {
+        clearTimeout(settle);
+        settle = setTimeout(function () { following = false; }, 200);
+      } else if (!pending) {
+        pending = true;
+        window.requestAnimationFrame(updateHash);
+      }
     }, { passive: true });
   }
 })();
