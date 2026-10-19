@@ -224,3 +224,5 @@
 /* The layer buttons under a render: small, on one line where they fit. */
 .run-viewer-tabs .btn { padding: 0.3rem 0.85rem; font-size: 0.68rem; line-height: 1.4; }
 .run-facts th, .run-facts td { vertical-align: top; }
+.run-oxides th { white-space: normal; }
+.run-oxides td:last-child { min-width: 12rem; }
