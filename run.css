@@ -171,3 +171,14 @@
   .page-title-wrapper.run-hero .inner { padding-bottom: 36px; }
   .wrapper.run-first .inner { padding-top: 40px; padding-bottom: 40px; }
 }
+
+/* Section links, as on GitHub's rendered Markdown: a link icon after each heading, shown while the heading is
+   hovered or the link has keyboard focus, and always faintly on touch screens. The link takes no width, so
+   centred headings stay centred; the icon hangs just past the end of the text. */
+.run-anchor { position: relative; display: inline-block; width: 0; height: 1em; vertical-align: baseline;
+  color: inherit; opacity: 0; transition: opacity 0.15s ease; }
+.run-anchor svg { position: absolute; left: 0.3em; bottom: 0.05em; width: 0.6em; height: 0.6em; fill: currentColor; }
+:is(h2, h3, h4):hover > .run-anchor, .run-anchor:focus-visible { opacity: 0.6; }
+.run-anchor:hover, .run-anchor:focus-visible { opacity: 1; color: var(--run-accent); }
+@media (hover: none) { .run-anchor { opacity: 0.35; } }
+:is(h2, h3, h4)[id] { scroll-margin-top: 90px; }
