@@ -25,6 +25,7 @@
   var pending = false;
   function updateHash() {
     pending = false;
+    if (following) { return; }
     // The current section is the one whose top is nearest above a line a quarter of the way down the window.
     // Nearest, rather than last in the page, because some headings sit side by side in columns.
     var line = Math.max(120, window.innerHeight / 4);
@@ -44,6 +45,11 @@
   // may not reach the line at all.
   var following = Boolean(location.hash);
   var settle = null;
+  // Set on the click itself: hashchange arrives only after an update queued by an earlier scroll has run.
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest && event.target.closest('a[href^="#"]');
+    if (link && link.hash.length > 1) { following = true; }
+  });
   window.addEventListener('hashchange', function () { following = true; });
   if (sections.length) {
     window.addEventListener('scroll', function () {
