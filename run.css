@@ -127,6 +127,8 @@
 .run-files { columns: 2; font-size: 0.9rem; }
 .run-crumb { color: rgba(255, 255, 255, 0.75); text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.8rem; }
 .run-crumb:hover { color: #fff; }
+.run-crumb a { color: inherit; }
+.run-crumb a:hover { color: #fff; }
 .run-pager { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding-top: 30px; padding-bottom: 30px; }
 .run-pager a { color: #fff; font-weight: 600; }
 .run-pager a span { font-weight: 400; opacity: 0.7; }
@@ -182,3 +184,22 @@
 .run-anchor:hover, .run-anchor:focus-visible { opacity: 1; color: var(--run-accent); }
 @media (hover: none) { .run-anchor { opacity: 0.35; } }
 :is(h2, h3, h4)[id] { scroll-margin-top: 90px; }
+
+/* Tiny Tapeout: callouts, the demo board and the chips still to come. Tiny Tapeout's purple marks its parts,
+   as on the run timeline. */
+:root { --run-tt: #7b4fa3; --run-tt-wash: #f4eefa; }
+[data-theme="dark"] { --run-tt: #b28ad6; --run-tt-wash: #2f2638; }
+.run-callout { border-radius: 6px; padding: 20px 24px; margin: 20px 0; color: var(--run-ink); }
+.run-callout-note { background: var(--run-track); border-left: 4px solid var(--run-muted); }
+.run-callout-tt { background: var(--run-tt-wash); border-left: 4px solid var(--run-tt); }
+.run-callout-tt h3 { color: var(--run-tt); }
+.run-inner-slim { padding-top: 30px; padding-bottom: 30px; }
+.run-inner-slim .run-callout { margin: 0; }
+.run-board img { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+.run-status { display: inline-block; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em;
+  padding: 2px 8px; border-radius: 3px; color: #fff; background: var(--run-muted); }
+.run-status-open { background: var(--run-tt); }
+[data-theme="dark"] .run-coming.bg-white, [data-theme="dark"] #other .box.bg-white { background: var(--run-surface) !important; }
+.run-related { list-style: none; padding: 0; margin: 0; }
+.run-related li { padding: 6px 0; border-bottom: 1px solid var(--run-line); }
+.run-related li:last-child { border-bottom: 0; }
