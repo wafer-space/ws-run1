@@ -214,6 +214,7 @@
 .run-timeline li.run-today { padding-bottom: 16px; }
 .run-timeline li.run-today::before { display: none; }
 .run-today-rocket { position: absolute; left: -36px; top: -6px; width: 26px; height: 26px; background: var(--run-accent);
+  transform: rotate(135deg); /* the logo's rocket points up and right; turn it to fly down the line, towards today */
   -webkit-mask: url("rocket.png") no-repeat center / contain; mask: url("rocket.png") no-repeat center / contain; }
 .run-today .run-timeline-date { color: var(--run-accent); font-weight: 600; }
 
