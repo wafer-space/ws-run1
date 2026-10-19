@@ -203,3 +203,24 @@
 .run-related { list-style: none; padding: 0; margin: 0; }
 .run-related li { padding: 6px 0; border-bottom: 1px solid var(--run-line); }
 .run-related li:last-child { border-bottom: 0; }
+
+/* The reticle beside a design's placements, with its slots picked out. */
+.run-minimap { display: block; width: 140px; margin-top: 8px; }
+.run-minimap svg { display: block; width: 100%; height: auto; background: var(--run-track); border-radius: 3px; }
+.run-minimap rect { fill: var(--run-line); stroke: var(--run-surface); stroke-width: 0.12; }
+.run-minimap rect.mine { fill: var(--run-accent); }
+
+/* Today on the run timeline: the rocket from the wafer.space logo, in the accent colour, on the line. */
+.run-timeline li.run-today { padding-bottom: 16px; }
+.run-timeline li.run-today::before { display: none; }
+.run-today-rocket { position: absolute; left: -36px; top: -6px; width: 26px; height: 26px; background: var(--run-accent);
+  -webkit-mask: url("rocket.png") no-repeat center / contain; mask: url("rocket.png") no-repeat center / contain; }
+.run-today .run-timeline-date { color: var(--run-accent); font-weight: 600; }
+
+/* A design's fact tables: a steady label column that may wrap, so long names do not squeeze the values. */
+.run-facts th { width: 38%; white-space: normal; }
+.run-facts td { overflow-wrap: anywhere; }
+@media (max-width: 575px) { .run-facts th { width: 42%; font-size: 0.9em; } }
+/* The layer buttons under a render: small, on one line where they fit. */
+.run-viewer-tabs .btn { padding: 0.3rem 0.85rem; font-size: 0.68rem; line-height: 1.4; }
+.run-facts th, .run-facts td { vertical-align: top; }
