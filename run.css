@@ -275,3 +275,33 @@
 .run-card-actions .btn { margin: 0; }
 /* The planned Tiny Tapeout chips, as a compact table under the open ones. */
 .run-planned { max-width: 900px; margin: 0 auto 20px; }
+/* "Show all": the rest of a long list, or a table behind its one-line result. Native <details>, no script. */
+.run-more { margin-top: 6px; }
+.run-more > summary { cursor: pointer; display: inline-block; margin: 6px 0 14px; color: var(--run-accent); font-weight: 500; }
+.run-more > summary::marker, .run-more > summary::-webkit-details-marker { color: var(--run-muted); }
+.run-precheck-result.ok strong { color: #2f9e6e; }
+[data-theme="dark"] .run-precheck-result.ok strong { color: #5cc995; }
+
+/* Dark mode, from the design review. The theme gives light and gray wrappers the same colour, so alternating
+   sections would merge: the gray ones take the page background instead. */
+[data-theme="dark"] .gray-wrapper { background-color: var(--color-bg, #1a1a1a) !important; }
+/* Muted text at a readable contrast on the dark surfaces (the theme's #808080 is under 4:1). */
+[data-theme="dark"] .text-muted { color: #a8adb3 !important; }
+/* Callouts on the site's own grey, marked by an accent edge, rather than Bootstrap's navy. */
+[data-theme="dark"] .alert-primary { --bs-alert-bg: var(--color-bg-tertiary, #333); --bs-alert-color: var(--run-ink);
+  --bs-alert-border-color: var(--run-line); --bs-alert-link-color: #8cc4ec; border-left: 3px solid var(--run-accent); }
+/* Light text on Tiny Tapeout's lighter dark-mode purple is too faint: dark text instead. */
+[data-theme="dark"] .run-status-open { color: #1a1a1a; }
+/* The pale area-bar segments (filler, other) would glare on a dark page. */
+[data-theme="dark"] [style*="#e6ebf0"] { background: #3d4349 !important; }
+[data-theme="dark"] [style*="#b9c7d6"] { background: #6f7f90 !important; }
+/* This run's or chip's stage in a "Designs that grew" row, as a pill as well as bold. */
+.run-grew-stages strong.run-grew-label { background: var(--run-track); padding: 1px 9px 1px 7px; border-radius: 12px; }
+/* Tap targets on phones: the code links get room, and the reticle's slots (the project grid below links them all)
+   stop being links. */
+@media (max-width: 575.98px) {
+  a.run-mono { display: inline-block; padding: 4px 3px; }
+  .run-reticle-slot { pointer-events: none; }
+}
+/* The project pager is a dark band right above the dark footer: an edge between them. */
+.run-pager { border-bottom: 1px solid rgba(255, 255, 255, 0.14); }

@@ -37,7 +37,7 @@ https://github.com/rejunity/z80-open-silicon">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=151239991f">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=70a2ddb2a6">
 </head>
 <body>
   <div class="content-wrapper">
@@ -116,13 +116,15 @@ https://github.com/rejunity/z80-open-silicon">
 <span class="run-swatch"><i style="background: #282c46"></i>Nwell</span><span class="run-swatch"><i style="background: #3cbe5a"></i>Diffusion</span><span class="run-swatch"><i style="background: #eb4646"></i>Polysilicon</span><span class="run-swatch"><i style="background: #3c78ff"></i>Metal 1</span><span class="run-swatch"><i style="background: #c850e6"></i>Metal 2</span><span class="run-swatch"><i style="background: #32d2dc"></i>Metal 3</span><span class="run-swatch"><i style="background: #f0c83c"></i>Metal 4</span><span class="run-swatch"><i style="background: #f58c32"></i>Metal 5</span><span class="run-swatch"><i style="background: #e6e6eb"></i>Top metal</span><span class="run-swatch"><i style="background: #ffffff"></i>Pad openings</span>        </p>
 
         <h4 id="features" class="mt-30 mb-10">Process features<a class="run-anchor" href="#features" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h4>
+        <p class="small text-muted mb-10">Which parts of the GF180MCU process this design uses: its transistor
+          voltages and where they come from, its gate oxides, and any devices drawn by hand outside the standard cells,
+          SRAM and pads.</p>
         <table class="table table-sm run-table run-facts">
           <tbody>
             <tr><th><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/analog/spice/elec_specs/elec_specs_3.html">5 V</a></th><td>9t-5V standard cells</td></tr>
 <tr><th>Gate oxides</th><td>5 V/6 V only</td></tr>            <tr><th>I/O library</th><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/IPs/IO/gf180mcu_fd_io/datasheet.html#cell-list"><span class="run-mono">gf180mcu_fd_io</span></a> <span class="text-muted">(1122 cells)</span>, <a href="https://github.com/wafer-space/gf180mcu/tree/main/gf180mcuD/libs.ref/gf180mcu_fd_io"><span class="run-mono">gf180mcu_ws_io</span></a> <span class="text-muted">(18 cells)</span></td></tr>
           </tbody>
         </table>
-        <p class="small text-muted">Devices the designer drew, outside standard cells, SRAM macros and pads.</p>
 
         <h4 id="density" class="mb-10">Logic density<a class="run-anchor" href="#density" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h4>
         <table class="table table-sm run-table run-facts">
@@ -388,8 +390,9 @@ https://github.com/rejunity/z80-open-silicon">
       <p>Open-source Z80 was made on <a class="alert-link" href="https://tinytapeout.com/chips/tt07/">Tiny Tapeout 7</a> before it had a slot of
         its own on a wafer.space run. Tiny Tapeout puts many small designs on one chip, so a first version costs a
         fraction of a whole die: try the idea on a Tiny Tapeout tile, then bring it to wafer.space when it needs the room.</p>
-      <p class="mb-0"><a class="btn btn-default btn-sm mb-5" href="https://tinytapeout.com/">Get started at tinytapeout.com</a>
-        <a class="btn btn-outline-primary btn-sm mb-5" href="https://wafer.space/tinytapeouts/">Tiny Tapeout chips on wafer.space</a></p>
+      <p class="mb-0"><a class="btn btn-s mb-5 me-10" href="https://app.tinytapeout.com/shuttles/ttgf26c">Submit
+        to the next Tiny Tapeout chip, by 7 December 2026</a>
+        <a class="alert-link" href="https://wafer.space/tinytapeouts/">Tiny Tapeout chips on wafer.space</a></p>
     </div>
   </div>
 </div>
@@ -419,9 +422,16 @@ https://github.com/rejunity/z80-open-silicon">
 <div id="precheck" class="wrapper gray-wrapper">
   <div class="container inner">
     <h2 class="section-title mb-10 text-center">Precheck<a class="run-anchor" href="#precheck" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h2>
-    <p class="lead text-center mb-30">The platform precheck RZ80 was accepted on, and its latest re-run</p>
+    <p class="lead text-center mb-30 run-measure">Before a design is made, the wafer.space platform checks it against
+      the foundry's design rules. RZ80 was accepted on this check, and
+      has been checked again since with newer rules.</p>
     <div class="row">
       <div class="col-lg-10 offset-lg-1">
+        <p class="text-center mb-20 run-precheck-result ok"><strong>All 15
+          steps passed</strong>, with
+          0 KLayout DRC errors, on 2025-12-20.</p>
+        <details class="run-more">
+        <summary>Every step, and the latest re-run</summary>
         <div class="table-responsive">
         <table class="table table-sm run-table run-precheck bg-white">
           <thead><tr><th>Step</th><th>Accepted on<br>
@@ -456,6 +466,7 @@ https://github.com/rejunity/z80-open-silicon">
           </tbody>
         </table>
         </div>
+        </details>
         <p class="small text-muted">The steps of the <a href="https://github.com/wafer-space/gf180mcu-precheck">gf180mcu-precheck</a> <a href="https://librelane.readthedocs.io/">LibreLane</a>
           flow, as run by <a href="https://platform.wafer.space/">platform.wafer.space</a>. The
           design was accepted on the newest finished check before it was submitted; later re-runs check the same file with
@@ -536,6 +547,6 @@ https://github.com/rejunity/z80-open-silicon">
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=151239991f"></script>
+  <script src="../run.js?v=70a2ddb2a6"></script>
 </body>
 </html>
