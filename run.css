@@ -192,6 +192,7 @@
 [data-theme="dark"] { --run-tt: #b28ad6;
   --bs-primary-text-emphasis: #6ea8fe; --bs-primary-bg-subtle: #031633; --bs-primary-border-subtle: #084298;
   --bs-secondary-text-emphasis: #a7acb1; --bs-secondary-bg-subtle: #161719; --bs-secondary-border-subtle: #41464b; }
+[data-theme="dark"] .alert-heading { color: inherit; } /* the theme's dark headings would override it */
 .run-inner-slim { padding-top: 30px; padding-bottom: 30px; }
 .run-board img { display: block; max-width: 100%; height: auto; margin: 0 auto; }
 .run-status { display: inline-block; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em;
