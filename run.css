@@ -28,6 +28,10 @@
 .run-table th { font-weight: 600; white-space: nowrap; }
 .run-table td, .run-table th { border-color: var(--run-line); vertical-align: middle; }
 [data-theme="dark"] .run-table.bg-white { background: var(--run-surface) !important; }
+/* Each project's share of a shared block (Tiny Tapeout GF 0.1), as a bar with its percentage. */
+.run-netlist-bar { width: 22%; min-width: 140px; white-space: nowrap; }
+.run-netlist-bar span { display: inline-block; vertical-align: middle; height: 10px; min-width: 2px; max-width: 70%;
+  margin-right: 6px; border-radius: 2px; background: var(--run-tt); }
 
 /* Stacked area bars */
 .run-bar { display: flex; height: 14px; border-radius: 3px; overflow: hidden; background: var(--run-track); }
@@ -207,14 +211,14 @@
 /* A design's versions on the run timeline's line: Tiny Tapeout purple, Google shuttles hollow, wafer.space
    dies in the accent colour. */
 .run-history li { gap: 2px; }
-.run-history li.run-history-tiny-tapeout::before { background: var(--run-tt); border-color: var(--run-tt); }
-.run-history li.run-history-wafer-space::before { background: var(--run-accent); border-color: var(--run-accent); }
+.run-history li.run-history-tt::before { background: var(--run-tt); border-color: var(--run-tt); }
+.run-history li.run-history-ws::before { background: var(--run-accent); border-color: var(--run-accent); }
 .run-history-current strong { color: var(--run-ink); }
 .run-history-key span { display: inline-block; white-space: nowrap; margin-right: 14px; }
 .run-history-key span::before { content: ""; display: inline-block; vertical-align: -1px; width: 10px; height: 10px;
   border-radius: 50%; margin-right: 6px; border: 2px solid var(--run-muted); box-sizing: border-box; }
-.run-history-key .run-history-key-tiny-tapeout::before { background: var(--run-tt); border-color: var(--run-tt); }
-.run-history-key .run-history-key-wafer-space::before { background: var(--run-accent); border-color: var(--run-accent); }
+.run-history-key .run-history-key-tt::before { background: var(--run-tt); border-color: var(--run-tt); }
+.run-history-key .run-history-key-ws::before { background: var(--run-accent); border-color: var(--run-accent); }
 /* The run page's designs with a history: each a row of its versions, joined by arrows. */
 .run-grew { list-style: none; padding: 0; margin: 0 0 10px; }
 .run-grew > li { padding: 10px 0; border-bottom: 1px solid var(--run-line); }
@@ -226,8 +230,8 @@
 .run-grew-label::before { content: ""; display: inline-block; vertical-align: -1px; width: 10px; height: 10px;
   border-radius: 50%; margin-right: 5px; border: 2px solid var(--run-muted); box-sizing: border-box; }
 .run-grew-stages li:not(:last-child)::after { content: "→"; margin: 0 8px 0 6px; color: var(--run-muted); }
-.run-grew-stages .run-history-tiny-tapeout .run-grew-label::before { background: var(--run-tt); border-color: var(--run-tt); }
-.run-grew-stages .run-history-wafer-space .run-grew-label::before { background: var(--run-accent); border-color: var(--run-accent); }
+.run-grew-stages .run-history-tt .run-grew-label::before { background: var(--run-tt); border-color: var(--run-tt); }
+.run-grew-stages .run-history-ws .run-grew-label::before { background: var(--run-accent); border-color: var(--run-accent); }
 .run-grew-stages .text-muted { margin-left: 4px; }
 
 /* The reticle beside a design's placements, with its slots picked out. */
@@ -253,3 +257,21 @@
 .run-facts th, .run-facts td { vertical-align: top; }
 .run-oxides th { white-space: normal; }
 .run-oxides td:last-child { min-width: 12rem; }
+
+/* Where to go next (the theme's process steps): get a chip, put a design on the next one, make a whole chip. */
+.run-next h5 { margin-bottom: 8px; }
+.run-next p { max-width: 34ch; margin-left: auto; margin-right: auto; }
+.run-hero-actions { margin-top: 18px; }
+.run-hero-actions .btn { margin: 0 4px 8px; }
+/* Running text and notes at a readable length on wide screens. */
+.run-measure { max-width: 80ch; }
+.text-center.run-measure, .text-center .run-measure { margin-left: auto; margin-right: auto; }
+/* Links in a hero's lead line stay readable on the photograph, in either theme. */
+.run-hero .lead a, [data-theme="dark"] .run-hero .lead a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+/* A collection card holds its own actions: the image and title link to the die, the footer buys or tries it. */
+.run-card .run-card-body { flex: 1; }
+.run-card .post-title a { color: inherit; }
+.run-card-actions { padding: 0 18px 18px; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; font-size: 0.85rem; }
+.run-card-actions .btn { margin: 0; }
+/* The planned Tiny Tapeout chips, as a compact table under the open ones. */
+.run-planned { max-width: 900px; margin: 0 auto 20px; }
