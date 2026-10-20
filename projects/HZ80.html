@@ -37,7 +37,7 @@ https://github.com/rejunity/z80-open-silicon">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=088b335cb9">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=f987bb822c">
 </head>
 <body>
   <div class="content-wrapper">
@@ -323,42 +323,44 @@ https://github.com/rejunity/z80-open-silicon">
           1 mm square over the die in 0.1 mm steps. Edge squares are smaller than 1 mm².</p>
       </div>
     </div>
-    <h3 id="related" class="mt-20 mb-10">Related tapeouts<a class="run-anchor" href="#related" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
-    <p class="mb-20">Open-source Z80 has also been made on
-      3 other wafer.space slots and 5 Tiny Tapeout chips.</p>
-    <div class="row gutter-50">
-      <div class="col-md-6 mb-20">
-        <h4 class="mb-10">On wafer.space runs</h4>
-        <ul class="run-related">
-<li><a href="https://wafer.space/ws-run1/projects/RZ80.html"><strong>RZ80</strong> FOSSi open-source replacement for Z80 classic 8-bit CPU</a>
-            <span class="text-muted">— <a href="https://wafer.space/ws-run1/">wafer.space Run 1</a>, 1x1 slot</span></li>
-<li><a href="https://wafer.space/ws-run2/projects/HZ80.html"><strong>HZ80</strong> FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 1 slot)</a>
-            <span class="text-muted">— <a href="https://wafer.space/ws-run2/">wafer.space Run 2</a>, 0.5x1 slot</span></li>
-<li><a href="https://wafer.space/ws-run2/projects/QZ80.html"><strong>QZ80</strong> FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 0.5 slot)</a>
-            <span class="text-muted">— <a href="https://wafer.space/ws-run2/">wafer.space Run 2</a>, 0.5x0.5 slot</span></li>
-        </ul>
-      </div>
-      <div class="col-md-6 mb-20">
-        <h4 class="mb-10">On Tiny Tapeout chips</h4>
-        <ul class="run-related">
-<li><a href="https://tinytapeout.com/chips/tt07/tt_um_rejunity_z80">Zilog Z80</a>
-            <span class="text-muted">— <a href="https://tinytapeout.com/chips/tt07/">Tiny Tapeout 7</a>, by ReJ aka Renaldas Zioma</span>
-</li>
-<li><a href="https://tinytapeout.com/chips/tt09/tt_um_rejunity_z80">Zilog Z80</a>
-            <span class="text-muted">— <a href="https://tinytapeout.com/chips/tt09/">Tiny Tapeout 9</a>, by ReJ aka Renaldas Zioma</span>
-</li>
-<li><a href="https://tinytapeout.com/chips/ttihp0p2/tt_um_rejunity_z80">Zilog Z80</a>
-            <span class="text-muted">— <a href="https://tinytapeout.com/chips/ttihp0p2/">Tiny Tapeout IHP 0.2</a>, by ReJ aka Renaldas Zioma</span>
-</li>
-<li><a href="https://tinytapeout.com/chips/ttihp25a/tt_um_rejunity_z80">Zilog Z80</a>
-            <span class="text-muted">— <a href="https://tinytapeout.com/chips/ttihp25a/">Tiny Tapeout IHP 25a</a>, by ReJ aka Renaldas Zioma</span>
-</li>
-<li><a href="https://tinytapeout.com/chips/ttgf0p2/tt_um_rejunity_z80">Zilog Z80</a>
-            <span class="text-muted">— <a href="https://tinytapeout.com/chips/ttgf0p2/">Tiny Tapeout GF 0.2</a>, by ReJ aka Renaldas Zioma</span>
-<a class="small" href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/projects/455.html">measured here</a></li>
-        </ul>
-      </div>
-    </div>
+    <h3 id="related" class="mt-20 mb-10">How this design grew<a class="run-anchor" href="#related" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
+    <p class="mb-20">Open-source Z80 has been made on 7 shuttles since
+      Jun 2024. Every version, oldest first, with this one in bold:</p>
+    <ol class="run-timeline run-history">
+      <li class="run-history-tiny-tapeout">
+        <span class="run-timeline-date">Jun 2024 · <a href="https://tinytapeout.com/chips/tt07/">Tiny Tapeout 7</a></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/tt07/tt_um_rejunity_z80">Zilog Z80</a> <span class="text-muted">— 2×2 tiles</span></span>
+      </li>
+      <li class="run-history-tiny-tapeout">
+        <span class="run-timeline-date">Nov 2024 · <a href="https://tinytapeout.com/chips/ttihp0p2/">Tiny Tapeout IHP 0.2</a></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttihp0p2/tt_um_rejunity_z80">Zilog Z80</a> <span class="text-muted">— 2×2 tiles</span></span>
+      </li>
+      <li class="run-history-tiny-tapeout">
+        <span class="run-timeline-date">Nov 2024 · <a href="https://tinytapeout.com/chips/tt09/">Tiny Tapeout 9</a></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/tt09/tt_um_rejunity_z80">Zilog Z80</a> <span class="text-muted">— 2×2 tiles</span></span>
+      </li>
+      <li class="run-history-tiny-tapeout">
+        <span class="run-timeline-date">Mar 2025 · <a href="https://tinytapeout.com/chips/ttihp25a/">Tiny Tapeout IHP 25a</a></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttihp25a/tt_um_rejunity_z80">Zilog Z80</a> <span class="text-muted">— 2×2 tiles</span></span>
+      </li>
+      <li class="run-history-tiny-tapeout">
+        <span class="run-timeline-date">Nov 2025 · <a href="https://tinytapeout.com/chips/ttgf0p2/">Tiny Tapeout GF 0.2</a></span>
+        <span class="run-history-step"><a href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/projects/455.html">Zilog Z80</a> <span class="text-muted">— 2×2 tiles</span></span>
+      </li>
+      <li class="run-history-wafer-space">
+        <span class="run-timeline-date">Dec 2025 · <a href="https://wafer.space/ws-run1/">wafer.space Run 1</a></span>
+        <span class="run-history-step run-history-current"><strong>HZ80 FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 1 slot)</strong> <span class="text-muted">— 0.5×1 slot</span></span>
+        <span class="run-history-step"><a href="https://wafer.space/ws-run1/projects/RZ80.html">RZ80 FOSSi open-source replacement for Z80 classic 8-bit CPU</a> <span class="text-muted">— 1×1 slot</span></span>
+      </li>
+      <li class="run-history-wafer-space">
+        <span class="run-timeline-date">Jul 2026 · <a href="https://wafer.space/ws-run2/">wafer.space Run 2</a></span>
+        <span class="run-history-step"><a href="https://wafer.space/ws-run2/projects/HZ80.html">HZ80 FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 1 slot)</a> <span class="text-muted">— 0.5×1 slot</span></span>
+        <span class="run-history-step"><a href="https://wafer.space/ws-run2/projects/QZ80.html">QZ80 FOSSi open-source replacement for Z80 classic 8-bit CPU (0.5 x 0.5 slot)</a> <span class="text-muted">— 0.5×0.5 slot</span></span>
+      </li>
+    </ol>
+    <p class="small text-muted mb-20 run-history-key"><span class="run-history-key-tiny-tapeout">Tiny Tapeout tile</span>
+      <span class="run-history-key-other-shuttles">Google shuttle</span>
+      <span class="run-history-key-wafer-space">wafer.space die</span></p>
     <div class="alert alert-primary">
       <h4 class="alert-heading mb-10">This design started on Tiny Tapeout. You can too!</h4>
       <p>Open-source Z80 was made on <a class="alert-link" href="https://tinytapeout.com/chips/tt07/">Tiny Tapeout 7</a> before it had a slot of
@@ -503,6 +505,6 @@ https://github.com/rejunity/z80-open-silicon">
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=088b335cb9"></script>
+  <script src="../run.js?v=f987bb822c"></script>
 </body>
 </html>

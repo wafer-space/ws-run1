@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=088b335cb9">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=f987bb822c">
 </head>
 <body>
   <div class="content-wrapper">
@@ -342,38 +342,36 @@
           macros. Edge squares are smaller than 1 mm².</p>
       </div>
     </div>
-    <h3 id="related" class="mt-20 mb-10">Related tapeouts<a class="run-anchor" href="#related" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
-    <p class="mb-20">SERV multi-core RISC-V SoC has also been made on
-      3 other wafer.space slots, a Google shuttle and 2 Tiny Tapeout chips.</p>
-    <div class="row gutter-50">
-      <div class="col-md-6 mb-20">
-        <h4 class="mb-10">On wafer.space runs</h4>
-        <ul class="run-related">
-<li><a href="https://wafer.space/ws-run1/projects/GD03.html"><strong>GD03</strong> Racquet r2p0 - 23 core SoC</a>
-            <span class="text-muted">— <a href="https://wafer.space/ws-run1/">wafer.space Run 1</a>, 1x1 slot, 23 SERV cores</span></li>
-<li><a href="https://wafer.space/ws-run1/projects/GD04.html"><strong>GD04</strong> Racquet Wide 1x0.5</a>
-            <span class="text-muted">— <a href="https://wafer.space/ws-run1/">wafer.space Run 1</a>, 1x0.5 slot</span></li>
-<li><a href="https://wafer.space/ws-run2/projects/GD04.html"><strong>GD04</strong> Racquet Wide 1x0.5</a>
-            <span class="text-muted">— <a href="https://wafer.space/ws-run2/">wafer.space Run 2</a>, 1x0.5 slot</span></li>
-        </ul>
-        <h4 class="mb-10 mt-20">On Google GF180MCU shuttles</h4>
-        <ul class="run-related">
-<li><a href="https://wafer.space/google-gf180mcu-mpw0/projects/6079.html"><strong>6079</strong> Serv tri-core (GF180 MPW0 Serv)</a>
-            <span class="text-muted">— GFMPW-0 · Google &amp; Efabless GF180MCU Open MPW Shuttle, three SERV cores</span></li>
-        </ul>
-      </div>
-      <div class="col-md-6 mb-20">
-        <h4 class="mb-10">On Tiny Tapeout chips</h4>
-        <ul class="run-related">
-<li><a href="https://tinytapeout.com/chips/tt02/gregdavill_serv_top">serv - Serial RISCV CPU</a>
-            <span class="text-muted">— <a href="https://tinytapeout.com/chips/tt02/">Tiny Tapeout 2</a>, by Greg Davill, one SERV core</span>
-</li>
-<li><a href="https://tinytapeout.com/chips/tt03/gregdavill_serv_top">serv - Serial RISCV CPU</a>
-            <span class="text-muted">— <a href="https://tinytapeout.com/chips/tt03/">Tiny Tapeout 3</a>, by Greg Davill, one SERV core</span>
-</li>
-        </ul>
-      </div>
-    </div>
+    <h3 id="related" class="mt-20 mb-10">How this design grew<a class="run-anchor" href="#related" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
+    <p class="mb-20">SERV multi-core RISC-V SoC has been made on 5 shuttles since
+      Dec 2022. Every version, oldest first, with this one in bold:</p>
+    <ol class="run-timeline run-history">
+      <li class="run-history-tiny-tapeout">
+        <span class="run-timeline-date">Dec 2022 · <a href="https://tinytapeout.com/chips/tt02/">Tiny Tapeout 2</a></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/tt02/gregdavill_serv_top">serv - Serial RISCV CPU</a> <span class="text-muted">— 1×1 tile, one SERV core</span></span>
+      </li>
+      <li class="run-history-other-shuttles">
+        <span class="run-timeline-date">Dec 2022 · <a href="https://wafer.space/google-gf180mcu-mpw0/">Google GFMPW-0</a></span>
+        <span class="run-history-step"><a href="https://wafer.space/google-gf180mcu-mpw0/projects/6079.html">6079 Serv tri-core (GF180 MPW0 Serv)</a> <span class="text-muted">— Caravel chip, three SERV cores</span></span>
+      </li>
+      <li class="run-history-tiny-tapeout">
+        <span class="run-timeline-date">Apr 2023 · <a href="https://tinytapeout.com/chips/tt03/">Tiny Tapeout 3</a></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/tt03/gregdavill_serv_top">serv - Serial RISCV CPU</a> <span class="text-muted">— 1×1 tile, one SERV core</span></span>
+      </li>
+      <li class="run-history-wafer-space">
+        <span class="run-timeline-date">Dec 2025 · <a href="https://wafer.space/ws-run1/">wafer.space Run 1</a></span>
+        <span class="run-history-step run-history-current"><strong>GD02 Racquet Half r1p0 (1/2 slot)</strong> <span class="text-muted">— 0.5×1 slot</span></span>
+        <span class="run-history-step"><a href="https://wafer.space/ws-run1/projects/GD03.html">GD03 Racquet r2p0 - 23 core SoC</a> <span class="text-muted">— 1×1 slot, 23 SERV cores</span></span>
+        <span class="run-history-step"><a href="https://wafer.space/ws-run1/projects/GD04.html">GD04 Racquet Wide 1x0.5</a> <span class="text-muted">— 1×0.5 slot</span></span>
+      </li>
+      <li class="run-history-wafer-space">
+        <span class="run-timeline-date">Jul 2026 · <a href="https://wafer.space/ws-run2/">wafer.space Run 2</a></span>
+        <span class="run-history-step"><a href="https://wafer.space/ws-run2/projects/GD04.html">GD04 Racquet Wide 1x0.5</a> <span class="text-muted">— 1×0.5 slot</span></span>
+      </li>
+    </ol>
+    <p class="small text-muted mb-20 run-history-key"><span class="run-history-key-tiny-tapeout">Tiny Tapeout tile</span>
+      <span class="run-history-key-other-shuttles">Google shuttle</span>
+      <span class="run-history-key-wafer-space">wafer.space die</span></p>
     <div class="alert alert-primary">
       <h4 class="alert-heading mb-10">This design started on Tiny Tapeout. You can too!</h4>
       <p>SERV multi-core RISC-V SoC was made on <a class="alert-link" href="https://tinytapeout.com/chips/tt02/">Tiny Tapeout 2</a> before it had a slot of
@@ -518,6 +516,6 @@
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=088b335cb9"></script>
+  <script src="../run.js?v=f987bb822c"></script>
 </body>
 </html>
