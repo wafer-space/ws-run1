@@ -37,7 +37,7 @@ https://github.com/rejunity/z80-open-silicon">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=70a2ddb2a6">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=9fd13fffae">
 </head>
 <body>
   <div class="content-wrapper">
@@ -130,24 +130,24 @@ https://github.com/rejunity/z80-open-silicon">
         <table class="table table-sm run-table run-facts">
           <tbody>
             <tr><th>Core average<br><span class="small text-muted fw-normal">logic cells per mm²</span></th><td>1k
-              <span class="text-muted">(2% of buffer maximum)</span></td></tr>
+<span class="text-muted">(2% of buffer maximum)</span></td></tr>
             <tr><th>Densest mm²<br><span class="small text-muted fw-normal">logic cells per mm²</span></th><td>5k
-              <span class="text-muted">(8% of buffer maximum)</span></td></tr>
+<span class="text-muted">(8% of buffer maximum)</span></td></tr>
             <tr><th>Core covered by logic</th><td>3%</td></tr>
             <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>150k average,
               189k in the densest mm²</td></tr>
           </tbody>
         </table>
-        <p class="small text-muted mb-0">Every figure here is measured from the public reticle layout, the same way
-          for every design on the run: see <a href="../index.html#data">data and method</a>, and
-          <a href="../index.html#features">how the run's designs used the process</a>.</p>
+        <p class="small text-muted mb-0">Every figure here is measured from the public layout, the same way for every
+          design on the run: see <a href="../index.html#data">data and method</a>, and
+          <a href="../index.html#features">how its designs used the process</a>.</p>
       </div>
 
       <div class="col-lg-5">
         <div class="run-description"><p class="lead">Silicon proven, pin compatible, open-source replacement for Zilog Z80 a classic 8-bit CPU.</p><p>https://github.com/rejunity/z80-open-silicon</p></div>
-        <p>
-          <a class="btn btn-default btn-sm mb-10" href="https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu">Source repository</a>
-<a class="btn btn-outline-primary btn-sm mb-10" href="#photo">Die photograph</a><a class="btn btn-outline-primary btn-sm mb-10" href="#bonding">Bonding results</a>        </p>
+        <p class="run-design-links">
+          <a class="btn btn-s mb-10 me-10" href="https://github.com/rejunity/ws0-z80-open-silicon-gf180mcu">Source repository</a>
+<a href="#photo">Die photograph</a><a href="#bonding">Bonding results</a>        </p>
         <table class="table table-sm run-table run-facts">
           <tbody>
             <tr><th>Die</th><td>1.94 × 5.12 mm
@@ -202,7 +202,7 @@ https://github.com/rejunity/z80-open-silicon">
             <tr><th>Libraries</th><td>
               <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a> <span class="text-muted">(5k)</span>
 </td></tr>
-            <tr><th>SRAM</th><td>0 macros</td></tr>
+            <tr><th>SRAM</th><td>None</td></tr>
           </tbody>
         </table>
 
@@ -234,6 +234,7 @@ https://github.com/rejunity/z80-open-silicon">
     <div class="row gutter-50">
       <div class="col-lg-7 mb-30">
         <h3 id="area" class="mb-10">Where the area went<a class="run-anchor" href="#area" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
+        <p class="small text-muted mb-10">How this design's area splits between working logic, memory, filler and the pad ring.</p>
         <div class="run-bar run-bar-large mb-10">
           <div style="width: 1.84%; background: #5ca7db"
                title="Logic cells: 0.18 mm²">
@@ -262,29 +263,30 @@ https://github.com/rejunity/z80-open-silicon">
         </ul>
 
         <h3 id="cells" class="mt-30 mb-10">Most used cells<a class="run-anchor" href="#cells" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
+        <p class="small text-muted mb-10">The ten standard cells this design uses most.</p>
         <div class="table-responsive">
         <table class="table table-sm run-table bg-white">
-          <thead><tr><th>Cell</th><th>Library</th><th class="text-end">Instances</th><th>What it does</th></tr></thead>
+          <thead><tr><th>Cell</th><th class="d-none d-sm-table-cell">Library</th><th class="text-end">Instances</th><th>What it does</th></tr></thead>
           <tbody>
-            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/nand2/gf180mcu_fd_sc_mcu9t5v0__nand2_1.html"><span class="run-mono">nand2_1</span></a></td><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></td>
+            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/nand2/gf180mcu_fd_sc_mcu9t5v0__nand2_1.html"><span class="run-mono">nand2_1</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></td>
               <td class="text-end">703</td><td class="text-muted">2-input NAND gate</td></tr>
-            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/nor2/gf180mcu_fd_sc_mcu9t5v0__nor2_1.html"><span class="run-mono">nor2_1</span></a></td><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></td>
+            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/nor2/gf180mcu_fd_sc_mcu9t5v0__nor2_1.html"><span class="run-mono">nor2_1</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></td>
               <td class="text-end">350</td><td class="text-muted">2-input NOR gate</td></tr>
-            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/mux2/gf180mcu_fd_sc_mcu9t5v0__mux2_1.html"><span class="run-mono">mux2_1</span></a></td><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></td>
+            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/mux2/gf180mcu_fd_sc_mcu9t5v0__mux2_1.html"><span class="run-mono">mux2_1</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></td>
               <td class="text-end">309</td><td class="text-muted">2-input multiplexer</td></tr>
-            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/dlyd/gf180mcu_fd_sc_mcu9t5v0__dlyd_1.html"><span class="run-mono">dlyd_1</span></a></td><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></td>
+            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/dlyd/gf180mcu_fd_sc_mcu9t5v0__dlyd_1.html"><span class="run-mono">dlyd_1</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></td>
               <td class="text-end">304</td><td class="text-muted">Delay buffer</td></tr>
-            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/dlyc/gf180mcu_fd_sc_mcu9t5v0__dlyc_1.html"><span class="run-mono">dlyc_1</span></a></td><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></td>
+            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/dlyc/gf180mcu_fd_sc_mcu9t5v0__dlyc_1.html"><span class="run-mono">dlyc_1</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></td>
               <td class="text-end">263</td><td class="text-muted">Delay buffer</td></tr>
-            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/aoi21/gf180mcu_fd_sc_mcu9t5v0__aoi21_1.html"><span class="run-mono">aoi21_1</span></a></td><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></td>
+            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/aoi21/gf180mcu_fd_sc_mcu9t5v0__aoi21_1.html"><span class="run-mono">aoi21_1</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></td>
               <td class="text-end">257</td><td class="text-muted">AND-OR-Invert compound gate</td></tr>
-            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/oai21/gf180mcu_fd_sc_mcu9t5v0__oai21_1.html"><span class="run-mono">oai21_1</span></a></td><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></td>
+            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/oai21/gf180mcu_fd_sc_mcu9t5v0__oai21_1.html"><span class="run-mono">oai21_1</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></td>
               <td class="text-end">238</td><td class="text-muted">OR-AND-Invert compound gate</td></tr>
-            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/clkinv/gf180mcu_fd_sc_mcu9t5v0__clkinv_1.html"><span class="run-mono">clkinv_1</span></a></td><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></td>
+            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/clkinv/gf180mcu_fd_sc_mcu9t5v0__clkinv_1.html"><span class="run-mono">clkinv_1</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></td>
               <td class="text-end">183</td><td class="text-muted">Clock inverter</td></tr>
-            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/dffq/gf180mcu_fd_sc_mcu9t5v0__dffq_1.html"><span class="run-mono">dffq_1</span></a></td><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></td>
+            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/dffq/gf180mcu_fd_sc_mcu9t5v0__dffq_1.html"><span class="run-mono">dffq_1</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></td>
               <td class="text-end">170</td><td class="text-muted">D flip-flop (1 bit storage)</td></tr>
-            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/nand3/gf180mcu_fd_sc_mcu9t5v0__nand3_1.html"><span class="run-mono">nand3_1</span></a></td><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></td>
+            <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/cells/nand3/gf180mcu_fd_sc_mcu9t5v0__nand3_1.html"><span class="run-mono">nand3_1</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a></td>
               <td class="text-end">167</td><td class="text-muted">3-input NAND gate</td></tr>
           </tbody>
         </table>
@@ -364,13 +366,12 @@ https://github.com/rejunity/z80-open-silicon">
       <span class="run-history-key-google">Google shuttle</span>
       <span class="run-history-key-ws">wafer.space die</span></p>
     <div class="alert alert-primary">
-      <h4 class="alert-heading mb-10">This design started on Tiny Tapeout. You can too!</h4>
-      <p>Open-source Z80 was made on <a class="alert-link" href="https://tinytapeout.com/chips/tt07/">Tiny Tapeout 7</a> before it had a slot of
-        its own on a wafer.space run. Tiny Tapeout puts many small designs on one chip, so a first version costs a
-        fraction of a whole die: try the idea on a Tiny Tapeout tile, then bring it to wafer.space when it needs the room.</p>
-      <p class="mb-0"><a class="btn btn-s mb-5 me-10" href="https://app.tinytapeout.com/shuttles/ttgf26c">Submit
-        to the next Tiny Tapeout chip, by 7 December 2026</a>
-        <a class="alert-link" href="https://wafer.space/tinytapeouts/">Tiny Tapeout chips on wafer.space</a></p>
+      <h4 class="alert-heading mb-10">From Tiny Tapeout tiles to a die of its own</h4>
+      <p>Open-source Z80 began as tiles on
+        <a class="alert-link" href="https://tinytapeout.com/chips/tt07/">Tiny Tapeout 7</a>, and now has dies of its own on <a href="https://wafer.space/ws-run1/">wafer.space Run 1</a> and <a href="https://wafer.space/ws-run2/">wafer.space Run 2</a>.
+        Your next version can have one too: wafer.space Run 3 takes orders until 9 December 2026.</p>
+      <p class="mb-0"><a class="btn btn-s mb-5 me-10" href="https://buy.wafer.space/#products">Reserve a slot on wafer.space Run 3</a>        <a class="alert-link" href="https://app.tinytapeout.com/shuttles/ttgf26c">New to chip design? Start with a
+        Tiny Tapeout tile, by 7 December 2026</a></p>
     </div>
   </div>
 </div>
@@ -378,7 +379,7 @@ https://github.com/rejunity/z80-open-silicon">
 <div id="photo" class="wrapper light-wrapper">
   <div class="container inner">
     <h2 class="section-title mb-10 text-center">The fabricated die<a class="run-anchor" href="#photo" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h2>
-    <p class="lead text-center mb-30">Optical micrograph © 2026 <a href="http://infosecdj.net/">InfoSecDJ</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
+    <p class="lead text-center mb-30">A photograph of the finished chip, taken through a microscope after manufacture: optical micrograph © 2026 <a href="http://infosecdj.net/">InfoSecDJ</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
     <div class="row">
       <div class="col-lg-8 offset-lg-2 text-center">
         <a class="run-viewer shadow d-inline-block" href="http://infosecdj.net/map/wafer-space/gf180mcu-ws1-hz80/infosecdj_mz_nikpa40x/">
@@ -512,15 +513,16 @@ https://github.com/rejunity/z80-open-silicon">
                 <li><a href="../index.html">Run overview</a></li>
                 <li><a href="https://github.com/wafer-space/ws-run1">Layout and manifest on GitHub</a></li>
                 <li><a href="https://github.com/wafer-space/ws-run1/blob/density-report/reticle_density_report.md">Density report</a></li>
-<li><a href="https://www.crowdsupply.com/wafer-space/gf180mcu-run-1">Campaign page</a></li>              </ul>
+<li><a href="https://www.crowdsupply.com/wafer-space/gf180mcu-run-1">The run on Crowd Supply</a></li>              </ul>
             </div>
           </div>
           <div class="col-6 col-lg-4">
             <div class="widget">
               <h5 class="widget-title">About this page</h5>
               <p class="small mb-0">Generated on 2026-10-20 by
-                <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a> from the public reticle
-                layout. Every figure is measured from the layout; the data files are linked from the overview.</p>
+                <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a>. Sizes, cells and
+                transistors are measured from the public layout; dates come from the published schedules. The data
+                files are linked from the overview.</p>
             </div>
           </div>
         </div>
@@ -535,6 +537,6 @@ https://github.com/rejunity/z80-open-silicon">
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=70a2ddb2a6"></script>
+  <script src="../run.js?v=9fd13fffae"></script>
 </body>
 </html>

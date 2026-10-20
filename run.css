@@ -5,7 +5,7 @@
   --run-accent: var(--color-default, #5ca7db);
   --run-surface: #ffffff;
   --run-ink: #2e3440;
-  --run-muted: #7a8594;
+  --run-muted: #5f6a78;
   --run-line: #e3e8ee;
   --run-track: #eef1f5;
 }
@@ -13,7 +13,7 @@
 [data-theme="dark"] {
   --run-surface: #2a2a2a;
   --run-ink: #e0e0e0;
-  --run-muted: #9aa3ad;
+  --run-muted: #a8adb3;
   --run-line: #3a3a3a;
   --run-track: #333333;
 }
@@ -305,3 +305,35 @@
 }
 /* The project pager is a dark band right above the dark footer: an edge between them. */
 .run-pager { border-bottom: 1px solid rgba(255, 255, 255, 0.14); }
+
+/* From the second design review. */
+/* The theme's dark mode makes every .btn's text white, the white buttons too: keep theirs dark. */
+[data-theme="dark"] .btn.btn-white, [data-theme="dark"] .btn.btn-white:hover { color: #404040 !important; }
+/* The dark feature band would merge with the (now page-coloured) gray section after it. */
+[data-theme="dark"] .dark-wrapper { background-color: #111 !important; }
+/* The demo board render has a white background: in dark mode show it as a card. */
+[data-theme="dark"] .run-board img { background: #fff; border-radius: 8px; padding: 12px; }
+/* Labels on the grey (filler, other) area segments, which are darker in dark mode. */
+[data-theme="dark"] .run-bar-large span[style*="#e6ebf0"], [data-theme="dark"] .run-bar-large span[style*="#b9c7d6"] { color: #f0f0f0; }
+[data-theme="dark"] #density .box .run-mono { color: var(--run-ink); }
+[data-theme="dark"] .run-hero .run-crumb, [data-theme="dark"] .run-hero .run-crumb a { color: rgba(255, 255, 255, 0.8); }
+/* Readable contrast for the small things this project draws in the accent colour (theme blue is 2.5:1). */
+:root:not([data-theme="dark"]) .run-more > summary, :root:not([data-theme="dark"]) .run-grew-name { color: #2f7fb8; }
+.run-precheck-result.ok strong { color: #1e7a52; }
+/* Density map numbers stay readable over the SRAM and densest-window outlines. */
+.run-heatmap text { stroke: var(--run-surface); stroke-width: 0.04px; }
+/* "Designs that grew": a stage, its size and its arrow stay together where they fit. */
+.run-grew-stages li { display: inline-block; max-width: 100%; }
+.run-grew { max-width: 100ch; }
+/* The open chips' cards: their buttons line up at the foot. */
+.run-coming { display: flex; flex-direction: column; }
+.run-coming > p:last-child { margin-top: auto; }
+.run-nowrap { white-space: nowrap; }
+/* Phones: two project cards a row, with a shorter render. */
+@media (max-width: 575.98px) {
+  .run-card-image { aspect-ratio: 16 / 9; }
+  .run-card-body { padding: 10px 12px 12px; }
+  .run-card .post-title { font-size: 0.95rem; }
+}
+/* A design's links beside its source button. */
+.run-design-links a:not(.btn) { display: inline-block; margin: 0 14px 10px 0; }
