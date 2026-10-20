@@ -185,16 +185,14 @@
 @media (hover: none) { .run-anchor { opacity: 0.35; } }
 :is(h2, h3, h4)[id] { scroll-margin-top: 90px; }
 
-/* Tiny Tapeout: callouts, the demo board and the chips still to come. Tiny Tapeout's purple marks its parts,
-   as on the run timeline. */
-:root { --run-tt: #7b4fa3; --run-tt-wash: #f4eefa; }
-[data-theme="dark"] { --run-tt: #b28ad6; --run-tt-wash: #2f2638; }
-.run-callout { border-radius: 6px; padding: 20px 24px; margin: 20px 0; color: var(--run-ink); }
-.run-callout-note { background: var(--run-track); border-left: 4px solid var(--run-muted); }
-.run-callout-tt { background: var(--run-tt-wash); border-left: 4px solid var(--run-tt); }
-.run-callout-tt h3 { color: var(--run-tt); }
+/* Tiny Tapeout: the demo board and the chips still to come. Tiny Tapeout's purple marks its parts, as on the
+   run timeline. Callouts are the theme's Bootstrap alerts; the site's dark mode sets data-theme, not
+   data-bs-theme, so give them Bootstrap's own dark colours. */
+:root { --run-tt: #7b4fa3; }
+[data-theme="dark"] { --run-tt: #b28ad6;
+  --bs-primary-text-emphasis: #6ea8fe; --bs-primary-bg-subtle: #031633; --bs-primary-border-subtle: #084298;
+  --bs-secondary-text-emphasis: #a7acb1; --bs-secondary-bg-subtle: #161719; --bs-secondary-border-subtle: #41464b; }
 .run-inner-slim { padding-top: 30px; padding-bottom: 30px; }
-.run-inner-slim .run-callout { margin: 0; }
 .run-board img { display: block; max-width: 100%; height: auto; margin: 0 auto; }
 .run-status { display: inline-block; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em;
   padding: 2px 8px; border-radius: 3px; color: #fff; background: var(--run-muted); }
