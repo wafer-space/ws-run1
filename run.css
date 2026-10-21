@@ -305,7 +305,7 @@
 /* The demo board render has a white background: in dark mode show it as a card. */
 [data-theme="dark"] .run-board img { background: #fff; border-radius: 8px; padding: 12px; }
 /* Labels on the grey (filler, other) area segments, which are darker in dark mode. */
-[data-theme="dark"] .run-bar-large span[style*="#e6ebf0"], [data-theme="dark"] .run-bar-large span[style*="#b9c7d6"] { color: #f0f0f0; }
+[data-theme="dark"] .run-bar-large div[style*="#e6ebf0"] span, [data-theme="dark"] .run-bar-large div[style*="#b9c7d6"] span { color: #f0f0f0; }
 [data-theme="dark"] #density .box .run-mono { color: var(--run-ink); }
 [data-theme="dark"] .run-hero .run-crumb, [data-theme="dark"] .run-hero .run-crumb a { color: rgba(255, 255, 255, 0.8); }
 /* Readable contrast for the small things this project draws in the accent colour (theme blue is 2.5:1). */
@@ -401,3 +401,11 @@
 .run-which { overflow-wrap: anywhere; }
 /* A card title may be one long word (FA25_Engn2912e_Saligane...): wrap it rather than cut it off. */
 .run-card .post-title { overflow-wrap: anywhere; }
+/* A framed reticle shown cropped to its dies (the frame's scale, without the empty frame). */
+.run-reticle-crop { overflow: hidden; border-radius: 6px; line-height: 0; }
+.run-reticle-crop .run-reticle.framed { outline: 0; }
+/* The index's toggle reads as a link, like the other show-all toggles (the theme styles labels dark). */
+label.run-index-more { color: #2f7fb8; }
+[data-theme="dark"] label.run-index-more { color: var(--run-accent); }
+label.run-index-more::before { content: "▸ "; color: var(--run-muted); }
+.run-index-toggle:checked ~ label.run-index-more::before { content: "▾ "; }

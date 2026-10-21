@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=e990a249d3">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=41e907b34a">
 </head>
 <body>
   <div class="content-wrapper">
@@ -135,7 +135,7 @@
 <span class="text-muted">(36% of buffer maximum)</span></td></tr>
             <tr><th>Core covered by logic</th><td>49%</td></tr>
             <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>264k average,
-              300k in the densest mm²</td></tr>
+              300k in the densest mm² of logic</td></tr>
           </tbody>
         </table>
         <p class="small text-muted mb-0">Every figure here is measured from the <a href="https://github.com/wafer-space/ws-run1">public layout</a>, the same way for every
@@ -153,8 +153,8 @@
             <tr><th>Die</th><td>3.93 × 5.12 mm
               (20.1 mm²)</td></tr>
             <tr><th>Core area</th><td>12.92 mm² inside the pad ring
-              <br><span class="small text-muted">the design's CORE_AREA, from
-                <a href="https://github.com/mole99/gf180mcu-fabulous-fpga/blob/97da81d42c9e/librelane/slots/slot_1x1.yaml"><span class="run-mono">librelane/slots/slot_1x1.yaml</span></a></span></td></tr>
+              <br><span class="small text-muted">as set in
+                <a href="https://github.com/mole99/gf180mcu-fabulous-fpga/blob/97da81d42c9e/librelane/slots/slot_1x1.yaml">the design&#39;s own layout settings</a></span></td></tr>
 <tr><th>Inside the seal ring</th><td>19.65 mm²
               <span class="text-muted">(the die less its 26 µm seal ring)</span></td></tr>            <tr><th>Placements</th><td>1 on the reticle, in
               slot <a class="run-mono" href="../index.html#reticle">E3</a>              <a class="run-minimap" href="../index.html#reticle" aria-label="Where MOLE sits on the reticle">
@@ -395,7 +395,7 @@ The licence and template were read from the repository at commit
         </svg>
         <p class="small text-muted mb-0">Logic cells per mm² in each square millimetre of the
           die. Hatched
-          outlines are SRAM macros; the bold outline is the densest mm² that avoids them, found by sliding a
+          outlines are SRAM macros; the red outline is the densest mm² that avoids them, found by sliding a
           1 mm square over the die in 0.1 mm steps. Squares at the edges are partial, so they read low.</p>
       </div>
     </div>
@@ -409,36 +409,36 @@ The licence and template were read from the repository at commit
       </li>
       <li class="run-history-ws">
         <span class="run-timeline-date">Dec 2025 · <a href="https://wafer.space/ws-run1/">wafer.space Run 1</a></span>
-        <span class="run-history-step run-history-current"><strong>MOLE FABulous FPGA</strong> <span class="text-muted">— 1×1 slot</span></span>
+        <span class="run-history-step run-history-current"><strong>MOLE FABulous FPGA</strong> <span class="text-muted">— 1 × 1 slot</span></span>
       </li>
       <li class="run-history-tt">
         <span class="run-timeline-date">Mar 2026 · <a href="https://tinytapeout.com/chips/ttihp26a/">Tiny Tapeout IHP 26a</a></span>
-        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttihp26a/tt_um_fabulous_ihp_26a">Tiny FABulous FPGA</a> <span class="text-muted">— 8×4 tiles</span></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttihp26a/tt_um_fabulous_ihp_26a">Tiny FABulous FPGA</a> <span class="text-muted">— 8 × 4 tiles</span></span>
       </li>
       <li class="run-history-tt">
         <span class="run-timeline-date">May 2026 · <a href="https://tinytapeout.com/chips/ttsky26a/">Tiny Tapeout SKY 26a</a></span>
-        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttsky26a/tt_um_fabulous_sky_26a">Tiny FABulous FPGA</a> <span class="text-muted">— 8×4 tiles</span></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttsky26a/tt_um_fabulous_sky_26a">Tiny FABulous FPGA</a> <span class="text-muted">— 8 × 4 tiles</span></span>
       </li>
       <li class="run-history-tt">
         <span class="run-timeline-date">May 2026 · <a href="https://tinytapeout.com/chips/ttsky26b/">Tiny Tapeout SKY 26b</a></span>
-        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttsky26b/tt_um_fabulous_sky_26b">Tiny FABulous FPGA</a> <span class="text-muted">— 8×4 tiles</span></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttsky26b/tt_um_fabulous_sky_26b">Tiny FABulous FPGA</a> <span class="text-muted">— 8 × 4 tiles</span></span>
       </li>
       <li class="run-history-tt">
         <span class="run-timeline-date">Jul 2026 · <a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/">Tiny Tapeout GF 0.3</a></span>
-        <span class="run-history-step"><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/projects/102.html">Tiny FABulous FPGA</a> <span class="text-muted">— 4×4 tiles</span></span>
-        <span class="run-history-step"><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/projects/359.html">Tiny FABulous FPGA (3.3V version)</a> <span class="text-muted">— 4×4 tiles, 3.3 V version</span></span>
+        <span class="run-history-step"><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/projects/102.html">Tiny FABulous FPGA</a> <span class="text-muted">— 4 × 4 tiles</span></span>
+        <span class="run-history-step"><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/projects/359.html">Tiny FABulous FPGA (3.3V version)</a> <span class="text-muted">— 4 × 4 tiles, 3.3 V version</span></span>
       </li>
       <li class="run-history-ws">
         <span class="run-timeline-date">Jul 2026 · <a href="https://wafer.space/ws-run2/">wafer.space Run 2</a></span>
-        <span class="run-history-step"><a href="https://wafer.space/ws-run2/projects/MOLE.html">MOLE FABulous FPGA</a> <span class="text-muted">— 1×1 slot</span></span>
+        <span class="run-history-step"><a href="https://wafer.space/ws-run2/projects/MOLE.html">MOLE FABulous FPGA</a> <span class="text-muted">— 1 × 1 slot</span></span>
       </li>
       <li class="run-history-tt">
         <span class="run-timeline-date">Sep 2026 · <a href="https://tinytapeout.com/chips/ttsky26c/">Tiny Tapeout SKY 26c</a></span>
-        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttsky26c/tt_um_fabulous_sky_26c">Tiny FABulous FPGA</a> <span class="text-muted">— 8×4 tiles</span></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttsky26c/tt_um_fabulous_sky_26c">Tiny FABulous FPGA</a> <span class="text-muted">— 8 × 4 tiles</span></span>
       </li>
       <li class="run-history-tt">
         <span class="run-timeline-date">Sep 2026 · <a href="https://tinytapeout.com/chips/ttihp26b/">Tiny Tapeout IHP 26b</a></span>
-        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttihp26b/tt_um_fabulous_ihp_26b">Tiny FABulous FPGA</a> <span class="text-muted">— 6×4 tiles</span></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttihp26b/tt_um_fabulous_ihp_26b">Tiny FABulous FPGA</a> <span class="text-muted">— 6 × 4 tiles</span></span>
       </li>
     </ol>
     <p class="small text-muted mb-20 run-history-key"><span class="run-history-key-tt">Tiny Tapeout tile</span>
@@ -604,6 +604,6 @@ transistors are measured
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=e990a249d3"></script>
+  <script src="../run.js?v=41e907b34a"></script>
 </body>
 </html>

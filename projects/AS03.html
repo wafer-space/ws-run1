@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=e990a249d3">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=41e907b34a">
 </head>
 <body>
   <div class="content-wrapper">
@@ -138,7 +138,7 @@
 <span class="text-muted">(28% of buffer maximum)</span></td></tr>
             <tr><th>Core covered by logic</th><td>19%</td></tr>
             <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>188k average,
-              272k in the densest mm²</td></tr>
+              272k in the densest mm² of logic</td></tr>
           </tbody>
         </table>
         <p class="small text-muted mb-0">Every figure here is measured from the <a href="https://github.com/wafer-space/ws-run1">public layout</a>, the same way for every
@@ -156,8 +156,8 @@
             <tr><th>Die</th><td>3.93 × 5.12 mm
               (20.1 mm²)</td></tr>
             <tr><th>Core area</th><td>12.92 mm² inside the pad ring
-              <br><span class="small text-muted">the design's CORE_AREA, from
-                <a href="https://github.com/AvalonSemiconductors/ws-submission-2025/blob/ef1e1212213b/librelane/config.yaml"><span class="run-mono">librelane/config.yaml</span></a></span></td></tr>
+              <br><span class="small text-muted">as set in
+                <a href="https://github.com/AvalonSemiconductors/ws-submission-2025/blob/ef1e1212213b/librelane/config.yaml">the design&#39;s own layout settings</a></span></td></tr>
 <tr><th>Inside the seal ring</th><td>19.65 mm²
               <span class="text-muted">(the die less its 26 µm seal ring)</span></td></tr>            <tr><th>Placements</th><td>1 on the reticle, in
               slot <a class="run-mono" href="../index.html#reticle">D5</a>              <a class="run-minimap" href="../index.html#reticle" aria-label="Where AS03 sits on the reticle">
@@ -375,7 +375,7 @@ The licence and template were read from the repository at commit
         </svg>
         <p class="small text-muted mb-0">Logic cells per mm² in each square millimetre of the
           die. Hatched
-          outlines are SRAM macros; the bold outline is the densest mm² that avoids them, found by sliding a
+          outlines are SRAM macros; the red outline is the densest mm² that avoids them, found by sliding a
           1 mm square over the die in 0.1 mm steps. Squares at the edges are partial, so they read low.</p>
       </div>
     </div>
@@ -385,8 +385,8 @@ The licence and template were read from the repository at commit
     <ol class="run-timeline run-history">
       <li class="run-history-tt">
         <span class="run-timeline-date">Dec 2022 · <a href="https://tinytapeout.com/chips/tt02/">Tiny Tapeout 2</a></span>
-        <span class="run-history-step"><a href="https://tinytapeout.com/chips/tt02/tholin_avalonsemi_5401">Avalon Semiconductors &#39;5401&#39; 4-bit Microprocessor</a> <span class="text-muted">— 1×1 tile, a 4-bit microprocessor</span></span>
-        <span class="run-history-step"><a href="https://tinytapeout.com/chips/tt02/tholin_avalonsemi_tbb1143">Avalon Semiconductors &#39;TBB1143&#39; Programmable Sound Generator</a> <span class="text-muted">— 1×1 tile, a programmable sound generator</span></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/tt02/tholin_avalonsemi_5401">Avalon Semiconductors &#39;5401&#39; 4-bit Microprocessor</a> <span class="text-muted">— 1 × 1 tile, a 4-bit microprocessor</span></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/tt02/tholin_avalonsemi_tbb1143">Avalon Semiconductors &#39;TBB1143&#39; Programmable Sound Generator</a> <span class="text-muted">— 1 × 1 tile, a programmable sound generator</span></span>
       </li>
       <li class="run-history-google">
         <span class="run-timeline-date">Dec 2022 · <a href="https://wafer.space/google-gf180mcu-mpw0/">Google GFMPW-0</a></span>
@@ -394,16 +394,16 @@ The licence and template were read from the repository at commit
       </li>
       <li class="run-history-tt">
         <span class="run-timeline-date">Apr 2023 · <a href="https://tinytapeout.com/chips/tt03/">Tiny Tapeout 3</a></span>
-        <span class="run-history-step"><a href="https://tinytapeout.com/chips/tt03/tholin_avalonsemi_5401">Avalon Semiconductors &#39;5401&#39; 4-bit Microprocessor</a> <span class="text-muted">— 1×1 tile, a 4-bit microprocessor</span></span>
-        <span class="run-history-step"><a href="https://tinytapeout.com/chips/tt03/tholin_avalonsemi_tbb1143">Avalon Semiconductors &#39;TBB1143&#39; Programmable Sound Generator</a> <span class="text-muted">— 1×1 tile, a programmable sound generator</span></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/tt03/tholin_avalonsemi_5401">Avalon Semiconductors &#39;5401&#39; 4-bit Microprocessor</a> <span class="text-muted">— 1 × 1 tile, a 4-bit microprocessor</span></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/tt03/tholin_avalonsemi_tbb1143">Avalon Semiconductors &#39;TBB1143&#39; Programmable Sound Generator</a> <span class="text-muted">— 1 × 1 tile, a programmable sound generator</span></span>
       </li>
       <li class="run-history-ws">
         <span class="run-timeline-date">Dec 2025 · <a href="https://wafer.space/ws-run1/">wafer.space Run 1</a></span>
-        <span class="run-history-step run-history-current"><strong>AS03 WS-Multi</strong> <span class="text-muted">— 1×1 slot, a multi-project die: 6502 and SID replicas, an RV32IMA core, a DRAM controller and more</span></span>
+        <span class="run-history-step run-history-current"><strong>AS03 WS-Multi</strong> <span class="text-muted">— 1 × 1 slot, a multi-project die: 6502 and SID replicas, an RV32IMA core, a DRAM controller and more</span></span>
       </li>
       <li class="run-history-ws">
         <span class="run-timeline-date">Jul 2026 · <a href="https://wafer.space/ws-run2/">wafer.space Run 2</a></span>
-        <span class="run-history-step"><a href="https://wafer.space/ws-run2/projects/AS04.html">AS04 AS04 Multi-Project die using 3.3V SCL</a> <span class="text-muted">— 1×1 slot, the multi-project die again, on 3.3 V standard cells</span></span>
+        <span class="run-history-step"><a href="https://wafer.space/ws-run2/projects/AS04.html">AS04 AS04 Multi-Project die using 3.3V SCL</a> <span class="text-muted">— 1 × 1 slot, the multi-project die again, on 3.3 V standard cells</span></span>
       </li>
     </ol>
     <p class="small text-muted mb-20 run-history-key"><span class="run-history-key-tt">Tiny Tapeout tile</span>
@@ -564,6 +564,6 @@ transistors are measured
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=e990a249d3"></script>
+  <script src="../run.js?v=41e907b34a"></script>
 </body>
 </html>

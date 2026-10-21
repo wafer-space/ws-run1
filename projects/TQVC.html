@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=e990a249d3">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=41e907b34a">
 </head>
 <body>
   <div class="content-wrapper">
@@ -135,7 +135,7 @@
 <span class="text-muted">(21% of buffer maximum)</span></td></tr>
             <tr><th>Core covered by logic</th><td>16%</td></tr>
             <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>241k average,
-              263k in the densest mm²</td></tr>
+              263k in the densest mm² of logic</td></tr>
           </tbody>
         </table>
         <p class="small text-muted mb-0">Every figure here is measured from the <a href="https://github.com/wafer-space/ws-run1">public layout</a>, the same way for every
@@ -153,8 +153,8 @@
             <tr><th>Die</th><td>3.93 × 2.53 mm
               (9.9 mm²)</td></tr>
             <tr><th>Core area</th><td>5.02 mm² inside the pad ring
-              <br><span class="small text-muted">the design's CORE_AREA, from
-                <a href="https://github.com/MichaelBell/ws01-tinyQV/blob/2c8630bce07f/librelane/slots/slot_1x0p5.yaml"><span class="run-mono">librelane/slots/slot_1x0p5.yaml</span></a></span></td></tr>
+              <br><span class="small text-muted">as set in
+                <a href="https://github.com/MichaelBell/ws01-tinyQV/blob/2c8630bce07f/librelane/slots/slot_1x0p5.yaml">the design&#39;s own layout settings</a></span></td></tr>
 <tr><th>Inside the seal ring</th><td>9.61 mm²
               <span class="text-muted">(the die less its 26 µm seal ring)</span></td></tr>            <tr><th>Placements</th><td>2 on the reticle, in
               slots <a class="run-mono" href="../index.html#reticle">E1</a>, <a class="run-mono" href="../index.html#reticle">G1</a>              <a class="run-minimap" href="../index.html#reticle" aria-label="Where TQVC sits on the reticle">
@@ -354,7 +354,7 @@ The licence and template were read from the repository at commit
         </svg>
         <p class="small text-muted mb-0">Logic cells per mm² in each square millimetre of the
           die. Hatched
-          outlines are SRAM macros; the bold outline is the densest mm² that avoids them, found by sliding a
+          outlines are SRAM macros; the red outline is the densest mm² that avoids them, found by sliding a
           1 mm square over the die in 0.1 mm steps. Squares at the edges are partial, so they read low.</p>
       </div>
     </div>
@@ -364,28 +364,28 @@ The licence and template were read from the repository at commit
     <ol class="run-timeline run-history">
       <li class="run-history-tt">
         <span class="run-timeline-date">Apr 2024 · <a href="https://tinytapeout.com/chips/tt06/">Tiny Tapeout 6</a></span>
-        <span class="run-history-step"><a href="https://tinytapeout.com/chips/tt06/tt_um_MichaelBell_tinyQV">TinyQV Risc-V SoC</a> <span class="text-muted">— 2×2 tiles</span></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/tt06/tt_um_MichaelBell_tinyQV">TinyQV Risc-V SoC</a> <span class="text-muted">— 2 × 2 tiles</span></span>
       </li>
       <li class="run-history-tt">
         <span class="run-timeline-date">Nov 2024 · <a href="https://tinytapeout.com/chips/ttihp0p2/">Tiny Tapeout IHP 0.2</a></span>
-        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttihp0p2/tt_um_MichaelBell_tinyQV">TinyQV Risc-V SoC</a> <span class="text-muted">— 2×2 tiles</span></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttihp0p2/tt_um_MichaelBell_tinyQV">TinyQV Risc-V SoC</a> <span class="text-muted">— 2 × 2 tiles</span></span>
       </li>
       <li class="run-history-tt">
         <span class="run-timeline-date">Mar 2025 · <a href="https://tinytapeout.com/chips/ttihp25a/">Tiny Tapeout IHP 25a</a></span>
-        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttihp25a/tt_um_MichaelBell_tinyQV">TinyQV Risc-V SoC</a> <span class="text-muted">— 3×2 tiles</span></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttihp25a/tt_um_MichaelBell_tinyQV">TinyQV Risc-V SoC</a> <span class="text-muted">— 3 × 2 tiles</span></span>
       </li>
       <li class="run-history-tt">
         <span class="run-timeline-date">Sep 2025 · <a href="https://tinytapeout.com/chips/ttihp25b/">Tiny Tapeout IHP 25b</a></span>
-        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttihp25b/tt_um_tt_tinyQV">TinyQV - Crowdsourced Risc-V SoC</a> <span class="text-muted">— 5×4 tiles, with the peripherals of Tiny Tapeout&#39;s RISC-V competition</span></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttihp25b/tt_um_tt_tinyQV">TinyQV - Crowdsourced Risc-V SoC</a> <span class="text-muted">— 5 × 4 tiles, with the peripherals of Tiny Tapeout&#39;s RISC-V competition</span></span>
       </li>
       <li class="run-history-tt">
         <span class="run-timeline-date">Sep 2025 · <a href="https://tinytapeout.com/chips/ttsky25a/">Tiny Tapeout SKY 25a</a></span>
-        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttsky25a/tt_um_tt_tinyQV">TinyQV &#39;Asteroids&#39; - Crowdsourced Risc-V SoC</a> <span class="text-muted">— 8×4 tiles, &#39;Asteroids&#39;, with crowdsourced peripherals</span></span>
-        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttsky25a/tt_um_tt_tinyQVb">TinyQV &#39;Berzerk&#39; - Crowdsourced Risc-V SoC</a> <span class="text-muted">— 4×4 tiles, &#39;Berzerk&#39;, with crowdsourced peripherals</span></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttsky25a/tt_um_tt_tinyQV">TinyQV &#39;Asteroids&#39; - Crowdsourced Risc-V SoC</a> <span class="text-muted">— 8 × 4 tiles, &#39;Asteroids&#39;, with crowdsourced peripherals</span></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttsky25a/tt_um_tt_tinyQVb">TinyQV &#39;Berzerk&#39; - Crowdsourced Risc-V SoC</a> <span class="text-muted">— 4 × 4 tiles, &#39;Berzerk&#39;, with crowdsourced peripherals</span></span>
       </li>
       <li class="run-history-tt">
         <span class="run-timeline-date">Nov 2025 · <a href="https://tinytapeout.com/chips/ttsky25b/">Tiny Tapeout SKY 25b</a></span>
-        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttsky25b/tt_um_MichaelBell_tinyQV">TinyQV Risc-V SoC</a> <span class="text-muted">— 3×2 tiles</span></span>
+        <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttsky25b/tt_um_MichaelBell_tinyQV">TinyQV Risc-V SoC</a> <span class="text-muted">— 3 × 2 tiles</span></span>
       </li>
       <li class="run-history-tt">
         <span class="run-timeline-date">Nov 2025 · <a href="https://wafer.space/tinytapeouts/ttgf0p1/gf-mpw-t0p1/">Tiny Tapeout GF 0.1</a></span>
@@ -393,24 +393,24 @@ The licence and template were read from the repository at commit
       </li>
       <li class="run-history-tt">
         <span class="run-timeline-date">Nov 2025 · <a href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/">Tiny Tapeout GF 0.2</a></span>
-        <span class="run-history-step"><a href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/projects/039.html">TinyQV Risc-V SoC</a> <span class="text-muted">— 3×4 tiles</span></span>
+        <span class="run-history-step"><a href="https://wafer.space/tinytapeouts/ttgf0p2/ws-run1-ttpg/projects/039.html">TinyQV Risc-V SoC</a> <span class="text-muted">— 3 × 4 tiles</span></span>
       </li>
       <li class="run-history-ws">
         <span class="run-timeline-date">Dec 2025 · <a href="https://wafer.space/ws-run1/">wafer.space Run 1</a></span>
-        <span class="run-history-step run-history-current"><strong>TQVC TinyQV - Crowdsourced Risc-V SoC (1x0.5)</strong> <span class="text-muted">— 1×0.5 slot</span></span>
-        <span class="run-history-step"><a href="https://wafer.space/ws-run1/projects/TQVA.html">TQVA TinyQV - Crowdsourced Risc-V SoC</a> <span class="text-muted">— 0.5×0.5 slot</span></span>
-        <span class="run-history-step"><a href="https://wafer.space/ws-run1/projects/TQVB.html">TQVB TinyQV - Crowdsourced Risc-V SoC (0.5x1)</a> <span class="text-muted">— 0.5×1 slot</span></span>
+        <span class="run-history-step run-history-current"><strong>TQVC TinyQV - Crowdsourced Risc-V SoC (1x0.5)</strong> <span class="text-muted">— 1 × ½ slot</span></span>
+        <span class="run-history-step"><a href="https://wafer.space/ws-run1/projects/TQVA.html">TQVA TinyQV - Crowdsourced Risc-V SoC</a> <span class="text-muted">— ½ × ½ slot</span></span>
+        <span class="run-history-step"><a href="https://wafer.space/ws-run1/projects/TQVB.html">TQVB TinyQV - Crowdsourced Risc-V SoC (0.5x1)</a> <span class="text-muted">— ½ × 1 slot</span></span>
       </li>
       <li class="run-history-tt">
         <span class="run-timeline-date">Jul 2026 · <a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/">Tiny Tapeout GF 0.3</a></span>
-        <span class="run-history-step"><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/projects/199.html">TinyQV Risc-V SoC</a> <span class="text-muted">— 4×2 tiles</span></span>
+        <span class="run-history-step"><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/projects/199.html">TinyQV Risc-V SoC</a> <span class="text-muted">— 4 × 2 tiles</span></span>
       </li>
       <li class="run-history-ws">
         <span class="run-timeline-date">Jul 2026 · <a href="https://wafer.space/ws-run2/">wafer.space Run 2</a></span>
-        <span class="run-history-step"><a href="https://wafer.space/ws-run2/projects/TQVA.html">TQVA TinyQV - Crowdsourced Risc-V SoC</a> <span class="text-muted">— 0.5×0.5 slot</span></span>
-        <span class="run-history-step"><a href="https://wafer.space/ws-run2/projects/TQVC.html">TQVC TinyQV - Crowdsourced Risc-V SoC (1x0.5)</a> <span class="text-muted">— 1×0.5 slot</span></span>
-        <span class="run-history-step"><a href="https://wafer.space/ws-run2/projects/TQVD.html">TQVD TinyQV - RISC-V SoC with HDMI output</a> <span class="text-muted">— 0.5×0.5 slot, 3.3 V standard cells and SRAM, HDMI output</span></span>
-        <span class="run-history-step"><a href="https://wafer.space/ws-run2/projects/TQVE.html">TQVE TinyQV - RISC-V SoC with experimental pad setup</a> <span class="text-muted">— 0.5×0.5 slot, 3.3 V, with an experimental pad setup</span></span>
+        <span class="run-history-step"><a href="https://wafer.space/ws-run2/projects/TQVA.html">TQVA TinyQV - Crowdsourced Risc-V SoC</a> <span class="text-muted">— ½ × ½ slot</span></span>
+        <span class="run-history-step"><a href="https://wafer.space/ws-run2/projects/TQVC.html">TQVC TinyQV - Crowdsourced Risc-V SoC (1x0.5)</a> <span class="text-muted">— 1 × ½ slot</span></span>
+        <span class="run-history-step"><a href="https://wafer.space/ws-run2/projects/TQVD.html">TQVD TinyQV - RISC-V SoC with HDMI output</a> <span class="text-muted">— ½ × ½ slot, 3.3 V standard cells and SRAM, HDMI output</span></span>
+        <span class="run-history-step"><a href="https://wafer.space/ws-run2/projects/TQVE.html">TQVE TinyQV - RISC-V SoC with experimental pad setup</a> <span class="text-muted">— ½ × ½ slot, 3.3 V, with an experimental pad setup</span></span>
       </li>
     </ol>
     <p class="small text-muted mb-20 run-history-key"><span class="run-history-key-tt">Tiny Tapeout tile</span>
@@ -586,6 +586,6 @@ transistors are measured
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=e990a249d3"></script>
+  <script src="../run.js?v=41e907b34a"></script>
 </body>
 </html>

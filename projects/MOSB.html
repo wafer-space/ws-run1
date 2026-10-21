@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=e990a249d3">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=41e907b34a">
 </head>
 <body>
   <div class="content-wrapper">
@@ -131,7 +131,7 @@
             <tr><th><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/analog/model_parameters/LV/LV_4.html">Salicided poly resistors</a></th><td>68
               <span class="text-muted">(13,600 µm²)</span>
 </td></tr>
-            <tr><th><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/analog/model_parameters/LV/LV_3.html">Diodes (DIODE_MK)</a></th><td>816
+            <tr><th><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/analog/model_parameters/LV/LV_3.html">Diodes</a></th><td>816
               <span class="text-muted">(68,727 µm²)</span>
 </td></tr>
             <tr><th>I/O library</th><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/IPs/IO/gf180mcu_fd_io/datasheet.html#cell-list"><span class="run-mono">gf180mcu_fd_io</span></a> <span class="text-muted">(1138 cells)</span>, <a href="https://github.com/wafer-space/gf180mcu/tree/main/gf180mcuD/libs.ref/gf180mcu_fd_io"><span class="run-mono">gf180mcu_ws_io</span></a> <span class="text-muted">(2 cells)</span></td></tr>
@@ -149,7 +149,7 @@
 <span class="text-muted">(8% of buffer maximum)</span></td></tr>
             <tr><th>Core covered by logic</th><td>5%</td></tr>
             <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>22k average,
-              67k in the densest mm²</td></tr>
+              67k in the densest mm² of logic</td></tr>
           </tbody>
         </table>
         <p class="small text-muted mb-0">Every figure here is measured from the <a href="https://github.com/wafer-space/ws-run1">public layout</a>, the same way for every
@@ -373,7 +373,7 @@
         </svg>
         <p class="small text-muted mb-0">Logic cells per mm² in each square millimetre of the
           die. Hatched
-          outlines are SRAM macros; the bold outline is the densest mm² that avoids them, found by sliding a
+          outlines are SRAM macros; the red outline is the densest mm² that avoids them, found by sliding a
           1 mm square over the die in 0.1 mm steps. Squares at the edges are partial, so they read low.</p>
       </div>
     </div>
@@ -542,6 +542,6 @@ transistors are measured
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=e990a249d3"></script>
+  <script src="../run.js?v=41e907b34a"></script>
 </body>
 </html>
