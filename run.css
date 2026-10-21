@@ -54,6 +54,8 @@
 .run-density i { position: absolute; left: 0; top: 0; height: 100%; border-radius: 3px; }
 .run-density .core { background: var(--run-accent); }
 .run-density .peak { border: 1.5px solid var(--run-accent); background: transparent; box-sizing: border-box; }
+/* The average inside the seal ring, always below the core's: a dark line along the core bar. */
+.run-density .usable { top: 5px; height: 4px; background: var(--run-ink); opacity: 0.7; border-radius: 2px; }
 
 /* Categories */
 .run-category { display: grid; grid-template-columns: minmax(140px, 220px) 1fr 2em; gap: 12px; align-items: center; padding: 6px 0; color: var(--run-ink); text-decoration: none; }
@@ -91,7 +93,11 @@
 .run-reticle.framed { background: transparent; border-radius: 0; outline: 1px dashed var(--run-line); }
 .run-reticle-slot { position: absolute; display: flex; align-items: flex-end; justify-content: flex-start; border: 1px solid transparent; text-decoration: none; line-height: 1; }
 .run-reticle-slot span { margin: 3px; padding: 1px 4px; border-radius: 2px; background: rgba(10, 12, 20, 0.7); color: #fff; font-size: 10px; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; opacity: 0; transition: opacity 0.12s ease; }
+/* Every slot is outlined, so the image reads as blocks to select; hovering one lights it and names it. */
+.run-reticle-slot { border-color: rgba(255, 255, 255, 0.28); }
 .run-reticle-slot:hover, .run-reticle-slot:focus-visible { border-color: #fff; background: rgba(255, 255, 255, 0.12); }
+/* Without hover (tablets), the names show all the time. */
+@media (hover: none) and (min-width: 576px) { .run-reticle-slot span { opacity: 1; } }
 .run-reticle-slot:hover span, .run-reticle-slot:focus-visible span { opacity: 1; }
 
 /* Timeline */
@@ -372,9 +378,26 @@
   .run-tl-dot { transform: translateY(var(--dym, 0px)); }
 }
 /* A Tiny Tapeout chip's project index: long, so the header stays in view while scrolling it. */
-.run-index { max-height: 70vh; overflow-y: auto; border: 1px solid var(--run-line); border-radius: 6px; }
-.run-index thead th { position: sticky; top: 0; background: var(--run-surface); z-index: 1; }
+/* The project index shows its first rows; the toggle under it shows the rest. */
+.run-index-toggle { position: absolute; opacity: 0; pointer-events: none; }
+.run-index tr.run-extra { display: none; }
+.run-index-toggle:checked + .run-index tr.run-extra { display: table-row; }
+.run-index-more { display: inline-block; margin-top: 10px; color: var(--run-accent); cursor: pointer; font-weight: 600; }
+.run-index-more .run-hide, .run-index-toggle:checked ~ .run-index-more .run-show { display: none; }
+.run-index-toggle:checked ~ .run-index-more .run-hide { display: inline; }
+.run-index-toggle:focus-visible ~ .run-index-more { outline: 2px solid var(--run-accent); outline-offset: 2px; }
 .run-index table { margin-bottom: 0; }
 /* Run names linked in a hero's title stay white, underlined. */
 .run-hero .page-title-sub a, [data-theme="dark"] .run-hero .page-title-sub a { color: inherit; text-decoration: underline;
   text-underline-offset: 4px; text-decoration-thickness: 1px; }
+/* The shuttle status's two lists: done so far, still to come. */
+.run-status-head { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--run-muted); margin: 0 0 12px; }
+.run-reticle-frame { margin-inline: auto; }
+/* A list behind its count, inside a table cell: the summary reads as a link. */
+.run-more-inline { margin: 0; }
+.run-more-inline > summary { display: inline; cursor: pointer; margin: 0; }
+.run-more-inline[open] > summary { display: block; margin-bottom: 4px; }
+/* Design names in a table cell may be one long word (openframe_caravel_picorv32): let them break. */
+.run-which { overflow-wrap: anywhere; }
+/* A card title may be one long word (FA25_Engn2912e_Saligane...): wrap it rather than cut it off. */
+.run-card .post-title { overflow-wrap: anywhere; }

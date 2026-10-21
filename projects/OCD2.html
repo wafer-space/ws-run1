@@ -39,7 +39,7 @@ Also there is a POR macro with a test output.">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=e922b8f332">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=e990a249d3">
 </head>
 <body>
   <div class="content-wrapper">
@@ -140,10 +140,12 @@ Also there is a POR macro with a test output.">
         <h4 id="density" class="mb-10">Logic density<a class="run-anchor" href="#density" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h4>
         <table class="table table-sm run-table run-facts">
           <tbody>
-            <tr><th>Core average<br><span class="small text-muted fw-normal">logic cells per mm²</span></th><td>&lt;1k
-<span class="text-muted">(&lt;1% of buffer maximum)</span></td></tr>
+            <tr><th>Inside the core<br><span class="small text-muted fw-normal">logic cells per mm²</span></th><td>&lt;1k
+<span class="text-muted">(&lt;1% of buffer maximum)</span><br><span class="small text-muted">over the 5.01 mm² core: what the design itself packed</span></td></tr>
+            <tr><th>Inside the seal ring<br><span class="small text-muted fw-normal">logic cells per mm²</span></th><td>&lt;1k
+              <br><span class="small text-muted">over all 9.61 mm² of the slot, pad ring included</span></td></tr>
             <tr><th>Core covered by logic</th><td>&lt;1%</td></tr>
-            <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>29k average</td></tr>
+            <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>34k average</td></tr>
           </tbody>
         </table>
         <p class="small text-muted mb-0">Every figure here is measured from the <a href="https://github.com/wafer-space/ws-run1">public layout</a>, the same way for every
@@ -160,8 +162,10 @@ Also there is a POR macro with a test output.">
           <tbody>
             <tr><th>Die</th><td>3.93 × 2.53 mm
               (9.9 mm²)</td></tr>
-            <tr><th>Core area</th><td>5.9 mm² inside the pad ring</td></tr>
-            <tr><th>Placements</th><td>2 on the reticle, in
+            <tr><th>Core area</th><td>5.01 mm² inside the pad ring
+              <br><span class="small text-muted">the project template's, 442 µm in from each edge</span></td></tr>
+<tr><th>Inside the seal ring</th><td>9.61 mm²
+              <span class="text-muted">(the die less its 26 µm seal ring)</span></td></tr>            <tr><th>Placements</th><td>2 on the reticle, in
               slots <a class="run-mono" href="../index.html#reticle">B1</a>, <a class="run-mono" href="../index.html#reticle">C1</a>              <a class="run-minimap" href="../index.html#reticle" aria-label="Where OCD2 sits on the reticle">
                 <svg viewBox="0 0 30.00 23.38" role="img"><title>OCD2 on the reticle</title>
 <rect class="" x="0.060" y="18.197"
@@ -223,7 +227,10 @@ Also there is a POR macro with a test output.">
             <tr><th>Licence</th><td><a href="https://spdx.org/licenses/Apache-2.0.html">Apache-2.0</a> <span class="text-muted">declared</span>
 <br><span class="text-muted">Repository: Apache-2.0
 (in <a href="https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test/tree/6d4f6099546c">source file headers</a>) — agrees</span>
-<br><span class="small text-muted">Repository checked at <a href="https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test/commit/6d4f6099546c"><span class="run-mono">6d4f6099546c</span></a></span></td></tr>
+</td></tr>
+            <tr><th>How it was checked</th><td><details class="run-more run-more-inline"><summary>Commit and PDK pin</summary>
+The licence and template were read from the repository at commit
+              <a href="https://github.com/RTimothyEdwards/gf180mcu_ocd_sram_test/commit/6d4f6099546c"><span class="run-mono">6d4f6099546c</span></a>.</details></td></tr>
             <tr><th>Chip-on-board</th><td>Not selected at submission
 · <a href="#bonding">bonding results</a></td></tr>
             <tr><th>Precheck</th><td>Passed
@@ -242,29 +249,27 @@ Also there is a POR macro with a test output.">
     <div class="row gutter-50">
       <div class="col-lg-7 mb-30">
         <h3 id="area" class="mb-10">Where the area went<a class="run-anchor" href="#area" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
-        <p class="small text-muted mb-10">How this design's area splits between working logic, memory, filler and the pad ring.</p>
+        <p class="small text-muted mb-10">How this design's area splits between logic cells, SRAM, other and pad ring.</p>
         <div class="run-bar run-bar-large mb-10">
           <div style="width: 3.90%; background: #9b6bd6"
                title="SRAM: 0.39 mm²">
           </div>
-          <div style="width: 55.45%; background: #e6ebf0"
-               title="Other: 5.51 mm²">
-<span>55%</span>          </div>
-          <div style="width: 40.55%; background: #f0b84c"
-               title="Pad ring: 4.03 mm²">
-<span>41%</span>          </div>
+          <div style="width: 46.43%; background: #e6ebf0"
+               title="Other: 4.62 mm²">
+<span>46%</span>          </div>
+          <div style="width: 49.57%; background: #f0b84c"
+               title="Pad ring: 4.93 mm²">
+<span>50%</span>          </div>
         </div>
         <ul class="run-legend">
           <li><i style="background: #5ca7db"></i><strong>Logic cells</strong>
             0.01 mm² <span class="text-muted">(&lt;1%)</span></li>
           <li><i style="background: #9b6bd6"></i><strong>SRAM</strong>
             0.39 mm² <span class="text-muted">(4%)</span></li>
-          <li><i style="background: #b9c7d6"></i><strong>Filler and tap cells</strong>
-            0.00 mm² <span class="text-muted">(&lt;1%)</span></li>
           <li><i style="background: #e6ebf0"></i><strong>Other</strong>
-            5.51 mm² <span class="text-muted">(55%)</span></li>
+            4.62 mm² <span class="text-muted">(46%)</span></li>
           <li><i style="background: #f0b84c"></i><strong>Pad ring</strong>
-            4.03 mm² <span class="text-muted">(41%)</span></li>
+            4.93 mm² <span class="text-muted">(50%)</span></li>
         </ul>
 
         <h3 id="cells" class="mt-30 mb-10">Most used cells<a class="run-anchor" href="#cells" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
@@ -323,18 +328,27 @@ Also there is a POR macro with a test output.">
           <rect class="sram-macro" x="3.007" y="1.569" width="0.301" height="0.225"><title>gf180mcu_ocd_ip_sram__sram256x8m8wm1</title></rect>
           <rect class="sram-macro" x="2.429" y="1.569" width="0.301" height="0.225"><title>gf180mcu_ocd_ip_sram__sram256x8m8wm1</title></rect>
           <rect class="window" x="2.600" y="0.330" width="1" height="1"><title>Densest SRAM-free mm²: 20 logic cells</title></rect>
-          <text x="0.500" y="2.030" class="light">&lt;1k</text>
-          <text x="1.500" y="2.030" class="light">&lt;1k</text>
-          <text x="2.500" y="2.030" class="light">&lt;1k</text>
-          <text x="3.466" y="2.030" class="light">&lt;1k</text>
-          <text x="0.500" y="1.030" class="">&lt;1k</text>
-          <text x="1.500" y="1.030" class="">0</text>
-          <text x="2.500" y="1.030" class="">0</text>
-          <text x="3.466" y="1.030" class="light">&lt;1k</text>
+          <text x="0.500" y="2.030" class="light"
+                style="font-size: 0.220px">&lt;1k</text>
+          <text x="1.500" y="2.030" class="light"
+                style="font-size: 0.220px">&lt;1k</text>
+          <text x="2.500" y="2.030" class="light"
+                style="font-size: 0.220px">&lt;1k</text>
+          <text x="3.466" y="2.030" class="light"
+                style="font-size: 0.220px">&lt;1k</text>
+          <text x="0.500" y="1.030" class=""
+                style="font-size: 0.220px">&lt;1k</text>
+          <text x="1.500" y="1.030" class=""
+                style="font-size: 0.220px">0</text>
+          <text x="2.500" y="1.030" class=""
+                style="font-size: 0.220px">0</text>
+          <text x="3.466" y="1.030" class="light"
+                style="font-size: 0.220px">&lt;1k</text>
         </svg>
-        <p class="small text-muted mb-0">Logic cells in each square millimetre of the die. Hatched outlines are SRAM
-          macros; the bold outline is the densest 1 mm² that avoids them, found by sliding a
-          1 mm square over the die in 0.1 mm steps. Edge squares are smaller than 1 mm².</p>
+        <p class="small text-muted mb-0">Logic cells per mm² in each square millimetre of the
+          die. Hatched
+          outlines are SRAM macros; the bold outline is the densest mm² that avoids them, found by sliding a
+          1 mm square over the die in 0.1 mm steps. Squares at the edges are partial, so they read low.</p>
       </div>
     </div>
     <h3 id="related" class="mt-20 mb-10">How this design grew<a class="run-anchor" href="#related" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
@@ -493,6 +507,6 @@ transistors are measured
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=e922b8f332"></script>
+  <script src="../run.js?v=e990a249d3"></script>
 </body>
 </html>
