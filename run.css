@@ -409,3 +409,12 @@ label.run-index-more { color: #2f7fb8; }
 [data-theme="dark"] label.run-index-more { color: var(--run-accent); }
 label.run-index-more::before { content: "▸ "; color: var(--run-muted); }
 .run-index-toggle:checked ~ label.run-index-more::before { content: "▾ "; }
+/* A chart row is a link to the design: its code is link-coloured, and its name underlines on hover. */
+.run-row .run-row-label strong { color: #2f7fb8; }
+[data-theme="dark"] .run-row .run-row-label strong { color: var(--run-accent); }
+.run-row:hover .run-row-label, .run-row:focus-visible .run-row-label { text-decoration: underline; text-underline-offset: 3px; }
+/* Map labels sit on a halo of their cell's own tone, so a dashed SRAM outline passing under one does not strike it through. */
+.run-heatmap text { stroke: var(--run-surface); stroke-width: 0.07px; stroke-opacity: 0.95; stroke-linejoin: round; }
+.run-heatmap text.light { stroke: none; }
+/* SRAM macro names are long: they wrap, so the table fits the narrow column beside the map. */
+.run-macros td:first-child { overflow-wrap: anywhere; }
