@@ -414,15 +414,11 @@ label.run-index-more::before { content: "▸ "; color: var(--run-muted); }
 [data-theme="dark"] .run-row .run-row-label strong { color: var(--run-accent); }
 .run-row:hover .run-row-label, .run-row:focus-visible .run-row-label { text-decoration: underline; text-underline-offset: 3px; }
 /* Map labels sit on a halo of their cell's own tone, so a dashed SRAM outline passing under one does not strike it through. */
-.run-heatmap text { stroke: var(--run-surface); stroke-width: 0.07px; stroke-opacity: 0.95; stroke-linejoin: round; }
-.run-heatmap text.light { stroke: none; }
+.run-heatmap text.pale { stroke: var(--run-surface); stroke-width: 0.07px; stroke-opacity: 0.95; stroke-linejoin: round; }
 /* SRAM macro names are long: they wrap, so the table fits the narrow column beside the map. */
 .run-macros td:first-child { overflow-wrap: anywhere; }
 /* A design named by its repository ("FA25_Engn2912e_Saligane_Brown") is one long word: let it wrap on a phone. */
 .page-title { overflow-wrap: anywhere; }
-/* The densest window's own figure, in the outline's red on a halo of the page. */
-.run-heatmap text.window-label { fill: #d23f4a; font-weight: 700; stroke: var(--run-surface); }
-[data-theme="dark"] .run-heatmap text.window-label { fill: #f07a83; }
 /* The GitHub account owning a Tiny Tapeout project's repository, beside its authors. */
 .run-account { color: var(--run-muted); }
 .page-title-sub .run-account, .run-hero .run-account, .run-hero .run-account a { color: rgba(255, 255, 255, 0.85); }
