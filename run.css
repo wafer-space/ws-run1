@@ -219,20 +219,6 @@
   border-radius: 50%; margin-right: 6px; border: 2px solid var(--run-muted); box-sizing: border-box; }
 .run-history-key .run-history-key-tt::before { background: var(--run-tt); border-color: var(--run-tt); }
 .run-history-key .run-history-key-ws::before { background: var(--run-accent); border-color: var(--run-accent); }
-/* The run page's designs with a history: each a row of its versions, joined by arrows. */
-.run-grew { list-style: none; padding: 0; margin: 0 0 10px; }
-.run-grew > li { padding: 10px 0; border-bottom: 1px solid var(--run-line); }
-.run-grew > li:last-child { border-bottom: 0; }
-.run-grew-name { font-weight: 600; margin-right: 6px; }
-.run-grew-stages { list-style: none; padding: 0; margin: 4px 0 0; font-size: 0.85rem; line-height: 1.9; }
-.run-grew-stages li { display: inline; color: var(--run-ink); }
-.run-grew-label { white-space: nowrap; }
-.run-grew-label::before { content: ""; display: inline-block; vertical-align: -1px; width: 10px; height: 10px;
-  border-radius: 50%; margin-right: 5px; border: 2px solid var(--run-muted); box-sizing: border-box; }
-.run-grew-stages li:not(:last-child)::after { content: "→"; margin: 0 8px 0 6px; color: var(--run-muted); }
-.run-grew-stages .run-history-tt .run-grew-label::before { background: var(--run-tt); border-color: var(--run-tt); }
-.run-grew-stages .run-history-ws .run-grew-label::before { background: var(--run-accent); border-color: var(--run-accent); }
-.run-grew-stages .text-muted { margin-left: 4px; }
 
 /* The reticle beside a design's placements, with its slots picked out. */
 .run-minimap { display: block; width: 140px; margin-top: 8px; }
@@ -295,8 +281,6 @@
 /* The pale area-bar segments (filler, other) would glare on a dark page. */
 [data-theme="dark"] [style*="#e6ebf0"] { background: #3d4349 !important; }
 [data-theme="dark"] [style*="#b9c7d6"] { background: #6f7f90 !important; }
-/* This run's or chip's stage in a "Designs that grew" row, as a pill as well as bold. */
-.run-grew-stages strong.run-grew-label { background: var(--run-track); padding: 1px 9px 1px 7px; border-radius: 12px; }
 /* Tap targets on phones: the code links get room, and the reticle's slots (the project grid below links them all)
    stop being links. */
 @media (max-width: 575.98px) {
@@ -318,13 +302,8 @@
 [data-theme="dark"] #density .box .run-mono { color: var(--run-ink); }
 [data-theme="dark"] .run-hero .run-crumb, [data-theme="dark"] .run-hero .run-crumb a { color: rgba(255, 255, 255, 0.8); }
 /* Readable contrast for the small things this project draws in the accent colour (theme blue is 2.5:1). */
-:root:not([data-theme="dark"]) .run-more > summary, :root:not([data-theme="dark"]) .run-grew-name { color: #2f7fb8; }
+:root:not([data-theme="dark"]) .run-more > summary { color: #2f7fb8; }
 .run-precheck-result.ok strong { color: #1e7a52; }
-/* Density map numbers stay readable over the SRAM and densest-window outlines. */
-.run-heatmap text { stroke: var(--run-surface); stroke-width: 0.04px; }
-/* "Designs that grew": a stage, its size and its arrow stay together where they fit. */
-.run-grew-stages li { display: inline-block; max-width: 100%; }
-.run-grew { max-width: 100ch; }
 /* The open chips' cards: their buttons line up at the foot. */
 .run-coming { display: flex; flex-direction: column; }
 .run-coming > p:last-child { margin-top: auto; }
@@ -337,3 +316,54 @@
 }
 /* A design's links beside its source button. */
 .run-design-links a:not(.btn) { display: inline-block; margin: 0 14px 10px 0; }
+
+/* Designs' versions as a dot timeline (_history.html). Colours are the dataviz reference palette's first three
+   categorical slots (validated all-pairs, light and dark); shape repeats the kind so colour is never alone:
+   wafer.space a circle, Tiny Tapeout a square, Google a diamond. */
+:root { --tl-ws: #2a78d6; --tl-tt: #eb6834; --tl-google: #1baf7a; }
+[data-theme="dark"] { --tl-ws: #3987e5; --tl-tt: #d95926; --tl-google: #199e70; }
+.run-tl { margin: 0 0 6px; }
+.run-tl-row { display: grid; grid-template-columns: 240px 1fr; align-items: center; column-gap: 16px; min-height: 40px;
+  border-bottom: 1px solid var(--run-line); }
+.run-tl-row:last-child { border-bottom: 0; }
+.run-tl-name { font-weight: 600; line-height: 1.3; padding: 6px 0; }
+.run-tl-name .text-muted { font-weight: 400; }
+.run-tl-track { position: relative; height: 40px; }
+.run-tl-grid { position: absolute; top: 0; bottom: 0; width: 1px; background: var(--run-line); }
+.run-tl-axis { min-height: 24px; border-bottom: 0; }
+.run-tl-axis .run-tl-track { height: 24px; }
+.run-tl-axis span { position: absolute; top: 3px; transform: translateX(-50%); font-size: 0.75rem; color: var(--run-muted);
+  font-variant-numeric: tabular-nums; }
+.run-tl-axis span:first-child { transform: none; }
+.run-tl-dot { position: absolute; top: 50%; width: 12px; height: 12px; margin: -6px 0 0 -6px;
+  transform: translateY(var(--dy, 0px)); background: var(--tl-ws); border-radius: 50%; box-shadow: 0 0 0 2px var(--run-surface); }
+.run-tl-dot.run-tl-tt { background: var(--tl-tt); border-radius: 2px; }
+.run-tl-dot.run-tl-google { background: var(--tl-google); border-radius: 1px; transform: translateY(var(--dy, 0px)) rotate(45deg) scale(0.9); }
+.run-tl-dot.current { box-shadow: 0 0 0 2px var(--run-surface), 0 0 0 4px var(--run-ink); z-index: 2; }
+/* A bigger hit area than the mark, and a tooltip on hover or keyboard focus. */
+.run-tl-dot::before { content: ""; position: absolute; inset: -8px; }
+.run-tl-tip { display: none; position: absolute; bottom: calc(100% + 10px); left: 50%; transform: translateX(-50%); z-index: 5;
+  min-width: 180px; max-width: 280px; padding: 8px 10px; border-radius: 6px; background: var(--run-surface); color: var(--run-ink);
+  border: 1px solid var(--run-line); box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15); font-size: 0.8rem; line-height: 1.4;
+  white-space: normal; text-align: left; pointer-events: none; }
+.run-tl-google .run-tl-tip { transform: translateX(-50%) rotate(-45deg); }
+.run-tl-dot:hover .run-tl-tip, .run-tl-dot:focus-visible .run-tl-tip { display: block; }
+.run-tl-dot:hover, .run-tl-dot:focus-visible { z-index: 6; }
+.run-tl-key span { display: inline-block; white-space: nowrap; margin-right: 14px; }
+.run-tl-key span::before { content: ""; display: inline-block; vertical-align: -1px; width: 10px; height: 10px; margin-right: 6px;
+  background: var(--tl-ws); border-radius: 50%; }
+.run-tl-key .run-tl-key-tt::before { background: var(--tl-tt); border-radius: 2px; }
+.run-tl-key .run-tl-key-google::before { background: var(--tl-google); border-radius: 1px; transform: rotate(45deg) scale(0.85); }
+.run-tl-key .run-tl-key-current::before { background: transparent; box-shadow: 0 0 0 2px var(--run-ink); }
+@media (max-width: 767.98px) {
+  .run-tl-row { grid-template-columns: 1fr; }
+  .run-tl-axis .run-tl-name { display: none; }
+  .run-tl-name { padding: 8px 0 0; }
+}
+/* A Tiny Tapeout chip's project index: long, so the header stays in view while scrolling it. */
+.run-index { max-height: 70vh; overflow-y: auto; border: 1px solid var(--run-line); border-radius: 6px; }
+.run-index thead th { position: sticky; top: 0; background: var(--run-surface); z-index: 1; }
+.run-index table { margin-bottom: 0; }
+/* Run names linked in a hero's title stay white, underlined. */
+.run-hero .page-title-sub a, [data-theme="dark"] .run-hero .page-title-sub a { color: inherit; text-decoration: underline;
+  text-underline-offset: 4px; text-decoration-thickness: 1px; }
