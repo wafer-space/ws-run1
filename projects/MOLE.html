@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=1a84e24183">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=6845eef8df">
 </head>
 <body>
   <div class="content-wrapper">
@@ -85,7 +85,7 @@
   <div class="container inner text-center">
     <p class="mb-10"><a class="run-crumb" href="../index.html">wafer.space Run 1</a></p>
     <h1 class="page-title">FABulous FPGA</h1>
-    <p class="lead"><span class="run-code-inline">MOLE</span> · FPGA · 1 × 1 slot</p>
+    <p class="lead"><span class="run-code-inline">MOLE</span> · FPGA · <span class="run-nowrap">1 × 1 slot</span></p>
   </div>
 </div>
 
@@ -124,7 +124,7 @@
 <span class="text-muted">(36% of buffer maximum)</span></td></tr>
             <tr><th>Core covered by logic</th><td>49%</td></tr>
             <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>264k average,
-              300k in the densest mm² of logic</td></tr>
+              300k in the mm² with the most logic cells</td></tr>
           </tbody>
         </table>
         <p class="small text-muted mb-0">Every figure here is measured from the <a href="https://github.com/wafer-space/ws-run1">public layout</a>, the same way for every
@@ -381,11 +381,13 @@ The licence and template were read from the repository at commit
                 style="font-size: 0.220px">7k</text>
           <text x="3.466" y="0.620" class=""
                 style="font-size: 0.220px">&lt;1k</text>
+          <text x="2.100" y="1.455" class="window-label"
+                style="font-size: 0.220px">27k</text>
         </svg>
         <p class="small text-muted mb-0">Logic cells per mm² in each square millimetre of the
           die. Hatched
-          outlines are SRAM macros; the red outline is the densest mm² that avoids them, found by sliding a
-          1 mm square over the die in 0.1 mm steps. Squares at the edges are partial, so they read low.</p>
+          outlines are SRAM macros; the red outline, labelled in red, is the densest mm² that avoids them, found by sliding a
+          1 mm square over the die in 0.1 mm steps, so it can straddle the fixed squares and find more than any one of them. Squares at the edges are partial, so they read low.</p>
 
         <h3 id="sram" class="mt-30 mb-10">SRAM macros<a class="run-anchor" href="#sram" aria-label="Link to this section"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></a></h3>
         <p class="small text-muted mb-10">The ready-made memory blocks this design uses.</p>
@@ -425,7 +427,7 @@ The licence and template were read from the repository at commit
         <span class="run-history-step"><a href="https://tinytapeout.com/chips/ttsky26b/tt_um_fabulous_sky_26b">Tiny FABulous FPGA</a> <span class="text-muted">— 8 × 4 tiles</span></span>
       </li>
       <li class="run-history-tt">
-        <span class="run-timeline-date">Jul 2026 · <a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/">Tiny Tapeout GF 0.3</a></span>
+        <span class="run-timeline-date">Jun 2026 · <a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/">Tiny Tapeout GF 0.3</a></span>
         <span class="run-history-step"><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/projects/102.html">Tiny FABulous FPGA</a> <span class="text-muted">— 4 × 4 tiles</span></span>
         <span class="run-history-step"><a href="https://wafer.space/tinytapeouts/ttgf0p3/ws-run2-t0p3/projects/359.html">Tiny FABulous FPGA (3.3V version)</a> <span class="text-muted">— 4 × 4 tiles, 3.3 V version</span></span>
       </li>
@@ -605,6 +607,6 @@ transistors are measured
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=1a84e24183"></script>
+  <script src="../run.js?v=6845eef8df"></script>
 </body>
 </html>

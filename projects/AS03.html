@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=1a84e24183">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=6845eef8df">
 </head>
 <body>
   <div class="content-wrapper">
@@ -85,7 +85,7 @@
   <div class="container inner text-center">
     <p class="mb-10"><a class="run-crumb" href="../index.html">wafer.space Run 1</a></p>
     <h1 class="page-title">WS-Multi</h1>
-    <p class="lead"><span class="run-code-inline">AS03</span> · Multi-project die · 1 × 1 slot</p>
+    <p class="lead"><span class="run-code-inline">AS03</span> · Multi-project die · <span class="run-nowrap">1 × 1 slot</span></p>
   </div>
 </div>
 
@@ -124,7 +124,7 @@
 <span class="text-muted">(28% of buffer maximum)</span></td></tr>
             <tr><th>Core covered by logic</th><td>19%</td></tr>
             <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>188k average,
-              272k in the densest mm² of logic</td></tr>
+              272k in the mm² with the most logic cells</td></tr>
           </tbody>
         </table>
         <p class="small text-muted mb-0">Every figure here is measured from the <a href="https://github.com/wafer-space/ws-run1">public layout</a>, the same way for every
@@ -196,7 +196,7 @@
               <a href="https://github.com/AvalonSemiconductors/gf180mcu_as_ex_mcu7t5v0">AS extra 7t-5V</a> <span class="text-muted">(4k)</span>, 
               <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu9t5v0/index.html">9t-5V</a> <span class="text-muted">(2k)</span>
 </td></tr>
-            <tr><th>SRAM</th><td>None</td></tr>
+            <tr><th>SRAM</th><td>No SRAM</td></tr>
           </tbody>
         </table>
 
@@ -296,7 +296,7 @@ The licence and template were read from the repository at commit
             <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/aoi21/gf180mcu_fd_sc_mcu7t5v0__aoi21_1.html"><span class="run-mono">aoi21_1</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
               <td class="text-end">3,490</td><td class="text-muted">AND-OR-Invert compound gate</td></tr>
             <tr><td><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_ex_mcu7t5v0"><span class="run-mono">dfxtn_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://github.com/AvalonSemiconductors/gf180mcu_as_ex_mcu7t5v0">AS extra 7t-5V</a></td>
-              <td class="text-end">2,436</td><td class="text-muted"></td></tr>
+              <td class="text-end">2,436</td><td class="text-muted">D flip-flop (falling edge, 2x drive)</td></tr>
           </tbody>
         </table>
         </div>
@@ -372,11 +372,13 @@ The licence and template were read from the repository at commit
                 style="font-size: 0.220px">5k</text>
           <text x="3.466" y="0.620" class=""
                 style="font-size: 0.220px">0</text>
+          <text x="2.900" y="2.455" class="window-label"
+                style="font-size: 0.220px">21k</text>
         </svg>
         <p class="small text-muted mb-0">Logic cells per mm² in each square millimetre of the
           die. Hatched
-          outlines are SRAM macros; the red outline is the densest mm² that avoids them, found by sliding a
-          1 mm square over the die in 0.1 mm steps. Squares at the edges are partial, so they read low.</p>
+          outlines are SRAM macros; the red outline, labelled in red, is the densest mm² that avoids them, found by sliding a
+          1 mm square over the die in 0.1 mm steps, so it can straddle the fixed squares and find more than any one of them. Squares at the edges are partial, so they read low.</p>
 
       </div>
     </div>
@@ -404,7 +406,7 @@ The licence and template were read from the repository at commit
       </li>
       <li class="run-history-ws">
         <span class="run-timeline-date">Jul 2026 · <a href="https://wafer.space/ws-run2/">wafer.space Run 2</a></span>
-        <span class="run-history-step"><a href="https://wafer.space/ws-run2/projects/AS04.html">AS04 AS04 Multi-Project die using 3.3V SCL</a> <span class="text-muted">— 1 × 1 slot, the multi-project die again, on 3.3 V standard cells</span></span>
+        <span class="run-history-step"><a href="https://wafer.space/ws-run2/projects/AS04.html">AS04 Multi-Project die using 3.3V SCL</a> <span class="text-muted">— 1 × 1 slot, the multi-project die again, on 3.3 V standard cells</span></span>
       </li>
     </ol>
     <p class="small text-muted mb-20 run-history-key"><span class="run-history-key-tt">Tiny Tapeout tile</span>
@@ -565,6 +567,6 @@ transistors are measured
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=1a84e24183"></script>
+  <script src="../run.js?v=6845eef8df"></script>
 </body>
 </html>

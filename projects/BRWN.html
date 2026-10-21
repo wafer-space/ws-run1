@@ -35,7 +35,7 @@
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
   <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
-  <link rel="stylesheet" type="text/css" href="../run.css?v=1a84e24183">
+  <link rel="stylesheet" type="text/css" href="../run.css?v=6845eef8df">
 </head>
 <body>
   <div class="content-wrapper">
@@ -85,7 +85,7 @@
   <div class="container inner text-center">
     <p class="mb-10"><a class="run-crumb" href="../index.html">wafer.space Run 1</a></p>
     <h1 class="page-title">FA25_Engn2912e_Saligane_Brown</h1>
-    <p class="lead"><span class="run-code-inline">BRWN</span> · Other digital · 1 × 1 slot</p>
+    <p class="lead"><span class="run-code-inline">BRWN</span> · Other digital · <span class="run-nowrap">1 × 1 slot</span></p>
   </div>
 </div>
 
@@ -124,7 +124,7 @@
 <span class="text-muted">(3% of buffer maximum)</span></td></tr>
             <tr><th>Core covered by logic</th><td>1%</td></tr>
             <tr><th>Transistor density<br><span class="small text-muted fw-normal">transistors per mm²</span></th><td>50k average,
-              119k in the densest mm² of logic</td></tr>
+              119k in the mm² with the most logic cells</td></tr>
           </tbody>
         </table>
         <p class="small text-muted mb-0">Every figure here is measured from the <a href="https://github.com/wafer-space/ws-run1">public layout</a>, the same way for every
@@ -192,7 +192,7 @@
             <tr><th>Libraries</th><td>
               <a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a> <span class="text-muted">(4k)</span>
 </td></tr>
-            <tr><th>SRAM</th><td>None</td></tr>
+            <tr><th>SRAM</th><td>No SRAM</td></tr>
           </tbody>
         </table>
 
@@ -267,13 +267,13 @@
             <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/dffrnq/gf180mcu_fd_sc_mcu7t5v0__dffrnq_1.html"><span class="run-mono">dffrnq_1</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
               <td class="text-end">490</td><td class="text-muted">D flip-flop with reset</td></tr>
             <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html"><span class="run-mono">dffrnq_1_0</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
-              <td class="text-end">422</td><td class="text-muted"></td></tr>
+              <td class="text-end">422</td><td class="text-muted">D flip-flop with reset</td></tr>
             <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html"><span class="run-mono">mux2_2_0</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
-              <td class="text-end">305</td><td class="text-muted"></td></tr>
+              <td class="text-end">305</td><td class="text-muted">2-input multiplexer (2x drive)</td></tr>
             <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/clkinv/gf180mcu_fd_sc_mcu7t5v0__clkinv_1.html"><span class="run-mono">clkinv_1</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
               <td class="text-end">294</td><td class="text-muted">Clock inverter</td></tr>
             <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html"><span class="run-mono">clkinv_1_0</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
-              <td class="text-end">248</td><td class="text-muted"></td></tr>
+              <td class="text-end">248</td><td class="text-muted">Clock inverter</td></tr>
             <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/mux2/gf180mcu_fd_sc_mcu7t5v0__mux2_2.html"><span class="run-mono">mux2_2</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
               <td class="text-end">179</td><td class="text-muted">2-input multiplexer (2x drive)</td></tr>
             <tr><td><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/cells/nor2/gf180mcu_fd_sc_mcu7t5v0__nor2_1.html"><span class="run-mono">nor2_1</span></a></td><td class="d-none d-sm-table-cell"><a href="https://gf180mcu-pdk.readthedocs.io/en/latest/digital/standard_cells/gf180mcu_fd_sc_mcu7t5v0/index.html">7t-5V</a></td>
@@ -359,11 +359,13 @@
                 style="font-size: 0.220px">&lt;1k</text>
           <text x="3.466" y="0.620" class="light"
                 style="font-size: 0.220px">1k</text>
+          <text x="0.800" y="0.255" class="window-label"
+                style="font-size: 0.220px">3k</text>
         </svg>
         <p class="small text-muted mb-0">Logic cells per mm² in each square millimetre of the
           die. Hatched
-          outlines are SRAM macros; the red outline is the densest mm² that avoids them, found by sliding a
-          1 mm square over the die in 0.1 mm steps. Squares at the edges are partial, so they read low.</p>
+          outlines are SRAM macros; the red outline, labelled in red, is the densest mm² that avoids them, found by sliding a
+          1 mm square over the die in 0.1 mm steps, so it can straddle the fixed squares and find more than any one of them. Squares at the edges are partial, so they read low.</p>
 
       </div>
     </div>
@@ -532,6 +534,6 @@ transistors are measured
   <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script src="https://wafer.space/assets/js/plugins.js"></script>
   <script src="https://wafer.space/assets/js/scripts.js"></script>
-  <script src="../run.js?v=1a84e24183"></script>
+  <script src="../run.js?v=6845eef8df"></script>
 </body>
 </html>

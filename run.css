@@ -418,3 +418,11 @@ label.run-index-more::before { content: "▸ "; color: var(--run-muted); }
 .run-heatmap text.light { stroke: none; }
 /* SRAM macro names are long: they wrap, so the table fits the narrow column beside the map. */
 .run-macros td:first-child { overflow-wrap: anywhere; }
+/* A design named by its repository ("FA25_Engn2912e_Saligane_Brown") is one long word: let it wrap on a phone. */
+.page-title { overflow-wrap: anywhere; }
+/* The densest window's own figure, in the outline's red on a halo of the page. */
+.run-heatmap text.window-label { fill: #d23f4a; font-weight: 700; stroke: var(--run-surface); }
+[data-theme="dark"] .run-heatmap text.window-label { fill: #f07a83; }
+/* The GitHub account owning a Tiny Tapeout project's repository, beside its authors. */
+.run-account { color: var(--run-muted); }
+.page-title-sub .run-account, .run-hero .run-account, .run-hero .run-account a { color: rgba(255, 255, 255, 0.85); }
