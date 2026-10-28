@@ -166,6 +166,9 @@
 .run-guidance .run-group, .run-guidance .run-group-start { border-left: 1px solid var(--run-line); }
 .run-guidance .run-note { display: block; font-size: 0.75rem; font-weight: 400; color: var(--run-muted); }
 .run-ip-only { opacity: 0.55; }
+/* Text for screen readers only. */
+.run-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 
 /* Who owns a timeline step, where two schedules meet (a Tiny Tapeout die on a wafer.space run). */
 .run-owner { display: inline-block; font-size: 0.7rem; font-weight: 600; line-height: 1.4; padding: 0 6px; border-radius: 3px;
@@ -230,6 +233,19 @@
 .run-minimap svg { display: block; width: 100%; height: auto; background: var(--run-track); border-radius: 3px; }
 .run-minimap rect { fill: var(--run-line); stroke: var(--run-surface); stroke-width: 0.12; }
 .run-minimap rect.mine { fill: var(--run-accent); }
+/* The same on the private designs page, with the locked slots picked out. */
+.run-private-map svg { display: block; width: 100%; height: auto; background: var(--run-track); border-radius: 6px; }
+.run-private-map rect { fill: var(--run-line); stroke: var(--run-surface); stroke-width: 0.12; }
+.run-private-map rect.locked { fill: var(--run-accent); }
+
+/* A private design's slot on the reticle: hatched and locked, its label in the corner as on the others. */
+.run-reticle-private { align-items: center; justify-content: center; container-type: size;
+  background: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0 3px, transparent 3px 9px); }
+/* The lock is sized from the slot's shorter side, so half slots get one as big as their height allows. */
+/* Its own colour, not the link colour, which the theme's dark mode turns blue. */
+.run-reticle-private svg { width: clamp(10px, 40cqmin, 32px); height: auto; fill: rgba(255, 255, 255, 0.7); }
+.run-reticle-private span { position: absolute; left: 0; bottom: 0; }
+.run-reticle-private:hover svg, .run-reticle-private:focus-visible svg { fill: #fff; }
 
 /* Today on the run timeline: the rocket from the wafer.space logo, in the accent colour, on the line. */
 .run-timeline li.run-today { padding-bottom: 16px; }
@@ -377,15 +393,7 @@
   .run-tl-track { height: var(--hm, 40px); }
   .run-tl-dot { transform: translateY(var(--dym, 0px)); }
 }
-/* A Tiny Tapeout chip's project index: long, so the header stays in view while scrolling it. */
-/* The project index shows its first rows; the toggle under it shows the rest. */
-.run-index-toggle { position: absolute; opacity: 0; pointer-events: none; }
-.run-index tr.run-extra { display: none; }
-.run-index-toggle:checked + .run-index tr.run-extra { display: table-row; }
-.run-index-more { display: inline-block; margin-top: 10px; color: var(--run-accent); cursor: pointer; font-weight: 600; }
-.run-index-more .run-hide, .run-index-toggle:checked ~ .run-index-more .run-show { display: none; }
-.run-index-toggle:checked ~ .run-index-more .run-hide { display: inline; }
-.run-index-toggle:focus-visible ~ .run-index-more { outline: 2px solid var(--run-accent); outline-offset: 2px; }
+/* The project index: no gap under its table. */
 .run-index table { margin-bottom: 0; }
 /* Run names linked in a hero's title stay white, underlined. */
 .run-hero .page-title-sub a, [data-theme="dark"] .run-hero .page-title-sub a { color: inherit; text-decoration: underline;
@@ -393,7 +401,7 @@
 /* The shuttle status's two lists: done so far, still to come. */
 .run-status-head { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--run-muted); margin: 0 0 12px; }
 .run-reticle-frame { margin-inline: auto; }
-/* A list behind its count, inside a table cell: the summary reads as a link. */
+/* Details behind a short summary inside a table cell (a design's commit and PDK pin): the summary reads as a link. */
 .run-more-inline { margin: 0; }
 .run-more-inline > summary { display: inline; cursor: pointer; margin: 0; }
 .run-more-inline[open] > summary { display: block; margin-bottom: 4px; }
@@ -404,11 +412,6 @@
 /* A framed reticle shown cropped to its dies (the frame's scale, without the empty frame). */
 .run-reticle-crop { overflow: hidden; border-radius: 6px; line-height: 0; }
 .run-reticle-crop .run-reticle.framed { outline: 0; }
-/* The index's toggle reads as a link, like the other show-all toggles (the theme styles labels dark). */
-label.run-index-more { color: #2f7fb8; }
-[data-theme="dark"] label.run-index-more { color: var(--run-accent); }
-label.run-index-more::before { content: "▸ "; color: var(--run-muted); }
-.run-index-toggle:checked ~ label.run-index-more::before { content: "▾ "; }
 /* A chart row is a link to the design: its code is link-coloured, and its name underlines on hover. */
 .run-row .run-row-label strong { color: #2f7fb8; }
 [data-theme="dark"] .run-row .run-row-label strong { color: var(--run-accent); }
@@ -422,3 +425,20 @@ label.run-index-more::before { content: "▸ "; color: var(--run-muted); }
 /* The GitHub account owning a Tiny Tapeout project's repository, beside its authors. */
 .run-account { color: var(--run-muted); }
 .page-title-sub .run-account, .run-hero .run-account, .run-hero .run-account a { color: rgba(255, 255, 255, 0.85); }
+/* A small table of figures inside a card or a table cell (a figure per library): label, figure, and an optional
+   cell name, the figures right-aligned in tabular digits. Plain on purpose: thin rules between rows only, so a
+   site-wide table style can build on it. Declared last so it wins over .run-facts and .run-table cells. */
+.run-mini { width: auto; margin-bottom: 0; border-collapse: collapse; color: var(--run-muted); font-variant-numeric: tabular-nums; }
+.run-mini th, .run-mini td { width: auto; padding: 3px 0 3px 12px; border: 0; font-weight: 400; white-space: nowrap;
+  vertical-align: baseline; text-align: left; background: transparent; }
+/* The library names are right-aligned, so each sits against its figure. A long one ("AS extra 7t-5V") wraps
+   rather than pushing the table out of a narrow card. */
+.run-mini th { padding-left: 0; white-space: normal; text-align: right; }
+/* Four cards in a row on a 992–1199 px screen leave each table about 160 px. */
+@media (min-width: 992px) and (max-width: 1199.98px) { .run-mini th, .run-mini td { padding-left: 6px; } .run-mini th { padding-left: 0; } }
+/* The theme rules off a table's last body: not inside another table's cell. */
+.run-mini > tbody { border: 0; }
+.run-mini tr + tr > * { border-top: 1px solid var(--run-line); }
+.run-mini .run-mini-num { text-align: right; color: var(--run-ink); }
+.run-mini .run-mono { color: var(--run-ink); }
+.run-facts .run-mini { margin: -3px 0; }

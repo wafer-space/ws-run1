@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Private designs — wafer.space Run 1</title>
+  <meta name="description" content="Many designs on wafer.space Run 1 are open source, but yours doesn't have to be. On wafer.space, your design can be open or closed.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Private designs — wafer.space Run 1">
+  <meta property="og:description" content="Many designs on wafer.space Run 1 are open source, but yours doesn't have to be. On wafer.space, your design can be open or closed.">
+<meta property="og:image" content="https://wafer.space/ws-run1/renders/reticle.webp">
+  <script>
+    // The main website's dark-mode-init: the same 'theme' preference, applied
+    // before first paint. Its scripts.js then runs the toggle.
+    (function () {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark-mode-init');
+      }
+    })();
+  </script>
+  <style>
+    [data-theme="dark"] body, .dark-mode-init body { background-color: #1a1a1a !important; color: #e0e0e0; }
+    [data-theme="dark"], .dark-mode-init { background-color: #1a1a1a !important; }
+  </style>
+  <link rel="shortcut icon" href="https://wafer.space/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/plugins.css" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/type/type.css" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/sky.css">
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/color/dark.css">
+  <link rel="stylesheet" type="text/css" href="https://wafer.space/assets/css/custom.css">
+  <link rel="stylesheet" type="text/css" href="run.css?v=f2283c2488">
+</head>
+<body>
+  <div class="content-wrapper">
+    <nav class="navbar wide absolute dark-wrapper inverse-text navbar-hover-opacity navbar-expand-lg nav-uppercase">
+      <div class="container-fluid flex-row justify-content-center">
+        <div class="navbar-brand" data-default-logo="white">
+          <a href="https://wafer.space/"><img src="https://wafer.space/assets/images/logo-light.webp"
+            srcset="https://wafer.space/assets/images/logo-light.webp 1x, https://wafer.space/assets/images/logo-light@2x.webp 2x"
+            class="logo-light" alt="wafer.space - Budget silicon manufacturing" /></a>
+          <a href="https://wafer.space/"><img src="https://wafer.space/assets/images/logo.webp"
+            srcset="https://wafer.space/assets/images/logo.webp 1x, https://wafer.space/assets/images/logo@2x.webp 2x"
+            class="logo-dark d-none" alt="wafer.space - Budget silicon manufacturing" /></a>
+        </div>
+        <div class="navbar-other ms-auto order-lg-3">
+          <ul class="navbar-nav flex-row align-items-center" data-sm-skip="true">
+            <li class="nav-item">
+              <div class="navbar-hamburger d-lg-none d-xl-none ms-auto">
+                <button class="hamburger animate plain" data-bs-toggle="offcanvas-nav"><span></span></button>
+              </div>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <button id="darkModeToggle" class="btn btn-sm btn-circle btn-outline-primary theme-toggle me-2" aria-label="Switch theme mode" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Click to toggle, right-click for auto"><i class="icofont-moon"></i></button>
+            </li>
+            <li class="nav-item d-none d-lg-block"><a href="https://wafer.space/free.html" class="btn btn-default">Free Silicon?</a></li>
+          </ul>
+        </div>
+        <div class="navbar-collapse offcanvas-nav">
+          <div class="offcanvas-header d-lg-none d-xl-none">
+            <a href="https://wafer.space/"><img src="https://wafer.space/assets/images/logo-light.webp" alt="wafer.space" /></a>
+            <button class="plain offcanvas-close offcanvas-nav-close"><i class="jam jam-close"></i></button>
+          </div>
+          <ul class="navbar-nav mx-auto" data-sm-skip-collapsible-behavior="true">
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/price.html">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/technology.html">Technology</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/design-help.html">Design Help</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/news">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wafer.space/faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<div class="wrapper image-wrapper bg-image page-title-wrapper run-hero inverse-text"
+     data-image-src="https://wafer.space/assets/images/header/mpw-one-partial-dice-top-1.jpg">
+  <div class="container inner text-center">
+    <p class="mb-10"><a class="run-crumb" href="index.html">wafer.space Run 1</a></p>
+    <h1 class="page-title">Private designs</h1>
+    <p class="lead mb-0">Open source is welcome on wafer.space, but not required.</p>
+  </div>
+</div>
+
+<div class="wrapper light-wrapper">
+  <div class="container inner run-inner-slim">
+    <div class="row gutter-50 align-items-center">
+      <div class="col-lg-7">
+        <p class="lead">Many of the designs on wafer.space Run 1 are open source. Their makers published them, so we
+          measure and show each one on <a href="index.html#projects">the run's page</a> for anyone to learn
+          from.</p>
+        <p class="mb-lg-0">2 of the 40 slots on this reticle hold private designs. They
+          were made on the same wafers as the published ones, but their owners chose not to publish them. In the
+          run's <a href="https://github.com/wafer-space/ws-run1">public layout</a> these slots are scrambled to hide what is inside, and
+          the project list shows only a short code and the slot size. So we show them here as locked slots and don't
+          measure them.</p>
+      </div>
+      <div class="col-lg-5">
+        <figure class="mb-0 run-private-map">
+          <svg viewBox="0 0 30.00 23.38" role="img"><title>The 2 locked slots among the 40 on the reticle</title>
+<rect class="" x="0.060" y="18.197"
+              width="3.932" height="5.122"/><rect class="" x="0.060" y="13.015"
+              width="3.932" height="5.122"/><rect class="" x="0.060" y="7.833"
+              width="3.932" height="5.122"/><rect class="" x="0.060" y="2.651"
+              width="3.932" height="5.122"/><rect class="" x="0.060" y="0.060"
+              width="3.932" height="2.531"/><rect class="" x="4.052" y="18.197"
+              width="3.932" height="5.122"/><rect class="" x="4.052" y="13.015"
+              width="3.932" height="5.122"/><rect class="" x="4.052" y="7.833"
+              width="3.932" height="5.122"/><rect class="" x="4.052" y="2.651"
+              width="3.932" height="5.122"/><rect class="" x="4.052" y="0.060"
+              width="3.932" height="2.531"/><rect class="" x="8.044" y="18.197"
+              width="3.932" height="5.122"/><rect class="" x="8.044" y="13.015"
+              width="3.932" height="5.122"/><rect class="" x="8.044" y="0.060"
+              width="3.932" height="2.531"/><rect class="" x="12.036" y="18.197"
+              width="3.932" height="5.122"/><rect class="" x="12.036" y="13.015"
+              width="3.932" height="5.122"/><rect class="" x="12.036" y="7.833"
+              width="3.932" height="5.122"/><rect class="" x="12.036" y="2.651"
+              width="3.932" height="5.122"/><rect class="" x="12.036" y="0.060"
+              width="3.932" height="2.531"/><rect class="" x="16.028" y="18.197"
+              width="3.932" height="5.122"/><rect class="" x="16.028" y="13.015"
+              width="3.932" height="5.122"/><rect class="" x="16.028" y="7.833"
+              width="3.932" height="5.122"/><rect class="" x="16.028" y="2.651"
+              width="3.932" height="5.122"/><rect class="" x="16.028" y="0.060"
+              width="3.932" height="2.531"/><rect class="" x="20.020" y="18.197"
+              width="3.932" height="5.122"/><rect class="" x="20.020" y="13.015"
+              width="3.932" height="5.122"/><rect class="" x="20.020" y="7.833"
+              width="3.932" height="5.122"/><rect class="" x="20.020" y="2.651"
+              width="3.932" height="5.122"/><rect class="" x="20.020" y="0.060"
+              width="3.932" height="2.531"/><rect class="" x="24.012" y="18.197"
+              width="3.932" height="5.122"/><rect class="" x="24.012" y="13.015"
+              width="3.932" height="5.122"/><rect class="" x="24.012" y="7.833"
+              width="3.932" height="5.122"/><rect class="" x="24.012" y="2.651"
+              width="3.932" height="5.122"/><rect class="" x="24.012" y="0.060"
+              width="3.932" height="2.531"/><rect class="" x="28.004" y="18.197"
+              width="1.936" height="5.122"/><rect class="" x="28.004" y="13.015"
+              width="1.936" height="5.122"/><rect class="" x="28.004" y="7.833"
+              width="1.936" height="5.122"/><rect class="" x="28.004" y="2.651"
+              width="1.936" height="5.122"/><rect class="" x="28.004" y="0.060"
+              width="1.936" height="2.531"/><rect class="locked" x="8.044" y="7.833"
+              width="3.932" height="5.122"/><rect class="locked" x="8.044" y="2.651"
+              width="3.932" height="5.122"/>          </svg>
+          <figcaption class="small text-muted mt-10">The reticle: the private designs in colour, the published designs in grey.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper gray-wrapper">
+  <div class="container inner run-inner-slim">
+    <h2 id="submit" class="section-title mb-20">Your design can stay private</h2>
+    <p>The GF180MCU process design kit (the PDK) is open source, but your design can be open or closed. You
+      don't have to publish its layout or its source, and you don't need to sign a non-disclosure agreement (NDA) to
+      get started. On wafer.space Run 1, private and published designs shared the same reticle.</p>
+    <p>Private here just means the design files aren't published. Open-source designs can be commercial too.</p>
+    <p>Questions about keeping a design private? Email <a href="mailto:info@wafer.space">info@wafer.space</a>.</p>
+    <p class="mb-0">
+<a class="btn btn-s mb-10 me-10" href="https://buy.wafer.space/#products">Reserve a slot on wafer.space Run 3</a>      <a href="https://wafer.space/faq">Read the wafer.space FAQ</a> ·
+      <a href="index.html#projects">Explore the published designs on this run</a>
+    </p>
+  </div>
+</div>
+
+    <footer class="dark-wrapper inverse-text">
+      <div class="container inner">
+        <div class="row">
+          <div class="col-md-12 col-lg-4 text-center text-lg-start">
+            <div class="widget">
+              <a href="https://wafer.space"><img src="https://wafer.space/assets/images/logo-light.webp" alt="wafer.space - Budget silicon manufacturing" /></a>
+              <div class="space20"></div>
+              <p>Budget silicon manufacturing.</p>
+            </div>
+          </div>
+          <div class="space30 d-lg-none d-xl-none"></div>
+          <div class="col-6 col-lg-4">
+            <div class="widget">
+              <h5 class="widget-title">wafer.space Run 1</h5>
+              <ul class="list-unstyled mb-0">
+                <li><a href="index.html">Run overview</a></li>
+                <li><a href="https://github.com/wafer-space/ws-run1">Layout and manifest on GitHub</a></li>
+                <li><a href="https://github.com/wafer-space/ws-run1/blob/density-report/reticle_density_report.md">Density report</a></li>
+<li><a href="https://www.crowdsupply.com/wafer-space/gf180mcu-run-1">The run on Crowd Supply</a></li>              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="widget">
+              <h5 class="widget-title">About this page</h5>
+              <p class="small mb-0">Generated on 2026-10-28 by
+                <a href="https://github.com/wafer-space/ws-run-reports">ws-run-reports</a>. Sizes, cells and
+transistors are measured
+                from the <a href="https://github.com/wafer-space/ws-run1">public layout</a>; dates come from the published schedules. The
+                data files are linked from <a href="index.html#data">the overview</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://wafer.space/assets/js/jquery.min.js"></script>
+  <script src="https://wafer.space/assets/js/popper.min.js"></script>
+  <script src="https://wafer.space/assets/js/bootstrap.min.js"></script>
+  <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+  <script src="https://wafer.space/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+  <script src="https://wafer.space/assets/js/plugins.js"></script>
+  <script src="https://wafer.space/assets/js/scripts.js"></script>
+  <script src="run.js?v=f2283c2488"></script>
+</body>
+</html>
